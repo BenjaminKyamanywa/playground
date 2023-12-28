@@ -6,8 +6,8 @@
   margin: 0;
 }
 
-section {
-  margin: 2rem 0;
+section, header {
+  margin: 1.5rem 0;
   padding: 24px;
 }
 
@@ -65,3 +65,7 @@ section {
 }
 
 /* Layout three styles */
+
+.box-small-layout-three {
+  margin-bottom: 24px;
+}
