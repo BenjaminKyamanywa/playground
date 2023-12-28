@@ -14,10 +14,14 @@
   border: 4px solid lightgray;
 }
 
+.small-box-wrapper {
+  display: flex;
+}
+
 .box {
   border: 4px solid lightgray;
   width: 100px;
-  height: 50px;
+  height: 100px;
 }
 
 .box-small {
