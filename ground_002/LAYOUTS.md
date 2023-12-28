@@ -6,4 +6,4 @@ Click [here](https://www.google.com) to view live.
 
 This includes:
 - Navigation bar
-- Search bar with 2 row items
+- Title with 2 rows items
