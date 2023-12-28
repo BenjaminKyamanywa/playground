@@ -9,3 +9,7 @@ This includes:
 - Title with 2 rows items
 - Side by side items
 - Side by side items with smaller row items
+
+## Goal
+
+To practise most common simplest CSS layouts in their simplest form without content.
