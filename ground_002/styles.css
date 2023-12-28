@@ -8,6 +8,7 @@
 
 section {
   margin: 2rem 0;
+  padding: 24px;
 }
 
 /* Navigation styles */
@@ -45,3 +46,12 @@ section {
   margin-bottom: 24px;
 }
 
+.layout-two-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-layout-two {
+  width: 30%;
+}
