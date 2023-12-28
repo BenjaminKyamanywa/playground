@@ -84,3 +84,14 @@ section, header {
   width: 45%;
   height: auto;
 }
+
+/* Layout four styles */
+
+.box-tiny-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-tiny {
+  width: 30%;
+}
