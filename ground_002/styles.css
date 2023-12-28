@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-section, header {
+section, header, footer {
   margin: 1.5rem 0;
   padding: 24px;
 }
@@ -94,4 +94,11 @@ section, header {
 
 .box-tiny {
   width: 30%;
+}
+
+/* Footer styles */
+
+footer {
+  border: 4px solid lightgray;
+  height: 200px;
 }
