@@ -68,16 +68,19 @@ section, header {
 
 .layout-three {
   display: flex;
+  justify-content: space-between;
 }
 
 .layout-three-small-items-wrapper {
   width: 45%;
 }
 
-.box-small-layout-three {
+.box-small-layout-three, * + * {
   width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .box-large-layout-three {
   width: 45%;
+  height: auto;
 }
