@@ -52,6 +52,7 @@ section {
   justify-content: space-between;
 }
 
-.box-layout-two {
+.box-small-layout-two {
   width: 30%;
+  margin-bottom: 24px;
 }
