@@ -66,6 +66,18 @@ section, header {
 
 /* Layout three styles */
 
+.layout-three {
+  display: flex;
+}
+
+.layout-three-small-items-wrapper {
+  width: 45%;
+}
+
 .box-small-layout-three {
-  margin-bottom: 24px;
+  width: 100%;
+}
+
+.box-large-layout-three {
+  width: 45%;
 }
