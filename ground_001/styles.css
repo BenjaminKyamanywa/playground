@@ -12,7 +12,8 @@ body {
 
 .row {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -74,7 +75,8 @@ h1 {
 button {
   background-color: #05c7cf;
   border: none;
-  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  padding: 1.125rem 1.063rem;
   color: #fff;
   cursor: pointer;
 }
