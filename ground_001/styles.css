@@ -93,4 +93,28 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+.section-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-description-wrapper {
+
+}
+
+.about-img-wrapper {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+.section-description-paragraph {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem
+}
+
 
