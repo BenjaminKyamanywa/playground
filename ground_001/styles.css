@@ -157,3 +157,13 @@ input, textarea {
 
 /* Footer section styles */
 
+footer {
+  background-color: #aaf5ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
+  padding: 0 1.5rem;
+}
+
+
