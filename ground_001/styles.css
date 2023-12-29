@@ -156,6 +156,10 @@ input, textarea {
   padding: 0.4rem 0.75rem
 }
 
+label {
+  margin-bottom: 0.5rem;
+}
+
 /* Footer section styles */
 
 footer {
