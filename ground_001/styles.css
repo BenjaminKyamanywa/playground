@@ -9,9 +9,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
 /* Header styles */
 
 .site-logo svg {
   height: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
 }
