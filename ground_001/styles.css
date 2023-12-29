@@ -10,6 +10,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.row {
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+
 figure img {
   width: 600px;
   border-radius: 5px;
@@ -53,10 +60,13 @@ header {
   justify-content: center;
   background-color: #eadcff;
   height: calc(100vh - 80px);
-  padding: 1.5rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4.5rem;
+}
+
+.subheader {
+  font-size: 2.25rem;
 }
 
