@@ -10,7 +10,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Header styles */
+figure img {
+  width: 600px;
+  border-radius: 5px;
+}
+
+/* Navigation styles */
 
 .site-logo svg {
   height: 2rem;
@@ -39,3 +44,19 @@ li {
   list-style-type: none;
   padding-left: 1.5rem;
 }
+
+/* Header Styles */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eadcff;
+  height: calc(100vh - 80px);
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
