@@ -100,11 +100,16 @@ h2 {
 }
 
 .section-description-wrapper {
-
+  width: 60%;
 }
 
 .about-img-wrapper {
-  width: 50%;
+  width: 40%;
+}
+
+.section-description-wrapper,
+.about-img-wrapper {
+  padding: 0 3rem;
 }
 
 img {
