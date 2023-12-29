@@ -83,5 +83,14 @@ button {
 
 /* About section styles */
 
+.about-section {
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 3.72rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
 
