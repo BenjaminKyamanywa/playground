@@ -53,6 +53,12 @@ li {
   padding-left: 1.5rem;
 }
 
+#about,
+#community,
+#contact {
+  padding: 3rem 0;
+}
+
 /* Header/Hero Styles */
 
 header {
@@ -84,7 +90,6 @@ button {
 /* About section styles */
 
 #about {
-  padding: 3rem 0;
   background-color: #f5fae4;
 }
 
@@ -104,9 +109,9 @@ h2 {
   width: 60%;
 }
 
-.about-img-wrapper {
+/* .about-img-wrapper {
   width: 40%;
-}
+} */
 
 .section-description-wrapper,
 .about-img-wrapper {
@@ -124,5 +129,9 @@ img {
 }
 
 /* Community section styles */
+
+#community {
+  background-color: #cefeff;
+}
 
 
