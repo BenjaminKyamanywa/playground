@@ -148,6 +148,7 @@ form {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 input, textarea {
@@ -203,7 +204,7 @@ footer {
     text-align: center;
   }
 
-  ul {
+  nav ul {
     display: none;
   }
 
@@ -220,6 +221,24 @@ footer {
   /* Community section styles */
   #community .section-description {
     flex-direction: column-reverse;
+  }
+
+  /* Footer Mobile responsive Styles */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer ul {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  footer ul li {
+    padding-bottom: 0.5rem;
   }
 
 }
