@@ -184,4 +184,22 @@ footer {
   .row {
     flex-direction: column
   }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .subheader {
+    font-size: 1.25rem;
+  }
+
+  .hero-area-responsive-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+  }
+
 }
