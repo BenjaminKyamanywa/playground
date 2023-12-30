@@ -217,4 +217,9 @@ footer {
     width: 100%;
   }
 
+  /* Community section styles */
+  #community .section-description {
+    flex-direction: column-reverse;
+  }
+
 }
