@@ -204,6 +204,10 @@ footer {
     text-align: center;
   }
 
+  .section-description-wrapper, .about-img-wrapper {
+    padding: 0;
+  }
+
   figure img {
     width: 350px;
   }
