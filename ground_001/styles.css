@@ -176,4 +176,12 @@ footer {
   font-weight: 700;
 }
 
+/* Responsive/Mobile styles */
 
+/* small phones, tablets, large smartphones */
+
+@media screen and (max-width: 728px) {
+  .row {
+    flex-direction: column
+  }
+}
