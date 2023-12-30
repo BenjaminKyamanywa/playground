@@ -204,6 +204,10 @@ footer {
     text-align: center;
   }
 
+  figure img {
+    width: 350px;
+  }
+
   nav ul {
     display: none;
   }
