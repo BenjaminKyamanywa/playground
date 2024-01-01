@@ -1,6 +1,7 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
 }
+
