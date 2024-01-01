@@ -9,7 +9,7 @@
 }
 
 h1, h2, h3, h4, h5, h6, span {
-  color: #343434;
+  color: #242424;
   text-align: center;
   line-height: 1.25;
 }
@@ -19,6 +19,30 @@ p {
   font-size: 1rem;
 }
 
-/* Top bar styles */
+li {
+  list-style-type: none;
+}
 
+/* Top bar navigation styles */
+
+nav {
+  height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link-list {
+  display: flex;
+}
+
+.nav-link-anchor {
+  margin: 0 0.75rem;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+}
 
