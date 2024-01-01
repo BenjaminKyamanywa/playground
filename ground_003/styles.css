@@ -23,6 +23,20 @@ li {
   list-style-type: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.row {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Top bar navigation styles */
 
 nav {
@@ -65,3 +79,25 @@ nav {
   padding: 0 0.75rem;
 }
 
+/* hero area styles */
+
+.hero-area {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-picture-mask {
+  width: 100px;
+  height: 100px;
+}
+
+.about-me-picture {
+  width: 100%;
+}
