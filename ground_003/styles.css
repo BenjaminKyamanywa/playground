@@ -126,4 +126,10 @@ nav {
   font-size: 1.125rem;
 }
 
+.about-me-link {
+  font-size: 1.5rem;
+  color: #242424;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
 
