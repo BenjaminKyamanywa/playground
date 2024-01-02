@@ -95,6 +95,11 @@ nav {
   flex-direction: column;
 }
 
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-me-info-container {
   display: flex;
   flex-direction: column;
@@ -132,5 +137,15 @@ nav {
   text-decoration: none;
   padding: 0 0.5rem;
   cursor: pointer;
+}
+
+.about-me-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-me-img {
+  width: 100%;
 }
 
