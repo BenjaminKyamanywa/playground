@@ -45,7 +45,7 @@ li {
   color: #6030b1
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: #f8f8f8;
 }
 
@@ -152,6 +152,7 @@ nav {
 .about-me-img {
   width: 100%;
 }
+
 
 
 
