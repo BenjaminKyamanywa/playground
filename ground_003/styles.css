@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6, span {
   color: #242424;
   text-align: center;
@@ -21,6 +25,10 @@ h1, span {
 p {
   line-height: 1.5;
   font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 li {
@@ -72,7 +80,6 @@ nav {
 .nav-link-anchor {
   margin: 0 0.75rem;
   color: #242424;
-  text-decoration: none;
   font-weight: 700;
 }
 
@@ -142,7 +149,6 @@ nav {
 .about-me-link {
   font-size: 1.5rem;
   color: #242424;
-  text-decoration: none;
   padding: 0 0.5rem;
   cursor: pointer;
 }
@@ -285,7 +291,6 @@ nav {
 .project-description-link {
   font-size: 1.25rem;
   margin-right: 1rem;
-  text-decoration: none;
 }
 
 .project-description-title,
@@ -302,7 +307,7 @@ footer {
   background-color: #242424;
 }
 
-.footer-logo {
+.footer-anchor {
   margin-bottom: 1.25rem;
 }
 
@@ -325,7 +330,11 @@ footer {
 }
 
 .footer-social-list {
-  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.75rem;
 }
 
 
