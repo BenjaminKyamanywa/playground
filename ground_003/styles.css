@@ -295,3 +295,19 @@ nav {
   text-align: left;
   color: #fff;
 }
+
+/* footer section styles */
+
+footer {
+  background-color: #242424;
+}
+
+.footer-logo-img {
+  width: 70px;
+  height: 70px;
+}
+
+.footer-row {
+  padding: 8% 0;
+}
+
