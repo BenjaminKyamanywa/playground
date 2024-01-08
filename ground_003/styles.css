@@ -245,3 +245,38 @@ nav {
   transform: scale(1.07);
   filter: blur(5px);
 }
+
+.project-list {
+  padding-top: 2.5rem;
+}
+
+.project-description {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translateY(-50%);
+  max-width: 550px;
+  z-index: 3;
+}
+
+.project-description-title {
+  font-size: 2.5rem;
+}
+
+.project-description-paragraph {
+  margin: 1rem 0;
+}
+
+.project-description-link {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.project-description-title,
+.project-description-subtitle,
+.project-description-paragraph,
+.project-description-link {
+  text-align: left;
+  color: #fff;
+}
