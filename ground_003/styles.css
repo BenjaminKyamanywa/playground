@@ -246,6 +246,11 @@ nav {
   filter: blur(5px);
 }
 
+.project:hover .project-description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
 .project-list {
   padding-top: 2.5rem;
 }
@@ -254,9 +259,11 @@ nav {
   position: absolute;
   top: 50%;
   left: 90px;
-  transform: translateY(-50%);
+  transform: translateY(100%);
   max-width: 550px;
   z-index: 3;
+  opacity: 0;
+  transition: transform 450ms, opacity 300ms;
 }
 
 .project-description-title {
