@@ -211,3 +211,7 @@ nav {
 
 /* projects section styles */
 
+.project-img {
+  width: 100%;
+}
+
