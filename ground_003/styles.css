@@ -302,12 +302,30 @@ footer {
   background-color: #242424;
 }
 
+.footer-logo {
+  margin-bottom: 1.25rem;
+}
+
 .footer-logo-img {
   width: 70px;
   height: 70px;
 }
 
 .footer-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 8% 0;
 }
+
+.footer-social-link,
+.footer-copyright {
+  color: #fff;
+}
+
+.footer-social-list {
+  margin-bottom: 1.25rem;
+}
+
 
