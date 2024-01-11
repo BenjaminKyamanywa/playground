@@ -71,6 +71,7 @@ li {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 12px
 }
 
 .text-purple {
@@ -382,5 +383,14 @@ small phones, tablets, large smartphones
 
   .language {
     width: calc(100% / 3);
+  }
+
+  .project-description-paragraph {
+    font-size: 14px;
+  }
+
+  .project-description {
+    left: 30px;
+    padding-right: 30px;
   }
 }
