@@ -95,6 +95,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 12px;
 }
 
 .nav-link-list {
@@ -359,4 +360,14 @@ footer {
   width: 100%;
   max-width: 500px;
   margin-bottom: 1.75rem;
+}
+
+/* Media Queries 
+small phones, tablets, large smartphones 
+*/
+
+@media (max-width: 728px) {
+  nav {
+    height: 68px;
+  }
 }
