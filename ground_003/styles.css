@@ -184,7 +184,7 @@ nav {
   align-items: center;
 }
 
-.about-me-img {
+.about-me-image {
   width: 100%;
 }
 
@@ -369,5 +369,9 @@ small phones, tablets, large smartphones
 @media (max-width: 728px) {
   nav {
     height: 68px;
+  }
+
+  h1 {
+    font-size: 28px;
   }
 }
