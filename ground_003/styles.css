@@ -394,3 +394,13 @@ small phones, tablets, large smartphones
     padding-right: 30px;
   }
 }
+
+/* 
+Media Queries Small Devices
+*/
+
+@media (max-width: 480px) {
+  .nav__link:not(:last-child) {
+    display: none;
+  }
+}
