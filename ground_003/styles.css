@@ -222,6 +222,7 @@ nav {
 
 .language-list {
   display: flex;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -377,5 +378,9 @@ small phones, tablets, large smartphones
 
   .about-me-info-paragraph {
     font-size: 18px;
+  }
+
+  .language {
+    width: calc(100% / 3);
   }
 }
