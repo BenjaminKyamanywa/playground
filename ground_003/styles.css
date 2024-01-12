@@ -403,4 +403,21 @@ Media Queries Small Devices
   .nav__link:not(:last-child) {
     display: none;
   }
+
+  .project-description-paragraph {
+    display: none;
+  }  
+
+  .project-description-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-description-title {
+    font-size: 24px;
+  }
+
+  .project-description-subtitle {
+    font-size: 13px;
+  }
 }
