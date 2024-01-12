@@ -32,7 +32,7 @@ a {
   position: relative;
 }
 
-a:hover {
+ion-icon:hover {
   opacity: 0.7;
 }
 
