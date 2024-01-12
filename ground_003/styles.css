@@ -414,10 +414,13 @@ Media Queries Small Devices
   }
 
   .project-description-title {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 1;
   }
 
   .project-description-subtitle {
     font-size: 13px;
+    text-align: center;
+    margin: 12px 0;
   }
 }
