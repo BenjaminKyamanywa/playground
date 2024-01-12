@@ -404,6 +404,12 @@ Media Queries Small Devices
     display: none;
   }
 
+  .project-description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
   .project-description-paragraph {
     display: none;
   }  
@@ -414,6 +420,7 @@ Media Queries Small Devices
   }
 
   .project-description-title {
+    text-align: center;
     font-size: 20px;
     line-height: 1;
   }
