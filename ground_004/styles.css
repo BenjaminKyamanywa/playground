@@ -1,6 +1,7 @@
 /* General styles */
 
 :root {
+  --font-family-sans: font-family: "Poppins", sans-serif;
   --color-primary-red: hsl(0, 78%, 62%);
   --color-primary-cyan: hsl(180, 62%, 55%);
   --color-primary-orange: hsl(34, 97%, 64%);
@@ -17,9 +18,26 @@
   --font-size-900: 2.5rem; 
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-neutral-very-dark-blue);
+  line-height: 1.1;
 }
 
 /* front end mentor initial styles */
