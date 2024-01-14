@@ -34,6 +34,10 @@ html {
   color: var(--color-neutral-grayish-blue);
 }
 
+body {
+  padding-block-end: 5rem;
+}
+
 h1,
 h2,
 h3 {
@@ -74,6 +78,11 @@ header {
 
 .layout-grid > * {
   flex: 1;
+}
+
+.card {
+  padding: 2rem;
+  box-shadow: 0rem 0.5rem 1rem -0.5rem rgb(0 0 0 / 0.2);
 }
 
 
