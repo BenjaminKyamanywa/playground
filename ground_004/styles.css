@@ -51,6 +51,32 @@ h3 {
   max-width: 550px;
 }
 
+/* header styles */
+
+header {
+  text-align: center;
+  margin-block: 6rem;
+}
+
+/* main content styles */
+
+.layout-grid {
+  --gap: 2rem;
+  display: flex;
+  gap: var(--gap);
+}
+
+.col {
+  display: grid;
+  align-content: center;
+  gap: var(--gap);
+}
+
+.layout-grid > * {
+  flex: 1;
+}
+
+
 /* front end mentor styles */
 .attribution { 
   font-size: 11px; 
