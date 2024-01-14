@@ -1,7 +1,4 @@
 /* General styles */
-* {
-  box-sizing: border-box;
-}
 
 :root {
   --primary-red: hsl(0, 78%, 62%);
@@ -11,6 +8,14 @@
   --neutral-very-dark-blue: hsl(234, 12%, 34%);
   --neutral-grayish-blue: hsl(229, 6%, 66%);
   --neutral-very-light-gray: hsl(0, 0%, 98%);
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* front end mentor initial styles */
