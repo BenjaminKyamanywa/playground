@@ -31,6 +31,7 @@ html {
   font-family: var(--font-family-sans);
   font-weight: var(--font-weight-normal);
   line-height: 1.7;
+  color: var(--color-neutral-grayish-blue);
 }
 
 h1,
@@ -40,9 +41,17 @@ h3 {
   line-height: 1.1;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
 
+.wrapper-small {
+  max-width: 550px;
+}
 
-/* front end mentor initial styles */
+/* front end mentor styles */
 .attribution { 
   font-size: 11px; 
   text-align: center; 
