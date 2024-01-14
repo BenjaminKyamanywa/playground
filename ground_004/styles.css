@@ -6,7 +6,7 @@
 }
 
 :root {
-  
+  --primary-red: hsl(0, 78%, 62%);
 }
 
 .attribution { font-size: 11px; text-align: center; }
