@@ -10,6 +10,7 @@
   --primary-blue: hsl(212, 86%, 64%);
 }
 
+/* front end mentor initial styles */
 .attribution { 
   font-size: 11px; 
   text-align: center; 
@@ -18,3 +19,4 @@
 .attribution a { 
   color: hsl(228, 45%, 44%); 
 }
+
