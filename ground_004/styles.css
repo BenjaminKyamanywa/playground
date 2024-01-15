@@ -88,13 +88,13 @@ header {
   box-shadow: 0rem 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
 }
 
-.border-teal {
-  border-color: var(--color-primary-blue);
+.border-cyan {
+  border-color: var(--color-primary-cyan);
 }
 .border-red {
   border-color: var(--color-primary-red);
 }
-.border-yellow {
+.border-orange {
   border-color: var(--color-primary-orange);
 }
 .border-blue {
