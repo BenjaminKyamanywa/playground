@@ -81,9 +81,29 @@ header {
 }
 
 .card {
+  --br: 0.325rem;
   padding: 2rem;
+  border-top: var(--br) solid;
+  border-radius: var(--br);
   box-shadow: 0rem 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
 }
+
+.border-teal {
+  border-color: var(--color-primary-blue);
+}
+.border-red {
+  border-color: var(--color-primary-red);
+}
+.border-yellow {
+  border-color: var(--color-primary-orange);
+}
+.border-blue {
+  border-color: var(--color-primary-blue);
+}
+
+
+
+
 
 
 /* front end mentor styles */
