@@ -38,6 +38,10 @@ body {
   padding-block-end: 5rem;
 }
 
+main {
+  margin-bottom: 2rem;
+}
+
 h1,
 h2,
 h3 {
@@ -46,6 +50,7 @@ h3 {
 }
 
 .wrapper {
+  padding-inline: 2rem;
   width: 100%;
   max-width: 1440px;
   margin-inline: auto;
@@ -125,10 +130,6 @@ header > p {
 }
 
 
-
-
-
-
 /* front end mentor styles */
 .attribution { 
   font-size: 11px; 
@@ -139,3 +140,10 @@ header > p {
   color: hsl(228, 45%, 44%); 
 }
 
+/* media queries */
+
+@media (max-width: 780px) {
+  .layout-grid {
+    flex-direction: column;
+  }
+}
