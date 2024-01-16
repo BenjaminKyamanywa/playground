@@ -42,7 +42,7 @@ h1,
 h2,
 h3 {
   color: var(--color-neutral-very-dark-blue);
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .wrapper {
@@ -63,11 +63,12 @@ header {
 }
 
 h1 {
+  font-weight: var(--font-weight-light);
   font-size: var(--font-size-900);
 }
 
 h1 span {
-  font-size: var(--font-weight-light);
+  font-size: var(--font-weight-bold);
 }
 
 header > p {
@@ -102,6 +103,12 @@ header > p {
 
 .card__title {
   font-size: var(--font-size-600);
+}
+
+.card__img {
+  display: block;
+  margin-left: auto;
+  margin-top: 2rem;
 }
 
 .border-cyan {
