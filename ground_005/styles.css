@@ -64,7 +64,9 @@ header {
   display: none;
 }
 
-.menu__button ion-icon {
+.menu__button button {
+  border: none;
+  background-color: transparent;
   font-size: 1.8rem;
 }
 

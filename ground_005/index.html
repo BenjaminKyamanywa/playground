@@ -100,8 +100,10 @@
     year.innerHTML = new Date().getFullYear();
 
     function toggleMobileNavigation() {
+      // get mobile nav element
       const element = document.getElementById('mobile-navigation');
 
+      // remove & add mobile nav element
       if (element.classList.contains('mobile-navigation__open')) {
         element.classList.remove('mobile-navigation__open');
       } else {
