@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #333;
 }
 
@@ -19,6 +19,11 @@ body {
 header {
   display: flex;
   align-items: center;
+}
+
+.logo {
+  width: 2rem;
+  fill: #75a1de;
 }
 
 .navigation {
