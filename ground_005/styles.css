@@ -10,10 +10,34 @@ body {
   color: #333;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
 header {
   display: flex;
   align-items: center;
 }
+
 .navigation {
   flex-grow: 1;
+  margin-left: 2.5rem;
 }
+
+.navigation__item {
+  text-decoration: none;
+  color: #bdbdbd;
+  margin-left: 2rem;
+}
+
+.navigation__item:first-child {
+  margin-left: 0;
+}
+
+.navigation__item--active {
+  color: #333;
+}
+
+
