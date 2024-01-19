@@ -59,6 +59,14 @@ header {
   color: #fff;
 }
 
+.menu__button {
+  flex-grow: 1;
+}
+
+.menu__button ion-icon {
+  font-size: 1.8rem;
+}
+
 /* main content styles */
 
 main {
@@ -73,6 +81,10 @@ main {
 
 .main-image {
   flex: 1;
+}
+
+.main-image img {
+  width: 100%;
 }
 
 .main__headline {
@@ -115,9 +127,20 @@ main {
 footer {
   display: flex;
   justify-content: space-between;
+  color: #bdbdbd;
 }
 
 .social__item {
   margin-left: 1rem;
 }
 
+/* media queries */
+@media (max-width: 728px) {
+  main {
+    display: block;
+  }
+
+  .navigation, .logo {
+    display: none;
+  }
+}
