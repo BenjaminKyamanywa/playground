@@ -14,7 +14,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
+
+/* Top navigation styles */
 
 header {
   display: flex;
@@ -54,8 +59,11 @@ header {
   color: #fff;
 }
 
+/* main content styles */
+
 main {
   display: flex;
+  align-items: center;
   margin-top: 2.5rem;
 }
 
@@ -101,3 +109,15 @@ main {
   font-size: 1.25rem;
   margin-right: 0.25rem;
 }
+
+/* footer styles */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  margin-left: 1rem;
+}
+
