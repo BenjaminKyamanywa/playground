@@ -82,5 +82,22 @@ main {
   border: 1px solid #e0e0e0;
   padding: 1rem 1.5rem;
   border-radius: 2rem;
+  display: flex;
+  align-items: center;
   background: transparent;
+  background: -webkit-linear-gradient(
+    270deg, 
+    #faa245 0%, 
+    #d8328a 37.25%, 
+    #753872 100%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__play-button ion-icon {
+  color: #d8328a;
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
 }
