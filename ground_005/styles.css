@@ -19,6 +19,11 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+.navigation__button,
+.main__play-button {
+  cursor: pointer;
+}
+
 /* Top navigation styles */
 
 header {
