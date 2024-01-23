@@ -19,7 +19,7 @@ Default: 1
 - Accents: 
 - Grays:
 #555
-
+#333
 --- 03 SHADOWS
 
 --- 04 BORDER RADIUS
@@ -43,6 +43,10 @@ Spacing (px):
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--font-family);
   line-height: 1;
@@ -61,4 +65,17 @@ body {
 
 .hero__img {
   width: 100%;
+}
+
+.section-hero__primary-title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.section-hero__primary-desctiption {
+  font-size: 2rem;
+  line-height: 1.5rem;
 }
