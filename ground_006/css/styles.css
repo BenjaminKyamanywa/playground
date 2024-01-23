@@ -13,8 +13,8 @@ Default: 400
 Default: 1
 
 --- 02 COLORS
-- Primary: #e67e22
-- Tints: 
+- Primary: #f7cc7e, #e67e22
+- Tints: #FEFEFE
 - Shades: 
 - Accents: 
 - Grays:
@@ -35,6 +35,7 @@ Spacing (px):
 
 :root {
   --font-family: "Poppins", sans-serif;
+  --bg-tint-light: #FEFEFE;
 }
 
 * {
@@ -56,11 +57,18 @@ body {
 
 /* hero area styles */
 
+.section-hero {
+  background-color: var(--bg-tint-light);
+  padding: 9.6rem 0;
+}
+
 .hero {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
 }
 
 .hero__img {
@@ -73,9 +81,11 @@ body {
   line-height: 1.1;
   color: #333;
   letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
 }
 
 .section-hero__primary-desctiption {
   font-size: 2rem;
-  line-height: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
 }
