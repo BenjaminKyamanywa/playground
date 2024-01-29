@@ -101,6 +101,7 @@ body {
 .btn:visited {
   display: inline-block;
   font-size: 2rem;
+  font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
@@ -133,3 +134,20 @@ body {
 .margin-right--sm {
   margin-right: 1.6rem;
 }
+
+/* hero area delivered meals component */
+
+.delivered__meals {
+  display: flex;
+}
+
+.delivered__imgs {
+  display: flex;
+}
+
+.delivered__imgs img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+}
+
