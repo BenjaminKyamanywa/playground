@@ -39,6 +39,7 @@ Spacing (px):
   --color-white: #fff;
   --fg-color-dark: #555;
   --bg-tint-light: #FEFEFE;
+  --bg-tint-cream: #fdf2e9;
 }
 
 * {
@@ -128,7 +129,7 @@ body {
 /* hero area styles */
 
 .section-hero {
-  background-color: var(--bg-tint-light);
+  background-color: var(--bg-tint-cream);
   padding: 9.6rem 0;
 }
 
@@ -143,6 +144,7 @@ body {
 
 .hero__img {
   width: 100%;
+  border-radius: 1.5rem;
 }
 
 .delivered__meals {
