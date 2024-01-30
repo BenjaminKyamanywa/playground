@@ -30,8 +30,7 @@ Spacing (px):
 
 ------------------------ */
 
-
-/* General styles */
+/* General reusable styles */
 
 :root {
   --font-family: "Rubik", sans-serif;
@@ -57,44 +56,6 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--fg-color-dark);
-}
-
-/* Top bar navigation styles */
-
-
-/* hero area styles */
-
-.section-hero {
-  background-color: var(--bg-tint-light);
-  padding: 9.6rem 0;
-}
-
-.hero {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
-
-.hero__img {
-  width: 100%;
-}
-
-.section-hero__primary-title {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.1;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-
-.section-hero__primary-desctiption {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link, 
@@ -135,7 +96,43 @@ body {
   margin-right: 1.6rem;
 }
 
-/* hero area delivered meals component */
+.section-hero__primary-title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.section-hero__primary-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+/* Top bar navigation styles */
+
+
+/* hero area styles */
+
+.section-hero {
+  background-color: var(--bg-tint-light);
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero__img {
+  width: 100%;
+}
 
 .delivered__meals {
   display: flex;
