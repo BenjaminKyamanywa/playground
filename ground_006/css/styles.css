@@ -36,8 +36,8 @@ Spacing (px):
 :root {
   --font-family: "Rubik", sans-serif;
   --bg-color-primary: #F37457;
-  --bg-color-white: #fff;
-  --fg-color-white: #fff;
+  --bg-color-secondary: #db684e;
+  --color-white: #fff;
   --fg-color-dark: #555;
   --bg-tint-light: #FEFEFE;
 }
@@ -111,7 +111,7 @@ body {
 .btn--full:link, 
 .btn--full:visited {
   background-color: var(--bg-color-primary);
-  color: var(--fg-color-white);
+  color: var(--color-white);
 }
 
 .btn--full:hover, 
@@ -121,7 +121,7 @@ body {
 
 .btn--outline:link, 
 .btn--outline:visited {
-  background-color: var(--bg-color-white);
+  background-color: var(--color-white);
   color: var(--fg-color-dark);
 }
 
@@ -166,6 +166,6 @@ body {
 }
 
 .delivered__description span {
-  color: var(--bg-color-primary);
+  color: var(--bg-color-secondary);
   font-weight: 700;
 }
