@@ -114,6 +114,21 @@ body {
 
 /* Top bar navigation header styles */
 
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
