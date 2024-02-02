@@ -114,7 +114,6 @@ body {
 
 /* Top bar navigation header styles */
 
-
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -127,7 +126,22 @@ body {
   color: #333;
   font-weight: 500;
   font-size: 1.8rem;
+  transition: all 0.3s;
 }
+
+.main-nav-link:active,
+.main-nav-link:hover {
+   color: #cf711f;
+}
+
+.nav-cta:link,
+.nav-cta:visited {
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  color: #fff;
+}
+
+
 
 .header {
   display: flex;
