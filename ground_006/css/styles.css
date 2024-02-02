@@ -117,6 +117,7 @@ body {
 .main-nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 3.2rem;
 }
 
@@ -139,8 +140,8 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   color: #fff;
+  background-color: var(--bg-color-secondary);
 }
-
 
 
 .header {
