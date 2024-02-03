@@ -288,6 +288,7 @@ body {
   font-size: 8.6rem;
   font-weight: 600;
   color: #ddd;
+  margin-bottom: 1.2rem;
 }
 
 .step-description {
@@ -295,6 +296,12 @@ body {
   line-height: 1.8;
 }
 
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .step-img {
-  width: 30%;
+  width: 35%;
 }
