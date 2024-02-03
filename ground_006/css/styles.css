@@ -143,6 +143,15 @@ body {
   line-height: 1.2;
 }
 
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
 .section-hero__primary-description {
   font-size: 2rem;
   line-height: 1.6;
