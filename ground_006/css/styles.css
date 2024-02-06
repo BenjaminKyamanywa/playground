@@ -365,3 +365,22 @@ body {
 .section-meals {
   padding: 9.6rem 0;
 }
+
+.meal-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.meal-attributes {
+  list-style: none;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
