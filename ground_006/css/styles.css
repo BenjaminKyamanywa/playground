@@ -100,8 +100,18 @@ body {
 
 .link:link,
 .link:visited {
+  display: inline-block;
   color: #e67e22;
   text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transform: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
 
 .btn:link, 
@@ -186,6 +196,10 @@ body {
 
 .margin-botton-md {
   margin-bottom: 4.8rem;
+}
+
+.center-text {
+  text-align: center;
 }
 
 strong {
@@ -424,6 +438,7 @@ strong {
 .meal-title {
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 3.2rem;
   color: #333;
 }
 
