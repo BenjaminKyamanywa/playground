@@ -28,6 +28,7 @@ Paragraph default: 1.6
 - Shades: 
 - Accents: 
 - Grays:
+#6f6f6f (lightest gray allowed  on #fdf2e9)
 #555
 #333
 --- 03 SHADOWS
@@ -500,7 +501,14 @@ strong {
 /* Testimonials section */
 
 .section-testimonials {
-  padding: 9.6rem 0;
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
 }
 
 .testimonials {
@@ -523,5 +531,26 @@ strong {
 
 .testimonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
