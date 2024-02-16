@@ -843,3 +843,8 @@ strong {
   color: #555;
 }
 
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  
+}
