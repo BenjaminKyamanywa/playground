@@ -483,6 +483,16 @@
     // auto update copyright year to current year
     const year = document.querySelector(".copyright-year");
     year.innerHTML = new Date().getFullYear();
+
+    // functionality for mobile navigation
+    const btnNavEl = document.querySelector(".btn-mobile-nav");
+    const headerEl = document.querySelector(".header");
+
+    btnNavEl.addEventListener("click", function(){
+      headerEl.classList.toggle("nav-open");
+    });
+
+
   </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
