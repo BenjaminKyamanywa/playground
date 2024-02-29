@@ -1,0 +1,1 @@
+// Script code for interactions on the travel website
