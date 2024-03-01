@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./styles.css">
   <title>Travel</title>
 </head>
 <body>
@@ -44,6 +48,19 @@
           <div class="booking__input">
             <label for="check-in">Check In</label>
             <input type="date" name="check-in" id="check-in">
+          </div>
+          <div class="booking__input">
+            <label for="check-out">Check out</label>
+            <input type="date" name="check-out" id="check-out">
+          </div>
+          <div class="booking__input">
+            <label for="persons">Persons</label>
+            <select name="persons" id="persons">
+              <option value="1">1 adult</option>
+              <option value="2">2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+            </select>
           </div>
         </div>
         <button class="booking-button">book now</button>
