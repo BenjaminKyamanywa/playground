@@ -31,8 +31,17 @@ body {
 
 .header-section nav li {
   background-color: var(--primary-color);
-  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
   list-style: none;
+}
+
+.header-section nav li i {
+  margin-right: 0.4rem;
 }
 
 .logo svg {
