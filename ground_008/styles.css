@@ -22,6 +22,14 @@ body {
   padding: 0 3.2rem;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
 /* Top navigation styles */
 
 .header-section {
@@ -39,6 +47,7 @@ body {
   text-transform: uppercase;
   padding: 0.4rem 0.9rem;
   list-style: none;
+  cursor: pointer;
 }
 
 .header-section nav li i {
@@ -51,6 +60,10 @@ body {
 }
 
 /* Hero area styles */
+
+.hero-section {
+  padding: 7.4rem 2.4rem;
+}
 
 .main-heading {
   font-family: var(--heading-font);
@@ -66,4 +79,18 @@ body {
   url(https://images.unsplash.com/photo-1604093882750-3ed498f3178b?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-repeat: no-repeat;
   color: #fff;
+}
+
+.hero-cta {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.hero-cta i {
+  margin-left: 0.5rem;
+  padding: 0.625rem;
+  font-size: 2.5rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
