@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #fe5303;
+  --heading-font: "Playfair", serif;
 }
 
 * {
@@ -49,9 +50,13 @@ body {
   height: 50px;
 }
 
-
-
 /* Hero area styles */
+
+.main-heading {
+  font-family: var(--heading-font);
+  font-size: 3.25rem;
+  font-weight: 700;
+}
 
 .header-section, .hero-section {
   background-image: 
