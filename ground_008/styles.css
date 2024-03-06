@@ -31,6 +31,12 @@ body {
 
 /* Hero styles */
 
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-section, .hero-section {
   background-image: 
   linear-gradient( 
