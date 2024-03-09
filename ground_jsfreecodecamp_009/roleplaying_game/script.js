@@ -5,4 +5,7 @@ let gold = 50;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
-let inventory = ["stick", "dagger", "sword"];
+let inventory = ["stick"];
+
+// UI variable initializations
+let button1 = document.querySelector("#button1");
