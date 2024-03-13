@@ -95,3 +95,38 @@ button {
   border: 1px solid #fff;
   border-radius: 50%;
 }
+
+.booking {
+  margin-top: 6.25rem;
+}
+
+.booking-inputs {
+  background-color: #fff;
+  color: #222;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.booking__input label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-weight: 500;
+}
+
+.booking__input input, 
+.booking__input select {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+}
+
+.booking-button {
+  background-color: var(--primary-color);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
