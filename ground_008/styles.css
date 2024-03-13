@@ -162,3 +162,15 @@ button {
   }
 }
 
+@media (mind-width: 1020px) {
+  .booking {
+    display: flex;
+  }
+
+  .booking-button {
+    margin-top: 0;
+    margin-left: 0.75rem;
+  }
+}
+  
+}i
