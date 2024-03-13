@@ -141,6 +141,10 @@ button {
 
 /* about us section */
 
+.about-us-section {
+  margin: 9.6rem 0 9.6rem 0;
+}
+
 .section-name {
   text-transform: uppercase;
   color: #bdbdbd;
@@ -157,6 +161,8 @@ button {
 .about-us-section p {
   color: #828282;
   margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.8;
 }
 
 .about-us-section img {
@@ -203,6 +209,10 @@ button {
   /* about us section */
   .about-us__content {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about-us__content--right img {
+    order: -1;
   }
 }
 
