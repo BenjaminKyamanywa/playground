@@ -138,8 +138,47 @@ button {
   box-shadow: 0 0.25rem 1.25rem rgba(254, 83, 3, 0.5);
 }
 
+
+/* about us section */
+
+.section-name {
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.about-us-section h2 {
+  font-size: 2.5rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+.about-us-section p {
+  color: #828282;
+  margin: 0;
+}
+
+.about-us-section img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.about-us__content {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-us__content--left,
+.about-us__content--right {
+  display: grid;
+  gap: 1.5rem;
+}
+
 /* media queries */
 
+/* tablet widths */
 @media (min-width: 760px) {
   .booking-inputs {
     display: grid;
@@ -160,7 +199,14 @@ button {
   .booking__input:last-child {
     padding-right: 0;
   }
+
+  /* about us section */
+  .about-us__content {
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
+/* larger screen widths */
 
 @media (mind-width: 1020px) {
   .booking {
