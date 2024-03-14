@@ -70,6 +70,8 @@ button {
   font-size: 3.25rem;
   font-weight: 700;
   max-inline-size: 38.75rem;
+  line-height: 1.5;
+  padding-bottom: 2.5rem;
 }
 
 .header-section, 
