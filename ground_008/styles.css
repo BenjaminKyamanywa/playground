@@ -201,7 +201,7 @@ h2 {
 .stays {
   margin-top: 1.5rem;
   display: grid;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .stay-card {
@@ -284,6 +284,16 @@ h2 {
   .about-us__content--right img {
     order: -1;
   }
+
+  /* accomodation section */
+
+  .stays {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stay-card--col-2 {
+    grid-column: 1 / span 2;
+  }
 }
 
 /* larger screen widths */
@@ -301,5 +311,11 @@ h2 {
 
   .booking-inputs {
     gap: 10rem;
+  }
+
+  /* accomodation section */
+
+  .stays {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
