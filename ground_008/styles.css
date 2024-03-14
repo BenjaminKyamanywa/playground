@@ -19,7 +19,7 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 9.6rem 5.5rem;
 }
 
 button {
@@ -62,7 +62,7 @@ button {
 /* Hero area styles */
 
 .hero-section {
-  padding: 7.4rem 2.4rem;
+  padding: 7.4rem 5.5rem;
 }
 
 .main-heading {
@@ -140,10 +140,6 @@ button {
 
 
 /* about us section */
-
-.about-us-section {
-  margin: 9.6rem 0 9.6rem 0;
-}
 
 .section-name {
   text-transform: uppercase;
