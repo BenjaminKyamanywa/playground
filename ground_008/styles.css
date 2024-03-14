@@ -36,6 +36,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2.5rem 5.5rem;
 }
 
 .header-section nav li {
@@ -62,7 +63,7 @@ button {
 /* Hero area styles */
 
 .hero-section {
-  padding: 7.4rem 5.5rem;
+  padding: 4.5rem 5.5rem;
 }
 
 .main-heading {
@@ -216,13 +217,18 @@ button {
 
 /* larger screen widths */
 
-@media (mind-width: 1020px) {
+@media (min-width: 1020px) {
   .booking {
     display: flex;
+    justify-content: center;
   }
 
   .booking-button {
     margin-top: 0;
     margin-left: 0.75rem;
+  }
+
+  .booking-inputs {
+    gap: 10rem;
   }
 }
