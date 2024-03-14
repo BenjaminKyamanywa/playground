@@ -217,6 +217,19 @@ h2 {
   object-position: center;
 }
 
+.stay-card__name {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stay-card__price {
+  font-weight: 500;
+}
+
+
+
 .stay-card__details {
   position: absolute;
   bottom: 2.5rem;
