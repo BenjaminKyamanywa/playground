@@ -353,6 +353,11 @@ h2 {
   .stay-card--col-2 {
     grid-column: 1 / span 2;
   }
+
+  /* testimonials section */
+  .feedback {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* larger screen widths */
