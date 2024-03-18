@@ -270,6 +270,10 @@ h2 {
   font-size: 0.85rem;
 }
 
+.testimonials-section strong {
+  color: #fe5303;
+}
+
 .feedback {
   margin-top: 2.5rem;
   display: grid;
