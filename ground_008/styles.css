@@ -311,6 +311,16 @@ h2 {
   font-size: 0.85rem;
 }
 
+/* footer section */
+
+.footer-section {
+  font-size: 0.75rem;
+}
+
+.footer-holder {
+  padding: 2rem 5.5rem;
+}
+
 /* media queries */
 
 /* tablet widths */
