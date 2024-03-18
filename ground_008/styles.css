@@ -254,7 +254,7 @@ h2 {
 .stay-card__price {
   font-weight: 500;
   font-size: 1rem;
-  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out 100ms;
 }
 
 .stay-card__details {
@@ -262,6 +262,8 @@ h2 {
   bottom: 2.5rem;
   left: 1.5rem;
 }
+
+/* testimonials section */
 
 
 
