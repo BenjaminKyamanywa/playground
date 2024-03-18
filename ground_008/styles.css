@@ -265,7 +265,48 @@ h2 {
 
 /* testimonials section */
 
+.testimonials {
+  background-color: #f2f2f2;
+}
 
+.feedback {
+  margin-top: 2.5rem;
+}
+
+.feedback-card__dialog {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 20px 20px 20px 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  font-family: var(--heading-font);
+}
+
+.feedback-card__dialog__content {
+  color: #4f4f4f;
+  line-height: 100%;
+}
+
+.feedback-card__user {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  margin-top: 2.5rem;
+  gap: 1.5rem;
+}
+
+.feedback-card__user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.feedback-card__user__name {
+  font-weight: 500;
+}
+
+.feedback-card__user__location {
+  color: #bdbdbd;
+  font-size: 0.85rem;
+}
 
 /* media queries */
 
