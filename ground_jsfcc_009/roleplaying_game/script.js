@@ -182,10 +182,20 @@ function attack () {
   healthText.innerText = health;
   monsterHealth.innerText = monsterHealth;
   if(health <= 0) {
-    return lose();
+    lose();
+  } else if (monsterHealth <= 0) {
+    defeatMonster();
   }
 }
 
 function dodge () {
+
+}
+
+function defeatMonster () {
+
+}
+
+function lose () {
 
 }
