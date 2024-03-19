@@ -83,6 +83,12 @@ const locations = [
     "button text": ["Go to town square", "Go to town square", "Go to town square"],
     "button functions": [goTown, goTown, goTown],
     text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
+  },
+  {
+    name: "lose",
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+    "button functions": [restart, restart, restart],
+    text: "You die. &#x2620;"
   }
 ];
 
@@ -94,10 +100,10 @@ button3.onclick = fightDragon;
 
 function update (location) {
   monsterStats.style.display = "none";
-  text.innerText = location.text;
-  button1.innerText = location["button text"][0];
-  button2.innerText = location["button text"][1];
-  button3.innerText = location["button text"][2];
+  text.innerHTML = location.text;
+  button1.innerHTML = location["button text"][0];
+  button2.innerHTML = location["button text"][1];
+  button3.innerHTML = location["button text"][2];
   button1.onclick = location["button functions"][0];
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];  
@@ -192,6 +198,11 @@ function attack () {
     lose();
   } else if (monsterHealth <= 0) {
     defeatMonster();
+    if (fighting === 2) {
+      winGame();
+    } else {
+      defeatMonster();
+    }
   }
 }
 
