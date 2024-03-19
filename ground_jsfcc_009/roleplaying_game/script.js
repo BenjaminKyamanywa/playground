@@ -222,6 +222,10 @@ function lose () {
   update(locations[5]);
 }
 
+function winGame () {
+  update(locations[6]);
+}
+
 // restart game
 function restart () {
   xp = 0;
