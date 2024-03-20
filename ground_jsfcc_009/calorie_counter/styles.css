@@ -43,3 +43,48 @@ legend {
   flex-direction: column;
 }
 
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--light-yellow);
+  border: 0.125rem solid var(--dark-yellow);
+}
+
+button,
+input,
+select {
+  min-height: 1.5rem;
+  color: var(--dark-blue);
+}
+
+fieldset,
+label,
+button,
+input,
+select {
+  margin-bottom: 0.625rem;
+}
+
+.output {
+  border: 0.125rem solid var(--light-grey);
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.output span {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.surplus {
+  color: var(--light-pink);
+}
+
+.deficit {
+  color: var(--light-green);
+}
+
