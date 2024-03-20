@@ -18,3 +18,28 @@ body {
   color: var(--light-grey);
 }
 
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 680px;
+}
+
+h1,
+.container,
+.output {
+  margin: 1.25rem auto;
+}
+
+label,
+legend {
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
