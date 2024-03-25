@@ -9,9 +9,14 @@ const output = document.getElementById('output');
 // set boolean variables
 let isError = false;
 
-
-// function to clean string value received from input
+// clean string value received from input
 function cleanInputString (str) {
   const strArray = str.split('');
   const cleanStrArray = [];
+  // iterate through each character in strArray
+  for (let i = 0; i < strArray.length; i++) {
+    if (!["+", "-", " "].includes(strArray[i])) {
+      cleanStrArray.push(strArray[i]);
+    }
+  }
 }
