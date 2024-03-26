@@ -24,5 +24,5 @@ function isInvalidInput (str) {
 
 // allow users to add calorie counter entries
 function addEntry () {
-  
+  const targetId = "#" + entryDropdown.value;
 }
