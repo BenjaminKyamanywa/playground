@@ -37,7 +37,11 @@ function addEntry () {
 
 // get calorie counts from user's entries
 function getCaloriesFromInputs (list) {
-  
+  let calories = 0;
+  let invalidInputMatch = isInvalidInput(currVal); 
+  for (const item of list) {
+    const currVal = cleanInputString(item.value);
+  }
 }
 
 // button event listeners
