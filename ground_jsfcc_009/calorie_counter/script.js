@@ -35,6 +35,12 @@ function addEntry () {
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
+// calculate calories
+function calculateCalories (e) {
+  e.preventDefault();
+  isError = false;
+}
+
 // get calorie counts from user's entries
 function getCaloriesFromInputs (list) {
   let calories = 0;
@@ -45,8 +51,12 @@ function getCaloriesFromInputs (list) {
 
     if (invalidInputMatch) {
       alert(`Invalid Input: ${invalidInputMatch[0]}`);
+      isError = true;
+      return null;
     }
+    calories += Number(currVal);
   }
+  return calories;
 }
 
 // button event listeners
