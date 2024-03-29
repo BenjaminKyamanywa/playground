@@ -68,6 +68,9 @@ function calculateCalories (e) {
   <p>${consumedCalories} Calories Consumed</p>
   <p>${exerciseCalories} Calories Burned</p>
   `;
+
+  // make output element visible so user can see text
+  output.classList.remove('hide');
 }
 
 // get calorie counts from user's entries
@@ -88,5 +91,11 @@ function getCaloriesFromInputs (list) {
   return calories;
 }
 
+// ability for user to clear the form
+function clearForm () {
+  const inputContainers = document.querySelectorAll('.input-container');
+}
+
 // button event listeners
 addEntryButton.addEventListener("click", addEntry);
+calorieCounter.addEventListener("submit", calculateCalories);
