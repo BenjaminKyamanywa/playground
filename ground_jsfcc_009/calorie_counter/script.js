@@ -93,7 +93,12 @@ function getCaloriesFromInputs (list) {
 
 // ability for user to clear the form
 function clearForm () {
-  const inputContainers = document.querySelectorAll('.input-container');
+  const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+  for (const container of inputContainers) {
+    container.innerHTML = "";
+  }
+
+  budgetNumberInput.value = "";
 }
 
 // button event listeners
