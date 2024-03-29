@@ -99,8 +99,13 @@ function clearForm () {
   }
 
   budgetNumberInput.value = "";
+  output.innerText = "";
+
+  // restore hide class to output element
+  output.classList.add("hide");
 }
 
 // button event listeners
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
+clearButton.addEventListener("click", clearForm);
