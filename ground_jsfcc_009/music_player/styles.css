@@ -38,3 +38,19 @@ h1 {
 h2 {
   font-size: var(--root-font-size);
 }
+
+ul {
+  margin: 0;
+}
+
+/* music player styles */
+
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
+
