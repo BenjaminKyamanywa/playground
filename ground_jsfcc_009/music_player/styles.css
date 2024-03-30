@@ -112,4 +112,14 @@ ul {
   column-gap: 13px;
 }
 
+#player-album-art {
+  background-color: var(--secondary-color);
+  border: 6px solid var(--background-color);
+}
+
+#player-album-art img {
+  display: block;
+  width: 150px;
+}
+
 
