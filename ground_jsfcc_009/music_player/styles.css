@@ -132,4 +132,21 @@ ul {
   width: 226px;
 }
 
+.player-display-song-artist {
+  height: 80px;
+}
+
+.player-buttons svg {
+  fill: var(--primary-color);
+}
+
+.playing > svg {
+  fill: var(--primary-color);
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 
