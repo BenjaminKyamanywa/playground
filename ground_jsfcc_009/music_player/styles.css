@@ -195,5 +195,11 @@ button {
   list-style: none;
 }
 
-
+.playlist-song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding: 5px;
+}
 
