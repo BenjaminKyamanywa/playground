@@ -222,4 +222,54 @@ button {
   font-family: var(--font-family);
 }
 
+#player-song-title,
+#player-song-artist {
+  margin: 0;
+}
+
+#player-song-artist {
+  color: var(--highlight-color);
+  font-size: 0.75rem;
+}
+
+#player-song-title {
+  font-size: 1.125rem;
+}
+
+.playlist-song-title {
+  font-size: 0.85rem;
+  width: 241px;
+  text-align: left;
+}
+
+.playlist-song-artist {
+  font-size: 0.725rem;
+  width: 80px;
+}
+
+.playlist-song-duration {
+  font-size: 0.725rem;
+  margin: auto;
+  font-family: var(--font-headline);
+  width: 30px;
+}
+
+.playlist-song-delete {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.playlist-song-delete,
+.playlist-song-delete {
+  fill: var(--foreground-color);
+}
+
+.playlist-song-delete:hover circle,
+.playlist-song-delete:focus circle {
+  fill: #ff0000;
+}
+
+
+
 
