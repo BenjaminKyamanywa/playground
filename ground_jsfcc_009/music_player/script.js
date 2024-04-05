@@ -85,5 +85,14 @@ const audio = new Audio ();
 
 // store object to keep track of songs, current & duration 
 let userData = {
-  
+  songs: [...allSongs],
+  currentSong: null,
+  songCurrentTime: 0
+}
+
+// display songs on the UI
+const renderSongs = (array) => {
+  const songsHTML = array.map((song) => {
+    return `<li id="song-${song.id}" class="playlist-song"></li>`
+  });
 }
