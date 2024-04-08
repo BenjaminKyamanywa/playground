@@ -109,5 +109,11 @@ const songsHTML = array.map((song) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
+// sort songs in alphabetical order by title
+const sortSongs = () => {
+  userData?.songs.sort();
+}
+
 // call renderSongs function to display songs on the UI
 renderSongs(userData?.songs);
+
