@@ -89,6 +89,13 @@ let userData = {
   songCurrentTime: 0,
 };
 
+// play displayed songs
+const playSong = (id) => {
+  const song = userData?.songs.find((song) => song.id === id);
+  audio.src = song.src;
+  audio.title = song.title;
+}
+
 // display songs on the UI
 const renderSongs = (array) => {
 const songsHTML = array.map((song) => {
