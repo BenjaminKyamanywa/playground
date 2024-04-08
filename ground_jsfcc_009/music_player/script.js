@@ -111,7 +111,11 @@ const songsHTML = array.map((song) => {
 
 // sort songs in alphabetical order by title
 const sortSongs = () => {
-  userData?.songs.sort();
+  userData?.songs.sort((a, b) => { 
+    if (a.title < b.title) {
+      return -1;
+    }
+  });
 }
 
 // call renderSongs function to display songs on the UI
