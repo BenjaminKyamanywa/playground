@@ -115,9 +115,16 @@ const sortSongs = () => {
     if (a.title < b.title) {
       return -1;
     }
+    if (a.title> b.title) {
+      return 1;
+    }
+    // if a = b leave order or elements unchanged
+    return 0;
   });
+
+  return userData?.songs;
 }
 
 // call renderSongs function to display songs on the UI
-renderSongs(userData?.songs);
+renderSongs(sortSongs());
 
