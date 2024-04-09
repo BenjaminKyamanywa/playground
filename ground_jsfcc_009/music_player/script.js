@@ -115,6 +115,16 @@ const pauseSong = () => {
   audio.pause();
 }
 
+// play next son
+const playNextSong = () => {
+
+}
+
+// play previous song
+const playPreviousSong = () => {
+  
+}
+
 // display songs on the UI
 const renderSongs = (array) => {
 const songsHTML = array.map((song) => {
