@@ -97,7 +97,14 @@ const playSong = (id) => {
   // make sure song start from beginning before playing
   if (userData?.currentSong === null || userData?.currentSong.id !== song.id) {
     audio.currentTime = 0;
+  } else {
+    // handle current song position in playlist
+    audio.currentTime = userData?.songCurrentTime;
   }
+  userData.currentSong = song;
+
+  playButton.classList.add("playing");
+  audio.play();
 }
 
 // display songs on the UI
