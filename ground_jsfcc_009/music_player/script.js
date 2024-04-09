@@ -125,7 +125,16 @@ const songsHTML = array.map((song) => {
 
   // update playlist in HTML to display songs
   playlistSongs.innerHTML = songsHTML;
-};
+}
+
+// functionality for play button to play current song when clicked
+playButton.addEventListener("click", () => {
+  if (!userData?.currentSong) {
+    playSong(userData?.songs[0].id);
+  } else {
+    playSong(userData?.currentSong.id);
+  }
+});
 
 // sort songs in alphabetical order by title
 const sortSongs = () => {
