@@ -135,6 +135,11 @@ const songsHTML = array.map((song) => {
   playlistSongs.innerHTML = songsHTML;
 }
 
+// get currentSong index to utilize with next & previous song
+const getCurrentSongIndex = () => {
+  return userData?.songs.indexOf(userData?.currentSong);
+}
+
 // play current song when play button is clicked
 playButton.addEventListener("click", () => {
   if (!userData?.currentSong) {
