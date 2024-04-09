@@ -109,7 +109,8 @@ const playSong = (id) => {
 
 // pause song
 const pauseSong = () => {
-  
+  // store current time of song when paused
+  userData.songCurrentTime = audio.currentTime;
 }
 
 // display songs on the UI
