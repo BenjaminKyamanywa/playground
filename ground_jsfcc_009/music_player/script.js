@@ -111,6 +111,8 @@ const playSong = (id) => {
 const pauseSong = () => {
   // store current time of song when paused
   userData.songCurrentTime = audio.currentTime;
+  playButton.classList.remove("playing");
+  audio.pause();
 }
 
 // display songs on the UI
@@ -133,7 +135,7 @@ const songsHTML = array.map((song) => {
   playlistSongs.innerHTML = songsHTML;
 }
 
-// functionality for play button to play current song when clicked
+// play current song when play button is clicked
 playButton.addEventListener("click", () => {
   if (!userData?.currentSong) {
     playSong(userData?.songs[0].id);
@@ -141,6 +143,10 @@ playButton.addEventListener("click", () => {
     playSong(userData?.currentSong.id);
   }
 });
+
+// pause current song when pause button is clicked
+pauseButton.addEventListener("click", pauseSong);
+
 
 // sort songs in alphabetical order by title
 const sortSongs = () => {
