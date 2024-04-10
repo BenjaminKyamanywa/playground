@@ -137,6 +137,19 @@ const playPreviousSong = () => {
   }
 }
 
+// highlight current playing song
+const highlightCurrentSong = () => {
+  const playlistSongElements = document.querySelectorAll(".playlist-song");
+  const songToHighlight = document.getElementById(`song-${userData?.currentSong?.id}`);
+  playlistSongElements.forEach((songEl) => {
+    songEl.removeAttribute("aria-current");
+  });
+  // add attribute back to current playing song
+  if (songToHighlight) {
+    songToHighlight.setAttribute("aria-current", "true");
+  }
+}
+
 // display songs on the UI
 const renderSongs = (array) => {
 const songsHTML = array.map((song) => {
