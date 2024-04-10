@@ -128,7 +128,11 @@ const playNextSong = () => {
 
 // play previous song
 const playPreviousSong = () => {
-
+  if (userData?.currentSong === null) {
+    return
+  } else {
+    const currentSongIndex = getCurrentSongIndex();
+  }
 }
 
 // display songs on the UI
