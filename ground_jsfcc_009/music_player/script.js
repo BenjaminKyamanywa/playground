@@ -168,6 +168,9 @@ playButton.addEventListener("click", () => {
 // pause current song when pause button is clicked
 pauseButton.addEventListener("click", pauseSong);
 
+// play next song when next button is clicked
+nextButton.addEventListener("click", playNextSong);
+
 
 // sort songs in alphabetical order by title
 const sortSongs = () => {
