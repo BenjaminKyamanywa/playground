@@ -180,7 +180,12 @@ const deleteSong = (id) => {
     playlistSongs.appendChild(resetButton);
 
     // add reset functionality to resetButton
-    resetButton.addEventListener("click", () => {})
+    resetButton.addEventListener("click", () => {
+      userData.songs = [...allSongs];
+      renderSongs(sortSongs());
+      setPlayButtonAccessibleText();
+      resetButton.remove();
+    })
   }
 }
 
@@ -260,6 +265,19 @@ previousButton.addEventListener("click", playPreviousSong);
 
 // shuffle button listener
 shuffleButton.addEventListener("click", shuffle);
+
+// play next song automatically when current song ends
+audio.addEventListener("ended", () => {
+  const currentSongIndex = getCurrentSongIndex();
+  const nextSongExists = userData?.songs[currentSongIndex + 1] !== undefined;
+
+  if (nextSongExists) {
+    playNextSong();
+  } else {
+    userData.currentSong = null;
+    userData.songCurrentTime = 0;
+  }
+})
 
 // sort songs in alphabetical order by title
 const sortSongs = () => {
