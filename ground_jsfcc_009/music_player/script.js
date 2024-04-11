@@ -107,6 +107,7 @@ const playSong = (id) => {
   
   highlightCurrentSong();
   setPlayerDisplay();
+  setPlayButtonAccessibleText();
   audio.play();
 }
 
@@ -188,6 +189,7 @@ const songsHTML = array.map((song) => {
 // play button accessible text
 const setPlayButtonAccessibleText = () => {
   const song = userData?.currentSong || userData?.songs[0];
+  playButton.setAttribute("aria-label", song?.title ? `Play ${song.title}` : "Play");
 }
 
 // get currentSong index to utilize with next & previous song
