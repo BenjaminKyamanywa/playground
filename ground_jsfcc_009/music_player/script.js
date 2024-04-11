@@ -185,6 +185,11 @@ const songsHTML = array.map((song) => {
   playlistSongs.innerHTML = songsHTML;
 }
 
+// play button accessible text
+const setPlayButtonAccessibleText = () => {
+  const song = userData?.currentSong || userData?.songs[0];
+}
+
 // get currentSong index to utilize with next & previous song
 const getCurrentSongIndex = () => {
   return userData?.songs.indexOf(userData?.currentSong);
