@@ -227,6 +227,9 @@ nextButton.addEventListener("click", playNextSong);
 // play previous song when previous button is clicked
 previousButton.addEventListener("click", playPreviousSong);
 
+// shuffle button listener
+shuffleButton.addEventListener("click", shuffle);
+
 // sort songs in alphabetical order by title
 const sortSongs = () => {
   userData?.songs.sort((a, b) => { 
