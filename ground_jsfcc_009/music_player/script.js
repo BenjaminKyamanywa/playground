@@ -157,6 +157,9 @@ const shuffle = () => {
 const deleteSong = (id) => {
   userData.songs = userData?.songs.filter((song) => song.id !== id);
   
+  renderSongs(userData?.songs);
+  highlightCurrentSong();
+  setPlayButtonAccessibleText();
 }
 
 // set current playing song onto music player display
