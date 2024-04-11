@@ -153,6 +153,12 @@ const shuffle = () => {
   setPlayButtonAccessibleText();
 }
 
+// music player delete song functionality
+const deleteSong = (id) => {
+  userData.songs = userData?.songs.filter((song) => song.id !== id);
+  
+}
+
 // set current playing song onto music player display
 const setPlayerDisplay = () => {
   const playingSong = document.getElementById("player-song-title");
