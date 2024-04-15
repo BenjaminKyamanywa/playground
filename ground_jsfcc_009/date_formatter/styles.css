@@ -35,3 +35,17 @@ body {
   width: 30px;
   height: 30px;
 }
+
+.divider {
+  margin: auto;
+  width: 150px;
+  height: 10px;
+  background-color: var(--yellow);
+}
+
+.dropdown-container {
+  width: 50%;
+  margin: 40px auto;
+  position: relative;
+}
+
