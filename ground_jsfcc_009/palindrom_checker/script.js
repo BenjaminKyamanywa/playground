@@ -18,5 +18,9 @@ const checkForPalindrome = (input) => {
   let messageResult = `<strong>${initialInput}</strong> ${lowerCaseString === [...lowerCaseString].reverse().join("") ? "is" : "is not"} a palindrome.`;
 
   const paragraphTag = document.createElement("p");
+  paragraphTag.className = "user-input";
+  paragraphTag.innerHTML = messageResult;
+  resultContainer.appendChild(paragraphTag);
+
   
 }
