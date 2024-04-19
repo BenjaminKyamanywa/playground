@@ -25,7 +25,7 @@ const checkForPalindrome = (input) => {
   resultContainer.classList.remove("hidden");
 }
 
-checkPalindromeBtn.addEventListener("click", () => {
+submitButton.addEventListener("click", () => {
   checkForPalindrome(userInput.value);
   userInput.value = "";
 });
