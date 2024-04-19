@@ -22,5 +22,12 @@ const checkForPalindrome = (input) => {
   paragraphTag.innerHTML = messageResult;
   resultContainer.appendChild(paragraphTag);
 
-  
+  resultContainer.classList.remove("hidden");
 }
+
+checkPalindromeBtn.addEventListener("click", () => {
+  checkForPalindrome(userInput.value);
+  userInput.value = "";
+})
+
+
