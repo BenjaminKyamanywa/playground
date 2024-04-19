@@ -28,6 +28,11 @@ const checkForPalindrome = (input) => {
 checkPalindromeBtn.addEventListener("click", () => {
   checkForPalindrome(userInput.value);
   userInput.value = "";
-})
+});
 
-
+userInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkForPalindrome(userInput.value);
+    userInput.value = "";
+  }
+});
