@@ -178,3 +178,7 @@ const myFavoriteFootballTeam = {
 // freeze meFavoriteFootballTeam from any changes
 Object.freeze(myFavoriteFootballTeam);
 
+// utilize favorite team variables with object destructuring
+const {sport, team} = myFavoriteFootballTeam;
+
+
