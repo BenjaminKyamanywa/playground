@@ -7,3 +7,16 @@
   --yellow: #f1be32;
   --golden-yelllow: #feac32;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--light-grey);
+  margin: 20px 0 40px 0;
+  
+}
