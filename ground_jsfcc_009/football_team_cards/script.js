@@ -204,5 +204,14 @@ const setPlayerCards = (arr = players) => {
 }
 
 // detect user selection from dropdown list
-playersDropdownList.addEventListener("change", () => {});
+playersDropdownList.addEventListener("change", (e) => {
+  playerCards.innerHTML = "";
+
+  // check user's selection from player dropdown menu and filter out cards based on the player's positions
+  switch (e.target.value) {
+    case "nickname":
+      setPlayerCards(players.filter((player) => player.nickname !== null));
+  }
+
+});
 
