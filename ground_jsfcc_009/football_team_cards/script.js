@@ -191,20 +191,21 @@ headCoach.textContent = coachName;
 // set player cards filter with dropdonw on UI
 const setPlayerCards = (arr = players) => {
   playerCards.innerHTML += arr.map(
-    ({name, position, number, isCaptain, nickname}) => {
+    ({name, position, number, isCaptain, nickname}) => 
       `
         <div class="player-card">
           <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
           <p>Position: ${position}</p>
           <p>Number: ${number}</p>
-          <p>Nickname: ${nickname ? nickname : "N/A"}</p>
-        </div>
+          <p>Nickname: ${nickname !== null ? nickname : "N/A"}</p>
+          </div>
       `
-  }).join("");
+  ).join("");
 }
 
 // detect user selection from dropdown list
 playersDropdownList.addEventListener("change", (e) => {
+  
   playerCards.innerHTML = "";
 
   // check user's selection from player dropdown menu and filter out cards based on the player's positions
@@ -227,6 +228,5 @@ playersDropdownList.addEventListener("change", (e) => {
     default:
         setPlayerCards();
   }
-
 });
 
