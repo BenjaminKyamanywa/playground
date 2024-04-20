@@ -195,8 +195,14 @@ const setPlayerCards = (arr = players) => {
       `
         <div class="player-card">
           <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
+          <p>Position: ${position}</p>
+          <p>Number: ${number}</p>
+          <p>Nickname: ${nickname ? nickname : "N/A"}</p>
         </div>
       `
-  });
+  }).join("");
 }
+
+// detect user selection from dropdown list
+playersDropdownList.addEventListener("change", () => {});
 
