@@ -188,4 +188,15 @@ teamName.textContent = team;
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
+// set player cards filter with dropdonw on UI
+const setPlayerCards = (arr = players) => {
+  playerCards.innerHTML += arr.map(
+    ({name, postion, number, isCaptain, nickname}) => {
+      `
+        <div class="player-card">
+          <h2>${name}</h2>
+        </div>
+      `
+  });
+}
 
