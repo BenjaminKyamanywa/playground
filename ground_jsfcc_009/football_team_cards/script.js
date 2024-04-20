@@ -191,7 +191,7 @@ headCoach.textContent = coachName;
 // set player cards filter with dropdonw on UI
 const setPlayerCards = (arr = players) => {
   playerCards.innerHTML += arr.map(
-    ({name, postion, number, isCaptain, nickname}) => {
+    ({name, position, number, isCaptain, nickname}) => {
       `
         <div class="player-card">
           <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
