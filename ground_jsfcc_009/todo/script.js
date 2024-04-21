@@ -18,5 +18,8 @@ let currentTask = {}
 // opening and closing form modal
 openTaskFormBtn.addEventListener("click", () => taskForm.classList.toggle("hidden"));
 
+// modal for close dialog box
+closeTaskFormBtn.addEventListener("click", () => confirmCloseDialog.showModal());
+
 
 
