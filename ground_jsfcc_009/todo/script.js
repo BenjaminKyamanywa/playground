@@ -29,7 +29,10 @@ discardBtn.addEventListener("click", () => {
   taskForm.classList.toggle("hidden");
 });
 
-
+// get values from input fields, save into taskData array, and display on UI
+taskForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
 
 
 
