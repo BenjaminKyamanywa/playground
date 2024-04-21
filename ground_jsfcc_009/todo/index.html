@@ -25,9 +25,21 @@
           <label class="task-form-label" for="description-input">Description</label>
           <textarea class="form-control" id="description-input" cols="30" rows="5"></textarea>
         </div>
-        <div class="task-form-footer"></div>
+        <div class="task-form-footer">
+          <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
+            Add Task
+          </button>
+        </div>
       </form>
-      
+      <dialog id="confirm-close-dialog" >
+        <form method="dialog">
+          <p class="discard-message-text">Discard unsaved changes?</p>
+          <div class="confirm-close-dialog-btn-container">
+            <button id="cancel-btn" class="btn">Cancel</button>
+            <button id="discard-btn" class="btn" >Discard</button>
+          </div>
+        </form>
+      </dialog>
       <div id="tasks-container"></div>
     </div>
   </main> 
