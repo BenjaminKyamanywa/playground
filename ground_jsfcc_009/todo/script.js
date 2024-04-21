@@ -15,3 +15,8 @@ const descriptionInput = document.getElementById("description-input");
 const taskData = []
 let currentTask = {}
 
+// opening and closing form modal
+openTaskFormBtn.addEventListener("click", () => taskForm.classList.toggle("hidden"));
+
+
+
