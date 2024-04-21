@@ -1,5 +1,4 @@
 // initialize variables
-
 const taskForm = document.getElementById("task-form");
 const confirmCloseDialog = document.getElementById("confirm-close-dialog");
 const openTaskFormBtn = document.getElementById("open-task-form-btn");
@@ -20,6 +19,19 @@ openTaskFormBtn.addEventListener("click", () => taskForm.classList.toggle("hidde
 
 // modal for close dialog box
 closeTaskFormBtn.addEventListener("click", () => confirmCloseDialog.showModal());
+
+// modal for cancel dialog 
+cancelBtn.addEventListener("click", confirmCloseDialog.close());
+
+// discard btn closes the modal
+discardBtn.addEventListener("click", () => {
+  confirmCloseDialog.close();
+  taskForm.classList.toggle("hidden");
+});
+
+
+
+
 
 
 
