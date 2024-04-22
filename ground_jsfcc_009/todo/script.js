@@ -31,15 +31,29 @@ discardBtn.addEventListener("click", () => {
 
 // get values from input fields, save into taskData array, and display on UI
 taskForm.addEventListener("submit", (e) => {
+  
   e.preventDefault();
+  
   const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id).value;
+  
   const taskObj = {
     id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
     title: titleInput.value,
     date: dateInput.value,
     description: descriptionInput.value
   }
-  console.log(taskObj);
+
+  if (dataArrIndex === -1) {
+    taskData.unshift(taskObj);
+  }
+
+  taskData.forEach(({id, title, date, description}) => {
+    tasksContainer += 
+    ` 
+    <div class="task" id="${id}"></div>
+    <p><strong>Title:</strong>${title}</p>
+    `
+  });
 });
 
 
