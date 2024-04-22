@@ -14,26 +14,8 @@ const descriptionInput = document.getElementById("description-input");
 const taskData = []
 let currentTask = {}
 
-// opening and closing form modal
-openTaskFormBtn.addEventListener("click", () => taskForm.classList.toggle("hidden"));
-
-// modal for close dialog box
-closeTaskFormBtn.addEventListener("click", () => confirmCloseDialog.showModal());
-
-// modal for cancel dialog 
-cancelBtn.addEventListener("click", confirmCloseDialog.close());
-
-// discard btn closes the modal
-discardBtn.addEventListener("click", () => {
-  confirmCloseDialog.close();
-  taskForm.classList.toggle("hidden");
-});
-
-// get values from input fields, save into taskData array, and display on UI
-taskForm.addEventListener("submit", (e) => {
-  
-  e.preventDefault();
-  
+// add or update task
+const addOrUpdateTask = () => {
   const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id).value;
   
   const taskObj = {
@@ -47,6 +29,12 @@ taskForm.addEventListener("submit", (e) => {
     taskData.unshift(taskObj);
   }
 
+  updateTaskContainer()
+  reset()
+}
+
+// update task
+const updateTaskContainer = () => {
   taskData.forEach(({id, title, date, description}) => {
     tasksContainer += 
     ` 
@@ -58,6 +46,38 @@ taskForm.addEventListener("submit", (e) => {
     <button type="button" class="btn">Delete</button>
     `
   });
+}
+
+// opening and closing form modal
+openTaskFormBtn.addEventListener("click", () => taskForm.classList.toggle("hidden"));
+
+// modal for close dialog box
+closeTaskFormBtn.addEventListener("click", () => {
+  const formInputsContainValues = titleInput.value || dateInput.value || descriptionInput.value;
+  
+  confirmCloseDialog.showModal()
+
+  if (formInputsContainValues) {
+    confirmCloseDialog.showModal();
+  } else {
+    reset();
+  }
+
+});
+
+// modal for cancel dialog 
+cancelBtn.addEventListener("click", confirmCloseDialog.close());
+
+// discard btn closes the modal
+discardBtn.addEventListener("click", () => {
+  confirmCloseDialog.close();
+  reset();
+});
+
+// get values from input fields, save into taskData array, and display on UI
+taskForm.addEventListener("submit", (e) => {
+  
+  e.preventDefault();
 
   // clear input fields and hide form modal for user to see added task
   reset();
