@@ -59,7 +59,8 @@ taskForm.addEventListener("submit", (e) => {
     `
   });
 
-  taskForm.classList.toggle("hidden");
+  // clear input fields and hide form modal for user to see added task
+  reset();
 });
 
 // clear input fields after entering task
@@ -70,6 +71,8 @@ const reset = () => {
   taskForm.classList.toggle("hidden");
   currentTask = {}
 }
+
+
 
 
 
