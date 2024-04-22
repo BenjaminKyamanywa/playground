@@ -35,6 +35,10 @@ const addOrUpdateTask = () => {
 
 // update task
 const updateTaskContainer = () => {
+
+  // clear existing task container contents to avoid duplication
+  tasksContainer.innerHTML = "";
+
   taskData.forEach(({id, title, date, description}) => {
     tasksContainer += 
     ` 
@@ -79,8 +83,7 @@ taskForm.addEventListener("submit", (e) => {
   
   e.preventDefault();
 
-  // clear input fields and hide form modal for user to see added task
-  reset();
+  addOrUpdateTask();
 });
 
 // clear input fields after entering task
