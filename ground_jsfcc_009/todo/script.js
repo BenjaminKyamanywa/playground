@@ -52,9 +52,24 @@ taskForm.addEventListener("submit", (e) => {
     ` 
     <div class="task" id="${id}"></div>
     <p><strong>Title:</strong>${title}</p>
+    <p><strong>Date:</strong>${date}</p>
+    <p><strong>Description:</strong>${description}</p>
+    <button type="button" class="btn">Edit</button>
+    <button type="button" class="btn">Delete</button>
     `
   });
+
+  taskForm.classList.toggle("hidden");
 });
+
+// clear input fields after entering task
+const reset = () => {
+  titleInput.value = "";
+  dateInput.value = "";
+  descriptionInput.value = "";
+  taskForm.classList.toggle("hidden");
+  currentTask = {}
+}
 
 
 
