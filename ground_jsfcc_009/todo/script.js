@@ -52,6 +52,13 @@ const updateTaskContainer = () => {
   });
 }
 
+// delete task
+const deleteTask = () => {
+  const dataArrIndex = taskData.findIndex((item) => item.id === buttonEl.parentElement.id);
+  buttonEl.parentElement.remove(); 
+  taskData.splice(dataArrIndex, 1);
+}
+
 // opening and closing form modal
 openTaskFormBtn.addEventListener("click", () => taskForm.classList.toggle("hidden"));
 
