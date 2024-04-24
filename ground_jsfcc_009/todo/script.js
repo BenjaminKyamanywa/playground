@@ -62,7 +62,12 @@ const deleteTask = () => {
 // edit task
 const editTask = (buttonEl) => {
   const dataArrIndex = taskData.findIndex((item) => item.id === buttonEl.parentElement.id);
-  
+  currentTask = taskData[dataArrIndex];
+
+  // add task to be edited inside input fields
+  titleInput.value = currentTask.title;
+  dateInput.value = currentTask.date;
+  descriptionInput.value = currentTask.description;
 }
 
 // opening and closing form modal
