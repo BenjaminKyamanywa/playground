@@ -59,6 +59,12 @@ const deleteTask = () => {
   taskData.splice(dataArrIndex, 1);
 }
 
+// edit task
+const editTask = (buttonEl) => {
+  const dataArrIndex = taskData.findIndex((item) => item.id === buttonEl.parentElement.id);
+  
+}
+
 // opening and closing form modal
 openTaskFormBtn.addEventListener("click", () => taskForm.classList.toggle("hidden"));
 
