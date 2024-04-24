@@ -27,6 +27,8 @@ const addOrUpdateTask = () => {
 
   if (dataArrIndex === -1) {
     taskData.unshift(taskObj);
+  } else {
+    taskData[dataArrIndex] = taskObj;
   }
 
   updateTaskContainer()
@@ -68,6 +70,10 @@ const editTask = (buttonEl) => {
   titleInput.value = currentTask.title;
   dateInput.value = currentTask.date;
   descriptionInput.value = currentTask.description;
+
+  addOrUpdateTask.innerText = "Update Task";
+
+  taskForm.classList.toggle("hidden");
 }
 
 // opening and closing form modal
