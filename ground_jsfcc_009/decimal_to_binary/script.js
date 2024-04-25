@@ -12,4 +12,8 @@ const checkUserInput = () => {
 convertBtn.addEventListener("click", checkUserInput);
 
 // listen for keyboard enter and return keys
-numberInput.addEventListener("keydown", () => {})
+numberInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkUserInput();
+  }
+})
