@@ -31,3 +31,22 @@ h1 {
   margin: 20px 0;
 }
 
+.input-container {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.convert-button {
+  background-color: var(--orange);
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.number-input {
+  height: 25px;
+}
+
