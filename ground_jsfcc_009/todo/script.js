@@ -11,22 +11,22 @@ const titleInput = document.getElementById("title-input");
 const dateInput = document.getElementById("date-input");
 const descriptionInput = document.getElementById("description-input");
 
-const taskData =  JSON.parse(localStorage.getItem("data")) || [];
+const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
-let currentTask = {}
+let currentTask = {};
 
 // add or update task
 const addOrUpdateTask = () => {
 
-  addOrUpdateTask.innerText = "Add Task";
+  addOrUpdateTaskBtn.innerText = "Add Task";
   
-  const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id).value;
+  const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
   
   const taskObj = {
     id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
     title: titleInput.value,
     date: dateInput.value,
-    description: descriptionInput.value
+    description: descriptionInput.value,
   }
 
   if (dataArrIndex === -1) {
@@ -43,46 +43,64 @@ const addOrUpdateTask = () => {
 
 // update task
 const updateTaskContainer = () => {
-
-  // clear existing task container contents to avoid duplication
   tasksContainer.innerHTML = "";
 
-  taskData.forEach(({id, title, date, description}) => {
-    tasksContainer += 
-    ` 
-    <div class="task" id="${id}"></div>
-    <p><strong>Title:</strong>${title}</p>
-    <p><strong>Date:</strong>${date}</p>
-    <p><strong>Description:</strong>${description}</p>
-    <button type="button" class="btn" onclick="editTask(this)">Edit</button>
-    <button type="button" class="btn" onclick="deleteTask(this)">Delete</button>
-    `
-  });
-}
+  taskData.forEach(
+    ({ id, title, date, description }) => {
+        (tasksContainer.innerHTML += `
+        <div class="task" id="${id}">
+          <p><strong>Title:</strong> ${title}</p>
+          <p><strong>Date:</strong> ${date}</p>
+          <p><strong>Description:</strong> ${description}</p>
+          <button onclick="editTask(this)" type="button" class="btn">Edit</button>
+          <button onclick="deleteTask(this)" type="button" class="btn">Delete</button> 
+        </div>
+      `)
+    }
+  );
+};
 
 // delete task
-const deleteTask = () => {
-  const dataArrIndex = taskData.findIndex((item) => item.id === buttonEl.parentElement.id);
-  buttonEl.parentElement.remove(); 
-  taskData.splice(dataArrIndex, 1);
+const deleteTask = (buttonEl) => {
+  const dataArrIndex = taskData.findIndex(
+    (item) => item.id === buttonEl.parentElement.id
+  );
 
-  // remove deleted task from local storage
+  buttonEl.parentElement.remove();
+  taskData.splice(dataArrIndex, 1);
   localStorage.setItem("data", JSON.stringify(taskData));
 }
 
+
 // edit task
 const editTask = (buttonEl) => {
-  const dataArrIndex = taskData.findIndex((item) => item.id === buttonEl.parentElement.id);
-  currentTask = taskData[dataArrIndex];
+  const dataArrIndex = taskData.findIndex(
+  (item) => item.id === buttonEl.parentElement.id
+);
 
-  // add task to be edited inside input fields
-  titleInput.value = currentTask.title;
-  dateInput.value = currentTask.date;
-  descriptionInput.value = currentTask.description;
+currentTask = taskData[dataArrIndex];
 
-  addOrUpdateTask.innerText = "Update Task";
+titleInput.value = currentTask.title;
+dateInput.value = currentTask.date;
+descriptionInput.value = currentTask.description;
 
+addOrUpdateTaskBtn.innerText = "Update Task";
+
+taskForm.classList.toggle("hidden");  
+}
+
+// clear input fields after entering task
+const reset = () => {
+  titleInput.value = "";
+  dateInput.value = "";
+  descriptionInput.value = "";
   taskForm.classList.toggle("hidden");
+  currentTask = {}
+}
+
+// reflect retrieved task items on the UI
+if (taskData.length) {
+  updateTaskContainer();
 }
 
 // opening and closing form modal
@@ -94,7 +112,6 @@ closeTaskFormBtn.addEventListener("click", () => {
 
   const formInputValuesUpdated = titleInput.value !== currentTask.title || dateInput.value !== currentTask.date || descriptionInput.value !== currentTask.description;
 
-  confirmCloseDialog.showModal()
 
   if (formInputsContainValues && formInputValuesUpdated) {
     confirmCloseDialog.showModal();
@@ -105,12 +122,13 @@ closeTaskFormBtn.addEventListener("click", () => {
 });
 
 // modal for cancel dialog 
-cancelBtn.addEventListener("click", confirmCloseDialog.close());
+cancelBtn.addEventListener("click", () => confirmCloseDialog.close());
+
 
 // discard btn closes the modal
 discardBtn.addEventListener("click", () => {
   confirmCloseDialog.close();
-  reset();
+  reset()
 });
 
 // get values from input fields, save into taskData array, and display on UI
@@ -120,16 +138,6 @@ taskForm.addEventListener("submit", (e) => {
 
   addOrUpdateTask();
 });
-
-// clear input fields after entering task
-const reset = () => {
-  titleInput.value = "";
-  dateInput.value = "";
-  descriptionInput.value = "";
-  taskForm.classList.toggle("hidden");
-  currentTask = {}
-}
-
 
 
 
