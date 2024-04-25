@@ -67,3 +67,22 @@ h1 {
   max-width: 300px;
 }
 
+.animation-frame {
+  margin: 250px auto 0;
+  padding: 15px 10px;
+  border: 5px solid var(--orange);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* media queries */
+
+@media (min-width: 500px) {
+  .input-container {
+    flex-direction: row;
+  }
+
+  #result {
+    max-width: 460px;
+  }
+}
