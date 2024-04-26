@@ -5,7 +5,10 @@ const result = document.getElementById("result");
 
 // check input value
 const checkUserInput = () => {
-
+  if (!numberInput.value || isNaN(parseInt(numberInput.value))) {
+    alert("Please provide a decimal number");
+    return
+  }
 }
 
 // user convert btn
