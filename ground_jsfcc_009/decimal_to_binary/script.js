@@ -5,7 +5,11 @@ const result = document.getElementById("result");
 
 // decimal to binary conversion
 const decimalToBinary = (input) => {
-  
+  const inputs = []
+  const quotients = []
+  const remainders = []
+
+  input = 0;
 }
 
 // check input value
@@ -14,6 +18,9 @@ const checkUserInput = () => {
     alert("Please provide a decimal number");
     return
   }
+
+  decimalToBinary(parseInt(numberInput.value));
+  numberInput.value = "";
 }
 
 // user convert btn
