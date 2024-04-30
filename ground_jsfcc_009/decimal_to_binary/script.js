@@ -12,6 +12,19 @@ const decimalToBinary = (input) => {
   }
 };
 
+// animation
+const showAnimation = () => {
+  setTimeout(() => {
+    console.log("free");
+  }, 500);
+  setTimeout(() => {
+    console.log("Code");
+  }, 1000);
+  setTimeout(() => {
+    console.log("Camp");
+  }, 1500);
+};
+
 // check input value
 const checkUserInput = () => {
   if (!numberInput.value || isNaN(parseInt(numberInput.value))) {
