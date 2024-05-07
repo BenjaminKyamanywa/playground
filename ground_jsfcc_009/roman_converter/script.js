@@ -62,7 +62,7 @@ form.addEventListener('submit', e => {
   updateUI();
 });
 
-convertButton.addEventListener('click', () => {
+buttonConvert.addEventListener('click', () => {
   updateUI();
 });
 
