@@ -51,3 +51,8 @@ const isValid = (str, int) => {
 
   return false;
 };
+
+const clearOutput = () => {
+  output.innerText = '';
+  output.classList.remove('alert');
+};
