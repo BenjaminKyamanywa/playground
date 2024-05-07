@@ -75,6 +75,6 @@ const updateUI = () => {
   clearOutput();
 
   if (isValid(numStr, int)) {
-    output.innerText = convertToRoman(int);
+    output.innerText = convertRoman(int);
   }
 };
