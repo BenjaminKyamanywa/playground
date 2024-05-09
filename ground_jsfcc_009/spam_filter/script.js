@@ -4,9 +4,10 @@ const result = document.getElementById("result");
 const checkMessageButton = document.getElementById("check-message-btn");
 
 // regex variables
-const helpRegex = /please help/i;
+const helpRegex = /please help|assist me/i;
 
-
+// functions
+const isSpam = (msg) => helpRegex.test(msg);
 
 // event listeners
 checkMessageButton.addEventListener("click", () => {
