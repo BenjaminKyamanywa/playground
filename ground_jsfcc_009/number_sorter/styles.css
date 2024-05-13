@@ -1,1 +1,14 @@
 /* General styles */
+
+:root {
+  --gray-00: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
