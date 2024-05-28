@@ -11,5 +11,13 @@ const sortInputArray = (event) => {
   ].map((dropdown) => Number(dropdown.value));
 }
 
+// update UI with sorted numbers
+const updateUI = (array = []) => {
+  array.forEach((num, i) => {
+    const outputValueNode = document.getElementById(`output-value-${i}`);
+    outputValueNode.innerText = num;
+  })
+}
+
 // event listeners
 sortButton.addEventListener("click", sortInputArray);
