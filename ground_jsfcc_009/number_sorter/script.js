@@ -9,6 +9,9 @@ const sortInputArray = (event) => {
   const inputValues = [
     ...document.getElementsByClassName("values-dropdown")
   ].map((dropdown) => Number(dropdown.value));
+
+  updateUI(inputValues);
+
 }
 
 // update UI with sorted numbers
