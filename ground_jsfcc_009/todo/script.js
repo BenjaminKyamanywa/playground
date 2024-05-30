@@ -91,6 +91,10 @@ taskForm.classList.toggle("hidden");
 
 // clear input fields after entering task
 const reset = () => {
+
+  addOrUpdateTaskBtn.innerText = "Add Task";
+
+
   titleInput.value = "";
   dateInput.value = "";
   descriptionInput.value = "";
