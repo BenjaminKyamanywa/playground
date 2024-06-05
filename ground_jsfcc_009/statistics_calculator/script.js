@@ -5,7 +5,7 @@ const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length
 
 // getMedia function
 const getMedian = (array) => {
-  const sorted = array.sort((a, b) => a - b);
+  const sorted = array.slice().sort((a, b) => a - b);
   const median =
     array.length % 2 === 0
       ? getMean([sorted[array.length / 2], sorted[array.length / 2 - 1]])
@@ -29,6 +29,11 @@ const getMode = (array) => {
     (el) => counts[el] === counts[highest]
   );
   return mode.join(", ");
+}
+
+// getRange function
+const getRange = (array) => {
+  return Math.max(...array) - Math.min(...array);
 }
 
 // calculate function
