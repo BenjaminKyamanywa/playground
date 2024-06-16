@@ -10,7 +10,20 @@
   <main>
     <h1>Telephone Validator</h1>
     <div class="phone-container">
-      
+      <div class="phone-background">
+        <div class="phone-camera"></div>
+      </div>
+      <label for="user-input">Enter a phone number:</label>
+      <input type="text" maxlength="20" id="user-input" value>
+      <div id="results-div">
+        <p class="results-text" style="color: rgb(77, 56, 0);">Invalid US number:  1(555)555-5555
+          <a href="http://voice.google.com/calls?a=nc,%2B15555555555" class="gv-tel-link" target="_blank" rel="noopener" title="Call +1 555-555-5555 via Google Voice"></a>
+        </p>
+      </div>
+      <div class="phone-footer">
+        <button class="btn-styles" id="check-btn">Check</button>
+        <button class="btn-styles" id="clear-btn">Clear</button>
+      </div>
     </div>
   </main>
   <!-- Links JS -->
