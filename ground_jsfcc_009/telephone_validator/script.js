@@ -34,3 +34,22 @@ const checkForValidNumber = input => {
   );
   results.appendChild(paragraphElement);
 };
+
+// add check button event listener
+checkBtn.addEventListener("click", () => {
+  checkForValidNumber(userInput.value);
+  userInput.value = "";
+});
+
+// add user input event listener
+userInput.addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+    checkForValidNumber(userInput.value);
+    userInput.value = "";
+  }
+});
+
+// add clear button event listener
+clearBtn.addEventListener("click", () => {
+  results.textContent = "";
+});
