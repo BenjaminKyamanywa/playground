@@ -103,5 +103,15 @@ label {
   justify-content: center;
 }
 
-
+.btn-styles {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  color: #0a0a23;
+  font-size: 18px;
+  background-color: #fff;
+  background-image: linear-gradient(#fff, #928d86);
+  border-color: #fff;
+  border-width: 3px;
+}
 
