@@ -2,7 +2,6 @@
 
 :root {
   --phone-colors: #dfdfe2;
-  --center-text: center;
   --gray-00: #fff;
 }
 
@@ -28,4 +27,45 @@ main {
   flex-direction: column;
   padding: 40px 10px;
 }
+
+h1 {
+  color: #fff;
+  width: 100%;
+  max-width: 480px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.phone-container {
+  position: relative;
+  background-color: var(--phone-colors);
+  width: 250px;
+  height: 460px;
+  margin: 30px auto;
+  border-radius: 15px;
+  border: 15px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-background {
+  background-color: #000;
+  width: 100%;
+  height: 25px;
+}
+
+.phone-camera {
+  background-color: var(--phone-colors);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+label {
+  margin: 10px auto 5px;
+}
+
+
 
