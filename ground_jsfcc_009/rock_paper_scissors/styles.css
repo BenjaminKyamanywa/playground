@@ -48,3 +48,17 @@ h1 {
   background-color: var(--white);
   color: var(--very-dark-blue);
 }
+
+.rules-container p {
+  margin: 10px 0;
+}
+
+/* Media Queries */
+
+@media (min-width: 760px) {
+  .rules-container {
+    width: 60%;
+  }
+
+  
+}
