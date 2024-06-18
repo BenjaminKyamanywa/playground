@@ -5,3 +5,12 @@ const getRandomComputerResult = () => {
   return options[RandomIndex];
 }
 
+// check if player has won the round
+const hasPlayerWonTheRound = (player, computer) => {
+  return (
+    (player === "Rock" && computer === "Scissors") ||
+    (player === "Scissors" && computer === "Paper") ||
+    (player === "Paper" && computer === "Rock")
+  );
+}
+
