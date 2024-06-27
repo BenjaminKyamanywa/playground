@@ -12,3 +12,17 @@ let cid = [
   ["ONE HUNDRED", 100]
 ];
 
+const changeDue = document.getElementById("change-due");
+const cash = document.getElementById("cash");
+const purchaseBtn = document.getElementById("purchase-btn");
+const priceScreen = document.getElementById("price-screen");
+const cashDrawer = document.getElementById("cash-drawer-display");
+
+// format results
+const formatResults = (status, change) => {
+  changeDue.innerHTML `<p>Status: ${status}</p>`;
+  change.map(
+    money => (changeDue.innerHTML += `<p>${money[0]}: $${money[1]}</p>`)
+  );
+  return
+}
