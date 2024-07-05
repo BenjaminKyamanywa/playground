@@ -1,3 +1,6 @@
+// initialize variables
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
 const pokemonID = document.getElementById('pokemon-id');
 const pokemonName = document.getElementById('pokemon-name');
 const spriteContainer = document.getElementById('sprite-container');
@@ -6,14 +9,12 @@ const defense = document.getElementById('defense');
 const specialAttack = document.getElementById('special-attack');
 const specialDefense = document.getElementById('special-defense');
 const speed = document.getElementById('speed');
-const searchForm = document.getElementById('search-form');
-const searchInput = document.getElementById('search-input');
 const height = document.getElementById('height');
 const weight = document.getElementById('weight');
 const hp = document.getElementById('hp');
 const attack = document.getElementById('attack');
 
-
+// GET pokemon
 const getPokemon = async () => {
   try {
     const pokemonNameOrId = searchInput.value.toLowerCase();
@@ -22,7 +23,7 @@ const getPokemon = async () => {
     );
     const data = await response.json();
 
-    // Pokémon info
+    // display Pokemon info
     pokemonName.textContent = `${data.name.toUpperCase()}`;
     pokemonID.textContent = `#${data.id}`;
     weight.textContent = `Weight: ${data.weight}`;
