@@ -22,4 +22,4 @@ A simple hero homepage area to highlight the site's important offerings.
 
 ## 📸 Screenshot
 
-[![Landing page screenshot](./assets/simple%20homepage%202024-07-11%20at%208.50.46%20AM.png) "Landing page screenshot example"]
+![Hero Area Homepage screenshot example](./assets/simple%20homepage%202024-07-11%20at%208.50.46%20AM.png)
