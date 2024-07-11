@@ -2,6 +2,9 @@
 
 :root {
   --main-hot-red: #EC4A5C;
+  --main-dark-gray: #EFF0F4;
+  --secondary-light-gray: #F6F7F9;
+  --label-text-color: #7369AB;
 }
 
 *,
