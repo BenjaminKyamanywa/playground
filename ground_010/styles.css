@@ -1,0 +1,13 @@
+/* General Styles */
+
+:root {
+  --main-hot-red: #EC4A5C;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
