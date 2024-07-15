@@ -8,9 +8,12 @@ const playSound = (e) => {
   key.classList.add('playing');
   audio.currenTime = 0; //rewind audio to the start
   audio.play();
-
 }
 
-
-
 // remove transiton
+const removeTransition = (e) => {
+  
+}
+
+const keys = Array.from(document.querySelectorAll('.key'));
+keys.forEach(key => key.addEventListener('transitioned', removeTransition));
