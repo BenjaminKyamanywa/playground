@@ -12,8 +12,15 @@ const playSound = (e) => {
 
 // remove transiton
 const removeTransition = (e) => {
-  
+  if (e.propertyName !== 'transitioned') return;
+  e.target.classList.remove('playting');
 }
 
+// select all keys
 const keys = Array.from(document.querySelectorAll('.key'));
+
+// event listener for each key to fire remove transition
 keys.forEach(key => key.addEventListener('transitioned', removeTransition));
+
+// window object event listener to playSound
+window.addEventListener('keydown', playSound);
