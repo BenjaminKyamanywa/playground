@@ -20,17 +20,15 @@ const removeTransition = (e) => {
 
 // play sound onclick
 const handleClick = (e) => {
-//  add code for handling click
-
+  
 }
 
 // select all keys
 const keys = Array.from(document.querySelectorAll('.key'));
-const items = Array.from(document.querySelectorAll('.key'));
 
 // event listener for each key to fire remove transition
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-items.forEach(key => key.addEventListener('click', handleClick));
+keys.forEach(key => key.addEventListener('click', handleClick));
 
 
 // window object event listener to playSound
