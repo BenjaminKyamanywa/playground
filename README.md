@@ -1,7 +1,8 @@
-## A playground for coding projects
+## 🛝 Playground
+This is a place to break and experiment with a lot of coding projects. 
 
-# Summary
-This is a place to break and experiment with lots of coding projects
+# 🏗️ Projects
+Below is a list of projects created to refine my skills across various programming principles.
 
 | Name          | Description | Source code
 |-------------- |-------------|-----------
