@@ -13,7 +13,7 @@ In this guide we shall cover how to build a virtual drum kit using HTML, CSS, an
 
 ___
 
-With our HTML markup we shall see the usage of div elements and utilize the `data` attribute to set our custom `key` which we'll be using to reference keyboard key values
+With our HTML markup we shall see the usage of div elements and utilize the `data` attribute to set our custom `key` which we'll be using to reference keyboard key values.
 
 ```HTML
 
@@ -148,19 +148,19 @@ window.addEventListener('keydown', playSound);
 ___
 
 1. CSS and JavaScript Synchronization:
-- Integrating CSS transitions with JavaScript (`removeTransition`) demonstrates the importance of synchronizing visual effects with application logic.
-- This synchronization ensures that animations are smooth and responsive, enhancing the user experience when interacting with the drum kit.
+    - Integrating CSS transitions with JavaScript (`removeTransition`) demonstrates the importance of synchronizing visual effects with application logic.
+    - This synchronization ensures that animations are smooth and responsive, enhancing the user experience when interacting with the drum kit.
 
 2. Event Handling and Delegation:
-- Understanding how to use event listeners (`addEventListener`) allows us to capture and respond to user actions effectively.
-- Delegation, as seen with `clickHandler` using `e.target.closest('.key')`, ensures that even nested elements within our drum kit trigger the correct action, making our code more robust.
+    - Understanding how to use event listeners (`addEventListener`) allows us to capture and respond to user actions effectively.
+    - Delegation, as seen with `clickHandler` using `e.target.closest('.key')`, ensures that even nested elements within our drum kit trigger the correct action, making our code more robust.
 
 3. Modularity and Code Organization:
-- Refactoring code into separate functions (`playSound`, `clickHandler`, `removeTransition`) promotes modularity and code reuse.
-- Each function has a distinct responsibility, making the codebase easier to understand, maintain, and expand upon in case we add more features or customize the drum kit further.
+    - Refactoring code into separate functions (`playSound`, `clickHandler`, `removeTransition`) promotes modularity and code reuse.
+    - Each function has a distinct responsibility, making the codebase easier to understand, maintain, and expand upon in case we add more features or customize the drum kit further.
 
 ### Conclusion
-__
+___
 
 Building a virtual drum kit not only provides a fun way to explore JavaScript and CSS but also illustrates key programming concepts like event handling, CSS animations, and code organization. 
 
