@@ -11,6 +11,8 @@ In this guide we shall cover how to build a virtual drum kit using HTML, CSS, an
 
 ### Understanding our markup
 
+___
+
 With our HTML markup we shall see the usage of div elements and utilize the `data` attribute to set our custom `key` which we'll be using to reference keyboard key values
 
 ```HTML
@@ -23,6 +25,10 @@ With our HTML markup we shall see the usage of div elements and utilize the `dat
 ```
 
 ### CSS Highlights
+
+___
+
+All our styling is pretty straight forward and as such we'll only look at the key styles driving the animation transition of the elements.
 
 ```CSS
 
@@ -62,6 +68,10 @@ With our HTML markup we shall see the usage of div elements and utilize the `dat
 - We utilize transform property to scale our elements when a sound is playing with the styles in `.playing` that will show during the animation after a sound plays.
 
 ### Uncovering our JS
+
+___
+
+Let's go over our Javascript code to review it's usage in the drum kit app across the different functions and event listeners.
 
 ```JS
 // play sound 
@@ -135,6 +145,7 @@ window.addEventListener('keydown', playSound);
 
 
 ### Lessons
+___
 
 1. CSS and JavaScript Synchronization:
 - Integrating CSS transitions with JavaScript (`removeTransition`) demonstrates the importance of synchronizing visual effects with application logic.
@@ -149,6 +160,7 @@ window.addEventListener('keydown', playSound);
 - Each function has a distinct responsibility, making the codebase easier to understand, maintain, and expand upon in case we add more features or customize the drum kit further.
 
 ### Conclusion
+__
 
 Building a virtual drum kit not only provides a fun way to explore JavaScript and CSS but also illustrates key programming concepts like event handling, CSS animations, and code organization. 
 
