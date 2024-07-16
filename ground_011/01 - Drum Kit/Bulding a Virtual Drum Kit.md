@@ -13,6 +13,15 @@ In this guide we shall cover how to build a virtual drum kit using HTML, CSS, an
 
 With our HTML markup we shall see the usage of div elements and utilize the `data` attribute to set our custom `key` which we'll be using to reference keyboard key values
 
+```HTML
+
+<div data-key="65" class="key">
+  <kbd>A</kbd>
+  <span class="sound">clap</span>
+</div>
+
+```
+
 ### CSS Highlights
 
 ```CSS
