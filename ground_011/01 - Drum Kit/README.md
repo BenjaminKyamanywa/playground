@@ -15,7 +15,7 @@ A virtual drum kit that users can play with in the browser to create music.
 
 ## ✍️ Article
 
-- [How to Guide]()
+- [How to guide](./Bulding%20a%20Virtual%20Drum%20Kit.md)
 
 ## 📸 Screenshot
 
