@@ -109,8 +109,30 @@ const clickHandler = (e) => {
 
 ```
 
-- We remove the CSS animation transition.
-- We initialize a `clickHandler` function that will handle clicking the drum letter elements.
+- The `removeTransition` function ensures smooth animation by removing the `playing` class after the CSS transition ends, ensuring each drum hit looks and feels dynamic.
+- JavaScript dynamically selects elements based on data attributes (`data-key`) to match the key or button clicked.
+- It locates corresponding `<audio>` elements to play the associated sound file (`audio[data-key="${keyData}"]`) and adds the `playing` class to animate the drum visually.
+
+```JS
+
+// select all keys
+const keys = Array.from(document.querySelectorAll('.key'));
+
+// event listener for each key to fire remove transition
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+// event listener for click on div elements
+keys.forEach(key => key.addEventListener('click', clickHandler));
+
+// window object event listener to playSound
+window.addEventListener('keydown', playSound);
+
+```
+
+- We use event listeners to capture keyboard events (`keydown` for keyboard presses) and mouse clicks (click on drum kit elements).
+- Each event listener calls a specific function (`playSound` for keyboard events and `clickHandler` for mouse clicks) to trigger the corresponding sound and visual animation.
+- CSS transitions are utilized to add visual effects when a drum element is clicked (`transitionend` event listener).
+
 
 ### Lessons
 
