@@ -10,5 +10,6 @@ This is a place to break and experiment with lots of coding projects
 |[Portfolio Template](https://codepen.io/benjaminkyamanywa/pen/bGZgMmN)  | Portfolio template site | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_003)
 |[Feature Card section](https://codepen.io/benjaminkyamanywa/pen/bGZgMmN)  | Portfolio template site | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_004)
 |[Simple hero area](https://codepen.io/benjaminkyamanywa/pen/oNVWQgO)  | Hero homepage area | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_005)
+|[Drum Kit](https://codepen.io/benjaminkyamanywa/pen/XWLmxKM)  | A Virtual Drum Kit for users to make music with sounds | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/01%20-%20Drum%20Kit)
 
 

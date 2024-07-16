@@ -1,6 +1,6 @@
 # Virtual Drum Kit!
  
-A virtual drum kit that users can play with in the browser
+A virtual drum kit that users can play with in the browser to create music.
 
 ## 🚀 Features
 
@@ -13,15 +13,10 @@ A virtual drum kit that users can play with in the browser
 - `CSS`
 - `Javascript`
 
-## 💡 Improvements
-
-- **Navigation**: Add links for navigation and add a mobile navigation.
-- **Buttons**: Add button animations on hover to improve user experience.
-
-## Article
+## ✍️ Article
 
 - 
 
 ## 📸 Screenshot
 
-![Drum Kit screenshot]()
+![Drum Kit screenshot](./assets/drum_kit_ui_screenshot.png)
