@@ -23,6 +23,8 @@ const keys = Array.from(document.querySelectorAll('.key'));
 
 // event listener for each key to fire remove transition
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+// event listener for click on div elements
 keys.forEach(key => key.addEventListener('click', function (e) { 
   
   const clickPlay = (a) => {
