@@ -168,4 +168,4 @@ We've learned how to create a simple interactive web application that responds t
 
 Now, let's grab our drumsticks (or mouse) and start making some beats!
 
-You can view the project on Codepen [here](https://codepen.io/benjaminkyamanywa/pen/XWLmxKM).
+You can view the project on Codepen <a href="https://codepen.io/benjaminkyamanywa/pen/XWLmxKM" target="_blank">here</a>.
