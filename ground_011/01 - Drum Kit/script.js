@@ -20,7 +20,16 @@ const removeTransition = (e) => {
 
 // play sound onclick
 const handleClick = (e) => {
-  
+  // Get the data-key attribute from the clicked element
+  const key = e.target.getAttribute('data-key');
+
+  const audio = document.querySelector(`audio[data-key="${key}"]`);
+  const keyElement = document.querySelector(`.key[data-key="${key}"]`)
+    if (!audio) return;
+
+    keyElement.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
 }
 
 // select all keys
@@ -29,7 +38,6 @@ const keys = Array.from(document.querySelectorAll('.key'));
 // event listener for each key to fire remove transition
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 keys.forEach(key => key.addEventListener('click', handleClick));
-
 
 // window object event listener to playSound
 window.addEventListener('keydown', playSound);
