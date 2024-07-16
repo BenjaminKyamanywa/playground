@@ -3,11 +3,11 @@
 In this guide we shall cover how to build a virtual drum kit using HTML, CSS, and JavaScript. By the end, we'll have a working drum kit that plays in the browser with the keyboard or with a mouse click.
 
 ## Topics
-- [Understanding our markup](###Understanding-our-markup)
-- [CSS Highlights](###css-highlights)
-- [Uncovering our JS](###uncovering-our-js)
-- [Lessons](###lessons)
-- [Conclusion](###conclusion)
+- [Understanding our markup](#understanding-our-markup)
+- [CSS Highlights](#css-highlights)
+- [Uncovering our JS](#uncovering-our-js)
+- [Lessons](#lessons)
+- [Conclusion](#conclusion)
 
 ### Understanding our markup
 
