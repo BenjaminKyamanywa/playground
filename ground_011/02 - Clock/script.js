@@ -12,6 +12,6 @@ const setDate = () => {
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`
 }
 
-setInterval(setDate, 1000);
+// setInterval(setDate, 1000);
 
-setDate();
+// setDate();
