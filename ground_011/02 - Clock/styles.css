@@ -73,3 +73,10 @@ body {
   inset: 1px;
   text-align: center;
 }
+
+/* rotate individual clock numbers 180deg to be readable */
+.clock-numbers span b {
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+}
+
