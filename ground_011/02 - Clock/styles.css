@@ -34,8 +34,8 @@ body {
 }
 
 .clock {
-  width: 30rem;
-  height: 30rem;
+  width: 50rem;
+  height: 50rem;
   border: 0.25rem solid #fff;
   border-radius: 50%;
   margin: 50px auto;
@@ -70,6 +70,6 @@ body {
 .clock-numbers span {
   position: absolute;
   transform: rotate(calc(30deg * var(--i)));
-  inset: 12px;
+  inset: 1px;
   text-align: center;
 }
