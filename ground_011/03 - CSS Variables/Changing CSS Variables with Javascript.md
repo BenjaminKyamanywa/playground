@@ -3,13 +3,13 @@
 We are going to explore how we can change how things look on a webpage using HTML, CSS and Javascript. Imagine we have sliders and color pickers that can adjust colors, sizes, and blurriness!
 
 ## Topics
-- [Understanding our markup](#understanding-our-markup)
+- [A glimpse into our markup](#a-glimpse-into-our-markup)
 - [CSS Highlights](#css-highlights)
 - [Uncovering our JS](#uncovering-our-js)
 - [Lessons](#lessons)
 - [Conclusion](#conclusion)
 
-### Understanding our markup
+### A glimpse into our markup
 
 ___
 
@@ -37,9 +37,9 @@ Here we set up our structure for the inputs and labels for the variables we'll b
 
 ### CSS Highlights
 
-We'll go over our variable styles and base styling for our page.
 ___
 
+We'll go over our variable styles and base styling for our page.
 
 
 ```CSS
