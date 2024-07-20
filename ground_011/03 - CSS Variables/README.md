@@ -14,7 +14,7 @@ A project where users can change CSS values of elements with Javascript
 
 ## ✍️ Article
 
-- [How to guide](./Changing%20CSS%20Variables%20with%20Javascript.md)
+- [Lessons learned](./Changing%20CSS%20Variables%20with%20Javascript.md)
 
 ## 📸 Screenshot
 
