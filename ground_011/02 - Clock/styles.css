@@ -16,7 +16,12 @@ body {
   background: #f6f7fb;
 }
 
-/* .container {} */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
 
 .container .clock {
   display: flex;
@@ -45,29 +50,51 @@ body {
 
 .container .clock-hands {
   position: absolute;
-  height: 13px;
-  width: 13px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 15px;
+  width: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .clock-hands::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #000;
-  border: 2px solid red;
-  z-index: 2;
+  z-index: 100;
 }
 
 .clock-hands .hand {
   position: absolute;
-  height: 130px;
+  height: 160px;
   width: 4px;
   bottom: 0;
+  border-radius: 25px;
+  transform-origin: bottom;
   background: red;
+}
+
+.hand.min-hand {
+  height: 120px;
+  width: 5px;
+  transform: rotate(45deg);
+  background: black;
+}
+
+.hand.hour-hand {
+  height: 100px;
+  width: 8px;
+  transform: rotate(75deg);
+  background: black;
 }
 
 /* 
