@@ -13,7 +13,10 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #f6f7fb;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  color: #fff;
 }
 
 .container {
@@ -31,8 +34,11 @@ body {
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 25px 45px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
 }
 
 .clock-numbers span {
@@ -60,41 +66,28 @@ body {
   align-items: center;
 }
 
-.clock-hands::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #000;
-  z-index: 100;
-}
-
 .clock-hands .hand {
   position: absolute;
-  height: 160px;
+  height: 150px;
   width: 4px;
   bottom: 0;
   border-radius: 25px;
   transform-origin: bottom;
-  background: red;
+  background: white;
 }
 
 .hand.min-hand {
-  height: 120px;
+  height: 130px;
   width: 5px;
   transform: rotate(45deg);
-  background: black;
+  background: white;
 }
 
 .hand.hour-hand {
   height: 100px;
-  width: 8px;
+  width: 7px;
   transform: rotate(75deg);
-  background: black;
+  background: white;
 }
 
 /* 
@@ -104,7 +97,6 @@ Delete all this CSS below
 
 ===================================
 */
-
 
 /* body {
   font-family: Arial, Helvetica, sans-serif;

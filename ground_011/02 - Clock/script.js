@@ -20,7 +20,7 @@ const setDate = () => {
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 }
 
-// setInterval(setDate, 1000);
+setInterval(setDate, 1000);
 
 // call setDate function on page load
-// setDate()
+setDate()
