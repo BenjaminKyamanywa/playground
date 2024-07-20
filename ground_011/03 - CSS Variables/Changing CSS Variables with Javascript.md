@@ -32,13 +32,12 @@ Here we set up our structure for the inputs and labels for the variables we'll b
 ```
 
 - We have sliders and color pickers that control what our webpage looks like.
+- We use the sliders (`spacing` and `blur`) to adjust sizes and blurriness, and a color picker (`base`) to change colors.
 
 
 ### CSS Highlights
 
-- We variables (`--base`, `--spacing`, `--blur`) that store colors, sizes, and blurriness settings.
-- We'll use these for a user to be ablee to change their values in the browser.
-
+We'll go over our variable styles and base styling for our page.
 ___
 
 
@@ -46,30 +45,23 @@ ___
 ```CSS
 
 
+:root {
+  --base: #fb00ff;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+
 ```
 
-- Add points about the CSS
+- We variables (`--base`, `--spacing`, `--blur`) that store colors, sizes, and blurriness settings.
+- We'll use these for a user to be ablee to change their values in the browser.
 
 ### Uncovering our JS
 
 ___
 
-
-
-```JS
-
-
-
-```
--  Add points about JS
-
-```JS
-
-
-
-```
-
-- Add points about the JS
+We'll uncover our Javascript and go over our funtions, event listeners and the variable changes.
 
 ```JS
 
@@ -110,16 +102,20 @@ inputs.forEach(input => input.addEventListener('input', handleUpdate));
 ### Lessons
 ___
 
-1. CSS and JavaScript Synchronization:
-    - Add bullet point 
+1. CSS Variables:
+    - These are like containers that hold different values. By adjusting these values, we can change how our webpage looks without rewriting lots of CSS code.
 
-2. Event Handling and Delegation:
-    - Add bullet point
+2. Event Listeners:
+    - These are like ears that listen for actions, such as moving a slider or clicking a color picker. When they hear something, they tell JavaScript to update the webpage.
 
-3. Modularity and Code Organization:
-    - Add bullet point
+3. Teamwork:
+    - HTML, CSS, and JavaScript work together to create a webpage. HTML shows where things go, CSS makes them look good, and JavaScript makes them interactive.
 
 ### Conclusion
 ___
+
+We explored how HTML, CSS, and JavaScript collaborate to create an interactive webpage. We learned about CSS variables, which allow us to adjust colors, sizes, and blurriness easily. 
+
+Remember, with these tools and a little practice, we can create amazing designs on the web!
 
 You can view the project on Codepen [Here](). 
