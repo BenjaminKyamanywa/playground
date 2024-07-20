@@ -1,4 +1,4 @@
-# Virtual Drum Kit!
+# 🥁 Virtual Drum Kit!
  
 A virtual drum kit that users can play with in the browser to create music.
 
