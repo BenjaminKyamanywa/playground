@@ -18,12 +18,12 @@ html {
 }
 
 body {
-  margin: 0;
-  font-size: 2rem;
   display: flex;
-  flex: 1;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  font-size: 2rem;
+  margin: 0;
   min-height: 100vh;
   color: #fff;
 }
@@ -46,26 +46,42 @@ body {
     inset 0 0 0 3px #EFEFEF,
     inset 0 0 10px black,
     0 0 10px rgba(0,0,0,0.2);
+  /* display pointer to center of page */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .clock-face {
   position: relative;
   width: 100%;
   height: 100%;
-  transform: translateY(-3px);
+  transform: translateY(-3px); /* account for height of clock hands */
 }
 
 .hand {
+  top: 50%;
   width: 50%;
   height: 6px;
   background: #000;
   position: absolute;
-  top: 50%;
+  border-radius: 25px;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: all 0.5s;
+  transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-} 
+}
+
+.hand.min-hand {
+  height: 120px;
+  width: 5px;
+  background: var(--black-color);
+}
+.hand.hour-hand {
+  height: 100px;
+  width: 8px;
+  background: var(--black-color);
+}
 
 .clock-numbers span {
   position: absolute;
@@ -78,5 +94,16 @@ body {
 .clock-numbers span b {
   transform: rotate(calc(-30deg * var(--i)));
   display: inline-block;
+}
+
+/* display pointer of clock*/
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 2;
 }
 
