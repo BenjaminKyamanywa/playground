@@ -45,7 +45,9 @@ input {
   background-color: var(--base);
   background-size: cover;
   padding: var(--spacing);
-  filter: blur(var(--blur));
+  /* filter: blur(var(--blur)); */
+  width: 100%;
+  object-fit: cover;
 }
 
 
