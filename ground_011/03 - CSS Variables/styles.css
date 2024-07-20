@@ -9,7 +9,7 @@
 }
 
 :root {
-  --base: #ffc600;
+  --base-color: #ffc600;
   --spacing: 10px;
   --blur: 10px;
 }
@@ -23,14 +23,30 @@ body {
   font-size: 50px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.highlight {
+  color: var(--base-color);
+}
+
 .controls {
   margin-bottom: 50px;
 }
 
+input {
+  width: 100px;
+}
+
 .img {
   background-color: var(--base);
+  background-size: cover;
   padding: var(--spacing);
   filter: blur(var(--blur));
 }
+
 
 
