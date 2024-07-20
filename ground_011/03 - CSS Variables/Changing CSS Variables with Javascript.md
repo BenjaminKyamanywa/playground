@@ -13,9 +13,21 @@ We are going to explore how we can change how things look on a webpage using HTM
 
 ___
 
+Here we set up our structure for the inputs and labels for the variables we'll be changing.
 
 ```HTML
 
+<h2>Update <span class="highlight">CSS</span> Variables with <span class="highlight">JS</span></h2>
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" id="spacing">
+
+      <label for="blur">Blur:</label>
+      <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px" id="blur">
+
+      <label for="base">Base color:</label>
+      <input type="color" name="base" value="#fb00ff">
+</div>
 
 ```
 
@@ -23,6 +35,9 @@ ___
 
 
 ### CSS Highlights
+
+- We variables (`--base`, `--spacing`, `--blur`) that store colors, sizes, and blurriness settings.
+- We'll use these for a user to be ablee to change their values in the browser.
 
 ___
 
