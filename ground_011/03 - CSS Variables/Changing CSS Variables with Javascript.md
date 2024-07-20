@@ -54,8 +54,8 @@ We'll go over our variable styles and base styling for our page.
 
 ```
 
-- We variables (`--base`, `--spacing`, `--blur`) that store colors, sizes, and blurriness settings.
-- We'll use these for a user to be ablee to change their values in the browser.
+- The variables (`--base`, `--spacing`, `--blur`) store colors, sizes, and blurriness settings.
+- We'll use these for a user to be able to change their values in the browser.
 
 ### Uncovering our JS
 
@@ -85,19 +85,19 @@ inputs.forEach(input => input.addEventListener('input', handleUpdate));
 
 ```
 
-- Event Handling Change:
-    - Instead of using specific events like `change` or `mousemove`, which trigger only when the value changes or mouse moves, we use the `input` event. The `input` event triggers whenever the value of an input changes, regardless of how it changes (keyboard input, mouse dragging, etc.).
 - Accessing the Element:
     - In handleUpdate, we use `event.currentTarget` instead of `event.target`.
     - `event.currentTarget` always refers to the element to which the event listener is attached (`input` element in this case).
     - This ensures that even if the event bubbles up through nested elements, `currentTarget` always refers to the correct input element.
 - Setting CSS Variables:
-    - We continue to use `document.documentElement.style.setProperty` to dynamically set CSS variables based on the input element's `name` attribute and its `value + suffix`.
+    - We continue to use `document.documentElement.style.setProperty` to dynamically set CSS variables based on the input element's `name` attribute and its `value` + `suffix`.
 - Event Listener Setup:
     - The `forEach` loop iterates over all `input` elements with class `controls`.
     - Each input element has an event listener attached to the `input` event, which triggers `handleUpdate`.
     - This setup ensures that CSS variables are updated immediately as the user interacts with the input elements.
-
+- Event Handling Change:
+    - Instead of using specific events like `change` or `mousemove`, which trigger only when the value changes or mouse moves, we use the `input` event. 
+    - The `input` event triggers whenever the value of an input changes, regardless of how it changes (keyboard input, mouse dragging, etc.).
 
 ### Lessons
 ___
@@ -108,7 +108,7 @@ ___
 2. Event Listeners:
     - These are like ears that listen for actions, such as moving a slider or clicking a color picker. When they hear something, they tell JavaScript to update the webpage.
 
-3. Teamwork:
+3. Our setup:
     - HTML, CSS, and JavaScript work together to create a webpage. HTML shows where things go, CSS makes them look good, and JavaScript makes them interactive.
 
 ### Conclusion
