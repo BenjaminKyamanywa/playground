@@ -29,6 +29,10 @@ body {
   padding: 2rem 2rem;
 }
 
+h2 {
+  padding: 1.5rem 1.5rem;
+}
+
 .highlight {
   color: var(--base-color);
 }
