@@ -1,19 +1,10 @@
 /* General styles */
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
   font-size: 62.5%;
 }
 
@@ -21,19 +12,73 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  background: #f6f7fb;
+}
+
+/* .container {} */
+
+.container .clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.clock-numbers span {
+  position: absolute;
+  inset: 12px;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--i)));
+}
+
+.clock-numbers span b {
+  font-size: 2rem;
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--i)));
+}
+
+.container .clock-hands {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+}
+
+/* 
+===================================
+
+Delete all this CSS below
+
+===================================
+*/
+
+
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
+  min-height: 100vh;
+  text-align: center;
   font-size: 2rem;
   margin: 0;
-  min-height: 100vh;
   color: #fff;
-}
+} */
 
-.container {
-  margin: 0 auto;
+/* .container {
   position: relative;
-}
+} */
 
-.clock {
+/* .clock {
   width: 50rem;
   height: 50rem;
   border: 0.25rem solid #fff;
@@ -46,20 +91,38 @@ body {
     inset 0 0 0 3px #EFEFEF,
     inset 0 0 10px black,
     0 0 10px rgba(0,0,0,0.2);
-  /* display pointer to center of page */
+
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.clock-face {
+/* .clock-face {
   position: relative;
   width: 100%;
   height: 100%;
-  transform: translateY(-3px); /* account for height of clock hands */
-}
+  transform: translateY(-3px); 
+} */
 
-.hand {
+/* .container .clock-hands {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .clock-hands .hand {
+  position: absolute;
+  height: 130px;
+  width: 4px;
+  bottom: 0;
+  border-radius: 25px;
+  transform-origin: bottom;
+} */
+
+/* .hand {
   top: 50%;
   width: 50%;
   height: 6px;
@@ -70,34 +133,44 @@ body {
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
+} */
 
-.hand.min-hand {
+/* .hand.min-hand {
   height: 120px;
-  width: 5px;
-  background: var(--black-color);
-}
-.hand.hour-hand {
-  height: 100px;
-  width: 8px;
-  background: var(--black-color);
-}
+  width: 4px;
+  transform: rotate(45deg);
+  background: pink;
+} */
 
-.clock-numbers span {
+/* .hand.hour-hand {
+  height: 100px;
+  width: 7px;
+  transform: rotate(360deg);
+  background: red;
+} */
+
+/* .hand.second-hand {
+  height: 150px;
+  width: 3px;
+  transform: rotate(90deg);
+  background: cyan;
+} */
+
+/* .clock-numbers span {
   position: absolute;
   transform: rotate(calc(30deg * var(--i)));
   inset: 1px;
   text-align: center;
-}
+} */
 
 /* rotate individual clock numbers 180deg to be readable */
-.clock-numbers span b {
+/* .clock-numbers span b {
   transform: rotate(calc(-30deg * var(--i)));
   display: inline-block;
-}
+} */
 
 /* display pointer of clock*/
-.clock::before {
+/* .clock::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -105,5 +178,5 @@ body {
   border-radius: 50%;
   background: #fff;
   z-index: 2;
-}
+} */
 
