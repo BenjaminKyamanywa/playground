@@ -12,5 +12,6 @@ Below is a list of projects created to refine my skills across various programmi
 |[Feature Card section](https://codepen.io/benjaminkyamanywa/pen/bGZgMmN)  | Portfolio template site | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_004)
 |[Simple hero area](https://codepen.io/benjaminkyamanywa/pen/oNVWQgO)  | Hero homepage area | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_005)
 |[Drum Kit](https://codepen.io/benjaminkyamanywa/pen/XWLmxKM)  | A Virtual Drum Kit for users to make music with sounds | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/01%20-%20Drum%20Kit)
+|[Clock](https://codepen.io/benjaminkyamanywa/pen/oNrxqBQ)  | An analog clock | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/02%20-%20Clock)
 
 
