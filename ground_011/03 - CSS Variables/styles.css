@@ -9,7 +9,7 @@
 }
 
 :root {
-  --base-color: #ffc600;
+  --base: #ffc600;
   --spacing: 10px;
   --blur: 10px;
 }
@@ -45,13 +45,12 @@ input {
   width: 100px;
 }
 
-.img {
-  background-color: var(--base);
+img {
+  background: var(--base);
   background-size: cover;
   padding: var(--spacing);
-  filter: blur(var(--blur));
+  /* filter: blur(var(--blur)); */
   width: 100%;
 }
-
 
 
