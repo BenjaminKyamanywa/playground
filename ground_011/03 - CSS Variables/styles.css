@@ -9,7 +9,7 @@
 }
 
 :root {
-  --base: #ffc600;
+  --base: #fb00ff;
   --spacing: 10px;
   --blur: 10px;
 }
@@ -49,7 +49,7 @@ img {
   background: var(--base);
   background-size: cover;
   padding: var(--spacing);
-  /* filter: blur(var(--blur)); */
+  filter: blur(var(--blur));
   width: 100%;
 }
 
