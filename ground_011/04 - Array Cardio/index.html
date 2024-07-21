@@ -38,11 +38,27 @@
       'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
     ];
 
+
+    // Additional Arrays
+    let users = [
+    { name: 'John', age: 25, occupation: 'gardener' },
+    { name: 'Lenny', age: 51, occupation: 'programmer' },
+    { name: 'Andrew', age: 43, occupation: 'teacher' },
+    { name: 'Peter', age: 81, occupation: 'teacher' },
+    { name: 'Anna', age: 47, occupation: 'programmer' },
+    { name: 'Albert', age: 76, occupation: 'programmer' },
+]
+
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-    const bornIn1500 = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600)
+    const bornIn1500 = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
 
     console.table(bornIn1500);
+
+    // 1.1 From users array return users whose age is greater than 40 and whose occupation is equal to programmer
+    const programmer = users.filter(user => user.age >= 40 && user.occupation === 'programmer');
+
+    console.table(programmer);
 
     // Array.prototype.map()
     // 2. Give us an array of the inventor first and last names
