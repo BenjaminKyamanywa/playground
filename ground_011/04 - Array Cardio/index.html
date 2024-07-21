@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Cardio [Javascript Array Methods]</title>
+</head>
+<body>
+  <main>
+    <h2>We are going to practise Javascript Array methods.</h2>
+    <p>Results are returned in the console.</p>
+  </main>
+  <script>
+
     // data we can work with
 
     const inventors = [
@@ -26,7 +40,13 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-    
+    const bornIn1500 = inventors.filter((inventor) => {
+      if (inventor.year >= 1500 && inventor.year < 1600) {
+        return true;
+      }
+    })
+
+    console.table(bornIn1500);
 
     // Array.prototype.map()
     // 2. Give us an array of the inventor first and last names
@@ -37,3 +57,9 @@
 
 
     // 5. Sort the inventors by years lived
+
+
+
+  </script>
+</body>
+</html>
