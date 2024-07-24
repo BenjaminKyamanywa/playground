@@ -23,7 +23,15 @@ const displayProducts = (products) => {
 
 // display and filter categories
 const displayCategories = () => {
-  
+  const categories = [...new Set(products.map(({category}) => category))];
+  const categoriesContainer = document.getElementById('categories');
+  categoriesContainer.innerHTML = '';
+
+  categories.forEach((category) => {
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    
+  });
 }
 
 // call functions
