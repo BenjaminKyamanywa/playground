@@ -21,4 +21,10 @@ const displayProducts = (products) => {
   });
 }
 
+// display and filter categories
+const displayCategories = () => {
+  
+}
+
+// call functions
 displayProducts(products);
