@@ -15,6 +15,10 @@ const displayProducts = (products) => {
 
   // forEach to add a product to each list item
   products.forEach(product => {
-    
+    const li = document.createElement('li');
+    li.textContent = `${product.name} - $${product.price}`;
+    productList.appendChild(li);
   });
 }
+
+displayProducts(products);
