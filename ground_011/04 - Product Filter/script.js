@@ -30,9 +30,30 @@ const displayCategories = () => {
   categories.forEach((category) => {
     const label = document.createElement('label');
     const input = document.createElement('input');
-    
+    input.type = 'checkbox';
+    input.value = category;
+    input.addEventListener('change', filterProducts)
+    label. appendChild(input);
+    label.appendChild(document.createTextNode(category));
+    label.classList.add('category');
+    categoriesContainer.appendChild(label);
   });
 }
 
+// filter products
+const filterProducts = () => {
+  const selectedCategories = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(input => input.value);
+
+  // return all products if no category is selected
+  if (selectedCategories.length === 0) {
+    displayProducts(products);
+    return;
+  }
+
+  const filteredProducts = products.filter(product => selectedCategories.includes(product.category));
+  displayProducts(filteredProducts);
+}
+
 // call functions
+displayCategories();
 displayProducts(products);
