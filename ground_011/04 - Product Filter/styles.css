@@ -62,3 +62,13 @@ li:last-child {
   margin-right: 5px;
 }
 
+#totals {
+  margin-top: 20px;
+}
+
+#totals h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 10px;
+}
+
