@@ -45,11 +45,32 @@ We'll go over our variable styles and base styling for our page.
 ```CSS
 
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Additional styles for checkboxes, product list items, etc. */
+
 
 ```
 
-- 
-
+- `.container`: Provides structure and styling to the main content area.
+- `h1, ul, li`: Ensures consistent typography and list styling.
 
 ### Uncovering our JS
 
