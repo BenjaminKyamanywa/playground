@@ -13,7 +13,7 @@ const displayProducts = (products) => {
   const productList = document.getElementById('product-list');
   productList.innerHTML = '';
 
-  // forEach to add a product to each list item
+  // forEach to create a list item for each product
   products.forEach(product => {
     const li = document.createElement('li');
     li.textContent = `${product.name} - $${product.price}`;
@@ -23,10 +23,12 @@ const displayProducts = (products) => {
 
 // display and filter categories
 const displayCategories = () => {
+  // create an array of unique categories by mapping over products
   const categories = [...new Set(products.map(({category}) => category))];
   const categoriesContainer = document.getElementById('categories');
   categoriesContainer.innerHTML = '';
 
+  // iterate over each category in the categories array to create a checkbox and label
   categories.forEach((category) => {
     const label = document.createElement('label');
     const input = document.createElement('input');
