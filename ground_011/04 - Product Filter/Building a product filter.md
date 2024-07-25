@@ -103,9 +103,33 @@ const displayProducts = (products) => {
 
 ```JS
 
+// Function to display categories and handle filtering using ES6 arrow function
+const displayCategories = () => {
+  const categories = [...new Set(products.map(({ category }) => category))];
+  const categoriesContainer = document.getElementById('categories');
+  categoriesContainer.innerHTML = '';
 
+  categories.forEach(category => {
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.value = category;
+    input.addEventListener('change', filterProducts);
+    label.appendChild(input);
+    label.appendChild(document.createTextNode(category));
+    label.classList.add('category');
+    categoriesContainer.appendChild(label);
+  });
+
+  setTimeout(() => calculateTotals(products), 0); // Calculate initial totals for all products
+};
 
 ```
+
+- This function generates checkboxes for product categories and sets up event listeners for filtering.
+- It utilizes `map` and `forEach` to extract unique categories from products and create checkboxes dynamically.
+- Allows users to filter products by categories, improving usability and functionality of the application.
+
 
 
 - `Map` usage:
