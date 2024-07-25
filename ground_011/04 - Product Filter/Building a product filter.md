@@ -1,8 +1,8 @@
 # 🏪 Building a products filter
 
-We are going to explore some Javascript array functions by building a products filter application using HTML, CSS and Javascript. 
+We are going to explore some Javascript array functions by building a products filter application using HTML, CSS and Javascript. We'll utilize the `map`, `filter`, `reduce` ES6 functions understanding their roles and implementations.
 
-Imagine we inventory products in a store and we need to filter through them based on the categories we store.
+Imagine we have inventory products in a store and we need to filter through them based on the categories.
 
 ## Topics
 - [A glimpse into our markup](#a-glimpse-into-our-markup)
@@ -19,10 +19,20 @@ Here we set up our structure for the inputs and labels for the variables we'll b
 
 ```HTML
 
+<div class="container">
+      <h1>Inventory</h1>
+      <div id="categories"></div>
+      <h2>Product List</h2>
+      <ul id="product-list"></ul>
+      <h2>Total Prices</h2>
+      <div id="totals"></div>
+    </div>
 
 ```
 
-- 
+- `<div id="categories">`: Displays checkboxes for filtering product categories.
+- `<ul id="product-list">`: Lists products based on selected categories.
+- `<div id="totals">`: Container for displaying total prices dynamically.
 
 
 ### CSS Highlights
