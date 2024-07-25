@@ -130,7 +130,26 @@ const displayCategories = () => {
 - It utilizes `map` and `forEach` to extract unique categories from products and create checkboxes dynamically.
 - Allows users to filter products by categories, improving usability and functionality of the application.
 
+```JS
 
+// Function to filter products based on selected categories using ES6 arrow function
+const filterProducts = () => {
+  const selectedCategories = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(input => input.value);
+  
+  if (selectedCategories.length === 0) {
+    displayProducts(products);
+    return;
+  }
+
+  const filteredProducts = products.filter(product => selectedCategories.includes(product.category));
+  displayProducts(filteredProducts);
+};
+
+```
+
+- This funciton filters products based on selected categories from checkboxes
+- We use `filter` to create a subset of `products` that match selected categories.
+- It enables dynamic product filtering without page reloads, providing users with tailored content based on chosen options.
 
 - `Map` usage:
     - `categories.map(({ category }) => category)`: Maps over the `products` array to extract unique categories using destructuring and object shorthand notation.
