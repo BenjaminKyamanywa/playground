@@ -14,7 +14,7 @@ A project where users can filter inventory of items based on categories
 
 ## ✍️ Article
 
-- [Lessons learned]()
+- [Lessons learned](./Building%20a%20product%20filter.md)
 
 ## 📸 Screenshot
 
