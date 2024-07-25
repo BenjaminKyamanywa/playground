@@ -85,11 +85,11 @@ We'll uncover our Javascript and go over our funtions, event listeners and the v
 ```
 
 - Main Item:
-    - Sub item
+    - `categories.map(({ category }) => category)`: Maps over the `products` array to extract unique categories using destructuring and object shorthand notation.
 - Main item:
-    - Sub item
+    - `products.filter(product => selectedCategories.includes(product.category))`: Filters the `products` array based on selected categories using the `includes` method to check if the product's category is included in `selectedCategories`.
 - Main item:
-    - Sub item
+    - `products.reduce((totals, product) => { ... }, {})`: Reduces the `products` array to calculate total prices for each category by accumulating prices into an object (`totals`).
 
 ### Lessons
 ___
@@ -106,7 +106,7 @@ ___
 ### Conclusion
 ___
 
-We explored how HTML, CSS, and JavaScript collaborate to create an interactive filter of products inventory. 
+We explored how HTML, CSS, and JavaScript collaborate to create an interactive filter of products inventory. By exploring the functions map, filter, and reduce, you've gained insight into their practical applications in manipulating data and enhancing user experiences on the web.
 
 Remember, with these tools and dedicated practice, we can create amazing designs on the web!
 
