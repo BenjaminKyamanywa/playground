@@ -8,7 +8,7 @@ Imagine we have inventory products in a store and we need to filter through them
 - [A glimpse into our markup](#a-glimpse-into-our-markup)
 - [CSS Highlights](#css-highlights)
 - [Uncovering our JS](#uncovering-our-js)
-- [Lessons](#lessons)
+- [Key Take Aways](#key-take-aways)
 - [Conclusion](#conclusion)
 
 ### A glimpse into our markup
@@ -20,13 +20,13 @@ Here we set up our structure for the categories, product list and totals we'll b
 ```HTML
 
 <div class="container">
-      <h1>Inventory</h1>
-      <div id="categories"></div>
-      <h2>Product List</h2>
-      <ul id="product-list"></ul>
-      <h2>Total Prices</h2>
-      <div id="totals"></div>
-    </div>
+    <h1>Inventory</h1>
+    <div id="categories"></div>
+    <h2>Product List</h2>
+    <ul id="product-list"></ul>
+    <h2>Total Prices</h2>
+    <div id="totals"></div>
+</div>
 
 ```
 
@@ -43,7 +43,6 @@ We'll go over our key styles for our app.
 
 
 ```CSS
-
 
 .container {
   max-width: 800px;
@@ -66,7 +65,6 @@ ul {
 
 /* Additional styles for checkboxes, product list items, etc. */
 
-
 ```
 
 - `.container`: Provides structure and styling to the main content area.
@@ -80,7 +78,7 @@ We'll uncover in depth our Javascript and go over our functions, event listeners
 
 ```JS
 
-// Function to display products using ES6 arrow function
+// Function to display products 
 const displayProducts = (products) => {
   const productList = document.getElementById('product-list');
   productList.innerHTML = '';
@@ -97,13 +95,13 @@ const displayProducts = (products) => {
 
 ```
 
-- This function dynamically displays a list of products on the webpage.
+- `displayProducts` function dynamically displays a list of products on the webpage.
 - We iterate through the `products` array using `forEach` to create list items (`<li>`) for each product, showing its name and price.
 - It helps provide real-time product updates based on user interactions (like filtering), enhancing user experience by displaying relevant information dynamically.
 
 ```JS
 
-// Function to display categories and handle filtering using ES6 arrow function
+// Function to display categories and handle filtering 
 const displayCategories = () => {
   const categories = [...new Set(products.map(({ category }) => category))];
   const categoriesContainer = document.getElementById('categories');
@@ -126,13 +124,13 @@ const displayCategories = () => {
 
 ```
 
-- This function generates checkboxes for product categories and sets up event listeners for filtering.
+- `displayCategories` function generates checkboxes for product categories and sets up event listeners for filtering.
 - It utilizes `map` and `forEach` to extract unique categories from products and create checkboxes dynamically.
 - Allows users to filter products by categories, improving usability and functionality of the application.
 
 ```JS
 
-// Function to filter products based on selected categories using ES6 arrow function
+// Function to filter products based on selected categories
 const filterProducts = () => {
   const selectedCategories = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(input => input.value);
   
@@ -147,7 +145,7 @@ const filterProducts = () => {
 
 ```
 
-- This funciton filters products based on selected categories from checkboxes
+- `filterProducts` function filters products based on selected categories from the checkboxes.
 - We use `filter` to create a subset of `products` that match selected categories.
 - It enables dynamic product filtering without page reloads, providing users with tailored content based on chosen options.
 
@@ -191,11 +189,13 @@ const calculateTotals = (products) => {
 
 ```
 
-- Here we compute and displays total prices for each category.
-- We use `reduce` to aggregate prices based on category, creating an object (`categoryTotals`) with cumulative sums.
+- `calculateTotals` function computes and displays total prices for each category.
+- We use `reduce` to aggregate prices based on each category, creating an object (`categoryTotals`) with cumulative sums.
 - This offers a summary of expenses by category, enhancing transparency and decision-making for users.
 
+#### Usage of our Javascript array functions
 
+---
 
 - `Map` usage:
     - `categories.map(({ category }) => category)`: Maps over the `products` array to extract unique categories using destructuring and object shorthand notation.
@@ -204,21 +204,20 @@ const calculateTotals = (products) => {
 - `Reduce` usage:
     - `products.reduce((totals, product) => { ... }, {})`: Reduces the `products` array to calculate total prices for each category by accumulating prices into an object (`totals`).
 
-
-### Lessons
+### Key Take Aways
 ___
 
 1. Functional Iteration:
-    - Functions like `forEach`, `map`, `filter`, and `reduce` facilitate efficient data manipulation and iteration over arrays, enabling dynamic content updates in web applications.
+    - Functions like `forEach`, `map`, `filter`, and `reduce` facilitate efficient data manipulation and iteration over arrays, enabling dynamic content updates in our application.
 
 2. Event-Driven Interaction:
-    - Event listeners (`addEventListener`) paired with functions like `filterProducts` allow for responsive user interactions, such as filtering products based on checkboxes.
+    - Event listeners (`addEventListener`) paired with functions like `filterProducts` allow for responsive user interactions, such as filtering products based on selected checkboxes.
 
 3. Data Transformation:
-    - `map` and `reduce` empower developers to transform and aggregate data flexibly, optimizing performance and enhancing user experience by presenting data in meaningful ways.
+    - `map` and `reduce` empowers us to transform and aggregate data flexibly, optimizing performance and enhancing user experience by presenting data in meaningful ways.
 
 4. Modular Code Structure:
-    - Organizing code into modular functions such as (`displayProducts`, `displayCategories`) promotes maintainability and scalability, making it easier to debug and extend functionality of our products filter app.
+    - Organizing code into modular functions such as (`displayProducts`, `displayCategories`) promotes maintainability and scalability, making it easier to debug and extend functionality of our application.
 
 ### Conclusion
 ___
