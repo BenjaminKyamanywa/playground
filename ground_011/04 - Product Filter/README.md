@@ -18,4 +18,4 @@ A project where users can filter inventory of items based on categories
 
 ## 📸 Screenshot
 
-![Inventory Screenshot](./assets/inventory_screenshot.png)
+![Inventory Screenshot](./assets/product_filter_screenshot.png)
