@@ -1,4 +1,4 @@
-# 🏪 Building a products filter
+# 🏪 Building a products filter using `map`, `filter`, `reduce`
 
 We are going to explore some Javascript array functions by building a products filter application using HTML, CSS and Javascript. We'll utilize the `map`, `filter`, `reduce` ES6 functions understanding their roles and implementations.
 
