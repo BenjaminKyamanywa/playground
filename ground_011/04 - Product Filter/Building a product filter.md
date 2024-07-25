@@ -80,16 +80,41 @@ We'll uncover our Javascript and go over our funtions, event listeners and the v
 
 ```JS
 
+// Function to display products using ES6 arrow function
+const displayProducts = (products) => {
+  const productList = document.getElementById('product-list');
+  productList.innerHTML = '';
+
+  products.forEach(product => {
+    const li = document.createElement('li');
+    li.textContent = `${product.name} - $${product.price}`;
+    productList.appendChild(li);
+  });
+
+  calculateTotals(products); // Calculate totals whenever products are displayed
+};
 
 
 ```
 
-- Main Item:
+- This function dynamically displays a list of products on the webpage.
+- We iterate through the `products` array using `forEach` to create list items (`<li>`) for each product, showing its name and price.
+- It helps provide real-time product updates based on user interactions (like filtering), enhancing user experience by displaying relevant information dynamically.
+
+```JS
+
+
+
+```
+
+
+- `Map` usage:
     - `categories.map(({ category }) => category)`: Maps over the `products` array to extract unique categories using destructuring and object shorthand notation.
-- Main item:
+- `Filter` usage:
     - `products.filter(product => selectedCategories.includes(product.category))`: Filters the `products` array based on selected categories using the `includes` method to check if the product's category is included in `selectedCategories`.
-- Main item:
+- `Reduce` usage:
     - `products.reduce((totals, product) => { ... }, {})`: Reduces the `products` array to calculate total prices for each category by accumulating prices into an object (`totals`).
+
 
 ### Lessons
 ___
