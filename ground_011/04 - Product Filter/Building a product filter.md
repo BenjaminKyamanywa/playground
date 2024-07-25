@@ -15,7 +15,7 @@ Imagine we have inventory products in a store and we need to filter through them
 
 ___
 
-Here we set up our structure for the inputs and labels for the variables we'll be changing.
+Here we set up our structure for the categories, product list and totals we'll be displaying.
 
 ```HTML
 
@@ -39,7 +39,7 @@ Here we set up our structure for the inputs and labels for the variables we'll b
 
 ___
 
-We'll go over our variable styles and base styling for our page.
+We'll go over our key styles for our app.
 
 
 ```CSS
@@ -76,7 +76,7 @@ ul {
 
 ___
 
-We'll uncover our Javascript and go over our funtions, event listeners and the variable changes.
+We'll uncover in depth our Javascript and go over our functions, event listeners and the map, filter and reduce functions.
 
 ```JS
 
