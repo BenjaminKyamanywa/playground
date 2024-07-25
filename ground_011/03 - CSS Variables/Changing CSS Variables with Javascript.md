@@ -118,4 +118,4 @@ We explored how HTML, CSS, and JavaScript collaborate to create an interactive w
 
 Remember, with these tools and a little practice, we can create amazing designs on the web!
 
-You can view the project on Codepen [Here](). 
+You can view the project on Codepen [Here](https://codepen.io/benjaminkyamanywa/pen/gONrKrz). 
