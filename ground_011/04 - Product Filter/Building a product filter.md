@@ -151,6 +151,52 @@ const filterProducts = () => {
 - We use `filter` to create a subset of `products` that match selected categories.
 - It enables dynamic product filtering without page reloads, providing users with tailored content based on chosen options.
 
+```JS
+
+// Function to calculate and display total price for each category
+const calculateTotals = (products) => {
+  const totalsContainer = document.getElementById('totals');
+
+  // Check if totalsContainer exists before manipulating it
+  if (!totalsContainer) {
+    console.error('Element with id "totals" not found.');
+    return;
+  }
+
+  totalsContainer.innerHTML = '';
+  const categoryTotals = products.reduce((totals, product) => {
+    if (!totals[product.category]) {
+      totals[product.category] = 0;
+    }
+    totals[product.category] += product.price;
+    return totals;
+  }, {});
+
+  // Display totals with headings for each category
+  Object.keys(categoryTotals).forEach(category => {
+    const categoryTotalContainer = document.createElement('div');
+    categoryTotalContainer.classList.add('category-total');
+
+    const heading = document.createElement('h3');
+    heading.textContent = `${category}:`;
+
+    const total = document.createElement('p');
+    total.textContent = `$${categoryTotals[category]}`;
+
+    categoryTotalContainer.appendChild(heading);
+    categoryTotalContainer.appendChild(total);
+    totalsContainer.appendChild(categoryTotalContainer);
+  });
+};
+
+```
+
+- Here we compute and displays total prices for each category.
+- We use `reduce` to aggregate prices based on category, creating an object (`categoryTotals`) with cumulative sums.
+- This offers a summary of expenses by category, enhancing transparency and decision-making for users.
+
+
+
 - `Map` usage:
     - `categories.map(({ category }) => category)`: Maps over the `products` array to extract unique categories using destructuring and object shorthand notation.
 - `Filter` usage:
@@ -162,14 +208,17 @@ const filterProducts = () => {
 ### Lessons
 ___
 
-1. Main Item:
-    - Sub item
+1. Functional Iteration:
+    - Functions like `forEach`, `map`, `filter`, and `reduce` facilitate efficient data manipulation and iteration over arrays, enabling dynamic content updates in web applications.
 
-2. Main Item:
-    - Sub item
+2. Event-Driven Interaction:
+    - Event listeners (`addEventListener`) paired with functions like `filterProducts` allow for responsive user interactions, such as filtering products based on checkboxes.
 
-3. Main Item:
-    - Sub Item
+3. Data Transformation:
+    - `map` and `reduce` empower developers to transform and aggregate data flexibly, optimizing performance and enhancing user experience by presenting data in meaningful ways.
+
+4. Modular Code Structure:
+    - Organizing code into modular functions such as (`displayProducts`, `displayCategories`) promotes maintainability and scalability, making it easier to debug and extend functionality of our products filter app.
 
 ### Conclusion
 ___
