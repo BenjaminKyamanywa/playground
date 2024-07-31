@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
   text-align: center;
   min-height: 100vh;
   background-color: #ffffff;
@@ -54,3 +55,22 @@ add style for opening quote ion icon
 
 */
 
+.quote-author {
+  margin-top: 12px;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Media Queries */
+
+/* tablet and smaller devices */
+@media screen and (max-width: 1000px) {
+    .quote-container {
+      margin: auto 10px;
+    }
+
+    .quote-text {
+      font-size: 2.5rem;
+    }
+}
