@@ -56,11 +56,13 @@ add style for opening quote ion icon
 */
 
 .quote-author {
-  margin-top: 12px;
+  margin-top: 15px;
   font-size: 2rem;
   font-style: italic;
   font-weight: 400;
 }
+
+
 
 /* Media Queries */
 
@@ -71,6 +73,6 @@ add style for opening quote ion icon
     }
 
     .quote-text {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
 }
