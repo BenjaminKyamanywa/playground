@@ -21,5 +21,5 @@ const getQuotes = async = async () => {
   }
 }
 
-// call newQoute function on page load
-newQuote();
+// call getQuotes function on page load
+getQuotes();
