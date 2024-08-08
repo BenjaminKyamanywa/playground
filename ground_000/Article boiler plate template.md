@@ -41,11 +41,11 @@ We'll go over our key styles.
 - 
 - 
 
-### Uncovering our JS
+### Uncovering our Javascript
 
 ___
 
-We'll uncover in depth our Javascript with utilisation of our functions.
+We'll uncover in depth our script and the functions we utilize in our project.
 
 ```JS
 
@@ -77,7 +77,7 @@ We'll uncover in depth our Javascript with utilisation of our functions.
 - 
 
 
-#### Usage of Javascript `async`, `try`, `catch`
+#### Usage of Javascript add `functions you want to highlight here...`
 
 ---
 
@@ -109,9 +109,7 @@ ___
 ### Conclusion
 ___
 
-In this article, we explored a practical example of building a random quote generator using HTML, CSS, and JavaScript. We focused on several key JavaScript concepts: async, fetch, and try/catch.
-
-Learning these concepts helps us build more robust and interactive web applications. We gain the ability to handle asynchronous tasks, manage errors effectively, and integrate external data seamlessly.
+Add conclusion intro here...
 
 Remember, with these tools and dedicated practice, we can create amazing apps on the web!
 
