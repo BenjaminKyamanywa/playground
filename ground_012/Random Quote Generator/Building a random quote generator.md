@@ -219,10 +219,13 @@ getQuotes();
 
 - `async` usage:
     - Tells JavaScript a function will perform tasks that take time (like fetching data) without blocking other code.
+    - It's used with the `getQuotes` and tells JavaScript that the function will include asynchronous operations, such as making a network request to get quotes from an external API.
 - `fetch` usage:
-    - A way to request data from the internet, like asking a server to send back information.
+    - We use it to make HTTP requests (like asking a server for data). It’s how we get data from the internet in a web application.
+    - It's used in the `getQuotes` function to request quote data from an API. The API is like a service on the web that provides the quotes.
 - `try` and `catch` usage:
     - A safety net for handling errors. `try` attempts an operation, and `catch` deals with any problems that occur during that attempt.
+    - Inside `getQuotes` function, try is used to attempt to fetch quotes from the API. If something goes wrong during this process (like a network issue), the catch block catches the error and allows us to handle it (for example, by showing an error message).
 
 ### Key Take Aways
 ___
@@ -242,8 +245,10 @@ ___
 ### Conclusion
 ___
 
+In this article, we explored a practical example of building a random quote generator using HTML, CSS, and JavaScript. We focused on several key JavaScript concepts: async, fetch, and try/catch.
 
+Learning these concepts helps us build more robust and interactive web applications. We gain the ability to handle asynchronous tasks, manage errors effectively, and integrate external data seamlessly.
 
 Remember, with these tools and dedicated practice, we can create amazing designs on the web!
 
-You can view the project on Codepen [Here](). 
+You can view the project on Codepen [Here](https://codepen.io/benjaminkyamanywa/pen/WNqEZrq). 
