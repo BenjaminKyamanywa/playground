@@ -14,7 +14,7 @@ Carousel component with multiple user feedback.
 
 ## ✍️ Article
 
-- [Lessons learned]()
+- [Lessons learned](./Building%20a%20carousel%20component.md)
 
 ## 📸 Screenshot
 
