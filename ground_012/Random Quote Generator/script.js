@@ -8,14 +8,14 @@ const loader = document.getElementById('loader');
 
 let apiQuotes = [];
 
-// show loading
-const loading = () => {
+// show loading spinner
+const showLoadingSpinner = () => {
   loader.hidden = false;
   quoteContainer.hidden = true;
 }
 
-// hide loading
-const completeLoading = () => {
+// remove loading spinner
+const removeLoadingSpinner = () => {
   loader.hidden = true;
   quoteContainer.hidden = false;
 }
@@ -23,7 +23,7 @@ const completeLoading = () => {
 // show new Quote 
 const newQuote = () => {
   // show loader
-  loading();
+  showLoadingSpinner();
   // pick random quote from quotes array
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 
@@ -34,7 +34,7 @@ const newQuote = () => {
     authorText.textContent = quote.author;
   }
 
-  // check quote length to determine styling
+  // reduce font size for long quotes
   if (quote.text.length > 40) {
     quoteText.classList.add('long-quote');
   } else {
@@ -43,13 +43,13 @@ const newQuote = () => {
 
   // set quote, hide loader
   quoteText.textContent = quote.text;
-  completeLoading();
+  removeLoadingSpinner();
 }
 
 // Get quotes from API
 const getQuotes = async = async () => {
   // show loader
-  loading();
+  showLoadingSpinner();
   // add URL for our API call 'https://jacintodesign.github.io/quotes-api/data/quotes.json'
   const apiURL = 'https://type.fit/api/quotes';
 
