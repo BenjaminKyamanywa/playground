@@ -1,6 +1,6 @@
 # 📃 Building a random quote generator
 
-In this project we are going to explore utilization of a third party API that generates quotes and users will get a random quote each time. We'll utilize `async` with `try` and `catch` understanding their roles and implementation.
+In this project we are going to explore utilization of a third party API that generates quotes and users will get a random quote each time. We'll utilize `async` with `try` and `catch` and understand their roles and implementation.
 
 ## Topics
 - [Markup Overview](#markup-overview)
