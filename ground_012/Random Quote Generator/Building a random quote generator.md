@@ -42,10 +42,9 @@ Here we set up our structure for the markup. We use id's on our dev elements tha
 
 ```
 
-- `<div id="quote-container">`: 
-- `<div id="quote-text">`:
-- `<div id="new-quote">`:
-
+- `<div id="quote-container">`: Contains all elements of our quote module.
+- `<div id="quote-text">`: Displays the random generated quotes.
+- `<div id="new-quote">`: Triggers a new quote each time a user clicks on it.
 
 ### CSS Highlights
 
@@ -56,84 +55,189 @@ We'll go over our key styles.
 
 ```CSS
 
+.quote-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
 
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
 
 ```
 
-- 
-- 
+- `.quote-container`: Provides our module with styling to display it in the center of the browser.
+- `button`: Ensures consistent styling for our buttons.
 
 ### Uncovering our JS
 
 ___
 
-We'll uncover in depth our Javascript and go over our functions.
+We'll uncover in depth our Javascript utilisation of our functions.
 
 ```JS
 
+// initialize element variables
+const quoteContainer = document.getElementById('quote-container');
+const quoteText = document.getElementById('quote');
+const authorText = document.getElementById('author');
+const twitterBtn = document.getElementById('twitter');
+const newQuoteBtn = document.getElementById('new-quote');
+const loader = document.getElementById('loader');
+const errorMessage = document.getElementById('error-message');
 
+
+let apiQuotes = [];
+
+// show loading spinner
+const showLoadingSpinner = () => {
+  loader.hidden = false;
+  quoteContainer.hidden = true;
+  errorMessage.hidden = true;
+}
+
+// remove loading spinner
+const removeLoadingSpinner = () => {
+  loader.hidden = true;
+  quoteContainer.hidden = false;
+}
+
+// show new Quote 
+const newQuote = () => {
+  // show loader
+  showLoadingSpinner();
+  // pick random quote from quotes array
+  const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+
+  // check if author field is blank and replace with 'Unknown' text
+  if (!quote.author) {
+    authorText.textContent = 'Unknown';
+  } else {
+    authorText.textContent = quote.author;
+  }
+
+  // reduce font size for long quotes
+  if (quote.text.length > 40) {
+    quoteText.classList.add('long-quote');
+  } else {
+    quoteText.classList.remove('long-quote');
+  }
+
+  // set quote, hide loader
+  quoteText.textContent = quote.text;
+  removeLoadingSpinner();
+}
 
 ```
 
-- 
-- 
+- `showLoadingSpinner`: Displays a loading spinner and hides the quote container while data is being fetched.
+- `removeLoadingSpinner`: Hides the loading spinner and displays the quote container once data is successfully loaded.
+- `newQuote`: Selects a random quote from the `apiQuotes` array and updates the `quoteText` and `authorText` elements with the quote's content. Adjusts the font size of the quote text if it’s too long. Also manages the visibility of the loading spinner.
+
+
+```JS
+
+// Get quotes from API
+const getQuotes = async () => {
+  // show loader
+  showLoadingSpinner();
+  // add URL for our API call 'https://jacintodesign.github.io/quotes-api/data/quotes.json'
+  const apiURL = 'https://type.fit/api/quotes';
+
+  try {
+    const response = await fetch(apiURL);
+    // check if response is not okay
+    if (!response.ok) {
+      throw new Error(`HTTP Error! Status: ${response.status}`);
+    }
+
+    apiQuotes = await response.json();
+    newQuote();
+
+  } catch (error) {
+    // Catch error and display error message
+    errorMessage.hidden = false;
+    errorMessage.textContent = `Failed to load quotes: ${error.message}. Please try again later.`;
+    removeLoadingSpinner();
+  }
+}
+
+```
+
+- `getQuotes`: Fetches data from an external API asynchronously using the fetch API.
+- Handles errors gracefully by displaying an error message if the API call fails.
+
 - 
 
 ```JS
 
+// Tweet Quote
+const tweetQuote = () => {
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+  window.open(twitterUrl, '_blank');
+}
 
+// Event listeners
+newQuoteBtn.addEventListener('click', newQuote);
+twitterBtn.addEventListener('click', tweetQuote);
 
-```
-
-- 
-- 
-- 
-
-```JS
-
-
-
-```
-
-- 
-- 
-- 
-
-```JS
-
-
+// call getQuotes function on page load
+getQuotes();
 
 ```
 
-- 
-- 
-- 
+- `tweetQuote`: Constructs a URL to open Twitter with a pre-filled tweet containing the current quote.
+- Opens this URL in a new browser tab for the user to tweet the quote.
+- Event listeners are attached to buttons so that specific functions (`newQuote` and `tweetQuote`) are triggered when the buttons are clicked.
 
-#### Usage of our Javascript array functions
+
+#### Usage of Javascript `async`, `try`, `catch`
 
 ---
 
-- Topic usage:
-    - 
-- Topic usage:
-    - 
-- Topic usage:
-    - 
+- `async` usage:
+    - Tells JavaScript a function will perform tasks that take time (like fetching data) without blocking other code.
+- `fetch` usage:
+    - A way to request data from the internet, like asking a server to send back information.
+- `try` and `catch` usage:
+    - A safety net for handling errors. `try` attempts an operation, and `catch` deals with any problems that occur during that attempt.
 
 ### Key Take Aways
 ___
 
-1. Topic:
-    - 
+1. Efficient DOM Access:
+    - Cache references to DOM elements to optimize performance.
 
-2. Topic :
-    - 
+2. Dynamic Content Handling:
+    - We us JavaScript to update content dynamically based on user actions or data changes.
 
-3. Topic:
-    - 
+3. User Experience:
+    - We manage loading states and provide feedback during asynchronous operations to enhance user satisfaction.
 
-4. Topic:
-    - 
+4. External Interactions:
+    - Use JavaScript to facilitate interactions with external services (e.g., Twitter), enhancing functionality and user engagement.
 
 ### Conclusion
 ___
