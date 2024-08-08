@@ -1,4 +1,4 @@
-# 🏪 Building a random quote generator
+# 📃 Building a random quote generator
 
 
 
@@ -13,7 +13,7 @@
 
 ___
 
-Here we set up our structure for the categories, product list and totals we'll be displaying.
+Here we set up our structure for the markup.
 
 ```HTML
 
@@ -30,7 +30,7 @@ Here we set up our structure for the categories, product list and totals we'll b
 
 ___
 
-We'll go over our key styles for our app.
+We'll go over our key styles.
 
 
 ```CSS
@@ -46,7 +46,7 @@ We'll go over our key styles for our app.
 
 ___
 
-We'll uncover in depth our Javascript and go over our functions, event listeners and the map, filter and reduce functions.
+We'll uncover in depth our Javascript and go over our functions.
 
 ```JS
 
@@ -92,26 +92,26 @@ We'll uncover in depth our Javascript and go over our functions, event listeners
 
 ---
 
-- `Map` usage:
+- Topic usage:
     - 
-- `Filter` usage:
+- Topic usage:
     - 
-- `Reduce` usage:
+- Topic usage:
     - 
 
 ### Key Take Aways
 ___
 
-1. Functional Iteration:
+1. Topic:
     - 
 
-2. Event-Driven Interaction:
+2. Topic :
     - 
 
-3. Data Transformation:
+3. Topic:
     - 
 
-4. Modular Code Structure:
+4. Topic:
     - 
 
 ### Conclusion
