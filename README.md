@@ -6,7 +6,7 @@ Below is a list of projects across various programming principles.
 
 | Name          | Description | Source code
 |-------------- |-------------|-----------
-|[Carousel Component](https://codepen.io/benjaminkyamanywa/pen/abPExVr)  | Feedback Carousel Component | [Link](https://codepen.io/benjaminkyamanywa/pen/abPExVr) 
+|[Carousel Component](https://codepen.io/benjaminkyamanywa/pen/abPExVr)  | Feedback Carousel Component | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_000) 
 |[Static Site](https://codepen.io/benjaminkyamanywa/pen/ZEPbbBx)  | Responsive one page static site | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_001)
 |[Portfolio Template](https://codepen.io/benjaminkyamanywa/pen/rNRWLpx)  | Frontend Developer Portfolio Template | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_003)
 |[Feature Card section](https://codepen.io/benjaminkyamanywa/pen/bGZgMmN)  | Website Feature Card Section | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_004)
