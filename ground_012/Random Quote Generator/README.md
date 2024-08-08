@@ -18,4 +18,4 @@ Random quotes are generated everytime a user clicks on the "Quote" button.
 
 ## 📸 Screenshot
 
-![Quote Generator Screenshot]()
+![Quote Generator Screenshot](./assets/random_quote_generator_screenshot.png)
