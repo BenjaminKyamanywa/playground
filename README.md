@@ -15,6 +15,7 @@ Below is a list of projects across various programming principles.
 |[Clock](https://codepen.io/benjaminkyamanywa/pen/oNrxqBQ)  | An analog clock | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/02%20-%20Clock)
 |[CSS Variables](https://codepen.io/benjaminkyamanywa/pen/gONrKrz)  | Adjust CSS variables with Javascript | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/03%20-%20CSS%20Variables)
 |[Inventory Filter](https://codepen.io/benjaminkyamanywa/pen/mdZrvdr)  | Filter inventory products using Map, Filter, Reduce | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/04%20-%20Product%20Filter)
+|[Random Quote Generator](https://codepen.io/benjaminkyamanywa/pen/WNqEZrq)  | Generate random quotes from third party API | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_012/Random%20Quote%20Generator)
 
 
 
