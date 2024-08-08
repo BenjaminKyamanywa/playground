@@ -1,6 +1,6 @@
-# 🧩 Caraousel Component
+# 🧩 Carousel Component
  
-Carousel component with user feedback.
+Carousel component with multiple user feedback.
 
 ## 🚀 Features
 
@@ -18,4 +18,4 @@ Carousel component with user feedback.
 
 ## 📸 Screenshot
 
-![Carousel Component]()
+![Carousel Component](./assets/carousel_component_screenshot.png)
