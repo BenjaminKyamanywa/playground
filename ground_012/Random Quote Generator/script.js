@@ -23,7 +23,7 @@ const completeLoading = () => {
 // show new Quote 
 const newQuote = () => {
   // show loader
-  loader();
+  loading();
   // pick random quote from quotes array
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 
@@ -49,7 +49,7 @@ const newQuote = () => {
 // Get quotes from API
 const getQuotes = async = async () => {
   // show loader
-  loader();
+  loading();
   // add URL for our API call 'https://jacintodesign.github.io/quotes-api/data/quotes.json'
   const apiURL = 'https://type.fit/api/quotes';
 
