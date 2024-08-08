@@ -5,6 +5,8 @@ const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
+const errorMessage = document.getElementById('error-message');
+
 
 let apiQuotes = [];
 
@@ -12,6 +14,7 @@ let apiQuotes = [];
 const showLoadingSpinner = () => {
   loader.hidden = false;
   quoteContainer.hidden = true;
+  errorMessage.hidden = true;
 }
 
 // remove loading spinner
@@ -47,7 +50,7 @@ const newQuote = () => {
 }
 
 // Get quotes from API
-const getQuotes = async = async () => {
+const getQuotes = async () => {
   // show loader
   showLoadingSpinner();
   // add URL for our API call 'https://jacintodesign.github.io/quotes-api/data/quotes.json'
@@ -55,11 +58,19 @@ const getQuotes = async = async () => {
 
   try {
     const response = await fetch(apiURL);
+    // check if response is not okay
+    if (!response.ok) {
+      throw new Error(`HTTP Error! Status: ${response.status}`);
+    }
+
     apiQuotes = await response.json();
     newQuote();
 
   } catch (error) {
-    // Catch error 
+    // Catch error and display error message
+    errorMessage.hidden = false;
+    errorMessage.textContent = `Failed to load quotes: ${error.message}. Please try again later.`;
+    removeLoadingSpinner();
   }
 }
 

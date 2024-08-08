@@ -106,6 +106,12 @@ button:active {
   100% { transform: rotate(360deg); }
 }
 
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 /* Media Queries */
 
 /* tablet and smaller devices */
