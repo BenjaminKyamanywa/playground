@@ -107,7 +107,7 @@ button:active {
 }
 
 .error-message {
-  color: red;
+  color: #ff0000;
   font-weight: bold;
   font-size: 1.5rem;
 }
