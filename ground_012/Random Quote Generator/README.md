@@ -14,7 +14,7 @@ Random quotes are generated everytime a user clicks on the "Quote" button.
 
 ## ✍️ Article
 
-- [Lessons learned]()
+- [Lessons learned](./Building%20a%20random%20quote%20generator.md)
 
 ## 📸 Screenshot
 
