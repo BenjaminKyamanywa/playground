@@ -224,6 +224,6 @@ ___
 
 We explored how HTML, CSS, and JavaScript collaborate to create an interactive filter of products inventory. By exploring the functions map, filter, and reduce, you've gained insight into their practical applications in manipulating data and enhancing user experiences on the web.
 
-Remember, with these tools and dedicated practice, we can create amazing designs on the web!
+Remember, with these tools and dedicated practice, we can create amazing apps on the web!
 
 You can view the project on Codepen [Here](https://codepen.io/benjaminkyamanywa/pen/mdZrvdr). 

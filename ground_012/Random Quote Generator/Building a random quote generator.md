@@ -13,7 +13,7 @@ In this project we are going to explore utilization of a third party API that ge
 
 ___
 
-Here we set up our structure for the markup. We use id's on our dev elements that we shall add interactivity with Javascript.
+Here we set up our structure for the markup. We use id's on our div elements that we shall later add interactivity with Javascript.
 
 ```HTML
 
@@ -44,7 +44,7 @@ Here we set up our structure for the markup. We use id's on our dev elements tha
 
 - `<div id="quote-container">`: Contains all elements of our quote module.
 - `<div id="quote-text">`: Displays the random generated quotes.
-- `<div id="new-quote">`: Triggers a new quote each time a user clicks on it.
+- `<button id="new-quote">`: Triggers a new quote each time a user clicks on it.
 
 ### CSS Highlights
 
@@ -89,13 +89,13 @@ button:active {
 ```
 
 - `.quote-container`: Provides our module with styling to display it in the center of the browser.
-- `button`: Ensures consistent styling for our buttons.
+- `button` `button:hover` `button:active`: Ensures consistent styling for our buttons.
 
 ### Uncovering our JS
 
 ___
 
-We'll uncover in depth our Javascript utilisation of our functions.
+We'll uncover in depth our Javascript with utilisation of our functions.
 
 ```JS
 
@@ -111,14 +111,12 @@ const errorMessage = document.getElementById('error-message');
 
 let apiQuotes = [];
 
-// show loading spinner
 const showLoadingSpinner = () => {
   loader.hidden = false;
   quoteContainer.hidden = true;
   errorMessage.hidden = true;
 }
 
-// remove loading spinner
 const removeLoadingSpinner = () => {
   loader.hidden = true;
   quoteContainer.hidden = false;
@@ -154,7 +152,7 @@ const newQuote = () => {
 
 - `showLoadingSpinner`: Displays a loading spinner and hides the quote container while data is being fetched.
 - `removeLoadingSpinner`: Hides the loading spinner and displays the quote container once data is successfully loaded.
-- `newQuote`: Selects a random quote from the `apiQuotes` array and updates the `quoteText` and `authorText` elements with the quote's content. Adjusts the font size of the quote text if it’s too long. Also manages the visibility of the loading spinner.
+- `newQuote`: Selects a random quote from the `apiQuotes` array and updates the `quoteText` and `authorText` elements with the quote's content. Adjusts the font size of the quote text if it’s too long and also manages the visibility of the loading spinner.
 
 
 ```JS
@@ -189,8 +187,6 @@ const getQuotes = async () => {
 - `getQuotes`: Fetches data from an external API asynchronously using the fetch API.
 - Handles errors gracefully by displaying an error message if the API call fails.
 
-- 
-
 ```JS
 
 // Tweet Quote
@@ -208,7 +204,7 @@ getQuotes();
 
 ```
 
-- `tweetQuote`: Constructs a URL to open Twitter with a pre-filled tweet containing the current quote.
+- `tweetQuote`: Constructs a URL to open Twitter with a pre-filled tweet containing the current quote and author.
 - Opens this URL in a new browser tab for the user to tweet the quote.
 - Event listeners are attached to buttons so that specific functions (`newQuote` and `tweetQuote`) are triggered when the buttons are clicked.
 
@@ -225,7 +221,7 @@ getQuotes();
     - It's used in the `getQuotes` function to request quote data from an API. The API is like a service on the web that provides the quotes.
 - `try` and `catch` usage:
     - A safety net for handling errors. `try` attempts an operation, and `catch` deals with any problems that occur during that attempt.
-    - Inside `getQuotes` function, try is used to attempt to fetch quotes from the API. If something goes wrong during this process (like a network issue), the catch block catches the error and allows us to handle it (for example, by showing an error message).
+    - Inside `getQuotes` function, `try` is used to attempt to fetch quotes from the API. If something goes wrong during this process (like a network issue), the `catch` block catches the error and allows us to handle it (for example, by showing an error message).
 
 ### Key Take Aways
 ___
@@ -234,7 +230,7 @@ ___
     - Cache references to DOM elements to optimize performance.
 
 2. Dynamic Content Handling:
-    - We us JavaScript to update content dynamically based on user actions or data changes.
+    - We use JavaScript to update content dynamically based on user actions or data changes.
 
 3. User Experience:
     - We manage loading states and provide feedback during asynchronous operations to enhance user satisfaction.
@@ -249,6 +245,6 @@ In this article, we explored a practical example of building a random quote gene
 
 Learning these concepts helps us build more robust and interactive web applications. We gain the ability to handle asynchronous tasks, manage errors effectively, and integrate external data seamlessly.
 
-Remember, with these tools and dedicated practice, we can create amazing designs on the web!
+Remember, with these tools and dedicated practice, we can create amazing apps on the web!
 
 You can view the project on Codepen [Here](https://codepen.io/benjaminkyamanywa/pen/WNqEZrq). 
