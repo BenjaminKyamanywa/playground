@@ -4,7 +4,7 @@ Carousel component with multiple user feedback.
 
 ## 🚀 Features
 
-- **Click through testimonials**: Users click through to see different testimonials with pagination.
+- **Cycle testimonials**: Users click through to see different testimonials with pagination.
 - **Auto rotate testimonials**: Testimonials auto rotate.
 - **Drag through testimonials**: Users can click to drag through different testimonials.
 
