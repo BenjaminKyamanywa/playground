@@ -1,6 +1,6 @@
 # 🧩 Carousel Component
  
-Carousel component with multiple user feedback. You can view the project on Codepen [Here](). 
+Carousel component with multiple user feedback. You can view the project live on Codepen [Here](). 
 
 ## 🚀 Features
 
