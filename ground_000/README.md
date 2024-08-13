@@ -7,6 +7,7 @@ Carousel component with multiple user feedback. You can view the project live on
 - **Cycle testimonials**: Users click through to see different testimonials with pagination.
 - **Auto rotate testimonials**: Testimonials auto rotate.
 - **Drag through testimonials**: Users can click to drag through different testimonials.
+- **Adapted for different screen sizes**: Responsive to different screen sizes.
 
 
 ## 🛠️ Technologies
