@@ -116,4 +116,4 @@ Learning these concepts helps us build more robust and interactive web applicati
 
 Remember, with these tools and dedicated practice, we can create amazing apps on the web!
 
-You can view the project on Codepen [Here](). 
+You can view the project on Codepen [Here](https://codepen.io/benjaminkyamanywa/pen/abPExVr). 
