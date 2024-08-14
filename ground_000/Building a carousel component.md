@@ -170,9 +170,8 @@ const images = [
 
 ```JS
 
-  /**
-   * Update carousel content and pagination dots based on the currentIndex.
-   */
+  
+  // Update carousel content and pagination dots based on the currentIndex.
   const updateCarousel = () => {
       imgElement.src = images[currentIndex];
       textElement.textContent = testimonials[currentIndex].text;
@@ -185,9 +184,8 @@ const images = [
       });
   };
 
-  /**
-   * Show the next slide in the carousel.
-   */
+  
+  //Show the next slide in the carousel.
   const showNext = () => {
       currentIndex = (currentIndex + 1) % images.length;
       updateCarousel();
@@ -201,9 +199,7 @@ const images = [
 
 ```JS
 
-/**
-   * Show the previous slide in the carousel.
-   */
+  //Show the previous slide in the carousel.   
   const showPrevious = () => {
       currentIndex = (currentIndex - 1 + images.length) % images.length;
       updateCarousel();
