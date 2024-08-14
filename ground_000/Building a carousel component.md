@@ -1,6 +1,7 @@
 # 🧩 Building a carousel component
 
-Add project introduction here...
+In this guide, we’ll walk through building a carousel component using HTML, CSS, and JavaScript. This carousel will display images and testimonials with navigation buttons and pagination dots with some automation.
+
 
 ## Topics
 - [Markup Overview](#markup-overview)
