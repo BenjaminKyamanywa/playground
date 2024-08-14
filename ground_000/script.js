@@ -21,12 +21,12 @@ const images = [
       },
       {
           text: `"A pleasure to work with! They delivered exactly what we needed, on time and with great quality. Highly recommended for any web development needs."`,
-          author: "Jane Smith",
+          author: "Jane Ndana",
           job: "Creative Director at Media Inc."
       },
       {
           text: `"Exceptional work from start to finish. The attention to detail and creativity were beyond our expectations. We look forward to future collaborations."`,
-          author: "Esther Culler",
+          author: "Esther Mutali",
           job: "CEO at Innovation Labs"
       }
   ];
