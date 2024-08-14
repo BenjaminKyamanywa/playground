@@ -1,6 +1,6 @@
 # 🧩 Building a carousel component
 
-In this guide, we’ll walk through building a carousel component using HTML, CSS, and JavaScript. This carousel will display images and testimonials with navigation buttons and pagination dots with some automation.
+In this guide, we’ll walk through building a carousel component using HTML, CSS, and JavaScript. This carousel will display images and testimonials with navigation buttons and pagination with some automation.
 
 
 ## Topics
@@ -165,7 +165,7 @@ const images = [
 ```
 
 - `images` and `testimonials`: Arrays we use to hold data that's used to dynamically add images and testimonials to the carousel components.
-- `imgElement`, `textElement`, `authorElement`, `jobElement`, `dots`: Constant variables we use to cache dom elements that we manipulate in the browser.
+- `imgElement`, `textElement`, `authorElement`, `jobElement`, `dots`: Constant variables we use to cache DOM elements that we manipulate in the browser.
 - `currentIndex`: We update this based on the current slide that's showing based on it's index.
 
 ```JS
@@ -235,7 +235,6 @@ const images = [
 - `showPrevious`: Moves to the previous slide by decrementing `currentIndex` and wrapping around.
 - `setInterval`: Automatically changes the slide every 4 seconds.
 - `clearInterval`: Stops automatic sliding when the mouse hovers over the carousel.
-
 
 ### Key Take Aways
 ___
