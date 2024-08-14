@@ -196,41 +196,69 @@ const images = [
 ```
 
 - `updateCarousel`: Updates the image, text, and pagination dots based on the `currentIndex`. This function is called whenever the slide changes.
-- 
+- `showNext`: Moves to the next slide by incrementing `currentIndex` and wrapping around using modulo operation.
+
 
 ```JS
 
+/**
+   * Show the previous slide in the carousel.
+   */
+  const showPrevious = () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateCarousel();
+  };
 
+  // Event listeners for navigation buttons
+  document.querySelector('.btn--right').addEventListener('click', showNext);
+  document.querySelector('.btn--left').addEventListener('click', showPrevious);
+
+  // Initial update to display the first slide
+  updateCarousel();
+
+  // Automatic slide every 4 seconds
+  let autoSlideInterval = setInterval(showNext, 4000);
+
+  // Pause automatic sliding on mouse hover
+  document.querySelector('.carousel').addEventListener('mouseenter', () => {
+      clearInterval(autoSlideInterval);
+  });
+
+  // Resume automatic sliding when mouse leaves
+  document.querySelector('.carousel').addEventListener('mouseleave', () => {
+      autoSlideInterval = setInterval(showNext, 5000);
+  });
+});
 
 ```
 
-- 
-- 
-- 
-
+- `showPrevious`: Moves to the previous slide by decrementing `currentIndex` and wrapping around.
+- `setInterval`: Automatically changes the slide every 4 seconds.
+- `clearInterval`: Stops automatic sliding when the mouse hovers over the carousel.
 
 
 ### Key Take Aways
 ___
 
-1. Topic:
-    - 
+1. Dynamic Content Updates:
+    - We change the content displayed in the carousel (image, text, and pagination dots) using the `updateCarousel` function. This function updates the image source and text based on the `currentIndex`. It ensures that the carousel reflects the current slide's information.
+    - Understanding how to dynamically update content allows us to change what users see without reloading the page, creating a smoother and more engaging user experience.
 
-2. Topic:
-    - 
+2. Event Handling for User Interaction:
+    - Event listeners are used to respond to user actions. In the carousel script, we add event listeners to the navigation buttons so that when a user clicks the left or right button, the carousel moves to the previous or next slide.
+    - It lets us define what should happen when users interact with elements on the page, such as clicking buttons or hovering over items.
 
-3. Topic:
-    - 
+3. Automatic Sliding with Intervals:
+    - We use `setInterval` to automatically advance the carousel every 4 seconds. This means the carousel changes slides on its own without user input, creating a seamless and automated experience.
+    - Automating tasks with intervals helps improve user experience by keeping content fresh and engaging without requiring manual actions. It also introduces concepts like timing functions, which are useful for various interactive elements in web development.
 
-4. Topic:
-    - 
 
 ### Conclusion
 ___
 
-In this article, we explored a practical example of building a random quote generator using HTML, CSS, and JavaScript. We focused on several key JavaScript concepts: async, fetch, and try/catch.
+In this article, we explored a practical example of building a carousel component using HTML, CSS, and JavaScript. We focused on several key JavaScript concepts: DOM manipulation, Event Handling, and Dynamic content updates.
 
-Learning these concepts helps us build more robust and interactive web applications. We gain the ability to handle asynchronous tasks, manage errors effectively, and integrate external data seamlessly.
+Learning these concepts helps us build more robust and interactive web applications.
 
 Remember, with these tools and dedicated practice, we can create amazing apps on the web!
 
