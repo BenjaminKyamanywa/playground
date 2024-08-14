@@ -2,6 +2,11 @@
 
 In this guide, we’ll walk through building a carousel component using HTML, CSS, and JavaScript. This carousel will display images and testimonials with navigation buttons and pagination dots with some automation.
 
+<iframe height="300" style="width: 100%;" scrolling="no" title="carousel_component" src="https://codepen.io/benjaminkyamanywa/embed/abPExVr?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/benjaminkyamanywa/pen/abPExVr">
+  carousel_component</a> by Benjamin Kyamanywa (<a href="https://codepen.io/benjaminkyamanywa">@benjaminkyamanywa</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 ## Topics
 - [Markup Overview](#markup-overview)
