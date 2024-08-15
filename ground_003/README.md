@@ -4,7 +4,7 @@ Here we build a portfolio template that can be used to showcase projects. You ca
 
 ## 🚀 Features
 
-- **Modularized sections**: Sections to highlight content such as description, projects, contact me.
+- **Modularized sections**: Sections to highlight content such as description, projects and tech stack.
 - **Responsive Design**: The site adopts to different screen widths without breaking changes to the layout.
 
 ## 🛠️ Technologies
