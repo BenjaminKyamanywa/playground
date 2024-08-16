@@ -23,4 +23,4 @@ A use login module that requires a name and email with validation.
 
 ## 📸 Screenshot
 
-![Login page](./assets/login_page_wireframe.png)
+![Login page](./img/login_page_wireframe.png)
