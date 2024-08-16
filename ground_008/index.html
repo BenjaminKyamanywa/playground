@@ -219,8 +219,15 @@
   <!-- footer section -->
   <footer class="footer-section">
     <div class="container footer-holder">
-      <p class="copyright">Copyright &copy; by YoursTruly</p>
+      <p class="copyright">Copyright &copy; <span class="copyright-year">2015</span> by YoursTruly</p>
     </div>
   </footer>
+  <!-- Script -->
+   <script>
+    // auto update copyright year to current year
+    const year = document.querySelector(".copyright-year");
+    year.innerHTML = new Date().getFullYear();
+
+   </script>
 </body>
 </html>
