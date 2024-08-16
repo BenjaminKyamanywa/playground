@@ -1,6 +1,6 @@
 # Homepage Hero - Showcase Hero Landing Page Area!
  
-A simple hero homepage area to highlight the site's important offerings.
+A simple hero homepage area to highlight the site's important offerings. You can view the project live on Codepen [Here](https://codepen.io/benjaminkyamanywa/pen/oNVWQgO). 
 
 ## 🚀 Features
 
