@@ -1,6 +1,6 @@
 # Omnnifood - A healthy meal delivered to your door, every single day
  
-A healthy food delivery landing page for a restaurant. You can view the project live on Codepen [Here](https://codepen.io/benjaminkyamanywa/pen/oNVWQgO). 
+A healthy food delivery landing page for a restaurant.  
 
 ## 🚀 Features
 
