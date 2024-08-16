@@ -11,6 +11,7 @@ Below is a list of projects across various programming principles.
 |[Portfolio Template](https://codepen.io/benjaminkyamanywa/pen/rNRWLpx)  | Frontend Developer Portfolio Template | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_003)
 |[Feature Card section](https://codepen.io/benjaminkyamanywa/pen/bGZgMmN)  | Website Feature Card Section | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_004)
 |[Hero Section](https://codepen.io/benjaminkyamanywa/pen/oNVWQgO)  | Homepage hero area section component | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_005)
+|[Travel Website](https://codepen.io/benjaminkyamanywa/pen/gONoeWZ)  | Travel Website landing page | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_008)
 |[Drum Kit](https://codepen.io/benjaminkyamanywa/pen/XWLmxKM)  | A Virtual Drum Kit for users to make music with sounds | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/01%20-%20Drum%20Kit)
 |[Clock](https://codepen.io/benjaminkyamanywa/pen/oNrxqBQ)  | A web analog clock | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/02%20-%20Clock)
 |[CSS Variables](https://codepen.io/benjaminkyamanywa/pen/gONrKrz)  | Adjust CSS variables with Javascript | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/03%20-%20CSS%20Variables)

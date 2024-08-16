@@ -10,6 +10,7 @@ A healthy food delivery landing page for a restaurant.
 
 - `HTML`
 - `CSS`
+- `Javascript`
 
 ## 💡 Improvements
 

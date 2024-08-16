@@ -11,6 +11,7 @@ Static travel website. You can view the project live on Codepen [Here](https://c
 
 - `HTML`
 - `CSS`
+- `Javascript`
 
 ## 📸 Screenshot
 
