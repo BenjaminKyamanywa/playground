@@ -1,6 +1,6 @@
 # Login Module
  
-A use login module that requires a name and email with validation.
+A use login module that requires a name and email with validation and shows any errors in case of wrong information.
 
 ## 🚀 Features
 
