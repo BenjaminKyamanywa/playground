@@ -80,7 +80,7 @@ console.log(notice);
 
 ### If else
 
-We use if..else statements to control flow of our applications based on conditions.
+We use if else statements to control flow of our applications based on conditions. We utilize them to simplify our application condition structure.
 
 ```ts
 
@@ -93,6 +93,32 @@ const holidaySeason = false;
 
 
 function approveMoreWork() {
+  // check if person doesn't have the skills
+  if (!hasTheSkills) {
+    // go home
+    return;
+  }
+
+  // if they have the skills, check if they can work overtime
+  // const canWorkOvertime = hoursWorked > 8 && totalOvertime < 1; [let's convert this to a function]
+
+  // check if they can't work overtime
+  if (!canWorkOvertime) {
+    // go home
+    return;
+  }
+
+  // check if it's a holiday season or if it's Tuesday
+  if (holidaySeason || isTuesday) {
+    // approve work
+  } else {
+    // go home
+  }
+
+  function hasOverTimeHours(hoursWorked: number, totalOvertime: number): boolean {
+    const hasHours = hoursWorked > 8 && totalOvertime < 1;
+    return hasHours;
+  }
 
 }
 
