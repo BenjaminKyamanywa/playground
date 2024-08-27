@@ -3,6 +3,8 @@
 - Topics
     - [Increment](#increment)
     - [Functions](#functions)
+    - [Template strings](#template-strings)
+    - [If else](#if-else)
 
 ### Increment
 
@@ -76,3 +78,22 @@ console.log(notice);
 
 ```
 
+### If else
+
+We use if..else statements to control flow of our applications based on conditions.
+
+```ts
+
+// evaluate if a person is approved to work overtime at a job
+const hasTheSkills = true;
+const isTuesday = true;
+const hoursWorked = 9;
+const totalOvertime = 0.5;
+const holidaySeason = false;
+
+
+function approveMoreWork() {
+
+}
+
+```
