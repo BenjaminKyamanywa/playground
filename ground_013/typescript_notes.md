@@ -43,9 +43,17 @@ Most basic unit of a program that contains execution instructions. They help us 
 
 ```ts
 
+// example function blueprint
 function call (color, sound, word) { // params for function execution to be successfull
   // execution for a successfull call
 }
+
+// greeting function
+function greet(message) {
+  console.log(`Hello ${message}`)
+}
+
+greet('Typescript');
 
 ```
 
