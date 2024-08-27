@@ -48,12 +48,31 @@ function call (color, sound, word) { // params for function execution to be succ
   // execution for a successfull call
 }
 
+
+
+```
+
+### Template strings
+
+Allow us to substitute data within a string.
+
+```ts
+
 // greeting function
 function greet(message) {
   console.log(`Hello ${message}`)
 }
 
 greet('Typescript');
+
+// number of people
+
+const children = 2;
+const adults = 4;
+const attendingPeople = children + adults;
+const notice = `There are ${attendingPeople} at the townhall meeting`;
+
+console.log(notice);
 
 ```
 
