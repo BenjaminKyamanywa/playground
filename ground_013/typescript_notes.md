@@ -1,13 +1,14 @@
 ## 🛠️ Typescript Reference
 
 - Topics
-    - Increment
+    - [Increment](#increment)
+    - [Functions](#functions)
 
 ### Increment
 
 In Typescript we have the capability to increment our numbers just like we would in normal javascipt.
 
-```typescript
+```ts
 
 // 'prefix' increment 'variable++' e.g a++
 n = 5;
@@ -25,7 +26,8 @@ n = 5;
 const t = --n;
 assert.equal(t, 4); 
 
-// arithmetic assignment
+// arithmetic assignment RECOMMENDED as we don't get unexpected bugs -> '+=, -=, *=, /=, %='
+
 n = 5;
 n += 5;
 assert.equal(n, 10); // add 5 to n hence we end up 10
@@ -34,3 +36,16 @@ n -= 5;
 assert.equal(n, 5); // remove 5 from n hence we end up 5
 
 ```
+
+### Functions
+
+Most basic unit of a program that contains execution instructions. They help us encapsulate logic that we can reuse anywhere in a program.
+
+```ts
+
+function call (color, sound, word) { // params for function execution to be successfull
+  // execution for a successfull call
+}
+
+```
+
