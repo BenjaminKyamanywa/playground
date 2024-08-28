@@ -6,6 +6,7 @@
     - [Template strings](#template-strings)
     - [If else](#if-else)
     - [Type Aliases](#type-aliases)
+    - [Object Types](#object-types)
 
 ### Increment
 
@@ -147,4 +148,32 @@ function printName(name: PersonName) {
   console.log(`Name is ${name}`);
 }
 
+printName(myName);
+
 ```
+
+### Object Types
+
+Similar to type aliases, however we have to define what the type actually looks like instead of using a pre-existing type like in our above example of Type Aliases.
+
+```ts
+
+// define our object type
+type Coordinate = {
+  x: number;
+  y: number;
+};
+
+// create instance of object type
+const origin: Coordinate = {
+  x: 0,
+  y: 0
+}
+
+const xPosition = origin.x;
+const yPosition = origin.y;
+
+```
+
+### Arrow Functions and Function Expressions
+
