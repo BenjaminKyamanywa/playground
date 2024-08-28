@@ -5,6 +5,7 @@
     - [Functions](#functions)
     - [Template strings](#template-strings)
     - [If else](#if-else)
+    - [Type Aliases](#type-aliases)
 
 ### Increment
 
@@ -86,7 +87,7 @@ We use if else statements to control flow of our applications based on condition
 
 // evaluate if a person is approved to work overtime at a job
 const hasTheSkills = true;
-const isTuesday = true;
+const day = 'tuesday';
 const hoursWorked = 9;
 const totalOvertime = 0.5;
 const holidaySeason = false;
@@ -100,19 +101,26 @@ function approveMoreWork() {
   }
 
   // if they have the skills, check if they can work overtime
-  // const canWorkOvertime = hoursWorked > 8 && totalOvertime < 1; [let's convert this to a function]
+  // const canWorkOvertime = hoursWorked > 8 && totalOvertime < 1; [let's convert this to a function called hasOverTimeHours()]
 
   // check if they can't work overtime
-  if (!canWorkOvertime) {
+  if (!hasOverTimeHours(hoursWorked, totalOvertime)) {
     // go home
     return;
   }
 
   // check if it's a holiday season or if it's Tuesday
-  if (holidaySeason || isTuesday) {
-    // approve work
-  } else {
+  if (!isBusyDay(day, holidaySeason)) {
     // go home
+    return;
+  } 
+
+  // approve work
+
+}
+
+  function isBusyDay(day: string, holidaySeason: boolean): boolean {
+    return holidaySeason || day === 'tuesday';
   }
 
   function hasOverTimeHours(hoursWorked: number, totalOvertime: number): boolean {
@@ -120,6 +128,23 @@ function approveMoreWork() {
     return hasHours;
   }
 
+```
+
+### Type Aliases
+
+It simply means providing another name for something that already exists.
+
+```ts
+
+// create type alias PersonName as a string. 'PersonName' & 'string' can be interchangably used.
+type PersonName = string;
+
+const myName: PersonName = 'John Doe';
+const alsoMyName: string = 'John Doe';
+
+// example self documenting code
+function printName(name: PersonName) {
+  console.log(`Name is ${name}`);
 }
 
 ```
