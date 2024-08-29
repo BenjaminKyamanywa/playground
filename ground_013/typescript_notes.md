@@ -2,6 +2,7 @@
 
 - Topics
     - [Types](#types)
+    - [Variables](#variables)
     - [Increment](#increment)
     - [Functions](#functions)
     - [Template strings](#template-strings)
@@ -14,7 +15,17 @@
 
 Bridge the gap between what computers understand and what humans understand. Computers can execute types to binary code and humans can write them in a human readable version.
 
+### Variables
 
+We utilize variables to help us assign useful names to data while automatically keeping track of where they exist in memory.
+
+```ts
+
+const home = 'Georgia'; // can't re-assign data. We can still change the value within a const binding but we can't assign entirely new data to it.
+let message = 'hello'; // allows us to re-assign data 
+var house = 'bangalow'; // never use this. It's from old JS and can cause unexpected behavior.
+
+```
 
 ### Increment
 
