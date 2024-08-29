@@ -1,12 +1,20 @@
 ## 🛠️ Typescript Reference
 
 - Topics
+    - [Types](#types)
     - [Increment](#increment)
     - [Functions](#functions)
     - [Template strings](#template-strings)
     - [If else](#if-else)
     - [Type Aliases](#type-aliases)
     - [Object Types](#object-types)
+    - [Arrow Functions and Function expressions](#arrow-functions-and-function-expressions)
+
+### Types
+
+Bridge the gap between what computers understand and what humans understand. Computers can execute types to binary code and humans can write them in a human readable version.
+
+
 
 ### Increment
 
@@ -177,3 +185,9 @@ const yPosition = origin.y;
 
 ### Arrow Functions and Function Expressions
 
+
+
+```ts
+
+
+```
