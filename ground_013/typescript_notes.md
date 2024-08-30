@@ -1,15 +1,15 @@
 ## 🛠️ Typescript Reference
 
 - Topics
-    - [Types](#types)
-    - [Variables](#variables)
-    - [Increment](#increment)
-    - [Functions](#functions)
-    - [Template strings](#template-strings)
-    - [If else](#if-else)
-    - [Type Aliases](#type-aliases)
-    - [Object Types](#object-types)
-    - [Arrow Functions and Function expressions](#arrow-functions-and-function-expressions)
+  - [Types](#types)
+  - [Variables](#variables)
+  - [Increment](#increment)
+  - [Functions](#functions)
+  - [Template strings](#template-strings)
+  - [If else](#if-else)
+  - [Type Aliases](#type-aliases)
+  - [Object Types](#object-types)
+  - [Arrow Functions and Function expressions](#arrow-functions-and-function-expressions)
 
 ### Types
 
@@ -196,7 +196,7 @@ const yPosition = origin.y;
 
 ### Arrow Functions and Function Expressions
 
-
+We utilize arrow functions and function expressions when we are writing out our logic.
 
 ```ts
 
