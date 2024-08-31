@@ -11,6 +11,7 @@
   - [Object Types](#object-types)
   - [Arrow Functions and Function expressions](#arrow-functions-and-function-expressions)
   - [Arrays and Objects](#arrays-and-objects)
+  - [Tuples](#tuples)
 
 ### Types
 
@@ -274,5 +275,25 @@ const links = [microsoft, typescript];
 const urlTypescript = links[1].url;
 
 console.log(urlTypescript);
+
+```
+
+### Tuples 
+
+These allow us to have multiple data types unlike an array where we can have one data type. Although however we cant' store a lot of different data. 
+
+For example below we are going to create a book with title and a publish year using a tuple in typescript.
+
+```ts
+
+// we define our tuple data types
+type Title = string;
+type PublishYear = number;
+
+// we create our book using a tuple
+type Book = [Title, PublishYear];
+
+// create a sample book
+const sampleBook: Book = ["Richest Man in Babylon", 1926];
 
 ```
