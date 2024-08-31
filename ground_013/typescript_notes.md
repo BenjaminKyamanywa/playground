@@ -10,6 +10,7 @@
   - [Type Aliases](#type-aliases)
   - [Object Types](#object-types)
   - [Arrow Functions and Function expressions](#arrow-functions-and-function-expressions)
+  - [Arrays and Objects](#arrays-and-objects)
 
 ### Types
 
@@ -242,5 +243,36 @@ function calculate(fn: calculationFn, lhs: number, rhs: number): number {
 
 console.log(calculate(arrowSum, 5, 6));
 console.log(calculate(sub, 10,3));
+
+```
+
+### Arrays and Objects
+
+We can store objects within arrays and access them easily as well.
+
+```ts
+
+type Link = {
+  title: string;
+  url: string; 
+}
+
+const microsoft = {
+  title: "microsoft",
+  url: "microsoft.com"
+}
+
+const typescript = {
+  title: "typescript",
+  url: "typescript.com"
+}
+
+// utilize array indexing to access microsoft or typescript array elements from links
+const links = [microsoft, typescript];
+
+// use dot notation to access typescript url 
+const urlTypescript = links[1].url;
+
+console.log(urlTypescript);
 
 ```
