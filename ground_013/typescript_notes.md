@@ -198,7 +198,13 @@ const yPosition = origin.y;
 
 We utilize arrow functions and function expressions when we are writing out our logic.
 
+Function expression is a function that is assigned to a variable.
+
 ```ts
 
+// function expression
+const sum = function(lhs: number, rhs: number): number {
+  return lhs + rhs;
+}
 
 ```
