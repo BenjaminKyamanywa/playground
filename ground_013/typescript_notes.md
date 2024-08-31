@@ -296,4 +296,19 @@ type Book = [Title, PublishYear];
 // create a sample book
 const sampleBook: Book = ["Richest Man in Babylon", 1926];
 
+console.log(sample[0]);
+
+```
+
+### Modules
+
+Allow us to take functions, variables and package them. They don't have a size limit. It's better to make smaller modules that have a single purpose or that perform small related tasks. Writing modules with a singular goal in mind helps them organized and much simpler to work with.
+
+```ts
+
+// export module function to add
+export function sum(lhs: number, rhs: number): number {
+  return lhs + rhs;
+}
+
 ```
