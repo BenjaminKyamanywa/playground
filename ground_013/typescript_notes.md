@@ -216,12 +216,31 @@ Arrow function is a function that deon't need the the 'function' key word.
 
 ```ts
 
-// arrow function
+// function expression with arrow function syntax 
 const arrowSum = (lhs: number, rhs: number): number => {
   return lhs + rhs;
 }
 
 const ten = arrowSum(5,7);
 console.log(ten);
+
+// subtraction function
+const sub = (lhs: number, rhs: number): number => {
+  return lhs - rhs;
+}
+
+// calling a function within another function
+type calculationFn = (lhs: number, rhs: number) => number;
+
+function calculate(fn: calculationFn, lhs: number, rhs: number): number {
+  const result = fn(lhs, rhs);
+  if (result === 7) {
+    console.log('You win extra');
+  }
+  return result;
+}
+
+console.log(calculate(arrowSum, 5, 6));
+console.log(calculate(sub, 10,3));
 
 ```
