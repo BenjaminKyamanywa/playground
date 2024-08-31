@@ -12,6 +12,7 @@
   - [Arrow Functions and Function expressions](#arrow-functions-and-function-expressions)
   - [Arrays and Objects](#arrays-and-objects)
   - [Tuples](#tuples)
+  - [Modules](#modules)
 
 ### Types
 
