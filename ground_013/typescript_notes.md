@@ -207,4 +207,21 @@ const sum = function(lhs: number, rhs: number): number {
   return lhs + rhs;
 }
 
+const two = sum(2, 5);
+console.log(two);
+
+```
+
+Arrow function is a function that deon't need the the 'function' key word.
+
+```ts
+
+// arrow function
+const arrowSum = (lhs: number, rhs: number): number => {
+  return lhs + rhs;
+}
+
+const ten = arrowSum(5,7);
+console.log(ten);
+
 ```
