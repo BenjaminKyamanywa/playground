@@ -377,4 +377,12 @@ p.translate(-5, -5); // utilize the class method to change transalation by -5 fo
 
 ```
 
+### Interfaces
+
+An interface is like a contract, it specificies what needs to be done but doesn't specify how it needs to get done.
+
+One way to use it is to implement it for a class. When we do so the class must implement all the properties and methods of the interface, failure to do so would result in a compile error.
+
+
+
 
