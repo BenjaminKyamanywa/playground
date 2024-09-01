@@ -16,6 +16,7 @@
     - [Modules](#modules)
   - Intermediate
     - [Classes](#classes)
+    - [Interfaces](#interfaces)
 
 ### Types
 
@@ -384,5 +385,22 @@ An interface is like a contract, it specificies what needs to be done but doesn'
 One way to use it is to implement it for a class. When we do so the class must implement all the properties and methods of the interface, failure to do so would result in a compile error.
 
 
+```ts
 
+// interface example
+interface Area {
+  area(): number;
+}
+
+// class 
+class Rectangle implements Area {
+  length: number = 1;
+  width: number = 1;
+  
+  area(): number {
+    return this.length * this.width;
+  }
+}
+
+```
 
