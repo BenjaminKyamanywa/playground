@@ -338,6 +338,23 @@ const red = new Color();
 red.r = 255; // set the color red  to 255.
 const redValue = red.r; // read what the red value is equivalent to.
 
+// example with constructor usage
+class Dimension = {
+  length: number;
+  width: number;
+  height: number
+
+  // define our constructor
+  constructor() {
+    // this keyword helps us instantiate our constructors for each class property
+    this.length = 0;
+    this.width = 0;
+    this.height = 0;
+  }
+}
+
+
+
 ```
 
 
