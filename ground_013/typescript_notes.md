@@ -441,6 +441,11 @@ rect.perimeter();
 // an array object with both a rectangle and circle
 const objectsWithArea: Area[] = [rect, circ];
 
+// return area for both rectangle and circle
+for (let i = 0; i < objectsWithArea.length; i++) {
+  console.log(objectsWithArea[i].area());
+}
+
 
 ```
 
