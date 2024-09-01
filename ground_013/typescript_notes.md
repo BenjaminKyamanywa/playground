@@ -327,7 +327,7 @@ Provide a way to tightly associate code and data together into a single unit. Th
 ```ts
 
 // create a class: blueprint of what we want to define with  our class.
-class Color = {
+class Color {
   r: number = 0;
   g: number = 0;
   b: number = 0;
@@ -339,7 +339,7 @@ red.r = 255; // set the color red  to 255.
 const redValue = red.r; // read what the red value is equivalent to.
 
 // example with constructor usage
-class Dimension = {
+class Dimension {
   length: number;
   width: number;
   height: number
@@ -347,13 +347,33 @@ class Dimension = {
   // define our constructor
   constructor() {
     // this keyword helps us instantiate our constructors for each class property
-    this.length = 0;
-    this.width = 0;
-    this.height = 0;
+    this.length = 1;
+    this.width = 1;
+    this.height = 1;
   }
 }
 
+const one = new Dimension();
 
+class Point {
+  x: number;
+  y: number;
+
+  // class constructor
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+  }
+
+  // class method
+  translate(x: number, y: number) {
+    this.x += x;
+    this.y += y;
+  }
+}
+
+const p = new Point(5, 5);
+p.translate(-5, -5); // utilize the class method to change transalation by -5 for both x and y.
 
 ```
 
