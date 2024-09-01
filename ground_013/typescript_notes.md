@@ -387,20 +387,30 @@ One way to use it is to implement it for a class. When we do so the class must i
 
 ```ts
 
-// interface example
+// interface area example
 interface Area {
   area(): number;
 }
 
-// class 
-class Rectangle implements Area {
+// interface perimeter example
+interface Perimeter {
+  perimeter(): number;
+}
+
+// class implementation of interfaces
+class Rectangle implements Area, Perimeter {
   length: number = 1;
   width: number = 1;
   
   area(): number {
     return this.length * this.width;
   }
+
+  perimiter(): number {
+    return 2 * (this.length + this.width);
+  }
 }
 
 ```
 
+ 
