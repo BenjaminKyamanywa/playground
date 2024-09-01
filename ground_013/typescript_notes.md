@@ -324,5 +324,20 @@ Provide a way to tightly associate code and data together into a single unit. Th
 - `Properties`: Are like variables, allow to maintain data within a class.
 - `Methods`: Are like functions, allow to operate on propeties of a class.
 
+```ts
+
+// create a class: blueprint of what we want to define with  our class.
+class Color = {
+  r: number = 0;
+  g: number = 0;
+  b: number = 0;
+}
+
+// create a class instance: actual class definition.
+const red = new Color();
+red.r = 255; // set the color red  to 255.
+const redValue = red.r; // read what the red value is equivalent to.
+
+```
 
 
