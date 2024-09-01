@@ -1,18 +1,21 @@
 ## 🛠️ Typescript Reference
 
 - Topics
-  - [Types](#types)
-  - [Variables](#variables)
-  - [Increment](#increment)
-  - [Functions](#functions)
-  - [Template strings](#template-strings)
-  - [If else](#if-else)
-  - [Type Aliases](#type-aliases)
-  - [Object Types](#object-types)
-  - [Arrow Functions and Function expressions](#arrow-functions-and-function-expressions)
-  - [Arrays and Objects](#arrays-and-objects)
-  - [Tuples](#tuples)
-  - [Modules](#modules)
+  - Basics
+    - [Types](#types)
+    - [Variables](#variables)
+    - [Increment](#increment)
+    - [Functions](#functions)
+    - [Template strings](#template-strings)
+    - [If else](#if-else)
+    - [Type Aliases](#type-aliases)
+    - [Object Types](#object-types)
+    - [Arrow Functions and Function expressions](#arrow-functions-and-function-expressions)
+    - [Arrays and Objects](#arrays-and-objects)
+    - [Tuples](#tuples)
+    - [Modules](#modules)
+  - Intermediate
+    - [Classes](#classes)
 
 ### Types
 
@@ -313,3 +316,13 @@ export function sum(lhs: number, rhs: number): number {
 }
 
 ```
+
+### Classes
+
+Provide a way to tightly associate code and data together into a single unit. The unit consists of properties and methods.
+
+- `Properties`: Are like variables, allow to maintain data within a class.
+- `Methods`: Are like functions, allow to operate on propeties of a class.
+
+
+
