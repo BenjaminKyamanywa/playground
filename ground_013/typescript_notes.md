@@ -22,6 +22,12 @@
 
 Bridge the gap between what computers understand and what humans understand. Computers can execute types to binary code and humans can write them in a human readable version.
 
+```ts
+
+type PersonName = string;
+
+```
+
 ### Variables
 
 We utilize variables to help us assign useful names to data while automatically keeping track of where they exist in memory.
@@ -410,6 +416,31 @@ class Rectangle implements Area, Perimeter {
     return 2 * (this.length + this.width);
   }
 }
+
+// class merges area and perimter
+type AreaAndPerimeter = Area & Perimeter;
+
+class Circle implements AreaAndPerimeter {
+  radius: number = 4;
+
+  area(): number {
+    return Math.PI * this.radius ** 2;
+  }
+
+  perimter(): number {
+    return 2 * Math.PI this.radius;
+  }
+}
+
+// create a new rectangle
+const rect = new Rectangle()
+const circ = new Circle()
+rect.area();
+rect.perimeter();
+
+// an array object with both a rectangle and circle
+const objectsWithArea: Area[] = [rect, circ];
+
 
 ```
 
