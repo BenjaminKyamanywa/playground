@@ -18,6 +18,7 @@
     - [Classes](#classes)
     - [Interfaces](#interfaces)
     - [Iterators for...of](#iterators-for-of)
+    - [Map Data Type](#map-data-type)
 
 ### Types
 
@@ -549,7 +550,20 @@ const testScores: Map<Name, Score> = new Map();
 // insert value into the map
 testSccores.set("Alice", 95);
 testSccores.set("Bob", 85);
+testSccores.set("Carol", 75);
+
+// iterate over our testScores map
+for (const [name, score] of testScores) {
+  console.log(`${name} score is ${score}`);
+}
+
+// iterate over only the keys
+for (const name of testScores.keys()) { }
+
+// iterate over only the values
+for (const score of testScores.values()) { }
 
 
 ```
+
 
