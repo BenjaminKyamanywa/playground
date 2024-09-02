@@ -673,4 +673,33 @@ function calculateArea(shape: Shape): number {
   throw new Error("unknown shape");
 }
 
+const square: Shape = { kind: "square", size: 5 };
+const circle: Shape = { kind: "circle", radius: 2 };
+
 ```
+
+### Optional Fields
+
+```ts
+
+type Warranty = "standard" | "extended";
+
+// function to return what should be displayed for each warranty
+function warrantyInfo(warranty: Warranty): String {
+  switch (warranty) {
+    case "standard":
+      return "90 day warranty";
+    case "extended":
+      return "180 day extended warranty";
+  }
+}
+
+interface LineItem {
+  name: string;
+  quantity: number;
+  warranty?: Warranty; // we use question mark to set this proprty as optional
+}
+
+```
+
+### Optional Chaining
