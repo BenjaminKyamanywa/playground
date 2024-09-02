@@ -17,6 +17,7 @@
   - Intermediate
     - [Classes](#classes)
     - [Interfaces](#interfaces)
+    - [Iterators for...of](#iterators-for-of)
 
 ### Types
 
@@ -390,6 +391,7 @@ An interface is like a contract, it specificies what needs to be done but doesn'
 
 One way to use it is to implement it for a class. When we do so the class must implement all the properties and methods of the interface, failure to do so would result in a compile error.
 
+- Interface example with methods
 
 ```ts
 
@@ -449,4 +451,69 @@ for (let i = 0; i < objectsWithArea.length; i++) {
 
 ```
 
- 
+- Interface example with properties.
+
+`Note`: It's better to use interfaces whenever we have objects because we get better error messages and it's possible to extend them if we need to.
+
+```ts
+
+interface CustomerInfo {
+  name: string;
+}
+
+class Customer implements CustomerInfo {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+
+// recommended to use interfaces instead of 'type' for objects
+interface Address {
+  street: string;
+  city: string
+}
+
+// for demo purposes only, it's recommended to use interface for objects because we get better error messages and it's possible to extend them if we need to.
+type LocalAddress {
+  street: string;
+  city: string
+}
+
+function printAddress(address: Address) {
+  console.log(`Street Name: ${address.street}, City: {address.city}`);
+}
+
+// make a new city
+const addr = {
+  street: "name",
+  city: "sample"
+}
+
+// call our address function
+printAddress(addr);
+
+```
+
+### Iterators for of
+
+These allow us to loop through arrays, objects, collections handling the looping for us.
+
+```ts
+
+const abc = ['a', 'b', 'c'];
+
+// c-style loop (for loop)
+for (let i = 0; i < abc.length; i++) {
+  console.log(abc[i]);
+}
+
+// iterator loop for of
+for (const letter of abc) {
+  console.log(letter);
+}
+
+```
+
+### Map Data Type
