@@ -19,6 +19,10 @@
     - [Interfaces](#interfaces)
     - [Iterators for...of](#iterators-for-of)
     - [Map Data Type](#map-data-type)
+    - [Exceptions](#exceptions)
+    - [Type Assertions](#type-assertions)
+    - [Union Types](#union-types)
+    - [Type predicates](#type-predicates)
 
 ### Types
 
@@ -563,7 +567,110 @@ for (const name of testScores.keys()) { }
 // iterate over only the values
 for (const score of testScores.values()) { }
 
+```
+
+### Exceptions
+
+We utilize exceptions to handle instances when unexpected errors happen in our code base.
+
+```ts
+
+function divide(lhs: number, rhs: number) {
+  if (rhs === 0){
+    throw new Error("Cannot divide by zero");
+  }
+
+  return lsh / rhs;
+}
+
+
+try {
+    const a = divide(10, 2);
+    console.log(a);
+    // our error will happen here and we log our error message
+    const b = divide(4, 0);
+    console.log(b);
+} catch (e) {
+    console.erro(`${e}`);
+}
 
 ```
 
+### Type Assertions
 
+We use them to tell Typescipt that our data is of a certain type.
+
+```ts
+
+// initialize our greeting variable
+const greeting: unknown = "hello";
+
+// we utilize our assertion
+const greet = greeting as string;
+
+```
+
+### Union Types
+
+Offer a way to specify that more than one type is acceptable.
+
+```ts
+
+// set union type
+type Color = "red" | "green" | "blue";
+
+const r: Color = "red";
+
+```
+
+### Type predicates
+
+These help us to set up advanced guards for our data.
+
+```ts
+// typeguard: mainly helpful with primitive types. On our own interfaces or objects they don't even work.
+type StrOrNum = string | number;
+function sample(data: StrOrNum) {
+  if (typeof data === "string") { // typecheck at runtime of the typeof data 
+    // ...code 
+  } else if (typeof data === "number") {
+    // ...code
+  }
+}
+
+// type predicate: helps us check for arbitrary objects that we create
+interface Square {
+  kind: "square";
+  size: number;
+}
+
+interface Circle {
+  kind: "circle";
+  radius: number;
+}
+
+// new union alias type
+type Shape = Square | Circle;
+
+// create type predicate: always return a boolean
+function isSquare(shape: Shape): shape is Square {
+  return shape.kind === "square";
+}
+
+function isCircle(shape: Shape): shape is Circle {
+  return shape.kind === "circle";
+}
+
+// use our Square predicate
+function calculateArea(shape: Shape): number {
+  if (isSquare(shape)) {
+    return shape.size ** 2; // will give us the area of a square
+  }
+  if (isCircle(shape)) {
+    return Math.PI * shape.radius ** 2;
+  }
+
+  throw new Error("unknown shape");
+}
+
+```
