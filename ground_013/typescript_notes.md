@@ -514,6 +514,24 @@ for (const letter of abc) {
   console.log(letter);
 }
 
+// iterating over objact properteis
+
+const nums = {
+  one: 1,
+  two: 2,
+  three: 3
+}
+
+// keyof - takes the properies in 'nums' and allows them to be used as an index or a key into the object.
+// typeof - looks at the type of 'nums', it sees the three properties we have and their types as numbers.
+let property: keyof typeof nums;
+
+for (const property in nums) {
+  console.log(property);
+  // access the data at each of the properties
+  console.log(`${nums[property]}`);
+}
+
 ```
 
 ### Map Data Type
