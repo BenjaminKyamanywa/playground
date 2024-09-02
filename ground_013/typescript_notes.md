@@ -526,7 +526,7 @@ const nums = {
 // typeof - looks at the type of 'nums', it sees the three properties we have and their types as numbers.
 let property: keyof typeof nums;
 
-for (const property in nums) {
+for (const property in nums) { // calculated at runtime when we use for...in with objects. Hence if anything modifies our object at runtime, it may cause undesirable behavior.
   console.log(property);
   // access the data at each of the properties
   console.log(`${nums[property]}`);
@@ -535,3 +535,4 @@ for (const property in nums) {
 ```
 
 ### Map Data Type
+
