@@ -536,3 +536,20 @@ for (const property in nums) { // calculated at runtime when we use for...in wit
 
 ### Map Data Type
 
+A map is a datastructure that associates one piece of data with another piece of data. Maps use the data association to make data access much faster than with an array. They load data immediately based on the association.
+
+```ts
+
+type Name = string;
+type Score = number;
+
+//                    KEY,  VALUE
+const testScores: Map<Name, Score> = new Map();
+
+// insert value into the map
+testSccores.set("Alice", 95);
+testSccores.set("Bob", 85);
+
+
+```
+
