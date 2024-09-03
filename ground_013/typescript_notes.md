@@ -829,3 +829,57 @@ fetchUserData(1)
   .catch((e) => console.error(e));
 
 ``` 
+
+### Unit testing
+
+Testing allows us to confirm that our code works correctly in ideal circumstances and ensures our code behaves as expected when things go wrong.
+
+Unit testing allows us to test individual units of code to ensure proper program behaviors. We can test individual units of a function or methods of a class.
+
+Testing a function is like calling a function, we call it with some known data and then check the return value. 
+If return value isn't what we expect then the test fails. 
+If return value is what we expect then the test passes.
+
+
+```ts
+
+// our function code normally in a 'filename.ts' file.
+// -> A basic function that concatenates two strings
+export function concat(a: string, b: string): string {
+  return `${a}${b}`;
+}
+
+// division function that returns an error if we try to divide by zero
+export function divide(lhs: number, rhs: number): number {
+  if (rhs === 0) {
+    throw new Error("cannot divide by zero");
+  } else {
+    return lhs / rhs;
+  }
+}
+
+// An asynchronous function that resolves
+export function slowString() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("sample");
+    }, 200);
+  });
+}
+
+// An asynchronous function that fails
+export function failedString() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject("whoops");
+    }, 1);
+  });
+}
+
+// ***** OUR TEST CODE NORMALLY IN A SEPARATE TEST FILE 'filename.test.ts' *****
+// we'll use jest for testing
+
+it()
+
+
+```
