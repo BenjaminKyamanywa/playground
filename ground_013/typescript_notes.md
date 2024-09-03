@@ -879,7 +879,23 @@ export function failedString() {
 // ***** OUR TEST CODE NORMALLY IN A SEPARATE TEST FILE 'filename.test.ts' *****
 // we'll use jest for testing
 
-it()
+// test concat function
+it('should say, "Hello, world!"', () => {
+  expect(
+    concat("Hello", " world!")
+    ).toEqual("Hello, world!");
+});
+
+// test divide function
+it("should divide", () => {
+  expect(divide(10, 2)).toEqual(5);
+});
+
+it("should fail to divide by zero", () => {
+  expect(() => {
+    divide(10, 0);
+  }).toThrow()
+})
 
 
 ```
