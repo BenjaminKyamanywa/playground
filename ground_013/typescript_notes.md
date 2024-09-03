@@ -24,7 +24,7 @@
     - [Union Types](#union-types)
     - [Type predicates](#type-predicates)
     - [Optional Fields](#optional-fields)
-    - [Optional Chaining](#optional-chaining)
+    - [Async/Await](#async-await)
 
 ### Types
 
@@ -797,3 +797,35 @@ const database = new Database();
 }
 
 ```
+
+### Async Await
+
+Helps our code to continue running while a given piece of code awaits external resources.
+
+```ts
+
+async function fetchUserData(userId: number): Promise<{name: string}> {
+  const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
+  
+  const data = await response.json();
+
+  return { name: data.name };
+}
+
+// call our async function
+(async () => {
+  // using asynchronous API with await
+  try {
+    const userData = await fetchUserDat(1);
+    console.log(userData.name)
+  } catch(e) {
+    console.log(e)
+  }
+})();
+
+// using the promise API
+fetchUserData(1)
+  .then((userData) => console.log(userData.name));
+  .catch((e) => console.error(e));
+
+``` 
