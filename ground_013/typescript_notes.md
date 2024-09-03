@@ -23,6 +23,8 @@
     - [Type Assertions](#type-assertions)
     - [Union Types](#union-types)
     - [Type predicates](#type-predicates)
+    - [Optional Fields](#optional-fields)
+    - [Optional Chaining](#optional-chaining)
 
 ### Types
 
