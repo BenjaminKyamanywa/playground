@@ -680,6 +680,8 @@ const circle: Shape = { kind: "circle", radius: 2 };
 
 ### Optional Fields
 
+These are properties that are not required mandatorily and can be omitted when not needed.
+
 ```ts
 
 type Warranty = "standard" | "extended";
@@ -697,9 +699,99 @@ function warrantyInfo(warranty: Warranty): String {
 interface LineItem {
   name: string;
   quantity: number;
-  warranty?: Warranty; // we use question mark to set this proprty as optional
+  warranty?: Warranty; // we use question mark to set this proprty as optional. It returns 'undefined' if value is not present.
 }
+
+function printLine(item: LineItem): void {
+  console.log(`Item ${item.name}`);
+  console.log(`Quantity ${item.quantity}`);
+
+  if (item.warranty !== undefined) {
+    console.log(`Warranty ${warrantyInfo(item.warranty)}`)
+  } else {
+    console.log(`Warranty: None`);
+  }
+}
+
+// create items
+const boxFan: LineItem = {
+  name: "box fan",
+  quantity: 1
+}
+
+console.log(printLine(boxFan));
+
+const heater: LineItem = {
+  name: "space heater",
+  quantity: 2,
+  warranty: "standard"
+}
+
+console.log(printLine(heater));
 
 ```
 
 ### Optional Chaining
+
+It allows us to access nested properties of an object or call chained methods, even when one or more of these properties are null or undefined.
+
+```ts
+
+interface Pii {
+  age?: number;
+  address: string;
+}
+
+interface SearchResult {
+  name: string;
+  pii?: Pii;
+}
+
+class Database {
+  search(name: string): SearchResult | undefined {
+    switch (name) {
+      case "John":
+        return {
+          name: "John Doe",
+          pii: {
+            age: 22
+          }
+        }
+      case "Jane":
+        return {
+          name: "Jane Doe"
+        }
+      default: 
+        return undefined
+    }
+  }
+}
+
+// create database
+const database = new Database();
+
+// without opitonal chanining ie the hard way
+{
+  const result = database.search("John");
+  if (
+    result !== undefined
+    && result !== null
+    && result.pii !== undefined
+    && result.pii !== null
+    && result.pii.age !== undefined
+    && result.pii.age !== null
+  ) {
+    console.log(`${result.name} age is ${result.pii.age}`);
+  }
+}
+
+// ***with optionale chaining: the optimal way to do it.***
+{
+  const result = database.search("John");
+  // question mark is the optional chaining part that automatically checks if it's undefined or null, if it's not undefined or null continue with rest of the code
+  if (result?.pii?.age) {
+    console.log(`${result.name} age is ${result.pii.age}`);
+  }
+}
+
+```
