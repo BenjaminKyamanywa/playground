@@ -25,6 +25,7 @@
     - [Type predicates](#type-predicates)
     - [Optional Fields](#optional-fields)
     - [Async/Await](#async-await)
+    - [Unit testing](#unit-testing)
 
 ### Types
 
