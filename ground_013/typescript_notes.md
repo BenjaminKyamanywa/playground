@@ -897,5 +897,10 @@ it("should fail to divide by zero", () => {
   }).toThrow()
 })
 
+// test asynchronous functions
+test("slow string fetches sample text", async   () => {
+
+});
 
 ```
+
