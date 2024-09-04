@@ -899,7 +899,19 @@ it("should fail to divide by zero", () => {
 
 // test asynchronous functions
 test("slow string fetches sample text", async   () => {
-  
+  slowString()
+    .then((data) => {
+      expect(data).toEqual("sample");
+    })
+    .catch((err) => expect(err).toBeUndefined());
+});
+
+test("failed string fails with a 'whoops'", async   () => {
+  failedString()
+    .then((data) => {
+      expect(data).toBeUndefined;
+    })
+    .catch((err) => expect(err).toEqual("whoops"));
 });
 
 ```
