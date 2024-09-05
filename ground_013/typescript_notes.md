@@ -2,6 +2,7 @@
 
 - Topics
   - Basics
+    - [Introduction](#introduction)
     - [Types](#types)
     - [Variables](#variables)
     - [Increment](#increment)
@@ -26,6 +27,11 @@
     - [Optional Fields](#optional-fields)
     - [Async/Await](#async-await)
     - [Unit testing](#unit-testing)
+
+
+### Introduction
+
+Typescript is a typed superset of Javascript. It offers static type checking which simply means it detects errors in code without running it.
 
 ### Types
 
