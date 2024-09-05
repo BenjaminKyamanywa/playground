@@ -951,6 +951,10 @@ const passwordTooShort: AccountCreationMessage = {
   message: "Password must be atleast 10 characters!"
 };
 
+const exists: AccountCreationMessage = {
+  kind: "userNameExists"
+};
+
 // use switch function
 function showMessage(msg:  AccountCreationMessage) {
   switch (msg.kind) {
@@ -968,5 +972,6 @@ function showMessage(msg:  AccountCreationMessage) {
 
 showMessage(ok); // prints: Welcome to the platform!
 showMessage(passwordTooShort); // prints: Password must be atleast 10 characters!
+showMessage(exists) // prints: That username already exists!
 
 ```
