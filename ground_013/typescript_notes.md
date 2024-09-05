@@ -28,6 +28,8 @@
     - [Async/Await](#async-await)
     - [Unit testing](#unit-testing)
 
+- Techniques & Patterns
+    - Discriminated Unions
 
 ### Introduction
 
@@ -923,3 +925,48 @@ test("failed string fails with a 'whoops'", async   () => {
 
 ```
 
+### Discriminated Unions
+
+This is an advanced form of a union that allows us to discriminate over some data exists within the union.
+
+```ts
+
+// create a discriminator and use switch for discrimination
+type numbers = 1 | 2 | 3;
+
+// kind: discriminator
+type AccountCreationMessage = 
+  | { kind: "ok"; greeting: "string" }
+  | { kind: "passwordComplexityFailure"; message: string }
+  | { kind: "userNameExists"; }
+
+// use discriminated object
+const ok: AccountCreationMessage = {
+  kind: "ok",
+  greeting: "Welcome to the platform!"
+};
+
+const passwordTooShort: AccountCreationMessage = {
+  kind: "passwordComplexitFailure",
+  message: "Password must be atleast 10 characters!"
+};
+
+// use switch function
+function showMessage(msg:  AccountCreationMessage) {
+  switch (msg.kind) {
+    case "ok":
+      console.log(`${msg.greeting}`);
+      break;
+    case "passwordComplexityFailure":
+      console.log(`${msg.message}`);
+      break;
+    case "usernameExists":
+      console.log("That username already exists!");
+      break;
+  }
+}
+
+showMessage(ok); // prints: Welcome to the platform!
+showMessage(passwordTooShort); // prints: Password must be atleast 10 characters!
+
+```
