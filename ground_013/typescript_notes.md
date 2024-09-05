@@ -927,7 +927,7 @@ test("failed string fails with a 'whoops'", async   () => {
 
 ### Discriminated Unions
 
-This is an advanced form of a union that allows us to discriminate over some data exists within the union.
+This is an advanced form of a union that allows us to discriminate over some data exists within the union. Helps enhance our code reliability and makes it a lot easier to write our code cause we just set the things that we want and anywhere else in our program it's going to automatically tell us if we did it correctly or not.
 
 ```ts
 
