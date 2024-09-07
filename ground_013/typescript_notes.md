@@ -987,8 +987,8 @@ These allow us to do many things:
 
 When we construct new literal expressions with const assertions, we can signal to the language:
 - no literal types in that expression should be widened (e.g. no going from "hello" to string)
-- object literals get readonly properties
-- array literals become readonly tuples
+- object literals get `readonly` properties
+- array literals become `readonly` tuples
 
 ```ts
 
