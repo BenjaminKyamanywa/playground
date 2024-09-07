@@ -29,7 +29,9 @@
     - [Unit testing](#unit-testing)
 
 - Techniques & Patterns
-    - Discriminated Unions
+    - [Discriminated Unions](#discriminated-unions)
+    - [Const assertions](#const-assertions)
+    - [Generic Functinos](#generic-functions)
 
 ### Introduction
 
@@ -975,3 +977,51 @@ showMessage(passwordTooShort); // prints: Password must be atleast 10 characters
 showMessage(exists) // prints: That username already exists!
 
 ```
+
+### Const assertions
+
+Const assertions provide an explicit type annotation to ensure that a value is treated as a literal type, rather than being widened to a more general type.
+
+These allow us to do many things:
+- We can make them to be similar to union types.
+
+When we construct new literal expressions with const assertions, we can signal to the language:
+- no literal types in that expression should be widened (e.g. no going from "hello" to string)
+- object literals get readonly properties
+- array literals become readonly tuples
+
+```ts
+
+// Type '"hello"'
+let x = "hello" as const;
+// Type 'readonly [10, 20]'
+let y = [10, 20] as const;
+// Type '{ readonly text: "hello" }'
+let z = { text: "hello" } as const;
+
+```
+
+```ts
+
+// union type
+type Rgb = "red" | "green" | "blue";
+const red: Rgb = "red";
+
+// using const assertion to make something similar to union
+{
+  const Color = ["red", "green", "blue"] as const;
+  type Color = (typeof Color)[number]
+  const blue: Color = "blue";
+
+  // we can loop over the data as well
+  for (const c of Color) {
+    console.log(c);
+  }
+}
+
+```
+
+
+
+### Generic Functions
+
