@@ -1043,13 +1043,33 @@ const red: Rgb = "red";
     
     */
   }
+
+  // if we want to access a specific department e.g Executive Department
+  const exec: Department = Department.Executive;
 }
 
+```
 
+### Generic Functions
+
+These help us build components that are capable of working on the data of today as well as the data of tomorrow which will give us the most flexible capabilities for building up large software systems.
+
+```ts
+
+//generic function that can work with numbers, strings, booleans to return the first value in the array
+function getFirst<T>(arr: T[]): T | undefined { // T: refers to Type of data
+  if (arr.length > 0) {
+    return arr[0];
+  }
+  return undefined;
+}
+
+// call our getFirst function with different dataTypes
+getFirst([1, 5]); // numbers: returns 1
+getFirst(["a", "b"]); // strings: returns a
+getFirst([true, false]) // booleans: returns true
 
 ```
 
 
-
-### Generic Functions
 
