@@ -986,9 +986,9 @@ These allow us to do many things:
 - We can make them to be similar to union types.
 
 When we construct new literal expressions with const assertions, we can signal to the language:
-- no literal types in that expression should be widened (e.g. no going from "hello" to string)
-- object literals get `readonly` properties
-- array literals become `readonly` tuples
+- no literal types in that expression should be widened (e.g. no going from "hello" to string).
+- object literals get `readonly` properties.
+- array literals become `readonly` tuples.
 
 ```ts
 
@@ -1018,6 +1018,34 @@ const red: Rgb = "red";
     console.log(c);
   }
 }
+
+
+// With Objects
+
+{
+  const Department = {
+    Executive: "top floor",
+    Sales: "middle floor",
+    Warehouse: "bottom floor"
+  } as const; // it now becomes a read-only object, analyzed at compile time.
+  // typeof: gets all the types of Department || [keyof typeof]: helps us index into our Deparment object
+  type Department = (typeof Department)[keyof typeof Department]; // typeof: gets the property names of Department e.g Executice, Sales, Warehouse, 'keyof' allows them to be used as key, meaning index or operation of the Department object.
+
+  let k: keyof typeof Department;
+  for (k in Department) {
+    console.log(`k = ${k}, floor = ${Department[k]}`);
+    /* 
+    ***Console response***
+
+    key = Executive, floor = top floor
+    key = Sales , floor = middle floor
+    key = Warehouse, floor = bottom floor
+    
+    */
+  }
+}
+
+
 
 ```
 
