@@ -1071,5 +1071,17 @@ getFirst([true, false]) // booleans: returns true
 
 ```
 
+### Generic Classes
+
+Enable us to create a class and place any type of data within in using generics.
+
+```ts
+
+// create generic class
+class Stack<T> {
+  
+}
+
+```
 
 
