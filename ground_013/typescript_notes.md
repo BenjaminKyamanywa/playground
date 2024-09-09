@@ -31,7 +31,8 @@
 - Techniques & Patterns
     - [Discriminated Unions](#discriminated-unions)
     - [Const assertions](#const-assertions)
-    - [Generic Functinos](#generic-functions)
+    - [Generic Functions](#generic-functions)
+    - [Generic Classes](#generic-classes)
 
 ### Introduction
 
@@ -1079,8 +1080,27 @@ Enable us to create a class and place any type of data within in using generics.
 
 // create generic class
 class Stack<T> {
-  
+  private elements: T[] = [];
+  public push(element: T): void {
+    this.elemens.push(element);
+  };
+  public pop(): T | undefined {
+    return this.elements.pop();
+  };
+  public peek(): T | undefined {
+    return this.elements[this.elements.lenght - 1];
+  };
+  public isEmpty(): boolean {
+    return this.elements.lenght === 0;
+  }
 }
+
+// create new stack
+const strings = new Stack:<string>();
+strings.push("Hello");
+strings.push("World");
+// remove last string
+const world = strings.pop();
 
 ```
 
