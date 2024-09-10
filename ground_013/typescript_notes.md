@@ -1173,6 +1173,86 @@ import CaseKind from "...add location of .ds file";
 const message = "hello";
 const upperCase = setCase(message, "uppercase");
 
+// add definiton
+add(1, 2, 3, 4);
+
+```
+
+#### Type definitions for Objects
+
+
+```ts
+
+// example apiResponse
+function apiResponse() {
+  return {
+    "status": "success",
+    "data": {
+      "items": [
+        {
+          "id": 1,
+          "name": "Widget 1",
+          "price": 10.99,
+          "quantity": 50,
+          "department": "Electronics"
+        },
+        {
+          "id": 2,
+          "name": "Widget 2",
+          "price": 19.99,
+          "quantity": 25,
+          "department": "Home & Kitchen"
+        },
+        {
+          "id": 3,
+          "name": "Widget 3",
+          "price": 20.99,
+          "quantity": 15,
+          "department": "Toys & Games"
+        }
+      ]
+    }
+  }
+}
+
+module.exports = {
+  apiResponse
+}
+
+// create type definition for object
+export type Status = "success" | "failure";
+
+// const assertion for departments
+const Departments = ["Electronics", "Home & Kitchen", "Toys & Games"] as const;
+export type Department = (typeof Departments)[number];
+
+export interface ApiResponseItem {
+  id: number;
+  name: string;
+  price: number;
+  quantity: number;
+  department: Department;
+}
+
+export interface apiResponse {
+  status: Status;
+  data: {
+    items: ApiResponseItem[]
+  }
+}
+
+export function apiResponse(): ApiResponse | undefined;
+
+
+// utilize our apiResponse object definiton
+import { apiResponse } from "...add definition .d filename";
+
+const response = apiResponse();
+if (response !== undefined) {
+  if (response.status === "success") {
+    console.log(response.data.items[1].name); // response: Widget 2
+  }
+}
 
 ```
 
