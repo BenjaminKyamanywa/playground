@@ -33,6 +33,7 @@
     - [Const assertions](#const-assertions)
     - [Generic Functions](#generic-functions)
     - [Generic Classes](#generic-classes)
+    - [Type definition files](#type-definition-files)
 
 ### Introduction
 
@@ -1104,9 +1105,9 @@ const world = strings.pop();
 
 ```
 
-### Type definition/declaration files
+### Type definition files
 
-Type definition files or type declaration files are any TypeScript files that have the `. d.` ts filename extension. These files are only meant to hold the type declarations of a particular script and not the source code itself. This means that they are not a part of the compilation process.
+Type definition files or or also know as type declaration files are any TypeScript files that have the `. d.` ts filename extension. These files are only meant to hold the type declarations of a particular script and not the source code itself. This means that they are not a part of the compilation process.
 
 ```ts
 
@@ -1134,7 +1135,7 @@ function setCase(message, kind) {
   } else if (kind === "lowercase") {
     return message.toLowerCase();
   } else {
-    throw new Error("invalid kind: muse be 'uppercase'")
+    throw new Error("invalid kind: muse be 'uppercase' or 'lowercase'");
   }
 }
 
@@ -1147,13 +1148,31 @@ function quote(message) {
 module.exports = {
   add,
   max,
-  setCase
+  setCase,
+  quote
 }
 
 // example code that would be in a type definiton file for the above Javascript function
-
+export function add(a: number, b: number, ...numbers: number[]): number;
 
 // type definition for max function
+export function max(arr: number[]): number | null;
+
+// type definition for setCase function
+export type CaseKind = "uppercase" | "lowercase";
+export function setCase(message: string, kind: CaseKind) string;
+
+// type definition for quote function
+export function quote(message: string): () => string;
+
+// **** utilize our type definitions in a new file ***
+import { add, max, setCase, quote } from "..add location of .ds file";
+import CaseKind from "...add location of .ds file";
+
+// use setCase definiton
+const message = "hello";
+const upperCase = setCase(message, "uppercase");
+
 
 ```
 
