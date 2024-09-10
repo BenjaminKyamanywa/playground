@@ -1096,7 +1096,7 @@ class Stack<T> {
 }
 
 // create new stack
-const strings = new Stack:<string>();
+const strings = new Stack:<string>(); // always specify a type when creating a generic class
 strings.push("Hello");
 strings.push("World");
 // remove last string
@@ -1104,4 +1104,56 @@ const world = strings.pop();
 
 ```
 
+### Type definition/declaration files
+
+Type definition files or type declaration files are any TypeScript files that have the `. d.` ts filename extension. These files are only meant to hold the type declarations of a particular script and not the source code itself. This means that they are not a part of the compilation process.
+
+```ts
+
+// example Javascript function that sums things together and returns that total
+function add(a, b, ..args) {
+  let total = a + b;
+  for (let n of args) {
+    total += n;
+  }
+  return total;
+}
+
+// returns the max from an array of numbers
+function max(arr) {
+  if (arr.length === 0) {
+    return null;
+  }
+  return arr.reduce((a, b) => Math.max(a, b));
+}
+
+// changes text to upper case of lowerase and returns the new case
+function setCase(message, kind) {
+  if (kind === "upperCase") {
+    return message.toUpperCase();
+  } else if (kind === "lowercase") {
+    return message.toLowerCase();
+  } else {
+    throw new Error("invalid kind: muse be 'uppercase'")
+  }
+}
+
+// returns another function
+function quote(message) {
+  return () => {return `"${message}"`};
+}
+
+// export the functions
+module.exports = {
+  add,
+  max,
+  setCase
+}
+
+// example code that would be in a type definiton file for the above Javascript function
+
+
+// type definition for max function
+
+```
 
