@@ -4,7 +4,7 @@ In this Typescript reference guide are notes taken while learning Typescript fro
 
 ## Helpful Links 
   - Official Documentation: https://www.typescriptlang.org/
-  - Online Book: https://www.totaltypescript.com/books/total-typescript-essentials
+  - Free Online Book: https://www.totaltypescript.com/books/total-typescript-essentials
   - Frontend Masters: https://frontendmasters.com/topics/typescript/
   - FreeCodeCamp: https://www.freecodecamp.org/news/learn-typescript-for-practical-projects/
   - ZTM Typescript CheatSheet: https://zerotomastery.io/cheatsheets/typescript-cheat-sheet/
