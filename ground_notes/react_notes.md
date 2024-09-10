@@ -2,8 +2,12 @@
 
 In this React reference guide are notes taken while learning React from the ground up with helpful links to provide guidance a long the journey. 
 
+React is a declarative paradigm that enables us to give our apps some state, components that are built with JSX that sometime also receive properties(props) as a giant Javascript object which creates a virtualDOM which is used by the React library to update the DOM for us instead of telling our apps exactly what we need them to do.
+
 ## Topics
   - [React Concepts](#react-concepts)
+  - [The Job of a React Developer](#the-job-of-a-react-developer)
+  - [React Basics](#react-basics)
 
 ## React Concepts
 
@@ -18,3 +22,19 @@ In this React reference guide are notes taken while learning React from the grou
     - It helps with our data flow to flow in one direction from parent components to children, which helps reduce complexity of our apps and makes debugging easier.
 4. React focuses on the UI, the rest is up to you
     - React focuses on the UI (components and the VirtualDOM) and as such it only works with the view gives us the flexibility to easily work with othe libraries. 
+
+## The Job of a React Developer
+
+On the path of becoming a great react developer we need to focus on improving with the below principles:
+
+1. Decide on components
+    - Decide what is component.
+    - How much do we want to break down a component.
+    - How do we build re-usable components.
+    - How do we break down an app into different components.
+2. Decide the state and where it leaves
+    - Place state in the appropriate component/s.
+3. What changes when state changes 
+    - Decide what part of the virtualDOM changes when state changes.
+
+## React Basics
