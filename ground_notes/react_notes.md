@@ -39,6 +39,40 @@ On the path of becoming a great react developer we need to focus on improving wi
 
 ## React Basics
 
-Rendering and Re-rendering
+1. Rendering and Re-rendering
 
 What makes a great React developer is understanding the concept of rendering and re-rendering. Discerning when React renders and re-renders our apps is a key concept that helps us become truly revolutionary.  
+
+Rendering is putting some UI onto the page i.e HTML, CSS, Javasript for users to see the final output.
+
+Below we'll see an example of a class component in React to help us see where rendering is happening:
+
+```JS
+
+// import Component from react
+import { Component } from "react";
+
+class App extends Component {
+    render() {
+        return (
+            <div classname='App'>
+                <header classname='App-header'>
+                    <img src={logo} classname='App-logo' alt='logo'>
+                    <p>
+                        Edit <code>scr/App.js</code> and save to reload.
+                    </p>
+                    <a
+                        classname='App-link'
+                        href='https://reactjs.org'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Learn React
+                    </a>
+                </header>
+            </div>
+        );
+    }
+}
+
+```
