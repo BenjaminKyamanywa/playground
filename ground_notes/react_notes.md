@@ -38,3 +38,7 @@ On the path of becoming a great react developer we need to focus on improving wi
     - Decide what part of the virtualDOM changes when state changes.
 
 ## React Basics
+
+Rendering and Re-rendering
+
+What makes a great React developer is understanding the concept of rendering and re-rendering. Discerning when React renders and re-renders our apps is a key concept that helps us become truly revolutionary.  
