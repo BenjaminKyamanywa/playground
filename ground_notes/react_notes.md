@@ -50,7 +50,7 @@ Below we'll see an example of a class component in React to help us see where re
 ```JS
 
 // import Component from react
-import { Component } from "react";
+import { Component } from 'react';
 
 class App extends Component {
     // constructor method for our state
@@ -81,7 +81,7 @@ class App extends Component {
                     <p>Hello {this.state.name}</p>
                     <button 
                     onClick={() => {
-                        this.setState({ name: 'John' });
+                        this.setState({ name: 'John' }); // react updates the state
                     }}
                     >Click Me<button>
                 </header>
