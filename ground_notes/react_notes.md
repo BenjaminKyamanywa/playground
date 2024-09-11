@@ -58,8 +58,8 @@ class App extends Component {
         super();
         // instantiate state
         this.state = {
-
-        }
+            name: 'Benjamin'
+        };
     }
 
     render() {
@@ -78,8 +78,12 @@ class App extends Component {
                     >
                         Learn React
                     </a>
-                    <p>Hello Benjamin</p>
-                    <button>Click Me<button>
+                    <p>Hello {this.state.name}</p>
+                    <button 
+                    onClick={() => {
+                        this.setState({ name: 'John' });
+                    }}
+                    >Click Me<button>
                 </header>
             </div>
         );
