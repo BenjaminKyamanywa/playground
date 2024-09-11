@@ -53,6 +53,15 @@ Below we'll see an example of a class component in React to help us see where re
 import { Component } from "react";
 
 class App extends Component {
+    // constructor method for our state
+    constructor() {
+        super();
+        // instantiate state
+        this.state = {
+
+        }
+    }
+
     render() {
         return (
             <div classname='App'>
@@ -69,10 +78,14 @@ class App extends Component {
                     >
                         Learn React
                     </a>
+                    <p>Hello Benjamin</p>
+                    <button>Click Me<button>
                 </header>
             </div>
         );
     }
 }
+
+export default App;
 
 ```
