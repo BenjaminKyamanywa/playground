@@ -14,9 +14,15 @@ class App extends Component {
     };
   }
 
-  // component mount initialization
+  // component mount initialization for our API data call
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users/')
+      .then( (response) => response.json())
+      .then((users) => this.setState(() => {
+        return {monsters: users}
+      }, () => {
+        console.log(this.state)
+      }))
   }
 
   render() {

@@ -1,14 +1,15 @@
-## Creatures
+## 👾 Creatures
 
 Creatures is an app that allows users to search for their favorite creatures.
 
 
-## 👾 Features
+## 🥌 Features
 
 - Search indexing for creatures.
 
 
 ## 📒 Process
+
 
 
 ## 🚦 Running the Project
