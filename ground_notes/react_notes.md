@@ -47,7 +47,7 @@ Rendering is putting some UI onto the page i.e HTML, CSS, Javasript for users to
 
 Below we'll see an example of a class component in React to help us see where rendering is happening:
 
-```JS
+```JSX
 
 // import Component from react
 import { Component } from 'react';
@@ -64,24 +64,31 @@ class App extends Component {
 
     render() {
         return (
-            <div classname='App'>
-                <header classname='App-header'>
-                    <img src={logo} classname='App-logo' alt='logo'>
+            <div classname="App">
+                <header classname="App-header">
+                    <img src={logo} classname="App-logo" alt="logo">
                     <p>
                         Edit <code>scr/App.js</code> and save to reload.
                     </p>
                     <a
-                        classname='App-link'
-                        href='https://reactjs.org'
-                        target='_blank'
-                        rel='noopener noreferrer'
+                        classname="App-link"
+                        href="https://reactjs.org"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Learn React
                     </a>
                     <p>Hello {this.state.name}</p>
                     <button 
                     onClick={() => {
-                        this.setState({ name: 'John' }); // react updates the state
+                       // this.setState({ name: 'John' });  react updates the state with shallow merge object exmple
+                       // recommended: passing a function with setState
+                       this.setState((state, props) => { // we can use state and props: different values we can pass to our components
+                        // we add an updater function
+                        return {
+                            { name: 'John' }
+                        }
+                       }, () => {});
                     }}
                     >Click Me<button>
                 </header>
