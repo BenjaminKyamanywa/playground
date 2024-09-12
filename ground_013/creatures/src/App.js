@@ -1,48 +1,60 @@
 import { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
 
-  // constructor method for our state
+  // constructor method for our state which is called first when our app initially runs
   constructor() {
     super();
 
     // instantiate state
     this.state = {
-      monsters: [],
+      creatures: [],
+      searchField: ''
     };
   }
 
-  // component mount initialization for our API data call
+  // component mount initialization for our API data call is called third when our app runs
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users/')
-      .then( (response) => response.json())
-      .then((users) => this.setState(() => {
-        return {monsters: users}
-      }, () => {
-        console.log(this.state)
-      }))
+      .then((response) => response.json())
+      .then((users) => 
+        this.setState(
+          () => {
+          return { creatures: users }
+          }, () => {
+          console.log(this.state)
+          }))
   }
 
   render() {
+    // render is called second when our app runs
+    // filter search result
+    const filteredCreatures = this.state.creatures.filter((creature) => {
+      return creature.name.toLocaleLowerCase().includes(this.state.searchField);
+    });
+
 
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <input className='search-box' type='search' placeholder='search creatures'
+          onChange={(event) => {
+            // change search string toLowercase
+            const searchField = event.target.value.toLocaleLowerCase();
+
+            // monsters equals new array
+            this.setState(() => {
+              return { searchField };
+            });
+          }}
+        />
+        {this.state.creatures.map((creature) => {
+          return (
+            <div key={creature.id}>
+              <h1>{creature.name}</h1>
+            </div>
+          )
+        })}
       </div>
     );
 
