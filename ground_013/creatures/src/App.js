@@ -27,28 +27,36 @@ class App extends Component {
           }))
   }
 
+  // optimization: add onSearchChange function
+  onSearchChange = (event) => {
+    // change search string toLowercase
+    const searchField = event.target.value.toLocaleLowerCase();
+
+    // monsters equals new array
+    this.setState(() => {
+      return { searchField };
+    });
+  }
+
+  // render is called second when our app runs
   render() {
-    // render is called second when our app runs
+
+    // destructuring: use variables from this.state and this to make our code cleaner
+    const { creatures, searchField } = this.state;
+    const { onSearchChange } = this;
+    
     // filter search result
-    const filteredCreatures = this.state.creatures.filter((creature) => {
-      return creature.name.toLocaleLowerCase().includes(this.state.searchField);
+    const filteredCreatures = creatures.filter((creature) => {
+      return creature.name.toLocaleLowerCase().includes(searchField);
     });
 
 
     return (
       <div className="App">
         <input className='search-box' type='search' placeholder='search creatures'
-          onChange={(event) => {
-            // change search string toLowercase
-            const searchField = event.target.value.toLocaleLowerCase();
-
-            // monsters equals new array
-            this.setState(() => {
-              return { searchField };
-            });
-          }}
+          onChange={ onSearchChange }
         />
-        {this.state.creatures.map((creature) => {
+        {filteredCreatures.map((creature) => {
           return (
             <div key={creature.id}>
               <h1>{creature.name}</h1>
