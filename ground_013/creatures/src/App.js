@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import { CardList } from './components/card-list/card-list.component';
-import { SearchBox } from './components/search-box/search-box.component';
+import CardList from './components/card-list/card-list.component';
+import SearchBox from './components/search-box/search-box.component';
 import './App.css';
 
 class App extends Component {
@@ -21,6 +21,7 @@ class App extends Component {
     fetch('https://jsonplaceholder.typicode.com/users/')
       .then((response) => response.json())
       .then((users) => 
+        // eslint-disable-next-line
         this.setState(
           () => {
           return { creatures: users }
@@ -55,7 +56,10 @@ class App extends Component {
 
     return (
       <div className="App">
-      <SearchBox onChangeHandler = { onSearchChange} placeholder = 'search monsters'/>
+      <SearchBox 
+      className = 'search-box'
+      onChangeHandler = { onSearchChange} 
+      placeholder = 'search monsters'/>
       <CardList creatures = { filteredCreatures } />
       </div>
     );
