@@ -101,6 +101,18 @@ export default App;
 
 ```
 
-Functional Components
+## Functional Components
 
-React uses functional components with hooks to achieve behavior similar to class components.
+React uses functional components with hooks to achieve behavior similar to class components. These are basically ES6 functions.
+
+```JSX
+
+// our app 
+const App = () => {
+
+    return (
+        // add template UI code
+    )
+}
+
+```
