@@ -8,6 +8,7 @@ React is a declarative paradigm that enables us to give our apps some state, com
   - [React Concepts](#react-concepts)
   - [The Job of a React Developer](#the-job-of-a-react-developer)
   - [React Basics](#react-basics)
+  - [Functional Components](#functional-components)
 
 ## React Concepts
 
@@ -105,20 +106,45 @@ export default App;
 
 React uses functional components with hooks to achieve behavior similar to class components. These are basically ES6 functions. They don't run through lifecycles like class components as they run from top to botom of the function.
 
+React Hooks
+- `useState`: A react hook that let's us add a state variable to our components. Syntax `const [state, setState] = useState(initialState)` 
+
 ```JSX
+
+import { useState } from 'react';
+import SearchBod from '...add here component path'/
 
 // our app 
 const App = () => {
 
+    // useState utilizes array destructuring to return two values we can use
+    const [searchField, setSearchField] = useState(''); // [value, setValue]
+
+    const onSearchChange = (event) => {
+        const searchFieldString = event.target.value.toLowerCase();
+        setSearchField(searchFieldString);
+    }
+
     return (
         // add template UI code
+        <div className='App'>
+            <h1 className='app-title'>Creatures Zone</h1>
+
+            <SearchBox 
+                className='creatures-search-box'
+                onChangeHandler={onSearchChange}
+                placeholder = 'search creatures'
+            />
+        </div>
     )
 }
 
 ```
 
-Pure functions
+### Pure functions
+- A function is considered pure when everything that dicates what it returns is completely isolated from what gets passed into it.
 - Returns the same exact result no matter how many times it gets called when given the same arguments.
+- It should not produce side effects.
 
 ```JS
 
@@ -130,5 +156,39 @@ pureFunction(2, 4); // no matter how many times we call it, should always return
 
 ```
 
-Impure functions
-Side Effects
+### Impure functions
+- If a function has to rely on something outside of it's scope and beyond the parameters being passed into it.
+- In react we are going to be using impure functions because we utilize hooks to create them which cause side effects.
+
+```JS
+
+let c = 3;
+
+const sideEffectFunction = (a, b) => {
+ c = a + b;
+ return a * b;
+}
+
+// if we change C
+c = 4;
+
+```
+
+### Side Effects
+- A side effect is when a function creates some kind of effect outside of it's scope. In our example below variable `C` is being set outside of the scope of `sideEffectFunction`.
+
+```JS
+
+let c = 3;
+
+const sideEffectFunction = (a, b) => {
+ c = a + b;
+ return a * b;
+}
+
+// if we change C
+c = 4;
+
+sideEffectFunction(2, 4) // 8
+
+```
