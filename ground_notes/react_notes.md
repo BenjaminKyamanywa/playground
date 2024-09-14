@@ -103,7 +103,7 @@ export default App;
 
 ## Functional Components
 
-React uses functional components with hooks to achieve behavior similar to class components. These are basically ES6 functions.
+React uses functional components with hooks to achieve behavior similar to class components. These are basically ES6 functions. They don't run through lifecycles like class components as they run from top to botom of the function.
 
 ```JSX
 
@@ -116,3 +116,19 @@ const App = () => {
 }
 
 ```
+
+Pure functions
+- Returns the same exact result no matter how many times it gets called when given the same arguments.
+
+```JS
+
+const pureFunction = (a, b) => {
+    retunr a + b;
+}
+
+pureFunction(2, 4); // no matter how many times we call it, should always return 6 as the result.
+
+```
+
+Impure functions
+Side Effects
