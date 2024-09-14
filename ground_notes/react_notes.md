@@ -100,3 +100,7 @@ class App extends Component {
 export default App;
 
 ```
+
+Functional Components
+
+React uses functional components with hooks to achieve behavior similar to class components.
