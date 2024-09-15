@@ -115,3 +115,19 @@ Example: We add a text element with Javascript to the page each time a user clic
 <script>
 
 ```
+
+## Event Handlers
+
+Instead of including JavaScript in our HTML, we ccan use a pure JavaScript construct. The `querySelectorAll()` function allows us to select all the buttons on a page. We can then loop through the buttons, assigning a handler for each using `addEventListener()`. 
+
+Code example for this is shown below:
+
+```js
+
+const buttons = document.querySelectorAll("button");
+
+for (const button of buttons) {
+  button.addEventListener("click", createParagraph);
+}
+
+```
