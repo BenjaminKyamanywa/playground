@@ -42,10 +42,12 @@ button {
 const button = document.querySelector("button");
 
 function updateName() {
+  // request user to add any name
   const name = prompt("Enter a new name");
   button.textContent = `Player 1: ${name}`;
 }
 
+// update name user adds when button is clicked
 button.addEventListener("click", updateName);
 
 ```
