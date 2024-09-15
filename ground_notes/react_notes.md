@@ -107,7 +107,7 @@ export default App;
 React uses functional components with hooks to achieve behavior similar to class components. These are basically ES6 functions. They don't run through lifecycles like class components as they run from top to botom of the function.
 
 React Hooks
-- `useState`: A react hook that let's us add a state variable to our components. Syntax `const [state, setState] = useState(initialState)` 
+- `useState`: A react hook that let's us add a state variable to our components. Syntax `const [state, setState] = useState(initialState)` - utilizes array destructuring.
 
 ```JSX
 
