@@ -99,3 +99,19 @@ Example: We add a text element with Javascript to the page each time a user clic
 
 ```
 
+## Inline Javascript Handlers & Event handlers
+
+- It's bad practise to pollute our HTML with these as we would need to add functions to all HTML elements where we need behavior to happen. for example with a button click.
+
+```html
+
+<button onclick="createParagraph()"></button>
+
+<script>
+  // JS function for a button click
+  function createParagraph() {
+
+  }
+<script>
+
+```
