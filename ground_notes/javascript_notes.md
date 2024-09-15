@@ -61,5 +61,41 @@ function updateName() {
 
 We can add Javascript internally to our web pages with the help of a `<script></script>` element that's added before our closing `≤/body≥` tag. The script tag is added at the bottom of our document after our  `HTML` and `CSS` files to allow for the page to load with our markup and styles before we plug in the interactivity. As such that's the organization flow of files on our webpages.
 
-Example: 
+Example: We add a text element with Javascript to the page each time a user clicks the button.
+
+```html
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS example</title>
+  </head>
+  <body>
+    <button>Click Me</button>
+    <!-- we'll add the JS code for here in the below -->
+    <script>
+      // internal javascript goes here
+      function createParagraph() {
+        // create paragraph element
+        const paragraph = document.createElement('p');
+        // add content to the paragraph element
+        paragraph.textContent = 'You clicked the button';
+        // add paragraph element to the DOM
+        document.body.appendChild(paragraph);
+      }
+
+      // select button element
+      const buttons = document.querySelectorAll("button");
+
+      // add paragraph element plus text each time button is clicked
+      for (const button of buttons) {
+        button.addEventListener('click', createParagraph);
+      }
+    </script>
+  </body>
+</html>
+
+```
 
