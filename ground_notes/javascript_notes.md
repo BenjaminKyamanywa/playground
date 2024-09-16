@@ -9,7 +9,8 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
 ## Topics
   - [Introduction](#introduction)
   - [Inline Javascript Handlers and Event handlers](#inline-javascript-handlers-and-event-handlers)
-  - [Script Loading strategies](#sript-loading-strategies)
+  - [Script Loading strategies](#script-loading-strategies)
+  - [Thinking like a programmer](#thinking-like-a-programmer)
 
 ## Introduction
 
@@ -112,6 +113,27 @@ Example: We add a text element with Javascript to the page each time a user clic
 
 ```
 
+### Comments
+- We can add comments to our code that will be ignored by the browser as they exist to provide instructions to fellow developers (*and us if we come back many months/years later and can't remember what we did*) on how the code we've written works.
+- Single Line comment: written after a double forward slash (`//`)
+
+```js
+// this is a single line comment
+
+```
+
+- Multi-line comment is written between the strings `/*` and `*/`.
+
+```js
+/*
+
+This is a mutli-line
+comment
+
+*/
+
+```
+
 ## Inline Javascript Handlers and Event handlers
 
 - It's bad practise to pollute our HTML with these as we would need to add functions to all HTML elements where we need behavior to happen. for example with a button click.
@@ -150,24 +172,20 @@ for (const button of buttons) {
 - The advantage of this is that the browser knows to load the external script after the HTML and CSS are loaded hence as such if a user is connected to a slower network our javascript won't take forever nor never load as opposed to if we put it at the bottom before the closing `</body>` tag.
 - It's best practise to put external scripts in the `<head>` element with the module `attribute`.
 
-## Comments
-- We can add comments to our code that will be ignored by the browser as they exist to provide instructions to fellow developers (*and us if we come back many months/years later and can't remember what we did*) on how the code we've written works.
-- Single Line comment: written after a double forward slash (`//`)
+## Thinking like a programmer
 
-```js
-// this is a single line comment
+One of the hardest things to learn in programming is not the syntax you need to learn, but how to apply it to solve real-world problems. We need to start thinking like a programmer. 
 
-```
+This generally involves: 
+- Looking at descriptions of what our program needs to do. 
+- Working out what code features are needed to achieve those things, and how to make them work together.
 
-- Multi-line comment is written between the strings `/*` and `*/`.
+**This requires a mixture of hard work, experience with the programming syntax, and practice — plus a bit of creativity. The more we code, the better we'll get good at it.**
 
-```js
-/*
+Example: Guess the number game
 
-This is a mutli-line
-comment
+Game brief:
+> I want you to create a simple guess the number type game. It should choose a random number between 1 and 100, then challenge the player to guess the number in 10 turns. After each turn, the player should be told if they are right or wrong, and if they are wrong, whether the guess was too low or too high. It should also tell the player what numbers they previously guessed. The game will end once the player guesses correctly, or once they run out of turns. When the game ends, the player should be given an option to start playing again.
 
-*/
-
-```
-
+Breakdown brief into simple actionable tasks is as much of a programmer mindset as possible:
+1. Generate a random number between 1 and 100
