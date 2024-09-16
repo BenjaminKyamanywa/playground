@@ -4,6 +4,9 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
 
 ## Topics
   - [Introduction](#introduction)
+  - [What can it do](#what-can-it-do)
+  - [Inline Javascript Handlers and Event handlers](#inline-javascript-handlers-and-event-handlers)
+  - [Script Loading strategies](#sript-loading-strategies)
 
 ## Introduction
 
@@ -99,7 +102,7 @@ Example: We add a text element with Javascript to the page each time a user clic
 
 ```
 
-## Inline Javascript Handlers & Event handlers
+## Inline Javascript Handlers and Event handlers
 
 - It's bad practise to pollute our HTML with these as we would need to add functions to all HTML elements where we need behavior to happen. for example with a button click.
 
@@ -110,13 +113,13 @@ Example: We add a text element with Javascript to the page each time a user clic
 <script>
   // JS function for a button click
   function createParagraph() {
-
+      // add logic
   }
 <script>
 
 ```
 
-## Event Handlers
+### Event Handlers
 
 Instead of including JavaScript in our HTML, we ccan use a pure JavaScript construct. The `querySelectorAll()` function allows us to select all the buttons on a page. We can then loop through the buttons, assigning a handler for each using `addEventListener()`. 
 
@@ -129,5 +132,31 @@ const buttons = document.querySelectorAll("button");
 for (const button of buttons) {
   button.addEventListener("click", createParagraph);
 }
+
+```
+
+## Script Loading strategies
+- If we are loading external scripts we can add it to the `<head>` of our HTML document with a type attribute `module`, it's syntax `<script type="module"></script>`.
+- The advantage of this is that the browser knows to load the external script after the HTML and CSS are loaded hence as such if a user is connected to a slower network our javascript won't take forever nor never load as opposed to if we put it at the bottom before the closing `</body>` tag.
+- It's best practise to put external scripts in the `<head>` element with the module `attribute`.
+
+## Comments
+- We can add comments to our code that will be ignored by the browser as they exist to provide instructions to fellow developers (*and us if we come back many months/years later and can't remember what we did*) on how the code we've written works.
+- Single Line comment: written after a double forward slash (`//`)
+
+```js
+// this is a single line comment
+
+```
+
+- Multi-line comment is written between the strings `/*` and `*/`.
+
+```js
+/*
+
+This is a mutli-line
+comment
+
+*/
 
 ```
