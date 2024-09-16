@@ -85,7 +85,7 @@ Example: We add a text element with Javascript to the page each time a user clic
         const paragraph = document.createElement('p');
         // add content to the paragraph element
         paragraph.textContent = 'You clicked the button';
-        // add paragraph element to the DOM
+        // add paragraph element to the bottom of the body
         document.body.appendChild(paragraph);
       }
 
