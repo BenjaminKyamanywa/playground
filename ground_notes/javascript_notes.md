@@ -2,15 +2,25 @@
 
 In this Javascript reference guide are notes taken while learning Javascript|ECMAScript from the ground up with helpful links to provide guidance a long the journey.
 
+## Helpful Links
+  - MDN Docs: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/
+  - Javascript Info: https://javascript.info/intro
+
 ## Topics
   - [Introduction](#introduction)
-  - [What can it do](#what-can-it-do)
   - [Inline Javascript Handlers and Event handlers](#inline-javascript-handlers-and-event-handlers)
   - [Script Loading strategies](#sript-loading-strategies)
 
 ## Introduction
 
-JavaScript is a programming language that allows us to implement complex functionalities on web pages.
+JavaScript is a programming language that allows us to implement complex functionalities on web pages and was initially created to “make web pages alive”. Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the [JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine). The programs in Javascript are called scripts cause they can be written right in a web page’s HTML and run automatically as the page loads.
+
+Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.
+
+#### Why is it called JavaScript?
+- When it was created, initially it had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.
+- But as it evolved, JavaScript became a fully independent language with its own specification called `ECMAScript`, and now it has no relation to Java at all.
+
 
 Example: 
 
@@ -160,3 +170,4 @@ comment
 */
 
 ```
+
