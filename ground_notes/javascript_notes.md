@@ -187,5 +187,13 @@ Example: Guess the number game
 Game brief:
 > I want you to create a simple guess the number type game. It should choose a random number between 1 and 100, then challenge the player to guess the number in 10 turns. After each turn, the player should be told if they are right or wrong, and if they are wrong, whether the guess was too low or too high. It should also tell the player what numbers they previously guessed. The game will end once the player guesses correctly, or once they run out of turns. When the game ends, the player should be given an option to start playing again.
 
-Breakdown brief into simple actionable tasks is as much of a programmer mindset as possible:
+Brief breakdown into simple actionable tasks in as much of a programmer mindset as possible:
 1. Generate a random number between 1 and 100
+2. Record the turn number the player is on. Start it on 1.
+3. Provide player with a way to guess what the number is.
+4. Once a guess is submitted record it somewhere first so the player can see their previous guesses.
+5. Next, check whether it's the correct number.
+5. If it's correct:
+    - i. Display congratulations message.
+    - ii. Prevent the player from being able to enter more guesses (this would disrupt the game).
+    - iii. Display control allowing the player to restart the game.
