@@ -196,6 +196,13 @@ Brief breakdown into simple actionable tasks in as much of a programmer mindset 
 6. If it's correct:
     - i. Display congratulations message.
     - ii. Prevent the player from being able to enter more guesses (this would disrupt the game).
-    - iii. Display control allowing the player to restart the game.
+    - iii. Display control allowing player to restart the game.
 7. If it's wrong and the player has turns left:
     - i. Tell the player they are wrong and whether their guess was too high or too low.
+    - ii. Allow player to make another guess.
+    - iii. Increment turn number by 1.
+8. If it's wrong and player has no turns left:
+    - i. Tell player it's game over.
+    - ii. Stop player from being able to make more guesses (this would disrupt the game).
+    - iii. Display control allowing player to restart the game.
+9. Once game restarts, make sure the game logic and UI are completely reset and go back to step 1.
