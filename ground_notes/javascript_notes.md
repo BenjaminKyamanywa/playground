@@ -193,7 +193,9 @@ Brief breakdown into simple actionable tasks in as much of a programmer mindset 
 3. Provide player with a way to guess what the number is.
 4. Once a guess is submitted record it somewhere first so the player can see their previous guesses.
 5. Next, check whether it's the correct number.
-5. If it's correct:
+6. If it's correct:
     - i. Display congratulations message.
     - ii. Prevent the player from being able to enter more guesses (this would disrupt the game).
     - iii. Display control allowing the player to restart the game.
+7. If it's wrong and the player has turns left:
+    - i. Tell the player they are wrong and whether their guess was too high or too low.
