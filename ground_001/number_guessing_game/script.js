@@ -67,6 +67,28 @@ function setGameOver() {
 }
 
 // resetGame to initial state
+function resetGame() {
+  guessCount = 1;
+
+  const resetParagraphs = document.querySelectorAll('.resultParagraphs p');
+  
+  // set each paragraph to empty
+  for (const resetParagraph of resetParagraphs) {
+    resetParagraph.textContent = '';
+  }
+
+  resetButton.parentNode.removeChild(resetButton);
+
+  guessField.disabled = true;
+  guessSubmit.disabled = true;
+  guessField.value = '';
+  guessField.focus();
+
+  lastResult.style.backgroundColor = 'white';
+
+  randomNumber = Math.floor(Math.random() * 100) + 1;;
+
+}
 
 // event listener for player guess submission
 guessSubmit.addEventListener('click', checkGuess);
