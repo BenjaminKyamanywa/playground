@@ -207,4 +207,4 @@ Brief breakdown into simple actionable tasks in as much of a programmer mindset 
     - iii. Display control allowing player to restart the game.
 9. Once game restarts, make sure the game logic and UI are completely reset and go back to step 1.
 
-**Project Link**: The project can be found on [here]()
+**Project Link**: The project can be found [here]()
