@@ -1,4 +1,4 @@
-# 🏖️ Travel Website
+# 🏖️ Travel Landing Page
  
 Static travel website. You can view the project live on Codepen [Here](https://codepen.io/benjaminkyamanywa/pen/gONoeWZ). 
 
