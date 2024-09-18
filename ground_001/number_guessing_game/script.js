@@ -56,4 +56,18 @@ function checkGuess() {
   guessField.focus(); // focus field for next guess to be entered
 }
 
+// add game over functionality
+function setGameOver() {
+  guessField.disabled = true; 
+  guessSubmit.disabled = true;
+  resetButton = document.createElement('button');
+  resetButton.textContent = 'Start new game';
+  document.body.append(resetButton);
+  resetButton.addEventListener('click', resetGame);
+}
+
+// resetGame to initial state
+
+// event listener for player guess submission
+guessSubmit.addEventListener('click', checkGuess);
 
