@@ -1,0 +1,56 @@
+/* General Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --base: #fb00ff;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #193549;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+h2 {
+  padding: 1.5rem 1.5rem;
+}
+
+.highlight {
+  color: var(--base-color);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+img {
+  background: var(--base);
+  background-size: cover;
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+  width: 100%;
+}
+
+
