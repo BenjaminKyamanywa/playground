@@ -28,26 +28,32 @@ function checkGuess() {
   // append current user user guess value onto the end of guesses paragraph with blank space inbetween
   guesses.textContent = `${guesses.textContent} ${userGuess}`;
 
+  // check if user guess is equal to randomNumber
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Congratulations! You got it right! 🤩'
     lastResult.style.backgroundColor = 'green';
     lowOrHi.textContent = '';
     setGameOver();
   } else if (guessCount === 10) {
+    // check if it's players' last turn
     lastResult.textContent = '🤒 !!!Game Over!!! 🤒';
     lowOrHi.textContent = '';
     setGameOver();
   } else {
+    // player didnt' guess right but has more guesses left
     lastResult.textContent = 'Wrong';
     lastResult.style.backgroundColor = 'red';
+    // check whether guess is lower or higher than answer
     if (userGuess < randomNumber) {
       lowOrHi.textContent = 'Last guess was too low!';
     } else if (userGuess > randomNumber) {
       lowOrHi.textContent = 'Last guess was too high!';
     }
   }
-
-  guessCount++;
-  guessField.value = '';
-  guessField.focus();
+// get readu for the next guess
+  guessCount++; // add one so player uses up their turn
+  guessField.value = ''; // empty value from form text field
+  guessField.focus(); // focus field for next guess to be entered
 }
+
+
