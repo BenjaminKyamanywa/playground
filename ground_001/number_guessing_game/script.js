@@ -80,8 +80,8 @@ function resetGame() {
 
   resetButton.parentNode.removeChild(resetButton);
 
-  guessField.disabled = true;
-  guessSubmit.disabled = true;
+  guessField.disabled = false;
+  guessSubmit.disabled = false;
   guessField.value = '';
   guessField.focus();
   // remove background color from last result paragraph
