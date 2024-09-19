@@ -11,6 +11,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Inline Javascript Handlers and Event handlers](#inline-javascript-handlers-and-event-handlers)
   - [Script Loading strategies](#script-loading-strategies)
   - [Thinking like a programmer](#thinking-like-a-programmer)
+  - [Troubleshooting Javascript](#troubleshooting-javascript)
 
 ## Introduction
 
@@ -207,4 +208,19 @@ Brief breakdown into simple actionable tasks in as much of a programmer mindset 
     - iii. Display control allowing player to restart the game.
 9. Once game restarts, make sure the game logic and UI are completely reset and go back to step 1.
 
-**Project Link**: We can find the project online [here]()
+**Project Link**: We can find the Guessing game project [here]()
+
+## Troubleshooting Javascript
+
+Here we'll cover some tips on how to find and fix errors in Javscript programs.
+
+### Types of errors
+
+Generally, when we do something wrong in code, there are two types of errors we'll face:
+
+- Syntax errors
+  - Spelling errors in code that cause our programs not to run at all, or to stop running part way through.
+- Logic Errors
+  - Syntax is correct but the code isn't what we intend it to be, meaning that the program runs successfully but gives incorrect results.
+  - Often harder to fix as there aren't usually error messages to direct us to the source of the issue.
+
