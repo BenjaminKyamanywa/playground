@@ -5,6 +5,7 @@ let randomNumber = Math.floor(Math.random() * 100) + 1; // assign random number 
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
+const resultParagraphs = document.querySelector('.resultParagraphs');
 
 // store reference to form text input and submit button
 const guessSubmit = document.querySelector('.guessSubmit');
@@ -62,7 +63,7 @@ function setGameOver() {
   guessSubmit.disabled = true;
   resetButton = document.createElement('button');
   resetButton.textContent = 'Start new game';
-  document.body.append(resetButton);
+  resultParagraphs.append(resetButton);
   resetButton.addEventListener('click', resetGame);
 }
 
@@ -72,7 +73,7 @@ function resetGame() {
 
   const resetParagraphs = document.querySelectorAll('.resultParagraphs p');
   
-  // set each paragraph to empty
+  // set each paragraph text content to empty
   for (const resetParagraph of resetParagraphs) {
     resetParagraph.textContent = '';
   }
@@ -83,9 +84,9 @@ function resetGame() {
   guessSubmit.disabled = true;
   guessField.value = '';
   guessField.focus();
-
+  // remove background color from last result paragraph
   lastResult.style.backgroundColor = 'white';
-
+  // generate new random number so player isn't guessing the same number again
   randomNumber = Math.floor(Math.random() * 100) + 1;
 
 }
