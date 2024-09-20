@@ -1,5 +1,7 @@
 // add variables to store data
 let randomNumber = Math.floor(Math.random() * 100) + 1; // assign random number between 1 and 100
+// Math.random(): generates a random decimal number between 0 and 1, e.g. 0.5675493843
+// Math.floor(Math.random() * 100) + 1: we pass the result of invoking Math.random() through Math.floor(), we multipy it by 100 to generate a random number between 0 and 99 as it gets rounded to the nearest whole number. We then add 1 to that result to make our random number between 1 and 100.
 
 // store reference to results paragraph
 const guesses = document.querySelector('.guesses');
