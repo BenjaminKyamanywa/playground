@@ -224,3 +224,12 @@ Generally, when we do something wrong in code, there are two types of errors we'
   - Syntax is correct but the code isn't what we intend it to be, meaning that the program runs successfully but gives incorrect results.
   - Often harder to fix as there aren't usually error messages to direct us to the source of the issue.
 
+Example syntax error:
+
+```js
+
+guessSubmit.addeventlistener('click', checkGuess); // Uncaught TypeError: guessSubmit.addeventListener is not a function. We have a type with '.addevenelistener'
+
+guessSubmit.addEventListener('click', checkGuess) // we fix the typo in '.addEventListener'
+
+```
