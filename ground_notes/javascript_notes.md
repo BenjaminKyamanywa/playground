@@ -224,21 +224,17 @@ Generally, when we do something wrong in code, there are two types of errors we'
   - Syntax is correct but the code isn't what we intend it to be, meaning that the program runs successfully but gives incorrect results.
   - Often harder to fix as there aren't usually error messages to direct us to the source of the issue.
 
-Example syntax error:
+Example syntax errors:
 
 ```js
 
-/**********
-Example One - typo with addEventListener JS built in function
-**********/
+/********** Example One - typo with addEventListener JS built in function **********/
 
 guessSubmit.addeventlistener('click', checkGuess); // Error: Uncaught TypeError: guessSubmit.addeventListener is not a function. We have a type with '.addevenelistener'
 
 guessSubmit.addEventListener('click', checkGuess) // we fix the typo in '.addEventListener'
 
-/**********
-Example Two - typo with parameter for querySelector()
-**********/
+/********** Example Two - typo with parameter for querySelector() **********/
 
 const lowOrHi = document.querySelector('lowOrHi'); // Error: Uncaught TypeError: Cannot set properties of null (setting 'textContent')
 
@@ -249,3 +245,17 @@ lowOrHi.textContent = 'Last guess was too high!';
 
 ```
 
+Example logic error:
+
+```js
+
+/********** Example - randomNumber always returns one **********/
+
+let randomNumber = Math.floor(Math.random()) + 1; // always returns 1 instead of a different random number
+
+// generates a random number between 1 and 100
+Math.floor(Math.random() * 100) + 1;
+// Math.random(): generates a random decimal number between 0 and 1, e.g. 0.5675493843
+// Math.floor(Math.random() * 100) + 1: we pass the result of invoking Math.random() through Math.floor(), we multipy it by 100 to generate a random number between 0 and 99 as it gets rounded to the nearest whole number. We then add 1 to that result to make our random number between 1 and 100.
+
+```
