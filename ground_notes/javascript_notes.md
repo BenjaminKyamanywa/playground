@@ -228,8 +228,24 @@ Example syntax error:
 
 ```js
 
-guessSubmit.addeventlistener('click', checkGuess); // Uncaught TypeError: guessSubmit.addeventListener is not a function. We have a type with '.addevenelistener'
+/**********
+Example One - typo with addEventListener JS built in function
+**********/
+
+guessSubmit.addeventlistener('click', checkGuess); // Error: Uncaught TypeError: guessSubmit.addeventListener is not a function. We have a type with '.addevenelistener'
 
 guessSubmit.addEventListener('click', checkGuess) // we fix the typo in '.addEventListener'
 
+/**********
+Example Two - typo with parameter for querySelector()
+**********/
+
+const lowOrHi = document.querySelector('lowOrHi'); // Error: Uncaught TypeError: Cannot set properties of null (setting 'textContent')
+
+// const lowOrHi = document.querySelector('.lowOrHi'); - we need to add a fullstop at the start of our parameter .querySelector('.lowOrHi')
+
+lowOrHi.textContent = 'Last guess was too high!';
+
+
 ```
+
