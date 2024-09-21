@@ -5,6 +5,8 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
 ## Helpful Links
   - MDN Docs: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/
   - Javascript Info: https://javascript.info/intro
+  - Advanced JS Cheat Sheet: https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts/
+  
 
 ## Topics
   - [Introduction](#introduction)

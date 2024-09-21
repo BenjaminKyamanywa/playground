@@ -4,6 +4,10 @@ In this React reference guide are notes taken while learning React from the grou
 
 React is a declarative paradigm that enables us to give our apps some state, components that are built with JSX that sometime also receive properties(props) as a giant Javascript object which creates a virtualDOM which is used by the React library to update the DOM for us instead of telling our apps exactly what we need them to do.
 
+## Helpful Links
+    - React Docs: https://react.dev/
+    - React Cheat Sheet: https://zerotomastery.io/cheatsheets/react-cheat-sheet/
+
 ## Topics
   - [React Concepts](#react-concepts)
   - [The Job of a React Developer](#the-job-of-a-react-developer)
