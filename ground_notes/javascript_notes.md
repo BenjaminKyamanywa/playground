@@ -12,6 +12,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Script Loading strategies](#script-loading-strategies)
   - [Thinking like a programmer](#thinking-like-a-programmer)
   - [Troubleshooting Javascript](#troubleshooting-javascript)
+  - [Storing information we need - Variables](#storing-information-we-need--variables)
 
 ## Introduction
 
@@ -276,4 +277,6 @@ There are other possible errors we can come across in our code. Below are some e
   - The second error means that the string has not been ended with a quote mark.
 
 MDN: [**JavaScript errors reference guide**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
+
+## Storing information we need — Variables
 
