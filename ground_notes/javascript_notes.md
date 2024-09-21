@@ -270,3 +270,10 @@ There are other possible errors we can come across in our code. Below are some e
   - Relates to an incorrectly formed Javascript object.
 - Syntax Error: missing `}` after function body
   - It means we've missed one of our curly braces from a function or conditional structure.
+- SyntaxError: expected expression, got 'string' | Syntax Error: string literal contains an unescaped line break
+  - These errors generally mean that we've left off a string value's opening or closing quote mark.
+  - With the first error, a string would be replaced with the unexpected character(s) that the browser found instead of a quote mark at the start of a string.
+  - The second error means that the string has not been ended with a quote mark.
+
+MDN: [**JavaScript errors reference guide**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
+
