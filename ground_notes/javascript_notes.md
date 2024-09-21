@@ -259,3 +259,14 @@ Math.floor(Math.random() * 100) + 1;
 // Math.floor(Math.random() * 100) + 1: we pass the result of invoking Math.random() through Math.floor(), we multipy it by 100 to generate a random number between 0 and 99 as it gets rounded to the nearest whole number. We then add 1 to that result to make our random number between 1 and 100.
 
 ```
+
+### Other common errors
+
+There are other possible errors we can come across in our code. Below are some examples:
+
+- Syntax Error: missing `)` after argument list
+  - It means that we've missed the closing parenthesis at the end of a function/method call.
+- Syntax Error: missing `:` after property id
+  - Relates to an incorrectly formed Javascript object.
+- Syntax Error: missing `}` after function body
+  - It means we've missed one of our curly braces from a function or conditional structure.
