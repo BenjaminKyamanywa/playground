@@ -18,7 +18,11 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
 
 ## Introduction
 
-JavaScript is a programming language that allows us to implement complex functionalities on web pages and was initially created to “make web pages alive”. Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the [JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine). The programs in Javascript are called scripts cause they can be written right in a web page’s HTML and run automatically as the page loads.
+JavaScript is a programming language that allows us to implement complex functionalities on web pages and was initially created to “make web pages alive”. 
+
+It was  created by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) in 1995. It's official name and specification is [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript).
+
+Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the [JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine). The programs in Javascript are called scripts cause they can be written right in a web page’s HTML and run automatically as the page loads.
 
 Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.
 
@@ -70,10 +74,19 @@ function updateName() {
 
 ```
 
-### What can it do:
+### What can in-browser Javascript do:
 - Store useful values inside variables.
 - Perform operations on strings.
-- Respond to events on a web page and run code.
+- React to user actions, run on mouse clicks, pointer movements, key presses.
+- Add new HTML to the page, change the existing content, modify styles.
+- Send requests over the network to remote servers, download and upload files (so-called AJAX and COMET technologies).
+- Get and set cookies, ask questions to the visitor, show messages.
+- Remember the data on the client-side (“local storage”).
+
+### What can't in-browser Javascript do:
+- It may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions. Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like “dropping” a file into a browser window or selecting it via an `<input>` tag.
+- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other page if they come from different sites (from a different domain, protocol or port). This is called the “Same Origin Policy”. To work around that, both pages must agree for data exchange and must contain special JavaScript code that handles it. We’ll cover that in the tutorial.
+- It can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. It’s a safety limitation.
 
 ### Internal Javascript
 
