@@ -211,7 +211,7 @@ Brief breakdown into simple actionable tasks in as much of a programmer mindset 
     - iii. Display control allowing player to restart the game.
 9. Once game restarts, make sure the game logic and UI are completely reset and go back to step 1.
 
-**Project Link**: We can find the Guessing game project [here]()
+**Project Link**: We can find the Guessing game project on Codepen [here](https://codepen.io/benjaminkyamanywa/pen/PoMYrQq)
 
 ## Troubleshooting Javascript
 
@@ -293,7 +293,8 @@ Example:
 
 <script>
 // 1. Change text of the button
-// 2. Show number of times button has been clicked in the heading. Store the number of times in a variable.
+// 2. Show number of times button has been clicked in the heading. 
+// 3. Store the number of times in a variable.
 
 const button = document.querySelector('#button');
 const heading = document.querySelector('#heading');
