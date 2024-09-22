@@ -293,8 +293,8 @@ Example:
 
 <script>
 // 1. Change text of the button
-// 2. Show number of times button has been clicked in the heading. 
-// 3. Store the number of times in a variable.
+// 2. Show number of times button has been clicked in the heading 
+// 3. Store the number of times in a variable
 
 const button = document.querySelector('#button');
 const heading = document.querySelector('#heading');
@@ -303,7 +303,7 @@ let count = 1;
 
 button.onclick = () => {
   button.textContent = 'Try again';
-  heading.textContent = `${count} clicks so far!`
+  heading.textContent = `${count} clicks so far!`;
 };
 
 </script>
