@@ -282,3 +282,29 @@ MDN: [**JavaScript errors reference guide**](https://developer.mozilla.org/en-US
 
 ## Storing information we need — Variables
 
+A variable is a container for a value that we use to store for instance a number we might use in a sum, or a string we might use as part of a sentence.
+
+Example:
+
+```html
+
+<button id="button">Click Me</button>
+<h2 id="heading"></h2>
+
+<script>
+// 1. Change text of the button
+// 2. Show number of times button has been clicked in the heading. Store the number of times in a variable.
+
+const button = document.querySelector('#button');
+const heading = document.querySelector('#heading');
+
+let count = 1;
+
+button.onclick = () => {
+  button.textContent = 'Try again';
+  heading.textContent = `${count} clicks so far!`
+};
+
+</script>
+
+```
