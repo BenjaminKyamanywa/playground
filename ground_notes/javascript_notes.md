@@ -324,6 +324,11 @@ button.onclick = () => {
 const firstName = 'Foo';
 const lastName = 'bar';
 
+function logName() {
+  console.log(`Hi there my first name is ${firstName} and my last name is ${lastName}`);
+}
+
+logName();
 
 </script>
 
