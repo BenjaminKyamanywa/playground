@@ -334,3 +334,11 @@ logName();
 
 ```
 
+#### Variable naming rules
+- Stick to using latin characters (0-9, a-z, A-Z) and the underscore character.
+- No use of underscores at the start of variable names as it's used in certain constructs to mean specific things, so it can get confusing.
+- Don't use numbers at the start of variable names, it will throw and error as it isn't allowed.
+- A safe convention to use is `lowerCamelCase`. Stick together words with lower case for the first word and capitalize subsequent words.
+- Make variable names intuitive so that they clearly describe the data they contain. Don't just use single letters/numbers, or big long phrases.
+- They are case sensitive therefore `myage` is different from `myAge`.
+- Avoid using Javascript reserved words as variable names e.g `var`, `function`, `let`, `for`. 
