@@ -319,6 +319,13 @@ button.onclick = () => {
   heading.textContent = `${count} clicks so far!`;
 };
 
+
+// Declaring and Initializing Variables
+const firstName = 'Foo';
+const lastName = 'bar';
+
+
 </script>
 
 ```
+
