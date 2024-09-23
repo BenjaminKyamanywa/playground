@@ -297,6 +297,12 @@ MDN: [**JavaScript errors reference guide**](https://developer.mozilla.org/en-US
 
 A variable is a container for a value that we use to store for instance a number we might use in a sum, or a string we might use as part of a sentence.
 
+In Javascript we predominantly use `let` and `const` to declare and initialize our variables.
+There is another way using `var` however it has unexpected behaviors and as such we don't use.
+
+Most of the time we use `const` when we can and `let` when we have to which means if we can initialize a variable when we declare it and don't need to re-assign it later, use `const`.
+
+
 Example:
 
 ```html
