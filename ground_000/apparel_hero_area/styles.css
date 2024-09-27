@@ -24,3 +24,15 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Header & Nav styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin: 4rem;
+}
