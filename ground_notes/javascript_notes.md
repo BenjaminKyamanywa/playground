@@ -348,3 +348,31 @@ logName();
 - Make variable names intuitive so that they clearly describe the data they contain. Don't just use single letters/numbers, or big long phrases.
 - They are case sensitive therefore `myage` is different from `myAge`.
 - Avoid using Javascript reserved words as variable names e.g `var`, `function`, `let`, `for`. 
+
+### Javascript commands
+
+```js
+
+/***Variables***/
+let x; // Declares block-scoped variable 
+const y; // Declares block-scoped read-only constant variable
+
+/***Functions***/
+function name() {
+  // Function declaration
+}
+
+const myFunction() => {
+  // Arrow function expression
+}
+
+/***Conditional Statements***/
+if (condition) {
+  // Executes if condition is true
+} else if (otherCondition) {
+  // Executes if other condition is true
+} else {
+  // Executes if all conditions are false
+}
+
+```
