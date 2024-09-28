@@ -375,4 +375,20 @@ if (condition) {
   // Executes if all conditions are false
 }
 
+/***Loops***/
+for (let i = 0; i < 10; i++) {
+  // runs code for as long as condition is true
+}
+
+while (condition) {
+  // runs code while condition set is true
+}
+
+do {
+  // executes code block at least once and repeats while condition is true
+} while (condition);
+
+/***Array Methods***/
+
+
 ```
