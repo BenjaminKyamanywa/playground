@@ -401,6 +401,15 @@ Object.keys(obj) // returns an array of objects' keys
 Object.values(obj); // returns an arrya of objects' values
 Object.entries(obj); // returns an array of objects' key-value pairs
 
+/***String Methods***/
+let str = "Helo world!";
+
+str.length; // returns length of a string
+str.toUpperCase(); // converts string characters to upper case
+str.toLowerCase(); // converts string characters to lower case
+str.includes('helo'); // checks if string includes word added in 'brackets'
+
+
 
 
 ```
