@@ -15,6 +15,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Thinking like a programmer](#thinking-like-a-programmer)
   - [Troubleshooting Javascript](#troubleshooting-javascript)
   - [Storing information we need - Variables](#storing-information-we-need--variables)
+  - [Javascript commands](#javascript-commands)
 
 ## Introduction
 
@@ -350,6 +351,8 @@ logName();
 - Avoid using Javascript reserved words as variable names e.g `var`, `function`, `let`, `for`. 
 
 ### Javascript commands
+
+Below is a list of most utilized javascript commands as a helpful reference with descripitons.
 
 ```js
 
