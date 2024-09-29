@@ -376,6 +376,18 @@ console.log(total);
 
 ```
 
+#### Arithmetic Operators
+
+| Operator    | Name    | Purpose   | Example        |
+| ----------- | --------- | ----------- | --------- |
+| + | Addition | Adds two numbers together | 6 + 9 |
+| - | Subtraction | Subtracts two numbers | 5 - 7 |
+| * | Multiplication | Multiplies two numbers | 5 * 7 |
+| * | Multiplication | Multiplies two numbers together | 5 * 7 |
+| / | Division | Divides left number from right number | 6 / 3 |
+| % | Remainder (Modulu) | Returns remainder after dividing left number into integer portions equal to the right number | 8 % 3 (returns 2, as three goes into 8 twice, leaving 2 left over) |
+| ** | Exponent | Raises base number to the exponent power, that's, the base number multiplied by itself, exponent times.	| 5 ** 2 (returns 25, which is the same as 5 * 5) |
+
 
 
 ### Javascript commands
