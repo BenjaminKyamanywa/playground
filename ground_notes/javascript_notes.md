@@ -395,4 +395,12 @@ arr.pop(); // Removes the last element of an array
 arr.shift(); // Removes the first element from an array
 arr.unshift(); // Adds an element to the beginning of an array
 
+/***Object Methods***/
+let obj = {name: "John Doe", age: 15}
+Object.keys(obj) // returns an array of objects' keys
+Object.values(obj); // returns an arrya of objects' values
+Object.entries(obj); // returns an array of objects' key-value pairs
+
+
+
 ```
