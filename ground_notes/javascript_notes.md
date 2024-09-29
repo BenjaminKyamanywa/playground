@@ -389,6 +389,10 @@ do {
 } while (condition);
 
 /***Array Methods***/
-
+let arr = [1, 2, 3];
+arr.push(4); // Adds an element to the end of an array
+arr.pop(); // Removes the last element of an array
+arr.shift(); // Removes the first element from an array
+arr.unshift(); // Adds an element to the beginning of an array
 
 ```
