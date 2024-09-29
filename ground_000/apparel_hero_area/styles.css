@@ -87,22 +87,27 @@ main {
 .right-col {
   flex-grow: 1;
 }
+
 h1 {
   font-family: 'Playfair Display';
   font-weight: normal;
   font-size: 5.2rem;
   margin:0;
 }
-.subhead {
+
+.subheadline {
   font-size: 1.8rem;
 }
+
 .cta-btns {
   margin: 5em 0;
 }
+
 .cta-btns, .secondary-cta {
   display: flex;
   gap: 2em;
 }
+
 .primary-cta {
   background: #F2F0DF;
   font-size: 1.8rem;
@@ -112,6 +117,7 @@ h1 {
   border-radius: 1.9em;
   padding: 1em 2em;
 }
+
 .secondary-cta {
   font-size: 1.8rem;
   text-decoration: none;
@@ -119,12 +125,13 @@ h1 {
   display: block;
   padding: 1em 0;
 }
+
 .secondary-cta svg {
   width: 20px;
   transition: transform .3s;
 }
 
-.news {
+.news-module {
   display: flex;
   gap: 3em;
   padding: 5em;
@@ -132,7 +139,8 @@ h1 {
   border-radius: 1.9em;
   position: relative;
 }
-.news:before {
+
+.news-module:before {
   position: absolute;
   content: "";
   background: url('https://assets.codepen.io/2621168/confetti.svg');
@@ -142,13 +150,15 @@ h1 {
   height: 100px;
   z-index: 2;
 }
-p.employees {
+
+.employees {
   font-size: 3.3rem;
   margin: 0;
   font-weight: 200;
   line-height: 100%;
 }
-p.details {
+
+.details {
   font-size: 1.4rem;
   margin: 0;
 }
@@ -173,13 +183,13 @@ p.details {
   transition: background-size .3s;
 }
 
-.card1 {
+.card-1 {
   grid-area: left;
   background-image: url('https://assets.codepen.io/2621168/clothing1.jpg');
   position: relative;
 }
 
-.card1:before {
+.card-1:before {
   position: absolute;
   content: "";
   background: url('https://assets.codepen.io/2621168/tag.svg') no-repeat;
@@ -190,11 +200,12 @@ p.details {
   pointer-events: none;
 }
 
-.card2 {
+.card-2 {
   grid-area: right;
   background-image: url('https://assets.codepen.io/2621168/clothing2.jpg');
 }
-.card3 {
+
+.card-3 {
   grid-area: bottom;
   background-image: url('https://assets.codepen.io/2621168/clothing3.jpg');
   background-position: 50%;
@@ -217,11 +228,13 @@ p.details {
   font-size: 1.6rem;
   font-weight: bold;
 }
+
 .card-details p {
   font-size: 1.4rem;
   margin: 0;
 }
-p.product-price {
+
+.product-price {
   font-size: 1.8rem;
 }
 
