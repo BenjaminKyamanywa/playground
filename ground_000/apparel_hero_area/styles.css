@@ -185,7 +185,7 @@ h1 {
 
 .card-1 {
   grid-area: left;
-  background-image: url('https://assets.codepen.io/2621168/clothing1.jpg');
+  background-image: url('https://images.unsplash.com/photo-1509319117193-57bab727e09d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   position: relative;
 }
 
@@ -202,12 +202,12 @@ h1 {
 
 .card-2 {
   grid-area: right;
-  background-image: url('https://assets.codepen.io/2621168/clothing2.jpg');
+  background-image: url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
 .card-3 {
   grid-area: bottom;
-  background-image: url('https://assets.codepen.io/2621168/clothing3.jpg');
+  background-image: url('https://images.unsplash.com/photo-1564858775248-ab611c9abd3d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-position: 50%;
 }
 
