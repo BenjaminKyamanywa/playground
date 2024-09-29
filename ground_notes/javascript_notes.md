@@ -15,6 +15,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Thinking like a programmer](#thinking-like-a-programmer)
   - [Troubleshooting Javascript](#troubleshooting-javascript)
   - [Storing information we need - Variables](#storing-information-we-need--variables)
+  - [Maths in Javascript - Numbers and Operators](#maths-in-javascript---numbers-and-operators)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
@@ -349,6 +350,22 @@ logName();
 - Make variable names intuitive so that they clearly describe the data they contain. Don't just use single letters/numbers, or big long phrases.
 - They are case sensitive therefore `myage` is different from `myAge`.
 - Avoid using Javascript reserved words as variable names e.g `var`, `function`, `let`, `for`. 
+
+
+### Maths in Javascript - Numbers and Operators
+
+We'll cover how we can use operators and other features to successfully manipulate numbers to do our bidding.
+
+We have different types of numbers:
+  - Integers: positive or negative numbers e.g 20, 30, -5
+  - Decimals(Floating point): have decimal points and decimal places e.g 4.5, 9.7
+
+Different number Systems:
+    - Binary: lowest level computer numbering system e.g 0s and 1s
+    - Octal: Base 8 numbers use 0-7 in each digit.
+    - Hexadecimal: Base 16, use 0-9 and a-f in each digit e.g #c55da1
+
+
 
 ### Javascript commands
 
