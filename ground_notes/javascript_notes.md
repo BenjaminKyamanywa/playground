@@ -408,6 +408,12 @@ console.log(total);
 | <= | Less than or equal to | Checks whether left value is smaller than or equal to right value | 3 <= 5 |
 | >= | Greater than or equal to | Checks whether left value is greater than or equal to right value | 3 >= 5 |
 
+### Handling Strings in Javascipt
+
+We'll cover the most common string operations in Javascript such as creation, escaping quotes and joining strings.
+
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
