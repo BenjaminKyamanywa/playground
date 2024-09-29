@@ -428,5 +428,31 @@ fetch(url)
   .then(data => console.log(data));
   .catch(error => console.error(error)); // catches errors during fetch process
 
+async function fetchData() {
+  // asynchronous function declaration
+  try {
+    let response = await fectch(url); // waits for fetch to complete
+    let data = await response.json(); // waits for respnse to be parsed
+    console.log(data); // logs data to console
+  } catch (error) {
+    console.error(error); // catches and logs any errors in the request
+  }
+}
+
+// Error Handling
+
+try {
+  // attempt to execute code that may throw an error
+} catch (error) {
+  // handles any errors
+  console.error(error); // logs any errors to the console
+} finally {
+  // executes code after try and catch regardless of result
+}
+
+
+
+
+
 
 ```
