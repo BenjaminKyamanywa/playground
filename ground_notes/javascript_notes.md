@@ -415,6 +415,18 @@ document.querySelector('.bar'); // selects element based on the selector. For cl
 document.querySelectorAll('div') // selects all elements that match selector
 document.createElement('div'); // creates a new html element
 
+/***Event Listeners***/
+element.addEventListener('click', function); // attaches a click event listener to an element that makes a function call when fired
+
+/***JSON Methods***/
+JSON.stringify(obj); // converts a javascript object into a JSON string
+JSON.parse(jsonStr); // parses a JSON string into a javascript object
+
+/***Asynchronous Operations***/
+fetch(url)
+  .then(response => response.json()); // performs network request and returns a promise
+  .then(data => console.log(data));
+  .catch(error => console.error(error)); // catches errors during fetch process
 
 
 ```
