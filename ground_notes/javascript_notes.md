@@ -450,9 +450,14 @@ try {
   // executes code after try and catch regardless of result
 }
 
-
-
-
+/***Date and Time Methods***/
+let now = new Date(); // creates new Date object representing current date and time
+now.getFullYear(); // gets four digit current year
+now.getMonth(); // gets current month (0 - 11) Jan - Dec
+now.getDate(); // gets date of the month (1 - 31)
+now.getHours(); // gets hours (0 - 23)
+now.getMinutes(); // gets minutes (0 - 59)
+now.getSeconds(); // gets seconds (0 - 59)
 
 
 ```
