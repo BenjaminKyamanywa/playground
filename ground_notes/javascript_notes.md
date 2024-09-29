@@ -388,7 +388,14 @@ console.log(total);
 | % | Remainder (Modulu) | Returns remainder after dividing left number into integer portions equal to the right number | 8 % 3 (returns 2, as three goes into 8 twice, leaving 2 left over) |
 | ** | Exponent | Raises base number to the exponent power, that's, the base number multiplied by itself, exponent times.	| 5 ** 2 (returns 25, which is the same as 5 * 5) |
 
+#### Assignment Operators
 
+| Operator    | Name    | Purpose   | Example       | Shortcut |
+| ----------- | --------- | ----------- | --------- | --------- |
+| += | Addition assignment | Adds right value to variable and returns new variable value | x += 4 | x = x + 4 |
+| -= | Subtraction assignment | Subtracts right value from variable and returns new variable value | x -= 3 | x = x - 3 |
+| *= | Multiplication assignment | Multiplies right value with variable and returns new variable value | x *= 2 | x = x * 2 |
+| /= | Division assignment | Divides right value with variable and returns new variable value | x /= 6 | x = x / 6 |
 
 ### Javascript commands
 
