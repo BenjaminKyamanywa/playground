@@ -27,6 +27,11 @@ body {
 
 /* Header & Nav styles */
 
+.logo {
+  width: 10rem;
+  margin-top: 2.5rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
