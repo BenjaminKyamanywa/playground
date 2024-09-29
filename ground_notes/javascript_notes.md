@@ -459,5 +459,20 @@ now.getHours(); // gets hours (0 - 23)
 now.getMinutes(); // gets minutes (0 - 59)
 now.getSeconds(); // gets seconds (0 - 59)
 
+/***Javascript Class***/
+class Person {
+  constructor(name, age) { // initialize object
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() { // method to greet
+    console.log(`Hello my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+/***Module Imports and Exports***/
+export const myFunction = () => { /* ... */ } // exports function from a module
+import { myFunction } from './myModule'; // imports function from module
 
 ```
