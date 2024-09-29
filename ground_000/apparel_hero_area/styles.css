@@ -114,10 +114,10 @@ h1 {
 }
 
 .primary-cta {
-  background: #F2F0DF;
+  background: #565273;
   font-size: 1.8rem;
   font-weight: bold;
-  color: black;
+  color: #fff;
   text-decoration: none;
   border-radius: 1.9em;
   padding: 1em 2em;
@@ -251,7 +251,7 @@ nav ul li a:hover:before {
 }
 
 .primary-cta:hover {
-  background: #e3e0c7;
+  background: #6a658a;
 }
 
 .secondary-cta:hover svg {
