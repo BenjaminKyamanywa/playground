@@ -409,6 +409,11 @@ str.toUpperCase(); // converts string characters to upper case
 str.toLowerCase(); // converts string characters to lower case
 str.includes('helo'); // checks if string includes word added in 'brackets'
 
+/***DOM Manipulation***/
+document.getElementById('foo'); // selects html element base on ID selector
+document.querySelector('.bar'); // selects element based on the selector. For classes use dot notation with class name e.g '.bar' and for ID's use selector notation e.g '#bar'
+document.querySelectorAll('div') // selects all elements that match selector
+document.createElement('div'); // creates a new html element
 
 
 
