@@ -397,6 +397,17 @@ console.log(total);
 | *= | Multiplication assignment | Multiplies right value with variable and returns new variable value | x *= 2 | x = x * 2 |
 | /= | Division assignment | Divides right value with variable and returns new variable value | x /= 6 | x = x / 6 |
 
+#### Comparison Operators
+
+| Operator    | Name    | Purpose   | Example        |
+| ----------- | --------- | ----------- | --------- |
+| === | Strict equality | Checks whether left and right values are identical | 6 === 9 + 2 |
+| !== | Strict non-equality | Checks whether left and right values are not identical | 6 !== 9 + 2 |
+| < | Less than | Checks whether left value is smaller than right value | 6 < 9 |
+| > | Greater than | Checks whether left value is greater than right value | 6 > 20 |
+| <= | Less than or equal to | Checks whether left value is smaller than or equal to right value | 3 <= 5 |
+| >= | Greater than or equal to | Checks whether left value is greater than or equal to right value | 3 >= 5 |
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
