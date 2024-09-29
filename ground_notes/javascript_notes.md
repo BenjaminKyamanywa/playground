@@ -365,6 +365,17 @@ Different number Systems:
     - Octal: Base 8 numbers use 0-7 in each digit.
     - Hexadecimal: Base 16, use 0-9 and a-f in each digit e.g #c55da1
 
+#### Convert to number data type
+- Sometimes we have for instance strings especially from form inputs and we need to convert info to a number data type. Javascript provides a Number method that we can use.
+
+```js
+
+let numToStr = '55';
+total = Number(numToStr) + 3; // convert string to number with Number method
+console.log(total);
+
+```
+
 
 
 ### Javascript commands
