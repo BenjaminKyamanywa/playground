@@ -412,7 +412,11 @@ console.log(total);
 
 We'll cover the most common string operations in Javascript such as creation, escaping quotes and joining strings.
 
-
+String delcaration:
+  - We use quotes to define characters as strings we can use either single (' '), double(" ") or backticks (` `) e.g 'Hello world', "Welcome home", `You rock`.
+  - String concatenation can help us join two strings however, for readability it's recommneded to use backticks. e.g ('Hello' + , + 'World');
+  - We can escape characters such as punctuation marks in strings so they aren't considered as code e.g ('I\'m striving for mastery as a developer').
+  - 
 
 ### Javascript commands
 
