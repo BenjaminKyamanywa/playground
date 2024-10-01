@@ -413,12 +413,21 @@ console.log(total);
 We'll cover the most common string operations in Javascript such as creation, escaping quotes and joining strings.
 
 String delcaration:
-  - We use quotes to define characters as strings we can use either single (' '), double(" ") or backticks (` `) e.g 'Hello world', "Welcome home", `You rock`.
+  - We use quotes to define characters as strings we can use either single (' '), double(" ") or backticks (` `) e.g 'Hello world', "Welcome home", \`You rock`.
   - Maintain the same style for the quotes used at the start and end of a string to avoid errors.
   - If we miss to add a quote at either the start of finish we get errors e.g 'unterminated string literal' or 'missing; before  statement'
   - String concatenation can help us join two strings however, for readability it's recommneded to use backticks. e.g ('Hello' + , + 'World');
   - We can escape characters such as punctuation marks in strings so they aren't considered as code e.g ('I\'m striving for mastery as a developer').
-  - We can add Javascript operations when we use backticks as well as variables e.g `Hello, I am ${name}`, `We get ${ 2 + 4} after adding the numbers 2 and 4`.
+  - We can add Javascript operations when we use backticks as well as variables e.g `Hello, I am ${name}`, \`We get ${ 2 + 4} after adding the numbers 2 and 4`.
+
+#### Useful string methods
+
+We'll cover here useful operations we can do on strings with built in Javascript methods.
+
+For instance:
+  - Finding length of a text string we use the length method e.g '.length'
+  - Joining and splitting strings
+  - Substituting one character in a string for another
 
 ### Javascript commands
 
