@@ -450,7 +450,21 @@ We can retrieve a specific character from a string by utilizing array index nota
 
 To retrieve the last character of any string we utilize 'string[string.length - 1]';
 
+#### Test if string contains substring
 
+Sometimes we'll need to check if a smaller string is present within a larger one. Basically if a string contains a substring. We can use '.includes()' that takes a single parameter for our substring search.
+
+```js
+
+const subStringCheck = 'Mozilla';
+
+if (subStringCheck.includes('zilla')) {
+  console.log('Found zilla!');
+} else {
+  console.log('No zilla here please check elsewhere!');
+}
+
+```
 
 ### Javascript commands
 
