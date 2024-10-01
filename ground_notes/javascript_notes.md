@@ -466,6 +466,31 @@ if (subStringCheck.includes('zilla')) {
 
 ```
 
+Sometimes we want to know if a string starts or ends with a particular substring. In this case we can utilize `startsWith()` or `endsWith()` methods.
+
+```js
+
+// startsWith() example
+const startsWithCheck = 'Mozilla'
+
+if (startsWithCheck.startsWith('ozil')) {
+  console.log('Yayy starts with ozil');
+} else {
+  console.log('Naayyy no zilla found here!');
+}
+
+// endsWith() example
+
+const endsWithCheck = 'Mozilla'
+
+if (endsWithCheck.endsWith('zilla')) {
+  console.log('Yaaay ends with zilla')
+} else {
+  console.log('Naayy no zilla found here!')
+}
+
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
