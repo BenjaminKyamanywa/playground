@@ -426,8 +426,23 @@ We'll cover here useful operations we can do on strings with built in Javascript
 
 For instance:
   - Finding length of a text string we use the length method e.g '.length'
-  - Joining and splitting strings
+  - Joining and splitting strings e.g .join and .split
   - Substituting one character in a string for another
+
+#### Finding length of a string
+
+This help us find out how many characaters are part of a string.
+
+Uses:
+  - Checking length of user uersnames/passswords entered into forms and letting users know if too long.
+  - Find the length of a series of names in order to display them in order of length.
+
+```js
+
+const string = 'Mozilla';
+console.log(string.length); // returns: 7
+
+```
 
 ### Javascript commands
 
