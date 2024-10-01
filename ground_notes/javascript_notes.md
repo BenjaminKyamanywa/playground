@@ -444,6 +444,14 @@ console.log(string.length); // returns: 7
 
 ```
 
+#### Retrieve specific string character
+
+We can retrieve a specific character from a string by utilizing array index notation. e.g string[0] // - this checks our string variable and returns 'o' in index 1 from the word 'Mozilla' as that's where it first appears.
+
+To retrieve the last character of any string we utilize 'string[string.length - 1]';
+
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
