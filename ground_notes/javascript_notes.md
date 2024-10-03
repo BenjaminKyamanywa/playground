@@ -491,6 +491,12 @@ if (endsWithCheck.endsWith('zilla')) {
 
 ```
 
+#### Finding position of a substring within a string
+
+We can find the position of a string within a larger string by utilizing indexOf() which returns the first ocurrence of the string it it's present and -1 if it's not. It takes two parameters, first is the substring we are looking for and an optional parameter that specifies the starting point of the search.
+
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
