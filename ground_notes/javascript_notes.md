@@ -493,8 +493,37 @@ if (endsWithCheck.endsWith('zilla')) {
 
 #### Finding position of a substring within a string
 
-We can find the position of a string within a larger string by utilizing indexOf() which returns the first ocurrence of the string it it's present and -1 if it's not. It takes two parameters, first is the substring we are looking for and an optional parameter that specifies the starting point of the search.
+We can find the position of a substring within a larger string by utilizing `indexOf()` which returns the first occurrence of the string if it's present and `-1` if it's not. 
 
+It takes two parameters, first is the substring we are looking for and an optional parameter that specifies the starting point of the search.
+
+```js
+
+const subStringWithinString = 'MDN - Best resource for developers, by developers';
+console.log(subStringWithinString.indexOf('developers')); // 24
+
+console.log(subStringWithinString.indexOf('x')); // -1
+// returns -1 because the character x isn't part of our string 
+
+```
+
+Starting at 0, if we count the number of characters (including whitespace) from the beginning of the string, the first occurrence of the substring "developers" is at index 24.
+
+
+How we can find additional occurrences of a substring:
+  - We pass in a value that's greater than the index of previous occurrence as second parameter to indexOf() method.
+
+```js
+
+const subStringWithinString = 'MDN - Best resource for developers, by developers';
+
+const firstOccurrence = subStringWithinString.indexOf('developers');
+const secondOccurrence = subStringWithinString.indexOf('developers', firstOccurrence + 1);
+
+console.log(firstOccurrence); // 24
+console.log(secondOccurrence); // 39
+
+```
 
 
 ### Javascript commands
