@@ -519,6 +519,7 @@ const subStringWithinString = 'MDN - Best resource for developers, by developers
 
 const firstOccurrence = subStringWithinString.indexOf('developers');
 const secondOccurrence = subStringWithinString.indexOf('developers', firstOccurrence + 1);
+// we are telling the method to search for the substring 'developers' starting at index 24 (firstOccurrence + 1), and it returns the index 39
 
 console.log(firstOccurrence); // 24
 console.log(secondOccurrence); // 39
