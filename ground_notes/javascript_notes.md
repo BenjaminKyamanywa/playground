@@ -526,6 +526,20 @@ console.log(secondOccurrence); // 39
 
 ```
 
+#### Extracting a substring from a string
+
+We can extract a substring from a string using 'slice()' method, we pass it:
+  - 1st: Index at which to start extracting.
+  - 2nd: Index at which to stop extracting. It's exclusive meaning that the character at this index is not included in the extracted substring.
+
+```js
+
+const browser = 'mozilla';
+console.log(browser.slice(1, 4)); // 'ozi'
+
+// character at index 1 is '0', and the character at index 4 is 'l'. So we extract all characters starting at 'o' and ending just before 'l' giving 'ozi'.
+
+```
 
 ### Javascript commands
 
