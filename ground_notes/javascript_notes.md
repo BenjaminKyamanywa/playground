@@ -539,6 +539,15 @@ console.log(browser.slice(1, 4)); // 'ozi'
 
 // character at index 1 is '0', and the character at index 4 is 'l'. So we extract all characters starting at 'o' and ending just before 'l' giving 'ozi'.
 
+/*
+
+if we want to return all remaining characters in a string from a certain character we don't need to include the second parameter.
+
+*/
+
+//returns: zilla
+console.log(slice(2));
+
 ```
 
 
