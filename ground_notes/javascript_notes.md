@@ -545,7 +545,7 @@ if we want to return all remaining characters in a string from a certain charact
 
 */
 
-//returns: zilla
+//returns: zilla (cause character at position two is 'z' and since we didn't add a second param substring returned is all remaining characters in the string)
 console.log(slice(2));
 
 ```
