@@ -550,7 +550,17 @@ console.log(slice(2));
 
 ```
 
+#### Changing Case
 
+We can utlize toUpperCase() and toLowerCase() to change the case of charaters. It can be helpful in case we'd like to save data to a database with a specific case.
+
+```JS
+
+const userGreeting = 'Hello World!, I am Driven to Master Problem Solving With Coding';
+console.log(userGreeting.toUpperCase()); // HELLO WORLD!, I AM DRIVEN TO MASTER PROBLEM SOLVING WITH CODING
+console.log(userGreeting.toLowerCase()); // hello world!, i am driven to master problem solving with coding
+
+```
 
 ### Javascript commands
 
