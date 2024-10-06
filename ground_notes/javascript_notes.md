@@ -541,6 +541,8 @@ console.log(browser.slice(1, 4)); // 'ozi'
 
 ```
 
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
