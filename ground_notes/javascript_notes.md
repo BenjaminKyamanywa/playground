@@ -562,6 +562,20 @@ console.log(userGreeting.toLowerCase()); // hello world!, i am driven to master 
 
 ```
 
+#### Updating parts of a string
+
+We are able to change parts of a string with a new set of string characters with the help of `replace()`.
+
+```js
+
+const stringUpdate = 'mozilla';
+const newStringUpdated = stringUpdate.replace('moz', 'van');
+console.log(newStringUpdated);
+
+```
+
+**NB:** `replace()` like many string methods doesn't change the string it's called on, but returns a new string.
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
