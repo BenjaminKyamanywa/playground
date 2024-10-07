@@ -16,6 +16,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Troubleshooting Javascript](#troubleshooting-javascript)
   - [Storing information we need - Variables](#storing-information-we-need--variables)
   - [Maths in Javascript - Numbers and Operators](#maths-in-javascript---numbers-and-operators)
+  - [Handling Strings in Javascipt](#handling-strings-in-javascipt)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
@@ -575,6 +576,8 @@ console.log(newStringUpdated);
 ```
 
 **NB:** `replace()` like many string methods doesn't change the string it's called on, but returns a new string.
+
+
 
 ### Javascript commands
 
