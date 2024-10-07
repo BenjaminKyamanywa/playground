@@ -16,7 +16,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Troubleshooting Javascript](#troubleshooting-javascript)
   - [Storing information we need - Variables](#storing-information-we-need--variables)
   - [Maths in Javascript - Numbers and Operators](#maths-in-javascript---numbers-and-operators)
-  - [Handling Strings in Javascipt](#handling-strings-in-javascipt)
+  - [Handling Strings in Javascript](#handling-strings-in-javascript)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
@@ -409,7 +409,7 @@ console.log(total);
 | <= | Less than or equal to | Checks whether left value is smaller than or equal to right value | 3 <= 5 |
 | >= | Greater than or equal to | Checks whether left value is greater than or equal to right value | 3 >= 5 |
 
-### Handling Strings in Javascipt
+### Handling Strings in Javascript
 
 We'll cover the most common string operations in Javascript such as creation, escaping quotes and joining strings.
 
