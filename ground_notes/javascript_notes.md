@@ -453,7 +453,7 @@ To retrieve the last character of any string we utilize 'string[string.length - 
 
 #### Test if string contains substring
 
-Sometimes we'll need to check if a smaller string is present within a larger one. Basically if a string contains a substring. We can use '.includes()' that takes a single parameter for our substring search.
+Sometimes we'll need to check if a smaller string is present within a larger one. Basically if a string contains a substring. We can use '.includes()' that takes a single parameter for our substring search. It's case sensitive hence we have to be sure to add exact characters we are searching for as they appear in our string.
 
 ```js
 
