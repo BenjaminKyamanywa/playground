@@ -577,7 +577,41 @@ console.log(newStringUpdated);
 
 **NB:** `replace()` like many string methods doesn't change the string it's called on, but returns a new string.
 
+### String Exercises
 
+Filter Greeting messages:
+  - We have a list of greetings card messages.
+  - We need to show only those that have 'Christmas' message.
+
+```html
+
+<div class='output'>
+  <ul></ul>
+</div>
+
+<script>
+  const list = document.querySelector('.output ul');
+  list.textContent = '';
+  // our greetings messages
+  const greetingsMessages = [
+                 'Happy Birthday!',
+                 'Merry Christmas my love',
+                 'A happy Christmas to all the family',
+                 'You\'re all I want for Christmas',
+                 'Get well soon'
+                 ];
+
+  // our for of loop to display list of messages
+  for (const greeting of greetingsMessages) {
+    if (greeting.includes('Christmas')) {
+      const listItem = document.createElement('li');
+      listItem.textContent = greeting;
+      list.appendChild(listItem);
+    }
+  }
+</script>
+
+```
 
 ### Javascript commands
 
