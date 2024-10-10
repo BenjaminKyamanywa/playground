@@ -621,7 +621,19 @@ Steps:
   - Convert entire string in `city` variable to lowercase and store it in a new variable.
   - Get first letter of the string in the new variable and store it in another variable.
   - Usinge latest variable as a substring replace first letter of lowercase string with first letter of uppercase string and store result in a new variable.
-  - Change value of the result variable to equal final result, not the city.
+  - Change value of the `result` variable to equal final result, not the city.
+
+```html
+
+<div class='output'>
+  <ul></ul>
+</div>
+
+<script>
+  
+</script>
+
+```
 
 ### Javascript commands
 
