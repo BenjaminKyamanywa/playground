@@ -630,7 +630,13 @@ Steps:
 </div>
 
 <script>
-  
+  const list = document.querySelector('.output ul');
+  list.textContent = '';
+  const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+  for (const city of cities) {
+    const lower = city.lowerCase();
+  }
 </script>
 
 ```
