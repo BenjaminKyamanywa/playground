@@ -636,6 +636,12 @@ Steps:
 
   for (const city of cities) {
     const lower = city.lowerCase();
+    const firstLetter = lower.slice(0, 1);
+    const capitalized = lower.replace(firstletter, firstletter.toUpperCase());
+    const result = capitalized;
+    const listItem = document.createElement('li');
+    listItem.textContent = result;
+    list.appendChild(listItem);
   }
 </script>
 
