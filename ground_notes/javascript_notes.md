@@ -749,12 +749,27 @@ console.log(multidimensionalArray)
 
 #### Finding the index of items in an array
 
-We can utilize indexOf() if we'd like to know the index of an array item. We pass it the item that we'd like the index of as it takes a parameter of it.
+We can utilize indexOf() if we'd like to know the index of an array item. We pass it the item that we'd like the index of as it takes a parameter of it. If the item is present the index will be returned otherwise if it isn't we shall get -1.
 
 ```js
 
 const dogs = ['bulldog', 'german shepheard', 'chiwawa', 'husky', 'tibetan mastif'];
 console.log(dogs.indexOf('chiwawa')); // 2
+console.log(dogs.indexOf('parrot')); // -1
+
+```
+
+#### Adding items to an array
+
+**Add items to end of array**: To add items to the end of an array we use 'push()'.
+
+```js
+
+const cities = ['Manchester', 'Liverpool'];
+cities.push('Brighton');
+// we can also add multiple items to an array with push, we only need to separate with commas
+citie.push('Lancaster', 'London');
+console.log(cities); // Manchester, Liverpool, Brighton
 
 ```
 
