@@ -717,7 +717,36 @@ console.log(sporstItems.length) //5
 
 ```
 
+#### Accessing and modifying array items
 
+We can access array items by using bracket notation as well as modify them as well. Array items start at index 0.
+
+```js
+
+const houseItems = ['chair', 'table', 'bed', 'basket'];
+console.log(houseItems[1]); // table
+
+// we can update an array item as well as below
+const roomItems = ['bedsheets', 'photo', 'laptop'];
+roomItems[1] = 'cup';
+console.log(roomItems);
+
+```
+
+**Multidimensional array:** This is an array that resides within an array. We can as well access the items within it and also and also update/change them as well.
+
+```js
+
+const multidimensionalArray = ['sugar', 'soap', 'bread', ['salt', 'pepper', 'pumpkin']];
+multidimensionalArray[3][1];
+console.log(multidimensionalArray);
+
+// we can also update items within our multidimensional array.
+multidimensionalArray[3][1] = 'cucumber';
+console.log(multidimensionalArray)
+
+
+```
 
 ### Javascript commands
 
