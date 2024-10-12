@@ -17,6 +17,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Storing information we need - Variables](#storing-information-we-need--variables)
   - [Maths in Javascript - Numbers and Operators](#maths-in-javascript---numbers-and-operators)
   - [Handling Strings in Javascript](#handling-strings-in-javascript)
+  - [Arrays](#arrays)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
@@ -687,6 +688,25 @@ console.log(stringUpdate); // mozilla
 </script>
 
 ```
+
+### Arrays
+
+Basically list like objects. These are single objects that contain multiple values stored in a list.
+
+#### Creating arrays
+
+```js
+
+const shopping = ['bread', 'milk', 'sugar', 'apples'];
+console.log(shoping);
+
+// we can mix and match different data types in an array
+const items = ['phone', 2, 5, 7, ['sugar', 6, 9]];
+console.log(items);
+
+```
+
+
 
 ### Javascript commands
 
