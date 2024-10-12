@@ -635,10 +635,10 @@ Steps:
   const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
 
   for (const city of cities) {
-    const lower = city.lowerCase();
-    const firstLetter = lower.slice(0, 1);
-    const capitalized = lower.replace(firstletter, firstletter.toUpperCase());
-    const result = capitalized;
+    const lower = city.lowerCase(); // make all characters lowercase
+    const firstLetter = lower.slice(0, 1); // get the firstletter of each city
+    const capitalized = lower.replace(firstletter, firstletter.toUpperCase()); // replace lowercase city firstletter with uppercase letter
+    const result = capitalized; // city with capitalized first letter
     const listItem = document.createElement('li');
     listItem.textContent = result;
     list.appendChild(listItem);
