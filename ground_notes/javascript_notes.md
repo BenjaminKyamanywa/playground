@@ -821,6 +821,53 @@ console.log(materials); // ['book', 'pen', 'rubber', 'ruler']
 
 ```
 
+#### Accessing every array item
+
+Very often we find ourselves needing to access every array item and for that we user `for...of` loop.
+
+```js
+
+const movies = ['Avengers', 'The Forge', 'Superman', 'Batman'];
+
+for (const movie of movies) {
+  console.log(movie);
+}
+
+```
+
+#### Array methods
+
+1) `map()`:
+      - Creates a new array populated with the results of calling a provided function on every element on the called array.
+      - 
+
+```js
+
+// we double the numbers in the array below with map array method
+
+function double(number) {
+  return number * 2;
+}
+
+const numbers = [1, 2, 3, 5, 6]
+const doubledNumbers = numbers.map(double);
+/*
+
+  ****How map is working****
+  - We give map() a function
+  - map() calls the function once for every item in the array passing in the item.
+  - map() then adds the return value from each function call to a new array.
+  - map() finally returns the new array.
+
+*/
+console.log(doubledNumbers); // [2, 4, 6, 10, 12] 
+
+```
+
+
+2) `filter()`:
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
