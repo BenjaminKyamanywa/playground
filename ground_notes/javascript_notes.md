@@ -761,19 +761,65 @@ console.log(dogs.indexOf('parrot')); // -1
 
 #### Adding items to an array
 
-**Add items to end of array**: To add items to the end of an array we use 'push()'.
+1) **Add items to end of array**: To add items to the end of an array we use `push()`.
 
 ```js
 
 const cities = ['Manchester', 'Liverpool'];
 cities.push('Brighton');
 // we can also add multiple items to an array with push, we only need to separate with commas
-citie.push('Lancaster', 'London');
+cities.push('Lancaster', 'London');
 console.log(cities); // Manchester, Liverpool, Brighton
 
 ```
 
+2) **Add items to the start of an array**: We add items to the start iwth `unshift()`.
 
+```js
+
+const towns = ['Acton', 'Balham', 'Barnes']
+towns.unshift('Bayswater');
+console.log(towns);
+
+```
+
+#### Removing Items from an array
+
+1) **Remove item from end of an array**: To remove an item from an array's end we use `pop()`
+
+```js
+
+const clothes = ['sweat shirt', 'trousers', 'shorts'];
+clothes.pop();
+console.log(clothes); // ['sweat shirt', 'trousers']
+
+```
+
+2) **Remove item from start of an array**: We use `shift()` to remove an item from the start of an array.
+
+```js
+
+const phones = ['itel', 'infinix', 'samsung', 'iphone'];
+phones.shift();
+console.log(phones); // ['infinix', 'samsung', 'iphone']
+
+```
+
+- If we know the index of the item we'd like to remove we can use `splice()`, which takes two arguments:
+  - 1st: Where we need to start removing items.
+  - 2nd: Number of items that should to be removed.
+
+```js
+
+const materials = ['book', 'pen', 'pencil', 'rubber', 'ruler'];
+const index = materials.indexOf('pencil');
+
+if (index !== -1) {
+  materials.splice(index, 1);
+} 
+console.log(materials); // ['book', 'pen', 'rubber', 'ruler']
+
+```
 
 ### Javascript commands
 
