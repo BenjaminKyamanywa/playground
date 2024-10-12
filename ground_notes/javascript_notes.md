@@ -745,8 +745,20 @@ console.log(multidimensionalArray);
 multidimensionalArray[3][1] = 'cucumber';
 console.log(multidimensionalArray)
 
+```
+
+#### Finding the index of items in an array
+
+We can utilize indexOf() if we'd like to know the index of an array item. We pass it the item that we'd like the index of as it takes a parameter of it.
+
+```js
+
+const dogs = ['bulldog', 'german shepheard', 'chiwawa', 'husky', 'tibetan mastif'];
+console.log(dogs.indexOf('chiwawa')); // 2
 
 ```
+
+
 
 ### Javascript commands
 
