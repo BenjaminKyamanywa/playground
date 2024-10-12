@@ -651,6 +651,26 @@ console.log(stringUpdate); // mozilla
 ```
 
 3) Making new strings from old parts
+  - We have string containing train station information ie three letter station code, machine readable data, station name. e.g 'MAN675847583748sjt567654;Manchester Piccadilly'. We need to extract station code and name so we have 'MAN: Manchester Piccadilly'.
+  - Steps:
+    - Extract the three letter station code and store it in a variable.
+    - Find the character index number of the semicolon.
+    - Extract station name using the semicolon character index number as a reference point, and store it in a new variable.
+    - Concatenate the two new variables and a string literal to make the final string.
+    - Change the value of the result variable to the final string, not the station.
+
+```html
+
+<div class="output">
+  <ul></ul>
+</div>
+
+<script>
+  const list = document.querySelector('.output ul');
+  
+</script>
+
+```
 
 ### Javascript commands
 
