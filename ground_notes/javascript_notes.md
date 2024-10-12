@@ -654,7 +654,7 @@ console.log(stringUpdate); // mozilla
   - We have string containing train station information ie three letter station code, machine readable data, station name. e.g 'MAN675847583748sjt567654;Manchester Piccadilly'. We need to extract station code and name so we have 'MAN: Manchester Piccadilly'.
   - Steps:
     - Extract the three letter station code and store it in a variable.
-    - Find the character index number of the semicolon.
+    - Find the character index number of the semicolon with indexOf().
     - Extract station name using the semicolon character index number as a reference point, and store it in a new variable.
     - Concatenate the two new variables and a string literal to make the final string.
     - Change the value of the result variable to the final string, not the station.
@@ -674,12 +674,15 @@ console.log(stringUpdate); // mozilla
                   'SYB4f65hf75f736463;Stalybridge',
                   'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
   for (const station of stations) {
-    
-
-    const result = station;
+    const stationCode = station.slice(0, 3);
+    const semiColon = station.indexOf(';');
+    const stationName = station.slice(semiColon + 1);
+    const stationCodeAndName = `${stationCode}; ${stationName}`;
+    const result = stationCodeAndName;
     const listItem = document.createElement('li');
     listItem.textContent = result;
     list.appendChild(listItem);
+    // result: MAN; Manchester City, GNF; Greenfield, LIV; Liverpool Lime Street, SYB; Stalybridge, HUD; Huddersfield
   }
 </script>
 
