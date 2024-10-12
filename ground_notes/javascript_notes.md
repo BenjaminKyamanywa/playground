@@ -546,8 +546,7 @@ if we want to return all remaining characters in a string from a certain charact
 
 */
 
-//returns: zilla (cause character at position two is 'z' and since we didn't add a second param substring returned is all remaining characters in the string)
-console.log(slice(2));
+console.log(slice(2)); //returns: zilla (cause character at position two is 'z' and since we didn't add a second param substring returned is all the remaining characters within the string)
 
 ```
 
@@ -567,11 +566,16 @@ console.log(userGreeting.toLowerCase()); // hello world!, i am driven to master 
 
 We are able to change parts of a string with a new set of string characters with the help of `replace()`.
 
+We need to utilize two params:
+  - 1st: String we want to replace.
+  - 2nd: String we want to replace it with.
+
 ```js
 
 const stringUpdate = 'mozilla';
 const newStringUpdated = stringUpdate.replace('moz', 'van');
-console.log(newStringUpdated);
+console.log(newStringUpdated); // vanilla
+console.log(stringUpdate); // mozilla
 
 ```
 
@@ -635,13 +639,14 @@ Steps:
   const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
 
   for (const city of cities) {
-    const lower = city.lowerCase(); // make all characters lowercase
+    const lower = city.toLowerCase(); // make all characters lowercase
     const firstLetter = lower.slice(0, 1); // get the firstletter of each city
     const capitalized = lower.replace(firstletter, firstletter.toUpperCase()); // replace lowercase city firstletter with uppercase letter
     const result = capitalized; // city with capitalized first letter
     const listItem = document.createElement('li');
     listItem.textContent = result;
     list.appendChild(listItem);
+    // result: London, Manchester, Birmingham, Liverpool
   }
 </script>
 
