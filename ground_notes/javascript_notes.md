@@ -706,6 +706,17 @@ console.log(items);
 
 ```
 
+#### Finding the length of an array
+
+Similar to finding the length of a string we can find the number of items within an array with the lenght method on an array.
+
+```js
+
+const sportItems = ['jumper', 'shorts', 'canvas', 'vest', 'bag'];
+console.log(sporstItems.length) //5
+
+```
+
 
 
 ### Javascript commands
