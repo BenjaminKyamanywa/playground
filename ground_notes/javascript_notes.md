@@ -838,8 +838,8 @@ for (const movie of movies) {
 #### Array methods
 
 1) `map()`:
+      - It's an iterative method that calls a provided call back function once for each element in an array and constructs a new array from the results.
       - Creates a new array populated with the results of calling a provided function on every element on the called array.
-      - 
 
 ```js
 
@@ -853,7 +853,7 @@ const numbers = [1, 2, 3, 5, 6]
 const doubledNumbers = numbers.map(double);
 /*
 
-  ****How map is working****
+  ****How map() is working****
   - We give map() a function
   - map() calls the function once for every item in the array passing in the item.
   - map() then adds the return value from each function call to a new array.
@@ -862,10 +862,38 @@ const doubledNumbers = numbers.map(double);
 */
 console.log(doubledNumbers); // [2, 4, 6, 10, 12] 
 
+
+// Example two:
+const newNumbers = [5, 6, 9, 23, 18];
+const mapNewArrayNumbers = newNumbers.map((x) => x * 2);
+console.log(mapNewArrayNumbers); // [10, 12, 18, 46, 36]
+
 ```
 
 
 2) `filter()`:
+    - An iterative method that calls a provided callback function once for each element in an array and constructs a new array for all the values for which the callback function returns a truthy value. Array elements that do not pass the callback function test are not included in the new array.
+
+```js
+
+function isLong(city) {
+  return city.length > 6;
+}
+
+const cities = ["London", "Liverpool", "Totnes", "Edinburgh"];
+const longer = cities.filter(isLong);
+/*
+
+  ****How filter() is working****
+  - We give filter() a function
+  - filter() calls the function once for every item in the array passing in the item.
+  - if the function returns true, then the item is added to a new array.
+  - filter() finally returns the new array.
+
+*/
+console.log(longer); // ['Liverpool', 'Edinburgh']
+
+```
 
 
 ### Javascript commands
