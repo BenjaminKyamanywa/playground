@@ -895,6 +895,31 @@ console.log(longer); // ['Liverpool', 'Edinburgh']
 
 ```
 
+#### Converting between strings and arrays
+
+We'll cover the `split()` method that's actually a string method but more suited for use with arrays. Often times we have big data in a long string and we might want to separate out some some items into a more useful form and then do some actions with them like display in a table. 
+
+`split()`: in it's simplest form takes a single parameter, the character at which  we want to separate the string at and it returns the substrings between the separator as items in an array.
+
+```js
+
+const data = "Manchester,London,Liverpool,Birmingham,Leeds,Carlisle";
+
+const cities = data.split(','); // we set it to split at each comma from data
+
+console.log(cities);
+
+```
+
+**join()**: we can use it to do the opposite of split()
+
+```js
+
+const newCommaJoined = cities.join(','); // Manchester,London,Liverpool,Birmingham,Leeds,Carlisle
+
+```
+
+
 
 ### Javascript commands
 
