@@ -911,7 +911,9 @@ console.log(cities);
 
 ```
 
-**join()**: we can use it to do the opposite of split()
+**join()**: 
+  - We can use it to do the opposite of split().
+  - We can specify different separators.
 
 ```js
 
@@ -919,7 +921,17 @@ const newCommaJoined = cities.join(','); // Manchester,London,Liverpool,Birmingh
 
 ```
 
+**toString()**:
+  - We can also use it to convert an array to a string.
+  - It's simpler than `join()` as it doesn't take any parameters but it's more limiting.
+  - With `join()` we can specify different separators whereas `toString()` always uses a comma.
 
+```js
+
+const dogNames = ["Rocket", "Flash", "Bella", "Slugger"];
+dogNames.toString(); // Rocket,Flash,Bella,Slugger
+
+```
 
 ### Javascript commands
 
