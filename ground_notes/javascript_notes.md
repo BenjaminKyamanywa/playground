@@ -944,8 +944,36 @@ We need to:
 Steps:
   - We need to store an array of product names with their prices.
   - We need to be able to go through all our products. Can use `for..of()` loop.
-  - 
+  - We need to split the current array item (name:price) into separate items with one containing the name and the other containing the price which we need to convert to a number.
+  - Add current item price to total in each iteration of the loop so that correct total is printed out on the invoice.
+  - Show correct information for each item onto the invoice.
 
+```html
+
+<div class="output">
+  <ul></ul>
+  <p></p>
+</div>
+
+<script>
+
+const list = document.querySelector('.output ul');
+const total = document.querySelector('.output p');
+let total = 0;
+list.textContent = '';
+total.textContent = '';
+
+//step 1: 
+// step 2:
+// step 3:
+// step 4:
+// step 5:
+// step 6:
+
+
+</script>
+
+```
 
 ### Javascript commands
 
