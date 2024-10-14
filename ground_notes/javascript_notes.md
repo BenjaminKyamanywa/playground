@@ -933,6 +933,20 @@ dogNames.toString(); // Rocket,Flash,Bella,Slugger
 
 ```
 
+**Project: Printing Products**
+
+In this project we'll print out an invoice. 
+
+We need to:
+- Print out product names and prices.
+- Total prices and show them at the bottom.
+
+Steps:
+  - We need to store an array of product names with their prices.
+  - We need to be able to go through all our products. Can use `for..of()` loop.
+  - 
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
