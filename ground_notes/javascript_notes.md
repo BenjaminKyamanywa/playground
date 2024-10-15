@@ -971,7 +971,10 @@ const products = [
                 'Trousers:31.99',
                 'Shoes:23.99'
                 ];
-// step 2:
+// step 2: for...of loop to go through every product item
+for (const product of products) {
+  
+}
 // step 3:
 // step 4:
 // step 5:
