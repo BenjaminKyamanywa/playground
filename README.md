@@ -15,7 +15,7 @@ Below is a list of projects across various programming principles.
 |[Drum Kit](https://codepen.io/benjaminkyamanywa/pen/XWLmxKM)  | A Virtual Drum Kit for users to make music with sounds | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/01%20-%20Drum%20Kit)
 |[Clock](https://codepen.io/benjaminkyamanywa/pen/oNrxqBQ)  | A web analog clock | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/02%20-%20Clock)
 |[CSS Variables](https://codepen.io/benjaminkyamanywa/pen/gONrKrz)  | Adjust CSS variables with Javascript | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/03%20-%20CSS%20Variables)
-|[Inventory Filter](https://codepen.io/benjaminkyamanywa/pen/mdZrvdr)  | Filter shop inventory products | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_011/04%20-%20Product%20Filter)
+|[Inventory Filter](https://codepen.io/benjaminkyamanywa/pen/mdZrvdr)  | Filter shop inventory products | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_001/products_filter)
 |[Random Quote Generator](https://codepen.io/benjaminkyamanywa/pen/WNqEZrq)  | Generate random quotes from a third party API | [Link](https://github.com/BenjaminKyamanywa/playground/tree/main/ground_012/Random%20Quote%20Generator)
 
 
