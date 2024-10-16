@@ -973,13 +973,22 @@ const products = [
                 ];
 // step 2: for...of loop to go through every product item
 for (const product of products) {
-  
-}
-// step 3:
-// step 4:
-// step 5:
-// step 6:
+  // step 3:
+  const splitArray = product.split(':');
+  const name = splitArray[0];
 
+  // step 4:
+
+  // step 5:
+  let itemText = 0;
+
+  const listItem = document.createElement('li');
+  listItem.textContent = itemText;
+  list.appendChild(listItem);
+}
+
+// step 6:
+totalBox.textContent = 'Total: $' + total.toFixed(2);
 
 </script>
 
