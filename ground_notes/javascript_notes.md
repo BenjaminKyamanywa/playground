@@ -996,6 +996,8 @@ totalBox.textContent = 'Total: $' + total.toFixed(2);
 
 ```
 
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
