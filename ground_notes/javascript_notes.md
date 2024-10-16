@@ -996,7 +996,17 @@ totalBox.textContent = 'Total: $' + total.toFixed(2);
 
 ```
 
+**Project: Top 5 Searches**
 
+In this project we'll display the top 5 most recent searches. 
+
+We need to:
+- Display the top 5 most recent searches made by a user.
+- Remove last old search result if they exceed 5 to keep the number as such.
+
+Steps:
+  - Add current search term to the stary of the array. We can retrieve it with searchInput.value.
+  - Remove value that's currently at the end of the array.
 
 ### Javascript commands
 
