@@ -973,13 +973,15 @@ const products = [
                 ];
 // step 2: for...of loop to go through every product item
 for (const product of products) {
-  // step 3:
+  // step 3: split name and price into separate variables
   const splitArray = product.split(':');
-  const name = splitArray[0];
+  const productName = splitArray[0];
+  const productPrice = splitArray[1];
+  // step 4: add current price for each product to print our correct total on our invoice
+  total += productPrice;
+  // step 5: show correct product name and price onto invoice
+  const itemText = `${productName} - $${productPrice}`;
 
-  // step 4:
-
-  // step 5:
   let itemText = 0;
 
   const listItem = document.createElement('li');
