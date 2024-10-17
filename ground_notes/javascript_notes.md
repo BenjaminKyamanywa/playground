@@ -1008,6 +1008,20 @@ Steps:
   - Add current search term to the stary of the array. We can retrieve it with searchInput.value.
   - Remove value that's currently at the end of the array.
 
+```html
+
+<div class="output">
+  <input type="text">
+  <button>Search</button>
+<ul></ul>
+</div>
+
+<script>
+  const list = document.querySelector('.output ul');
+</script>
+
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
