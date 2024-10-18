@@ -1005,7 +1005,7 @@ We need to:
 - Remove last old search result if they exceed 5 to keep the number as such.
 
 Steps:
-  - Add current search term to the stary of the array. We can retrieve it with searchInput.value.
+  - Add current search term to the start of the array. We can retrieve it with searchInput.value.
   - Remove value that's currently at the end of the array.
 
 ```html
@@ -1018,6 +1018,11 @@ Steps:
 
 <script>
   const list = document.querySelector('.output ul');
+  const searchInput = document.querySelector('.output input');
+  const searchButton = document.querySelector('.output button');
+
+  list.textContent = '';
+
 </script>
 
 ```
