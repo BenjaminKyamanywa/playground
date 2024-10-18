@@ -1023,6 +1023,39 @@ Steps:
 
   list.textContent = '';
 
+  const myHistory = [];
+  const maxHistory = 5;
+
+  // send search term when input is empty
+  function successSearch() {
+    if (searchInput.value !== '') {
+      myHistory.unshift(searchInput.value); // add search term to start of array
+
+    // empty the unordered list so that we don't display duplicate entries
+    // the display is regenerated every time a search term is entered.
+    list.textContent = "";
+
+    // loop through array and display all search terms in the list
+    for (const itemText of myHistory) {
+      const listItem = document.createElement('li');
+      listItem.textContent = itemText; 
+      list.appendChild(listItem);
+    }
+    }
+
+    // if array length is 5 or more, remove oldest search term
+    if (maxHistory.length >= maxHistory) {
+      myHistory.pop();
+    }
+
+    // empty search input and focus on it, ready for next term to be entered
+    searchInput.value = '';
+    searchInput.focus();
+  }
+
+  // event listeners
+  searchButton.addEventListener('click', successSearch);
+
 </script>
 
 ```
