@@ -1040,7 +1040,7 @@ Steps:
       const listItem = document.createElement('li');
       listItem.textContent = itemText; 
       list.appendChild(listItem);
-    }
+      }
     }
 
     // if array length is 5 or more, remove oldest search term
