@@ -15,11 +15,18 @@ const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
 const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
 
 function result() {
-  const newStory = storyText;
-
+  let newStory = storyText;
+  
+  // store random items from each array 
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
+
+  // replace placeholders in newStory with with strings stored in xItem, yItem, zItem
+  newStory = newStory.replaceAll(':insertx:', xItem);
+  newStory = newStory.replaceAll(':inserty:', yItem);
+  newStory = newStory.replaceAll(':insertz:', zItem);
+  
   
   if(customName.value !== '') {
     const name = customName.value;
