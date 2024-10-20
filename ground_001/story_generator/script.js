@@ -27,7 +27,7 @@ function result() {
     
   }
   
-  story.textContent = ;
+  story.textContent = '';
   story.style.visibility = 'visible';
 }
 
