@@ -30,7 +30,7 @@ function result() {
   
   if(customName.value !== '') {
     const name = customName.value;
-    
+    newStory = newStory.replaceAll('Bob', name); // if a value has been added into the customName text input, replace 'Bob' in the story with it
   }
   
   if(document.getElementById("uk").checked) {
