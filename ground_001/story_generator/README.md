@@ -1,6 +1,6 @@
 # ✍️ Story Generator
  
-An app that generates random stories.
+An app that generates random stories. You can find the code on CodePen [here](https://codepen.io/benjaminkyamanywa/pen/dyxVrmX).
 
 ## 🚀 Features
 
