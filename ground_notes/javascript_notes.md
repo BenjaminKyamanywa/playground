@@ -18,6 +18,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Maths in Javascript - Numbers and Operators](#maths-in-javascript---numbers-and-operators)
   - [Handling Strings in Javascript](#handling-strings-in-javascript)
   - [Arrays](#arrays)
+  - [Conditions in Javascript (if...else)](#conditions-in-javascript-ifelse)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
@@ -1057,6 +1058,22 @@ Steps:
   searchButton.addEventListener('click', successSearch);
 
 </script>
+
+```
+
+### Conditions in Javascript (if...else)
+
+We use conditional statements to determine what our logic should do in the event that a condition is true or if it's not.
+
+```js
+
+// basic syntax
+
+if (condition) {
+  // do something if condition is true
+} else {
+  // run other logic instead
+}
 
 ```
 
