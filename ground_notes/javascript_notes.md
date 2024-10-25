@@ -1075,6 +1075,17 @@ if (condition) {
   // run other logic instead
 }
 
+
+// syntax without else: here the second else block isn't controlled by our coditional statement, hence it always runs whether condition is true or false. While it's correct syntax it can present unexpected outcomes therefore we want to always add condition of either true or false
+
+if (condition) { // is true
+  // do something
+}
+
+// while correct syntax: not recommended for use as it can easily get confusing
+if (condition) // add code
+else // add code
+
 ```
 
 ### Javascript commands
