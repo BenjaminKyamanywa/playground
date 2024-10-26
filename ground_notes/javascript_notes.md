@@ -1086,6 +1086,17 @@ if (condition) { // is true
 if (condition) // add code
 else // add code
 
+
+// example scenario
+let shoppingDone = true;
+let childsAllowanve;
+
+if (shoppingDone === true) {
+  childsAlllowance = 10;
+} else {
+  childsAllowance = 5;
+}
+
 ```
 
 ### Javascript commands
