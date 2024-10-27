@@ -1088,7 +1088,7 @@ else // add code
 
 
 // example scenario
-let shoppingDone = true;
+let shoppingDone = false;
 let childsAllowanve;
 
 if (shoppingDone === true) {
@@ -1096,6 +1096,21 @@ if (shoppingDone === true) {
 } else {
   childsAllowance = 5;
 }
+
+```
+
+**else...if**: We can additionally utilize this when we want to chain on additional choices with our if...else. 
+
+Example: Simple weather app with recommendations for different weather conditions.
+
+```html
+
+<div class="output">
+<label for="weather"> Please select todays weather condition: </label>
+<select id="weather">
+  <option value="">--Choose from one of the options below--</option>
+</select>
+</div>
 
 ```
 
