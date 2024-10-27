@@ -1109,8 +1109,41 @@ Example: Simple weather app with recommendations for different weather condition
 <label for="weather"> Please select todays weather condition: </label>
 <select id="weather">
   <option value="">--Choose from one of the options below--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowy">Snowy</option>
+  <option value="overcast">Overcast</option>
 </select>
+<p class="message"></p>
 </div>
+
+<script>
+  // variable selectors
+  const selector = document.querySelector('select');
+  const message = document.querySelector('p');
+
+  // set weather function
+  function setWeather() {
+    // get selector value
+    const choice = selector.value;
+
+    // if..else optional conditions based on user choice
+    if (choice === 'sunny') {
+      message.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+    } else if (choice === 'rainy') {
+      message.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.';
+    } else if (choice === 'snowy') {
+      message.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+    } else if (choice === 'overcast') {
+      message.textContent = 'It is not raining, but the sky is grey and gloomy, it could turn any minute, so take a rain coat just in case.';
+    } else {
+      message.textContent = '';
+    }
+  }
+
+  // event listener
+  selector.addEventListener('change', setWeather);
+</script>
 
 ```
 
