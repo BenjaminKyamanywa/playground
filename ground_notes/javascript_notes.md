@@ -1137,13 +1137,30 @@ Example: Simple weather app with recommendations for different weather condition
     } else if (choice === 'overcast') {
       message.textContent = 'It is not raining, but the sky is grey and gloomy, it could turn any minute, so take a rain coat just in case.';
     } else {
-      message.textContent = '';
+      message.textContent = ''; // empty text from paragraph if nothing is selected
     }
   }
 
   // event listener
   selector.addEventListener('change', setWeather);
 </script>
+
+```
+
+#### Logical Operators: AND, OR, NOT
+
+We can utilize them to test multiple conditions without nesting if...else statements:
+
+- &&: AND operator allows us to chain two or more expressions that all have to evaluate to true.
+- ||: OR operator allows us to chain two or more expressions, only one or more of them have to evaluate to true.
+
+```JS
+
+if (choice === 'sunny' && temperature < 85) {
+    para.textContent = `It is ${temperature} degrees outside, which is nice, we can go out to the park`;
+} else if (choice === 'snowy' && temperature <= 35) {
+  para.textContent = `It is ${temperature} degrees outside, which is very cold, we cannot go outside`;
+}
 
 ```
 
