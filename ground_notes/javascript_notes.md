@@ -1156,10 +1156,18 @@ We can utilize them to test multiple conditions without nesting if...else statem
 
 ```JS
 
+// Logical AND operator example
 if (choice === 'sunny' && temperature < 85) {
-    para.textContent = `It is ${temperature} degrees outside, which is nice, we can go out to the park`;
+    message.textContent = `It is ${temperature} degrees outside, which is nice, we can go out to the park`;
 } else if (choice === 'snowy' && temperature <= 35) {
-  para.textContent = `It is ${temperature} degrees outside, which is very cold, we cannot go outside`;
+  message.textContent = `It is ${temperature} degrees outside, which is very cold, we cannot go outside`;
+}
+
+// Logical OR operator example
+if (choice === 'rainy' || temperature <= 30) {
+  message.textContent = `It is ${temperature} degress outside which is really cold to go outside`;
+} else if (choice === 'snowy' || temperature <= 10) {
+  message.textContent = `It is ${temperature} degrees outside which it extremely cold to even think about stepping outside`;
 }
 
 ```
