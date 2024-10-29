@@ -1179,7 +1179,26 @@ We can utilize switch statements as they are good in case of the following:
 - When we just want to set a variable to a certain choice of value.
 - Print out a particular statement depending on a condition.
 
+Switch statements take in a single expression/value as an input and look through several choices until they find one that matches that value hence executing code that goes with it.
 
+```JS
+
+switch (expresion) {
+  case choice1:
+    // run code
+    break;
+  case choice2:
+    // run code
+    break;
+  
+  // include as many cases as we'd like
+
+  default:
+    // run this code as default
+    break;
+}
+
+```
 
 ### Javascript commands
 
