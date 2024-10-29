@@ -1172,6 +1172,15 @@ if (choice === 'rainy' || temperature <= 30) {
 
 ```
 
+#### Switch statements
+
+We can utilize switch statements as they are good in case of the following:
+
+- When we just want to set a variable to a certain choice of value.
+- Print out a particular statement depending on a condition.
+
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descripitons.
