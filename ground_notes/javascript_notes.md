@@ -1194,15 +1194,35 @@ switch (expresion) {
   // include as many cases as we'd like
 
   default:
-    // run this code as default
+    // runs if none of the above choices match
     break;
 }
 
 ```
 
+**Switch Statement Example**: Weather App
+
+```HTML
+
+<div class="output">
+<label for="weather"> Please select todays weather condition: </label>
+<select id="weather">
+  <option value="">--Choose from one of the options below--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowy">Snowy</option>
+  <option value="overcast">Overcast</option>
+</select>
+<p class="message"></p>
+</div>
+
+
+
+```
+
 ### Javascript commands
 
-Below is a list of most utilized javascript commands as a helpful reference with descripitons.
+Below is a list of most utilized javascript commands as a helpful reference with descriptions.
 
 ```js
 
