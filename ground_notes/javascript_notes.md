@@ -1202,6 +1202,9 @@ switch (expresion) {
 
 **Switch Statement Example**: Weather App
 
+- A user can select a weather option.
+- Based on a user's weather option selected a message is shown.
+
 ```HTML
 
 <div class="output">
