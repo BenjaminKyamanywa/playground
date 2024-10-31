@@ -1216,7 +1216,20 @@ switch (expresion) {
 <p class="message"></p>
 </div>
 
+<script>
 
+// variable selectors
+const selector = document.querySelector('select');
+const message = document.querySelector('p');
+
+function setWeather () {
+  
+}
+
+// event listener
+selector.addEventListener('change', setWeather);
+
+</script>
 
 ```
 
