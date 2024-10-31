@@ -1223,7 +1223,25 @@ const selector = document.querySelector('select');
 const message = document.querySelector('p');
 
 function setWeather () {
-  
+  const userChoiceSelection = selector.value;
+
+  switch (choice) {
+    case 'sunny':
+      message.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+      break;
+    case 'rainy':
+      message.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and do not stay out for too long.';
+      break;
+    case 'snowing':
+      message.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+      break;
+    case 'overcast':
+      message.textContent = 'It is not raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+      break;
+    default:
+      message.textContent = '';
+  }
+
 }
 
 // event listener
