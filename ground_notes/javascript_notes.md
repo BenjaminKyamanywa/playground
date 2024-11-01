@@ -1183,7 +1183,7 @@ Switch statements take in a single expression/value as an input and look through
 
 ```JS
 
-switch (expresion) {
+switch (expression) {
   case choice1:
     // run code
     break;
@@ -1253,6 +1253,14 @@ selector.addEventListener('change', setWeather);
 </script>
 
 ```
+
+#### Ternary Operator
+
+It's used to test a condition and returns one value if it's true and another if it's false. It can be useful in some situations and takes up a lot less code than an `if...else` block if we have two choices that are chosen with a true/false condition.
+
+Example pseudo code:
+
+`condition ? run this code if true : run this code if false`
 
 ### Javascript commands
 
