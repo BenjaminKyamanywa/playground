@@ -1265,7 +1265,7 @@ Example pseudo code:
 Example:
 
 ```js
-
+// if isBirthday is true we give a happy birthday message otherwise if it's not we give standard greeting
 const greetings = isBirthday ? 'Happy Birthday Jones cheers' : 'Goodmorning Jones!';
 
 ```
