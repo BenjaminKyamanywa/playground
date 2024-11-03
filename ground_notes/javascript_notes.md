@@ -1262,6 +1262,14 @@ Example pseudo code:
 
 `condition ? run this code if true : run this code if false`
 
+Example:
+
+```js
+
+const greetings = isBirthday ? 'Happy Birthday Jones cheers' : 'Goodmorning Jones!';
+
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
