@@ -1270,6 +1270,26 @@ const greetings = isBirthday ? 'Happy Birthday Jones cheers' : 'Goodmorning Jone
 
 ```
 
+Ternary operator can:
+- Set variable values.
+- Can run functions and anything we'd like.
+
+```HTML
+
+<label for="theme">Select theme: </label>
+<select id="theme">
+  <option value="white">White</option>
+  <option value="black">Black</option>
+</select>
+<h2>This is a website</h2>
+
+<script>
+  
+</script>
+
+```
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
