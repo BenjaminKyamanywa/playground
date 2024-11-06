@@ -1284,7 +1284,9 @@ Ternary operator can:
 <h2>This is a website</h2>
 
 <script>
-  
+  const selector = document.querySelector('select');
+  const html = document.querySelector('html');
+  document.body.style.padding = '10px';
 </script>
 
 ```
