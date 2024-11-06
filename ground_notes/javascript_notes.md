@@ -1284,6 +1284,7 @@ Ternary operator can:
 <h2>This is a website</h2>
 
 <script>
+  // add variables
   const selector = document.querySelector('select');
   const html = document.querySelector('html');
   document.body.style.padding = '10px';
@@ -1292,7 +1293,7 @@ Ternary operator can:
     html.style.backgroundColor = bgColor;
     html.style.color = textColor;
   }
-
+  // ternary logic for color change
   select.addEventListener('change', () => {
     select.value === 'black'
       ? updateColor('black', 'white')
