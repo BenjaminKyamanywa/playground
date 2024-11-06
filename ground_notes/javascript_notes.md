@@ -1287,6 +1287,13 @@ Ternary operator can:
   const selector = document.querySelector('select');
   const html = document.querySelector('html');
   document.body.style.padding = '10px';
+
+  function updateColor(bgColor, textColor) {
+    html.style.backgroundColor = bgColor;
+    html.style.color = textColor;
+  }
+
+  
 </script>
 
 ```
