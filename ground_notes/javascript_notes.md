@@ -1293,7 +1293,11 @@ Ternary operator can:
     html.style.color = textColor;
   }
 
-  
+  select.addEventListener('change', () => {
+    select.value === 'black'
+      ? updateColor('black', 'white')
+      : updateColor('white', 'black')
+  })
 </script>
 
 ```
