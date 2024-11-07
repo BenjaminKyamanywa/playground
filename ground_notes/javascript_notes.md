@@ -1293,6 +1293,7 @@ Ternary operator can:
     html.style.backgroundColor = bgColor;
     html.style.color = textColor;
   }
+  
   // ternary logic for color change
   select.addEventListener('change', () => {
     select.value === 'black'
