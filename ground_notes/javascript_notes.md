@@ -1272,7 +1272,7 @@ const greetings = isBirthday ? 'Happy Birthday Jones cheers' : 'Goodmorning Jone
 
 Ternary operator can:
 - Set variable values.
-- Can run functions and anything we'd like.
+- Run functions and anything we'd like.
 
 ```HTML
 
