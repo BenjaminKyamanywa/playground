@@ -1310,6 +1310,22 @@ Ternary operator can:
 **Project 2**: Multiple colour choices with switch statement
 - User selects from multiple color choices that update the background color.
 
+```html
+
+<div class="container">
+<label for="theme">Select an option: </label>
+<select id="theme">
+  <option value="white">White</option>
+  <option value="black">Black</option>
+</select>
+</div>
+
+<script>
+  const select = document.querySelector('select');
+</script>
+
+```
+
 
 ### Javascript commands
 
