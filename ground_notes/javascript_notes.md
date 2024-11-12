@@ -1274,6 +1274,9 @@ Ternary operator can:
 - Set variable values.
 - Run functions and anything we'd like.
 
+**Project 1**: Two color choices with ternary operator
+- User selects from two color choices that update the background color.
+
 ```HTML
 
 <label for="theme">Select theme: </label>
@@ -1303,6 +1306,9 @@ Ternary operator can:
 </script>
 
 ```
+
+**Project 2**: Multiple colour choices with switch statement
+- User selects from multiple color choices that update the background color.
 
 
 ### Javascript commands
