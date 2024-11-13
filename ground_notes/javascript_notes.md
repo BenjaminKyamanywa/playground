@@ -1325,7 +1325,8 @@ Ternary operator can:
   const html = document.querySelector('.output');
 
   function updateColor(bgColor, textColor) {
-    
+    html.style.backgroundColor = bgColor;
+    html.style.backgroundColor = textColor;
   }
 
   select.addEventListener('change', () => {
