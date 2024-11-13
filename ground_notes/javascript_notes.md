@@ -1322,6 +1322,17 @@ Ternary operator can:
 
 <script>
   const select = document.querySelector('select');
+  const html = document.querySelector('.output');
+
+  function updateColor(bgColor, textColor) {
+    
+  }
+
+  select.addEventListener('change', () => {
+
+  });
+
+
 </script>
 
 ```
