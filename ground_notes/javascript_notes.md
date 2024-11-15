@@ -1335,13 +1335,19 @@ Ternary operator can:
     switch(choice) {
       case 'black':
         update('black', 'white');
-      break;
+        break;
       case 'white':
         update('white', 'black');
-      break;
+        break;
       case 'purple':
         update('purple', 'white');
-      break;
+        break;
+      case 'yellow':
+        update('yellow', 'purple');
+        break;
+      case 'psychedelic':
+        update('lime', 'purple');
+        break;
     }
   });
 
