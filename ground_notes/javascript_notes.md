@@ -1336,7 +1336,12 @@ Ternary operator can:
       case 'black':
         update('black', 'white');
       break;
-      
+      case 'white':
+        update('white', 'black');
+      break;
+      case 'purple':
+        update('purple', 'white');
+      break;
     }
   });
 
