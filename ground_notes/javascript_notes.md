@@ -1331,6 +1331,13 @@ Ternary operator can:
 
   select.addEventListener('change', () => {
     const choice = select.value;
+
+    switch(choice) {
+      case 'black':
+        update('black', 'white');
+      break;
+      
+    }
   });
 
 
