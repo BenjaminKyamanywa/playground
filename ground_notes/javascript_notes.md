@@ -19,6 +19,9 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Handling Strings in Javascript](#handling-strings-in-javascript)
   - [Arrays](#arrays)
   - [Conditions in Javascript (if...else)](#conditions-in-javascript-ifelse)
+  - [Logical Operators: AND, OR, NOT](#logical-operators-and-or-not)
+  - [Switch Statements](#switch-statements)
+  - [Ternary Operator](#ternary-operator)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
