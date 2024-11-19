@@ -1361,7 +1361,9 @@ Ternary operator can:
 
 ## Looping code
 
-Comuputers excel greatly at completing repetitive tasks.
+Computers excel greatly at completing repetitive tasks.
+
+
 
 ### Javascript commands
 
