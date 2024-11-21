@@ -1371,9 +1371,17 @@ We utilize these more specialized loops for collections in JS.
 
 ```JS
 
+// function to turn strings to uppercase
 function toUpper(string) {
   return string.toUpperCase();
 }
+
+const cats = ["Leopard", "Tiger", "Lion", "Cheetah", "Jaguar"];
+
+const upperCaseCats = cats.map(toUpper);
+
+console.log(upperCaseCats);
+// ["LEOPARD", "TIGER", "LION", "CHEETAH", "JAGUAR"]
 
 ```
 
