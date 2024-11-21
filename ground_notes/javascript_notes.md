@@ -1363,7 +1363,19 @@ Ternary operator can:
 
 Computers excel greatly at completing repetitive tasks.
 
+**map() and filter()**:
 
+We utilize these more specialized loops for collections in JS. 
+
+**map()**: We can do something to each item in a collection and create a new collection containing the changed items:
+
+```JS
+
+function toUpper(string) {
+  return string.toUpperCase();
+}
+
+```
 
 ### Javascript commands
 
