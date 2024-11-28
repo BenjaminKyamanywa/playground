@@ -1385,6 +1385,23 @@ console.log(upperCaseCats);
 
 ```
 
+**filter()**: We can use filter to test each item in a collection and create a new collection that contains only items that match:
+
+```JS
+
+function returnFirstLetter(cat) {
+  return cat.startsWith('L');
+}
+
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const filtered = cats.filter(returnFirstLetter);
+
+console.log(filtered);
+// [ "Leopard", "Lion" ]
+
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
