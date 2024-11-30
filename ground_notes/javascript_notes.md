@@ -1402,6 +1402,30 @@ console.log(filtered);
 
 ```
 
+**For Loop**
+
+We utilize for loops to run through a given condition a set number of times.
+
+```JS
+
+// Initializer: Variable usually set as a number that's incremented  everytime the loop runs. Known as counter variable.
+// Condition: Expression that defines when a loop should stop running that features a comparison expression to see if exit condition is met.
+// Final expression: Exaluated when the loop goes through full evaluation, it's either an incrementer or decrementor to the counter variable that brings it closer to where the condition isn't true.
+
+for (initializer; condition ; final exression) {
+  // logic
+}
+
+// example
+
+const result = document.querySelector('.result');
+
+for (let i = 1; i < 10; i++) {
+  
+}
+
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
