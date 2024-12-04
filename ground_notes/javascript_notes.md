@@ -1411,6 +1411,7 @@ We utilize for loops to run through a given condition a set number of times.
 // Initializer: Variable usually set as a number that's incremented  everytime the loop runs. Known as counter variable.
 // Condition: Expression that defines when a loop should stop running that features a comparison expression to see if exit condition is met.
 // Final expression: Exaluated when the loop goes through full evaluation, it's either an incrementer or decrementor to the counter variable that brings it closer to where the condition isn't true.
+// Curly braces contain our code that runs each time the loop iterates.
 
 for (initializer; condition ; final exression) {
   // logic
