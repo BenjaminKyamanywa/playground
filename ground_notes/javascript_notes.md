@@ -1433,7 +1433,14 @@ const results = document.querySelector('#result');
 function calculateSquares() {
   
   for (let i = 1; i < 10; i++) {
-    const newResult = `${i} x ${i} = ${i x i}`; 
+    const newResult = `${i} x ${i} = ${i x i}`; // calculare square of current value of i and express the calculation as a string with the result and add it to the output text. Add line break so that next string begins on a new line.
+    /* 
+    
+    1. During first iteration i = 1, so we add 1 x 1 = 1.
+    2. During second iteration, i = 2, so we add 2 x 2 = 4.
+    3. And so on... for the rest of the numbers up to 9
+    4. When i is equal to 10, loop stops and we move to next line of code that prints Finished! message on a new line
+    */
     results.textContent += `${newResult}\n`;
   }
   results.textContent += "\nFinished!\n\n";
