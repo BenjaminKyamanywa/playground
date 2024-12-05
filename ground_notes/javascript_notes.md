@@ -1425,6 +1425,26 @@ for (let i = 1; i < 10; i++) {
   
 }
 
+
+// Calculating the squares of numbers from 1 to 9
+
+const results = document.querySelector('#result');
+
+function calculateSquares() {
+  
+  for (let i = 1; i < 10; i++) {
+    const newResult = `${i} x ${i} = ${i x i}`; 
+    results.textContent += `${newResult}\n`;
+  }
+  results.textContent += "\nFinished!\n\n";
+}
+
+const calculateBtn = document.querySelector('#calculate');
+const clearBtn = document.querySelector('#clear');
+
+calculateBtn.addEventListener('click', calculateSquare);
+clearBtn.addEventListener('click', () => (results.textContent = ""));
+
 ```
 
 ### Javascript commands
