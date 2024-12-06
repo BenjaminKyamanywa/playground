@@ -1454,6 +1454,20 @@ clearBtn.addEventListener('click', () => (results.textContent = ""));
 
 ```
 
+**Looping through collections with a for loop**
+
+We can use a for...loop to loop through a collection instead of a for..of loop.
+
+```JS
+
+const cats = ['Leopard', 'Jaguar', 'Cheetah', 'Caracal', 'Lion', 'Serval'];
+
+for (let i = 0; i < cats.lenght; i++) {
+  console.log(cats[i]);
+}
+
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
