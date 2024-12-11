@@ -1466,6 +1466,9 @@ for (let i = 0; i < cats.lenght; i++) {
   console.log(cats[i]);
 }
 
+// 1. We are starting i at 0 and stopping when it reaches the length of the array.
+// 2. We utilize i to access each item in the array.
+
 ```
 
 ### Javascript commands
