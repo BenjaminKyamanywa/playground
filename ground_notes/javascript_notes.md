@@ -1522,6 +1522,7 @@ Just like we have it in switch statements we can also use the `break` statement 
 
 <label for="search">Search contact name: </label>
 <input id="search" type="text">
+<button>Search<button>
 
 ```
 
