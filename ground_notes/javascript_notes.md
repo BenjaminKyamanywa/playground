@@ -1510,6 +1510,21 @@ console.log(myFavoriteWildCats); // My favorite wild cats are called Lion, Jagua
 
 ```
 
+### Exiting loops with a break
+
+If we want to exit a loop before all iterations have been run through we can use a break statement.
+
+Just like we have it in switch statements we can also use the `break` statement in loops to immediately exit loops and make the browser move on to any code that follows.
+
+```html
+
+<!-- Our simple application below searches through an array of contacts with phone numbers and returns only the one we search for -->
+
+<label for="search">Search contact name: </label>
+<input id="search" type="text">
+
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
