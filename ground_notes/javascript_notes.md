@@ -1484,10 +1484,14 @@ const cats = ['Kitty', 'Cat', 'Kitten', 'Catty'];
 let myFavoriteCats = 'My favorite cats are called ';
 
 for (const cat of cats) {
-  myFavoriteCats += `${cat}, .`;
+  myFavoriteCats += `${cat}, `;
 }
 
-console.log(myFavoriteCats) // My favorite cats are called Kitty, Cat, Kitten, Catty.
+console.log(myFavoriteCats) // My favorite cats are called Kitty, Cat, Kitten, Catty
+
+// However, we need to handle our last item in the loop and add a full stop. We can user a for...loop for it
+
+const wildCats = ['Lion', 'Jaguar', 'Cheetah', 'Tiger'];
 
 ```
 
