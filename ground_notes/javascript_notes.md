@@ -1524,6 +1524,8 @@ Just like we have it in switch statements we can also use the `break` statement 
 <input id="search" type="text">
 <button>Search<button>
 
+<p></p>
+
 ```
 
 ### Javascript commands
