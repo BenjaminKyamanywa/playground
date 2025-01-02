@@ -1493,7 +1493,7 @@ console.log(myFavoriteCats) // My favorite cats are called Kitty, Cat, Kitten, C
 
 const wildCats = ['Lion', 'Jaguar', 'Cheetah', 'Tiger'];
 
-let myFavoriteWildCats = 'My favorite wild cats are called';
+let myFavoriteWildCats = 'My favorite wild cats are called ';
 
 // for loop to list all wildCats
 for (let i = 0; i < wildCats.length; i++) {
@@ -1502,9 +1502,11 @@ for (let i = 0; i < wildCats.length; i++) {
     // handle last item in the array differently
     myFavoriteWildCats += `and ${wildCats[i]}.`;
   } else {
-    myFavoriteWildCats += `${wildCats[i]}`;
+    myFavoriteWildCats += `${wildCats[i]}, `;
   }
 }
+
+console.log(myFavoriteWildCats); // My favorite wild cats are called Lion, Jaguar, Cheetah, and Tiger.
 
 ```
 
