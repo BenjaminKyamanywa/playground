@@ -1538,6 +1538,8 @@ const contacts = [
 
 const paragraph = document.querySelector('p');
 const input = document.querySelector('input');
+const btn = document.querySelector('button');
+
 
 <script>
 
