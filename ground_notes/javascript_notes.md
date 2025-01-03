@@ -1540,6 +1540,12 @@ const paragraph = document.querySelector('p');
 const input = document.querySelector('input');
 const btn = document.querySelector('button');
 
+function searchName() {
+  const searchNameInput = input.value.toLowerCase();
+}
+
+btn.addEventListener('click', searchName);
+
 
 <script>
 
