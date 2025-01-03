@@ -1526,6 +1526,21 @@ Just like we have it in switch statements we can also use the `break` statement 
 
 <p></p>
 
+<script>
+
+// initialize contacts
+const contacts = [
+  'John: 77754334',
+  'Mary: 48524578',
+  'Suzan: 47205845',
+  'Wikins: 58357382'
+];
+
+const paragraph = document.querySelector('p');
+const input = document.querySelector('input');
+
+<script>
+
 ```
 
 ### Javascript commands
