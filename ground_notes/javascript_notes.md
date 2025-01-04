@@ -1542,6 +1542,9 @@ const btn = document.querySelector('button');
 
 function searchName() {
   const searchNameInput = input.value.toLowerCase();
+  input.value = '';
+  input.focus();
+  paragraph.textContent = '';
 }
 
 btn.addEventListener('click', searchName);
