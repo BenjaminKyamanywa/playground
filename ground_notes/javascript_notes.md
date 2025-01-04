@@ -1545,6 +1545,9 @@ function searchName() {
   input.value = '';
   input.focus();
   paragraph.textContent = '';
+  for (const contact of contacts) {
+    const splitContact = contact.split(':'); // split array items by semi-colon
+  }
 }
 
 btn.addEventListener('click', searchName);
