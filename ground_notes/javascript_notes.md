@@ -1547,6 +1547,10 @@ function searchName() {
   paragraph.textContent = '';
   for (const contact of contacts) {
     const splitContact = contact.split(':'); // split array items by semi-colon
+    if (splitContact[0].toLowerCase() === searchName){
+      paragraph.textContent = `${splitContact[0]}'s number ${splitContact[1]}.`;
+      break;
+    }
   }
 }
 
