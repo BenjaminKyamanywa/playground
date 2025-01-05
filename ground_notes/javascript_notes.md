@@ -1552,6 +1552,9 @@ function searchName() {
       break;
     }
   }
+  if (paragraph.textContent === "") {
+    paragraph.textContent = "Contact not found.";
+  }
 }
 
 btn.addEventListener('click', searchName);
