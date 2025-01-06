@@ -1563,6 +1563,8 @@ btn.addEventListener('click', searchName);
 
 Code Walkthrough
 1. We have an array of contact information as a string with each item having a name and phone number separated by a colon.
+2. We have a function searchName that contains our logic for retrieving a single phone contact.
+3. We store user input into a variable searchNameInput before emptying the text input and focusing it again, ready for the next user search term.
 
 
 */
