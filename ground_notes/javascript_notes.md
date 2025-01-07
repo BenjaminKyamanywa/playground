@@ -1579,6 +1579,18 @@ Code Walkthrough
 ### Skipping iterations with continue
 
 `continue` statement works similar to `break` but instead of breaking the loop entirely it skips to the next iteration of the loop.
+
+```html
+
+<!-- App: Takes a number as an input and returns only numbers that are squares of integers (whole numbers) -->
+
+<label for="number"> Enter number: </label>
+<input id="number" type="number" />
+<button>Generate integer squares</button>
+<p>Output:</p>
+
+
+```
  
 ### Javascript commands
 
