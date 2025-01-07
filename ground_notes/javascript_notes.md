@@ -1572,11 +1572,14 @@ Code Walkthrough
 
 */
 
-
 <script>
 
 ```
 
+### Skipping iterations with continue
+
+`continue` statement works similar to `break` but instead of breaking the loop entirely it skips to the next iteration of the loop.
+ 
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
