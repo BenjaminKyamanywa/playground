@@ -1589,6 +1589,14 @@ Code Walkthrough
 <button>Generate integer squares</button>
 <p>Output:</p>
 
+<script> 
+
+const paragraph = document.querySelector('p');
+const input = document.querySelector('input');
+const btn = document.querySelector('button');
+
+
+</script>
 
 ```
  
