@@ -1596,7 +1596,8 @@ const input = document.querySelector('input');
 const btn = document.querySelector('button');
 
 function squareRoot () {
-paragraph.textContent = "Output: ;
+  paragraph.textContent = "Output: ;
+  const number = input.value;
 }
 
 btn.addEventListener('click', squareRoot);
