@@ -1599,6 +1599,7 @@ function squareRoot () {
   paragraph.textContent = "Output: ;
   const number = input.value;
   input.value = "";
+  input.focus();
 }
 
 btn.addEventListener('click', squareRoot);
