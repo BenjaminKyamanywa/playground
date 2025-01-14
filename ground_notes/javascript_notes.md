@@ -1602,7 +1602,10 @@ function squareRoot () {
   input.focus();
   for(let i = 1; i <= number; i++) {
     let squareRoot = Math.sqrt(i); // return square root of i
-    
+    if (Math.floor(squareRoot) !== squareRoot) {
+      continue;
+    }
+    paragraph.textContent += `${i} `;
   }
 }
 
