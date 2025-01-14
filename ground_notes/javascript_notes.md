@@ -1600,6 +1600,10 @@ function squareRoot () {
   const number = input.value;
   input.value = "";
   input.focus();
+  for(let i = 1; i <= number; i++) {
+    let squareRoot = Math.sqrt(i); // return square root of i
+    
+  }
 }
 
 btn.addEventListener('click', squareRoot);
