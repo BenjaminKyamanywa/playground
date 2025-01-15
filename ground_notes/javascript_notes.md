@@ -1611,9 +1611,20 @@ function squareRoot () {
 
 btn.addEventListener('click', squareRoot);
 
+/*
+**Script Walkthrough**
+
+1. User input should be a number (number). For...loop is given a counter starting at 1 (we aren't interested in 0 in this case), an exit condition that says the loop will stop when the counter  becomes bigger than the input (number), and an interator that adds 1 to the counter each time.
+
+
+*/
+
 </script>
 
+
 ```
+
+
  
 ### Javascript commands
 
