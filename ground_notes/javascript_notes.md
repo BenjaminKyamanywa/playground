@@ -1615,6 +1615,7 @@ btn.addEventListener('click', squareRoot);
 **Script Walkthrough**
 
 1. User input should be a number (number). For...loop is given a counter starting at 1 (we aren't interested in 0 in this case), an exit condition that says the loop will stop when the counter  becomes bigger than the input (number), and an interator that adds 1 to the counter each time.
+2. In the loop, we find the square root of each number using static method Math.sqrt(i), then check whether the square root is an integer by testing whether it is the same as itself when it has been rounded down to the nearest integer (this is what Math.floor()) does to the number it is passed.
 
 
 */
