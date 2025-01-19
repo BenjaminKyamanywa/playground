@@ -1619,15 +1619,15 @@ btn.addEventListener('click', squareRoot);
 3. If actual square root and rounded down square root don't equal one another (!==), it means that the square root is not an integer, so we are not interested in it. In such a case, we use the continue statement to skip on to the next loop iteration without recording the number anywhere.
 4. If square root is an integer, we skip the if block entirely, so the continue statement is not executed, instead we concatenate the current i value plus a space at the end of the paragraph content.
 
-
 */
 
 </script>
 
-
 ```
 
+### While and do..while loop
 
+We can utilize this kind of loop as well and below we'll analyze it and recognize some of the same features at work in a slightly different way.
  
 ### Javascript commands
 
