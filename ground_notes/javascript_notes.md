@@ -1628,6 +1628,19 @@ btn.addEventListener('click', squareRoot);
 ### While and do..while loop
 
 We can utilize this kind of loop as well and below we'll analyze it and recognize some of the same features at work in a slightly different way.
+
+First let's break down the `while` loop below:
+
+```JS
+
+initializer
+while (condition) {
+  // code to run
+  
+  final-expression
+}
+
+```
  
 ### Javascript commands
 
