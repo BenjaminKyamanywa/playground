@@ -1640,7 +1640,13 @@ while (condition) {
   final-expression
 }
 
+// initiator variable is set before the loop.
+// final expression is included inside the loop after the code to run.
+// rather than having both the initiator varibale and final expression being included inside parentheses.
+
 ```
+
+
  
 ### Javascript commands
 
