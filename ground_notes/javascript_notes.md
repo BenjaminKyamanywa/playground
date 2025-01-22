@@ -1643,6 +1643,7 @@ while (condition) {
 // initiator variable is set before the loop.
 // final expression is included inside the loop after the code to run.
 // rather than having both the initiator varibale and final expression being included inside parentheses.
+// the condition is included inside the parentheses, which are preceded by the while keywoard rather than for.
 
 ```
 
