@@ -1633,7 +1633,7 @@ First let's break down the `while` loop below:
 
 ```JS
 
-initializer
+initializer // let i = 0
 while (condition) {
   // code to run
   
@@ -1647,6 +1647,14 @@ while (condition) {
 
 ```
 
+Let's re-write the cats example with a while loop.
+
+```JS
+
+// initiate cats variable
+const cats = ['Pete', 'Biggles', 'Jasmine'];
+
+```
 
  
 ### Javascript commands
