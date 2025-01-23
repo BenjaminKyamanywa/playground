@@ -1654,6 +1654,8 @@ Let's re-write the cats example with a while loop.
 // initiate cats variable
 const cats = ['Pete', 'Biggles', 'Jasmine'];
 
+let myFavoriteCatsForever = 'My favorite cats are called ';
+
 ```
 
  
