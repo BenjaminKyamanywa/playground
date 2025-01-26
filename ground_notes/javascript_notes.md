@@ -1675,6 +1675,19 @@ console.log(myFavoriteCats); // "My cats are called Pete, Biggles, and Jasmine."
 
 It's very similar to the `while` loop but provides a variation of the whole structure.
 
+```JS
+
+initializer
+
+do {
+  // code to run
+
+  final-expression
+} while (condition)
+
+```
+
+
  
 ### Javascript commands
 
