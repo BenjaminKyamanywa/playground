@@ -1677,13 +1677,20 @@ It's very similar to the `while` loop but provides a variation of the whole stru
 
 ```JS
 
-initializer
+initializer // i.e let i = 0
 
 do {
   // code to run
 
   final-expression
 } while (condition)
+
+
+/* 
+
+With any kind of loop we need to be sure the initializer is incremented or decremented depending on the case so that the condition eventually becomes false so as to prevent an infinte loop.
+
+*/
 
 ```
 
