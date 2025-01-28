@@ -1694,8 +1694,14 @@ With any kind of loop we need to be sure the initializer is incremented or decre
 
 ```
 
+**Example**
 
- 
+Launch Countdown: We'll print out a simple launch countdown to the output box from 10 down to Blastoff.
+
+Instructions:
+
+
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
