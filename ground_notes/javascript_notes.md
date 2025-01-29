@@ -1699,6 +1699,14 @@ With any kind of loop we need to be sure the initializer is incremented or decre
 Launch Countdown: We'll print out a simple launch countdown to the output box from 10 down to Blastoff.
 
 Instructions:
+  - Loop from 10 down to 0.
+  - For each iteration, creat a new paragraph and append it to the output <div>
+  - Different iteration numbers require different text to be put in the paragraph for that iteration (you'll need a conditional statement and multiple para.textContent = lines):
+    - If the number is 10, print "Countdown 10" to the paragraph.
+    - If the number is 0, print "Blast Off!!" to the paragraph.
+    - For any other number, print just the number to the paragraph.
+  - Remember to include an iterator! However, in the example we are counting down after each iteration, not up, so we'll want to use `i--`
+
 
 
 
