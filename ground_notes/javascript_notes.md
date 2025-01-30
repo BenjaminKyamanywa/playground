@@ -1707,7 +1707,20 @@ Instructions:
     - For any other number, print just the number to the paragraph.
   - Remember to include an iterator! However, in the example we are counting down after each iteration, not up, so we'll want to use `i--`
 
+```HTML
 
+<html>
+  <head>
+    <title>Launch Countdown</title>
+    <styless>
+      html {
+        font-family: sans-serif;
+      }
+    </styles>
+  </head>
+</html>
+
+```
 
 
 ### Javascript commands
