@@ -1712,11 +1712,27 @@ Instructions:
 <html>
   <head>
     <title>Launch Countdown</title>
-    <styless>
+    <style>
       html {
         font-family: sans-serif;
       }
-    </styles>
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .ally-label {
+        margin: 0;
+        text-align: right;
+        font-size: 0.7rem;
+        width: 90%;
+      }
+
+      body {
+        margin: 10px;
+        background: #f5f9fa;
+      }
+    </style>
   </head>
 </html>
 
