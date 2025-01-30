@@ -1732,8 +1732,19 @@ Instructions:
         margin: 10px;
         background: #f5f9fa;
       }
+
+      .output {
+        height: 410px;
+        overflow: auto;
+      }
     </style>
   </head>
+  <body>
+    <div class="output"></div>
+  <body>
+  <script>
+    
+  </script>
 </html>
 
 ```
