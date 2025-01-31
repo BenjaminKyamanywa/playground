@@ -1743,7 +1743,14 @@ Instructions:
     <div class="output"></div>
   <body>
   <script>
-    
+    const output = document.querySelector('.output');
+    output.textContent = '';
+
+    let i = 10;
+
+    const paragraph = document.createElement('p');
+    paragraph.textContent = ;
+    output.appendChild(paragraph);
   </script>
 </html>
 
