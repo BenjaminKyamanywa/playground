@@ -1748,9 +1748,20 @@ Instructions:
 
     let i = 10;
 
-    const paragraph = document.createElement('p');
-    paragraph.textContent = ;
+    while (i >= 10) {
+      const paragraph = document.createElement('p');
+      if (i === 10) {
+        paragraph.textContent = `Countdown ${i}`;
+      } else if (i === 0) {
+        paragraph.textContent = '!Blast Off!';
+      } else {
+        paragraph.textContent = i;
+      }
+    }
+
     output.appendChild(paragraph);
+
+    i--;
   </script>
 </html>
 
