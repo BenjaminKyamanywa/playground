@@ -1696,7 +1696,7 @@ With any kind of loop we need to be sure the initializer is incremented or decre
 
 **Example**
 
-Launch Countdown: We'll print out a simple launch countdown to the output box from 10 down to Blastoff.
+**Launch Countdown:** We'll print out a simple launch countdown to the output box from 10 down to Blastoff.
 
 Instructions:
   - Loop from 10 down to 0.
@@ -1767,6 +1767,13 @@ Instructions:
 
 ```
 
+**Example**
+
+**Filling in a Guest List:** We'll take a list of names stored in an array and put them into a guest list.
+We don't want to let in some users i.e Phil & Lola because they are rude and always eat all the food. We have two lists, one for guests to admit and one for guests to refuse.
+
+Instructions:
+  - 
 
 ### Javascript commands
 
