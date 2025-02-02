@@ -1773,7 +1773,8 @@ Instructions:
 We don't want to let in some users i.e Phil & Lola because they are rude and always eat all the food. We have two lists, one for guests to admit and one for guests to refuse.
 
 Instructions:
-  - 
+  - Write a loop that will loop through the people array.
+  - During each loop iteration, check if current item is equal  to "Phil" or "Lola" using a conditional statement: 
 
 ### Javascript commands
 
