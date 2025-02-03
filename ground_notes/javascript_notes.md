@@ -1775,6 +1775,14 @@ We don't want to let in some users i.e Phil & Lola because they are rude and alw
 Instructions:
   - Write a loop that will loop through the people array.
   - During each loop iteration, check if current item is equal  to "Phil" or "Lola" using a conditional statement: 
+    - If it is, concatenate the array item to the end of the `refused` paragraph's `textContent`, followed by a comma and space.
+    - If it isn't concatenate the array item to the end of the `admitted` paragraph's `textContent`, followed by a comma and a space.
+
+```HTML
+
+
+
+```
 
 ### Javascript commands
 
