@@ -1780,6 +1780,10 @@ Instructions:
 
 ```HTML
 
+<div class="ouput" style="height: 100px; overflow: auto;">
+  <p class="admitted">Admit: </p>
+  <p class="refused">Refuse: </p>
+</div>
 
 
 ```
