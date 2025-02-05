@@ -1785,6 +1785,22 @@ Instructions:
   <p class="refused">Refuse: </p>
 </div>
 
+<script>
+  // initialize people variable
+  const people = [
+    'Chris',
+    'Anne',
+    'Colin',
+    'Teri',
+    'Phil',
+    'Lola',
+    'Sam',
+    'Kay',
+    'Bruce',
+    'Diana'
+  ];
+
+</script>
 
 ```
 
