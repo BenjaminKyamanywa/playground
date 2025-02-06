@@ -1800,6 +1800,12 @@ Instructions:
     'Diana'
   ];
 
+const admitted = document.querySelector('.admitted');
+const refused = document.querySelector('.refused');
+
+admitted.textContent = 'Admit: ';
+refused.textContent = 'Refuse: ';
+
 </script>
 
 ```
