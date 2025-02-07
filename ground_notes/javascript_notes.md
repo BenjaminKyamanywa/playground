@@ -1806,6 +1806,14 @@ const refused = document.querySelector('.refused');
 admitted.textContent = 'Admit: ';
 refused.textContent = 'Refuse: ';
 
+for (const person of people) {
+  if (person === 'Phil' || person === 'Lola') {
+    refused.textContent += `${person}, `;
+  } else {
+    admitted.textContent += `${person}, `;
+  }
+}
+
 </script>
 
 ```
