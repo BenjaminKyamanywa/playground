@@ -1821,6 +1821,12 @@ admitted.textContent = admitted.textContent.slice(0, admitted.textContent.length
 
 ```
 
+### Which loop should to use
+
+We'll add below some reasoning for when to know which type of loop to use:
+
+  - `for...of`: If iterating through an array or some other object that supports it and don't need access to the index position of each item.
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
