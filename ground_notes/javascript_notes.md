@@ -1825,7 +1825,11 @@ admitted.textContent = admitted.textContent.slice(0, admitted.textContent.length
 
 We'll add below some reasoning for when to know which type of loop to use:
 
-  - `for...of`: If iterating through an array or some other object that supports it and don't need access to the index position of each item.
+  - `for...of`: If iterating through an array or some other object that supports it and we don't need access to the index position of each item.
+  - `for`, `while`, `do...while`: Largely interchangeable and can all be used to solve the same problems. Whichever option we use depends on personal preference with ease of rememberance and intuitivity.
+    `for`: Recommended to begin with as it's easiest for remembering everything i.e initializer, condition and final-expression all have to go neatly into the parentheses so it's easy to see where they are and check that we aren't missing them.
+
+
 
 ### Javascript commands
 
