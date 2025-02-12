@@ -1843,6 +1843,13 @@ We'll add below some reasoning for when to know which type of loop to use:
     // code to run
   }
 
+  // while
+  initializer
+  while (condition) {
+    // code to run
+    final-expression
+  }
+
 
   ```
 
