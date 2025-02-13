@@ -1850,6 +1850,13 @@ We'll add below some reasoning for when to know which type of loop to use:
     final-expression
   }
 
+  // do while
+  initializer
+  do {
+    // code to run
+    final-expression
+  } while (condition)
+
 
   ```
 
