@@ -22,6 +22,8 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Logical Operators: AND, OR, NOT](#logical-operators-and-or-not)
   - [Switch Statements](#switch-statements)
   - [Ternary Operator](#ternary-operator)
+  - [Looping Code](#looping-code)
+  - [Exiting Loops with a break](#exiting-loops-with-a-break)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
@@ -1821,7 +1823,7 @@ admitted.textContent = admitted.textContent.slice(0, admitted.textContent.length
 
 ```
 
-### Which loop should to use
+### Which loop type should you use
 
 We'll add below some reasoning for when to know which type of loop to use:
 
@@ -1859,6 +1861,8 @@ We'll add below some reasoning for when to know which type of loop to use:
 
 
   ```
+
+
 
 ### Javascript commands
 
