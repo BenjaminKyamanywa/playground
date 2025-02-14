@@ -24,6 +24,8 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Ternary Operator](#ternary-operator)
   - [Looping Code](#looping-code)
   - [Exiting Loops with a break](#exiting-loops-with-a-break)
+  - [Skipping Iterations with Continue](#skipping-iterations-with-continue)
+  - [While and do while loop](#while-and-dowhile-loop)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
