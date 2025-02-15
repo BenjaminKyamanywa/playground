@@ -26,6 +26,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Exiting Loops with a break](#exiting-loops-with-a-break)
   - [Skipping Iterations with Continue](#skipping-iterations-with-continue)
   - [While and do while loop](#while-and-dowhile-loop)
+  - [Functions - Reusable blocks of code](#functions---reusable-blocks-of-code)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
@@ -1864,7 +1865,9 @@ We'll add below some reasoning for when to know which type of loop to use:
 
   ```
 
+## Functions - Reusable blocks of code
 
+Functions enable us to store code that does a single task inside a defined block of code, we can call the code whenever we need it using a short command rather than having to type out the same code multiple times.
 
 ### Javascript commands
 
