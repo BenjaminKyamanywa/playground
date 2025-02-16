@@ -1873,6 +1873,25 @@ Functions enable us to store code that does a single task inside a defined block
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
 
+### Built-in browser functions
+
+These are available built-in functions that are within the web browser that we can utilize without having to write all the code ourselves.
+
+**Examples**
+
+```js
+
+// Replace a text string
+const myString = 'I am a string';
+const myNewString = myString.replace('string', 'sausage');
+console.log(newString); // I am a sausage
+// the replace string function takes a source string
+// and a target string and replaces the source string
+// with a target string and returns the new string
+
+
+```
+
 ```js
 
 /***Variables***/
