@@ -1890,6 +1890,14 @@ console.log(newString); // I am a sausage
 // with a target string and returns the new string
 
 
+// Array manipulation - join
+const myArray = ['I', 'love', 'chocolate', 'frogs'];
+const myArrayString = myArray.join(" ");
+console.log(myArrayString); // I love chocolate frogs
+// the join()function takes an array
+// joins the array items into a single string
+// and returns the new joined string
+
 ```
 
 ```js
