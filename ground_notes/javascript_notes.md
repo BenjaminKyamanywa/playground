@@ -1900,6 +1900,10 @@ console.log(myArrayString); // I love chocolate frogs
 
 ```
 
+### Javascript commands
+
+Below is a list of most utilized javascript commands as a helpful reference with descriptions.
+
 ```js
 
 /***Variables***/
