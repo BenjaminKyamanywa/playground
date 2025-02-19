@@ -1898,7 +1898,11 @@ console.log(myArrayString); // I love chocolate frogs
 // joins the array items into a single string
 // and returns the new joined string
 
+// Random Number generation
+const myRandomNumber = Math.random();
+// random() functions generates a random number between 0 and up to but not including 1 and returns that number
 ```
+
 
 ### Javascript commands
 
