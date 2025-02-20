@@ -1903,6 +1903,20 @@ const myRandomNumber = Math.random();
 // random() functions generates a random number between 0 and up to but not including 1 and returns that number
 ```
 
+### Functions Vs Methods
+
+Functions that are part of objects are called methods. 
+
+Normal function usage where we provide a function with a name is called declaration
+
+```JS
+
+// example: we have a function below that has a name, function declarations are hoisted
+function myFunction () {
+  alert("hello");
+}
+
+```
 
 ### Javascript commands
 
