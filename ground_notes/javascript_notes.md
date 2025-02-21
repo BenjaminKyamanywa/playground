@@ -1907,7 +1907,11 @@ const myRandomNumber = Math.random();
 
 Functions that are part of objects are called methods. 
 
-Normal function usage where we provide a function with a name is called declaration
+Normal function usage where we provide a function with a name is called declaration.
+
+Functions have both global scope and function scope where the difference is that with former access can be from anywhere in the code while with the latter access is only possible within the function declaration.
+
+
 
 ```JS
 
@@ -1916,7 +1920,26 @@ function myFunction () {
   alert("hello");
 }
 
+// function scope example
+const x = 1;
+
+function a() {
+ const y = z;
+}
+
+function b() {
+  const z = 3;
+}
+
+function output(value) {
+  const paragraph = document.createElement('p');
+  document.body.appendChild(paragraph);
+  paragraph.textContent = `Value: ${value}`;
+}
+
 ```
+
+
 
 ### Javascript commands
 
