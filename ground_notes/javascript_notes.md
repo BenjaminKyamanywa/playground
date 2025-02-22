@@ -1925,17 +1925,25 @@ const x = 1;
 
 function a() {
  const y = z;
+ // output(y); 
+ // when we call the function a() with output(y) uncommmented we'll have the value returned.
 }
 
 function b() {
   const z = 3;
+  // output(z);
 }
 
-function output(value) {
+function output(value) { // output() is a global function and it's accessible from anywhere
   const paragraph = document.createElement('p');
   document.body.appendChild(paragraph);
   paragraph.textContent = `Value: ${value}`;
 }
+
+// calling the functions
+output(x); // will return 1
+output(y); // reference error: y is not defined. Because of function scope y is locked within function a() so output(y) can't access it from the global scope
+output(z); // reference error: z is not defined. Because of function scope z is locked within function b() so output(z) can't access it from the global scope
 
 ```
 
