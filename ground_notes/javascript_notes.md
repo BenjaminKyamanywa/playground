@@ -1921,7 +1921,7 @@ function myFunction () {
 }
 
 // function scope example
-const x = 1;
+const x = 1; // global variable accessible anywhere in our code base
 
 function a() {
  const y = z;
