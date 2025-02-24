@@ -1945,6 +1945,24 @@ output(x); // will return 1
 output(y); // reference error: y is not defined. Because of function scope y is locked within function a() so output(y) can't access it from the global scope
 output(z); // reference error: z is not defined. Because of function scope z is locked within function b() so output(z) can't access it from the global scope
 
+
+// Car racing between two players
+const playerOneTime = 130;
+const playerTwoTime = 145;
+
+function getFastestRaceTime() {
+  if (playerOneTime < playerTwoTime) {
+    return playerOneTime;
+  } else if (playerTwoTime < playerOneTime) {
+    return playerTwoTime;
+  } else {
+    return playerTwoTime;
+  }
+}
+
+let fastestRace = getFastestRaceTime();
+console.log(fastestRace);
+
 ```
 
 
