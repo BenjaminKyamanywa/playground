@@ -1950,6 +1950,7 @@ output(z); // reference error: z is not defined. Because of function scope z is 
 const playerOneTime = 130;
 const playerTwoTime = 145;
 
+// get the fastest race time
 function getFastestRaceTime() {
   if (playerOneTime < playerTwoTime) {
     return playerOneTime;
@@ -1960,8 +1961,16 @@ function getFastestRaceTime() {
   }
 }
 
+// get total race time
+function getTotalRaceTime() {
+  return playerOneTime + playerTwoTime;
+}
+
 let fastestRace = getFastestRaceTime();
 console.log(fastestRace);
+
+let totalRaceTime = getTotalRaceTime();
+console.log(totalRaceTime);
 
 ```
 
