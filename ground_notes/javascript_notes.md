@@ -1974,7 +1974,18 @@ console.log(totalRaceTime);
 
 ```
 
+### Building Custom Functions
 
+In this case we'll review building our own functions and we'll build off a simple example.
+
+```JS
+
+// custom function
+function displayMessage() {
+  
+}
+
+```
 
 ### Javascript commands
 
