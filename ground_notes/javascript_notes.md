@@ -1978,11 +1978,20 @@ console.log(totalRaceTime);
 
 In this case we'll review building our own functions and we'll build off a simple example.
 
-```JS
+```HTML
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    Custom Function
+  </title>
+</html>
 
 // custom function
 function displayMessage() {
-  
+
 }
 
 ```
