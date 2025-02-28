@@ -1984,9 +1984,20 @@ In this case we'll review building our own functions and we'll build off a simpl
 <html lang="en-US">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>
-    Custom Function
-  </title>
+  <title>Custom Function</title>
+  <style>
+    .messageBox {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      background: #eee;
+    }
+  </style>
+  <body>
+
+  </body>
 </html>
 
 // custom function
