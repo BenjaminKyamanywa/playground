@@ -1994,6 +1994,12 @@ In this case we'll review building our own functions and we'll build off a simpl
       width: 200px;
       background: #eee;
     }
+
+    .messageBox p {
+      line-height: 1.5;
+      padding: 10px 20px;
+      color: #333;
+    }
   </style>
   <body>
 
