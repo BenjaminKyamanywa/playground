@@ -2000,6 +2000,16 @@ In this case we'll review building our own functions and we'll build off a simpl
       padding: 10px 20px;
       color: #333;
     }
+
+    .messageBox button {
+      background: none;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.1rem;
+      color: #aaa;
+    }
   </style>
   <body>
 
