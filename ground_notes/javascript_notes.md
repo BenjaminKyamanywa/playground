@@ -2019,6 +2019,9 @@ In this case we'll review building our own functions and we'll build off a simpl
     // custom function
     function displayMessage() {
       
+      const body = document.body;
+
+      const panel = document.createElement("div");
     }
 
   </script>
