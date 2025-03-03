@@ -2012,14 +2012,18 @@ In this case we'll review building our own functions and we'll build off a simpl
     }
   </style>
   <body>
-
+    <button>Display message box</button>
   </body>
+  <script>
+    
+    // custom function
+    function displayMessage() {
+      
+    }
+
+  </script>
 </html>
 
-// custom function
-function displayMessage() {
-
-}
 
 ```
 
