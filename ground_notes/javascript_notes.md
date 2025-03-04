@@ -2022,6 +2022,9 @@ In this case we'll review building our own functions and we'll build off a simpl
       const body = document.body;
 
       const panel = document.createElement("div");
+      panel.setAttribute("class", "messageBox");
+      body.appendChild(panel);
+
     }
 
   </script>
