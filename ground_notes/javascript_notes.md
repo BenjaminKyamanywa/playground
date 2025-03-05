@@ -2025,6 +2025,11 @@ In this case we'll review building our own functions and we'll build off a simpl
       panel.setAttribute("class", "messageBox");
       body.appendChild(panel);
 
+      const message = document.createElement("p");
+      message.textContent("This is a message box");
+      panel.appendChild(message);
+
+
     }
 
   </script>
