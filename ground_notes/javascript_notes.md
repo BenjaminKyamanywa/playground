@@ -2029,7 +2029,9 @@ In this case we'll review building our own functions and we'll build off a simpl
       message.textContent("This is a message box");
       panel.appendChild(message);
 
-
+      const closeBtn = document.createElement("button");
+      closeBtn.textContent = "x";
+      panel.appendChild(closeBtn);
     }
 
   </script>
