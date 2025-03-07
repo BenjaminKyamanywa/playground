@@ -2032,6 +2032,10 @@ In this case we'll review building our own functions and we'll build off a simpl
       const closeBtn = document.createElement("button");
       closeBtn.textContent = "x";
       panel.appendChild(closeBtn);
+
+      closeBtn.addEventListener("click", () => {
+        panel.parentNode.removeChild(panel)
+      });
     }
 
   </script>
