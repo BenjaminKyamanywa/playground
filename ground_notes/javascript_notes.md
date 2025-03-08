@@ -2019,20 +2019,25 @@ In this case we'll review building our own functions and we'll build off a simpl
     // custom function
     function displayMessage() {
       
+      // select document body element
       const body = document.body;
 
+      // create outer container for message box
       const panel = document.createElement("div");
       panel.setAttribute("class", "messageBox");
       body.appendChild(panel);
 
+      // message element with message
       const message = document.createElement("p");
       message.textContent("This is a message box");
       panel.appendChild(message);
 
+      // message box close button
       const closeBtn = document.createElement("button");
       closeBtn.textContent = "x";
       panel.appendChild(closeBtn);
 
+      // close message box
       closeBtn.addEventListener("click", () => {
         panel.parentNode.removeChild(panel)
       });
