@@ -2043,6 +2043,8 @@ In this case we'll review building our own functions and we'll build off a simpl
       });
     }
 
+    // call function
+    displayMessage();
   </script>
 </html>
 
