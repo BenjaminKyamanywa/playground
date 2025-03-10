@@ -2016,6 +2016,10 @@ In this case we'll review building our own functions and we'll build off a simpl
   </body>
   <script>
     
+    const btn = document.querySelector("button");
+
+    btn.addEventListener("click", displayMessage);
+
     // custom function
     function displayMessage() {
       
@@ -2043,8 +2047,6 @@ In this case we'll review building our own functions and we'll build off a simpl
       });
     }
 
-    // call function
-    displayMessage();
   </script>
 </html>
 
