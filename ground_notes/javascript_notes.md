@@ -2018,10 +2018,12 @@ In this case we'll review building our own functions and we'll build off a simpl
     
     const btn = document.querySelector("button");
 
-    btn.addEventListener("click", displayMessage);
+    btn.addEventListener("click", () => {
+      displayMessage("Woo, this is a different message!");
+    });
 
     // custom function
-    function displayMessage() {
+    function displayMessage(msgText, msgType) {
       
       // select document body element
       const body = document.body;
@@ -2033,7 +2035,7 @@ In this case we'll review building our own functions and we'll build off a simpl
 
       // message element with message
       const message = document.createElement("p");
-      message.textContent("This is a message box");
+      message.textContent = msgText;
       panel.appendChild(message);
 
       // message box close button
