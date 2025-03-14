@@ -20,3 +20,10 @@ The basic syntax:
 <element>This is where we add content</element>
 ```
 
+- Void elements: These cannot have any content inside them. They only have a start tag. e.g `<img>` & `<meta>` elements. Sometimes we can add a slash at the end or not, either option is acceptable as some codebases utilize the slashes format. e.g `<img/>`.
+- Attributes: Provide additional information about an element or specify how it should behave. These are placed inside the opening tag of an HTML element.
+
+```HTML
+<element attribute="value"></element>
+```
+
