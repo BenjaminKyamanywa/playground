@@ -8,6 +8,7 @@ In this HTML reference notes we'll cover the buliding blocks and dive deeper in 
 
 ## Topics
   - [Introductions](#introduction)
+  - [Common HTML Elements](#common-html-elements)
 
 ## Introduction
 
@@ -32,4 +33,19 @@ The basic syntax:
 ```HTML
 <!-- This is an HTML comment -->
 ```
+
+## Common HTML Elements
+
+- Heading Elements: We have six of these from `h1` through `h6` and the higher the number the lower the importance. For instance `h6` has a lower importance than `h2`.
+
+```HTML
+<h1>most important heading element</h1>
+<h2>second most important heading element</h2>
+<h3>third most important heading element</h3>
+<h4>fourth most important heading element</h4>
+<h5>fifth most important heading element</h5>
+<h6>least important heading element</h6>
+```
+
+
 
