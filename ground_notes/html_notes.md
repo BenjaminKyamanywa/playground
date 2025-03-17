@@ -47,5 +47,9 @@ The basic syntax:
 <h6>least important heading element</h6>
 ```
 
+- Paragraph Elements: Used to add paragraphs on webpages.
 
+```HTML
+<p>This is a paragraph element</p>
+```
 
