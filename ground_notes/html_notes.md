@@ -55,3 +55,15 @@ The basic syntax:
 
 - **img element**: Used to add images to a webpage. It's good practise to add a `src` attribute that's used to add a link to the source of an image and an `alt` attribute to add a description of an image.
 
+```HTML
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+```
+
+- **body**: Used to represent the entire content of the HTML document.
+
+```HTML
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+</body>
+```
