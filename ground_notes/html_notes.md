@@ -67,3 +67,12 @@ The basic syntax:
   <p>This is a paragraph</p>
 </body>
 ```
+
+- **section** Element: Used to divide up webpage content into smaller sections. It provides semantic meaning indicating a particular grouping of content.
+
+```HTML
+<section>
+  <h2>About Us Page</h2>
+  <p>I am on a journey of mastery of my craft. Dedicating every waking moment.</p>
+</section>
+```
