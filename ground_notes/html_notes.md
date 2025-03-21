@@ -76,3 +76,12 @@ The basic syntax:
   <p>I am on a journey of mastery of my craft. Dedicating every waking moment.</p>
 </section>
 ```
+
+- **div** Element: Generic HTML element that doesn't have any semantic meaning and is used to contain other HTML elements.
+
+```HTML
+<div>
+  <h3>This is a heading</h3>
+  <p>Day and night I'll dedicate myself to mastery.</p>
+<div>
+```
