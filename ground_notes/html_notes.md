@@ -85,3 +85,10 @@ The basic syntax:
   <p>Day and night I'll dedicate myself to mastery.</p>
 <div>
 ```
+
+- **anchor <a>** Element: Used to add links onto a webpage. The `href` attribute specifies the destination of the link.
+
+```HTML
+<a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a>
+```
+
