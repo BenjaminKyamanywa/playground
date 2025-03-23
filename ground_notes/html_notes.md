@@ -92,3 +92,21 @@ The basic syntax:
 <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a>
 ```
 
+- Lists
+  - **Ordered List <ol>**: Used to create list items that are ordered in order.
+  ```HTML
+  <ol>
+    <li>Shoes</li>
+    <li>Hat</li>
+    <li>Pin</li>
+  </ol>
+  ```
+
+  - **Unordered List <ul>**: Used to create list items that are not in any specific order.
+  ```HTML
+  <ul>
+    <li>Susan</li>
+    <li>Doe</li>
+    <li>Pete</li>
+  </ul>
+  ```
