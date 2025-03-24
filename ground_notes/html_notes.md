@@ -86,14 +86,14 @@ The basic syntax:
 <div>
 ```
 
-- **anchor <a>** Element: Used to add links onto a webpage. The `href` attribute specifies the destination of the link.
+- **anchor `<a></a>`**: Used to add links onto a webpage. The `href` attribute specifies the destination of the link.
 
 ```HTML
 <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a>
 ```
 
-- Lists
-  - **Ordered List <ol>**: Used to create list items that are ordered in order.
+- Lists:
+  - **Ordered List <ol></ol>**: Used to create list items that are ordered in order.
   ```HTML
   <ol>
     <li>Shoes</li>
@@ -102,7 +102,7 @@ The basic syntax:
   </ol>
   ```
 
-  - **Unordered List <ul>**: Used to create list items that are not in any specific order.
+  - **Unordered List <ul></ul>**: Used to create list items that are not in any specific order.
   ```HTML
   <ul>
     <li>Susan</li>
@@ -110,3 +110,8 @@ The basic syntax:
     <li>Pete</li>
   </ul>
   ```
+
+- **Emphasis <em>**: Used to place strong importance on a piece of text.
+```HTML
+  <p>Look at that <em>tall</em> building.</p>
+```
