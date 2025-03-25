@@ -111,7 +111,12 @@ The basic syntax:
   </ul>
   ```
 
-- **Emphasis <em>**: Used to place strong importance on a piece of text.
+- **Emphasis <em>**: Used to place strong emphasis on a piece of text.
 ```HTML
   <p>Look at that <em>tall</em> building.</p>
+```
+
+- **strong <strong></strong>**: Used to place strong emphasis on text to indicate a sense of urgency and seriousness.
+```HTML
+<p>Make sure you <strong>wear</strong> your safety googles</p>
 ```
