@@ -129,3 +129,7 @@ The basic syntax:
   <figcaption>Cats <strong>love</strong> other cats.</figcaption>  
 </figure>
 ```
+
+- **main**: Element used to contain the primary content area of a webpage such as the main article, blog post or an applications main functionality. It should containg the central topic of a page excluding navigation, search, copyright elements. There should only be one main element.
+
+ 
