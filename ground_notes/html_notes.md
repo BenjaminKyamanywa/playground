@@ -132,4 +132,20 @@ The basic syntax:
 
 - **main**: Element used to contain the primary content area of a webpage such as the main article, blog post or an applications main functionality. It should containg the central topic of a page excluding navigation, search, copyright elements. There should only be one main element.
 
- 
+```HTML
+<main>
+  <h1>Apples</h1>
+  <p>The apple is the pomaceous fruit of the apple tree.</p>
+
+  <article>
+    <h2>Red Delicious</h2>
+    <p>
+      These bright red apples are the most common found in many supermarkets.
+    </p>
+    <p>…</p>
+    <p>…</p>
+  </article>
+</main>
+```
+
+- **footer**: 
