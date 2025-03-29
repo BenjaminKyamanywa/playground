@@ -148,4 +148,13 @@ The basic syntax:
 </main>
 ```
 
-- **footer**: 
+- **footer**: Used at the bottom of a webpage to add copyright information and other important links
+
+```HTML
+<footer>
+  <p>
+    No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+  </p>
+</footer>
+```
+
