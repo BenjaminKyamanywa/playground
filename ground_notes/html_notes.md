@@ -158,3 +158,11 @@ The basic syntax:
 </footer>
 ```
 
+- **Identifiers and Grouping**
+  - **ID Identifiers <p id="unique"></p>**: Unique element identifiers that should be used once per HTML element. There cannot be spaces for an ID identifier, if there are many words then use dashes or underscores to connect each word.
+  ```HTML
+    <h1 id="title">Movie Review Page</h1>
+    <h1 id="title-review-page">Title Review Page</h1>
+  ```
+
+  - **Class identifier**: Used to group elements for styling
