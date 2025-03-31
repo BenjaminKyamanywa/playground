@@ -165,4 +165,8 @@ The basic syntax:
     <h1 id="title-review-page">Title Review Page</h1>
   ```
 
-  - **Class identifier**: Used to group elements for styling
+  - **Class identifier**: Used to group elements for styling. Can be re-used throughout elements and can have spaces. Also, dashes and underscores can be used as well.
+  ```HTML
+    <div class="box red-box"></div>
+    <div class="box blue-box"></div>
+  ```
