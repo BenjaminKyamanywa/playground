@@ -3,8 +3,8 @@
 In this HTML reference notes we'll cover the buliding blocks and dive deeper in understanding the foundation of webpages.
 
 ## Helpful Links
-  - MDN Docs:https://developer.mozilla.org/en-US/docs/Web/HTML
-  - W3C Schools:https://www.w3schools.com/html/
+  - MDN Docs: https://developer.mozilla.org/en-US/docs/Web/HTML
+  - W3C Schools: https://www.w3schools.com/html/
 
 ## Topics
   - [Introductions](#introduction)
@@ -169,4 +169,9 @@ The basic syntax:
   ```HTML
     <div class="box red-box"></div>
     <div class="box blue-box"></div>
+  ```
+- **Special Characters and Linking**:
+  - **HTML Entities**: Character references to represent reserved characters in HTML. E.g ampersand `&amp;` and less than symbol `&lt;`
+  ```HTML
+  <p>This is an &lt; img /&gt; element </p> <!-- This is an < img /> element  -->
   ```
