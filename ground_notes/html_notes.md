@@ -175,3 +175,8 @@ The basic syntax:
   ```HTML
   <p>This is an &lt; img /&gt; element </p> <!-- This is an < img /> element  -->
   ```
+  -**link**: Used to link to external sources such as stylesheets and icons. It utilizes an `href` attribute that specifies the location of the URL for the external resource. Used in the head section of a webpage.
+  ```HTML
+  <link rel="stylesheet" href="styles.css">
+  ```
+  
