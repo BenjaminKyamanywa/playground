@@ -179,4 +179,11 @@ The basic syntax:
   ```HTML
   <link rel="stylesheet" href="styles.css">
   ```
-  
+  -**script**: Utilized to contain our Javascript code. Additionally, used to link to external script source files which is considered as the best practise. We utilize the `src` attribute to add the path to the external file.
+  ```HTML
+  <script>
+    alert("Hello wordl!");
+  </script>
+  <!-- linking to external script files -->
+  <script src="path-to-javasript-file.js"></script>
+  ```
