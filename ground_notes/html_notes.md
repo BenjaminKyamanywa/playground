@@ -175,15 +175,29 @@ The basic syntax:
   ```HTML
   <p>This is an &lt; img /&gt; element </p> <!-- This is an < img /> element  -->
   ```
-  -**link**: Used to link to external sources such as stylesheets and icons. It utilizes an `href` attribute that specifies the location of the URL for the external resource. Used in the head section of a webpage.
+  - **link**: Used to link to external sources such as stylesheets and icons. It utilizes an `href` attribute that specifies the location of the URL for the external resource. Used in the head section of a webpage.
   ```HTML
   <link rel="stylesheet" href="styles.css">
   ```
-  -**script**: Utilized to contain our Javascript code. Additionally, used to link to external script source files which is considered as the best practise. We utilize the `src` attribute to add the path to the external file.
+  - **script**: Utilized to contain our Javascript code. Additionally, used to link to external script source files which is considered as the best practise. We utilize the `src` attribute to add the path to the external file.
   ```HTML
   <script>
     alert("Hello wordl!");
   </script>
   <!-- linking to external script files -->
   <script src="path-to-javasript-file.js"></script>
+  ```
+- **Boilerplate and Encoding**:
+  - **HTML Boilerplate**: A skeletal template presentation that includes the basic structure and essential elements every HTML document needs.
+  ```HTML
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <!-- Headings, sections, paragraphs, images -->
+    </body>
+  </html>
   ```
