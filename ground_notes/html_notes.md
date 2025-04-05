@@ -201,3 +201,11 @@ The basic syntax:
     </body>
   </html>
   ```
+  - `DOCTYPE`: Specifies to browsers the HTML version of the webpage.
+  - `html`: Specifies the top level or root of the HTML document.
+  - `head`: Contains important behind the scenes meta data needed for browsers and search engines.
+  - `meta`: Represent meta data for a webpage, and contain information like character encoding and how social sites liken Twitter preview a page's link.
+  - `title`: Sets text that appears in the browser tab. 
+  - `body`: Contains all the content viewed by users on a webpage. 
+
+
