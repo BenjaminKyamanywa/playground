@@ -208,4 +208,13 @@ The basic syntax:
   - `title`: Sets text that appears in the browser tab. 
   - `body`: Contains all the content viewed by users on a webpage. 
 
+- **SEO & Social Sharing**
+  - **SEO**: Search Engine Optimization is a practice that optimizes webpages so they become more visible and rank higher on search engines.
+  - **Meta description**: Utilized to add a short description for the webpage that search engines read and contribute to SEO.
+  ```HTML
+    <meta name="description" content="Discover expert tips and techniques for gardening in small spaces, choosing the right plants, and maintaining a thriving garden."/>
+  ```
+  - **open graph tags**: Enables control over how a website's content appears across various social media platforms e.g Facebook, LinkedIn
+
+
 
