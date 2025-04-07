@@ -214,7 +214,10 @@ The basic syntax:
   ```HTML
     <meta name="description" content="Discover expert tips and techniques for gardening in small spaces, choosing the right plants, and maintaining a thriving garden."/>
   ```
-  - **open graph tags**: Enables control over how a website's content appears across various social media platforms e.g Facebook, LinkedIn
+  - **open graph tags**: Enables control over how a website's content appears across various social media platforms e.g Facebook, LinkedIn. Open Graph properties entice users to want to engage with webpage content. They can be set utilizing `meta` elements in the `head` section of a webpage.
+
+  
+  
 
 
 
