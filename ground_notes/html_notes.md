@@ -215,8 +215,16 @@ The basic syntax:
     <meta name="description" content="Discover expert tips and techniques for gardening in small spaces, choosing the right plants, and maintaining a thriving garden."/>
   ```
   - **open graph tags**: Enables control over how a website's content appears across various social media platforms e.g Facebook, LinkedIn. Open Graph properties entice users to want to engage with webpage content. They can be set utilizing `meta` elements in the `head` section of a webpage.
-
+  ```HTML
+  <!-- og:title - Sets title that displays for social media posts -->
+  <meta property="title" content="exampleWebsite.org">
+  <!-- og:type - Represents the type of content being shared on social  -->
+  <meta property="type" content="website">
+  <!-- og:image - Sets the image shown on social media content -->
+  <meta property="og:image" content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"/>
+  <!-- og:url - Sets the URL users click on for social media conent/posts -->
   
+  ``` 
   
 
 
