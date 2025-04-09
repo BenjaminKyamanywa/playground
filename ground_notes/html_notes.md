@@ -223,8 +223,14 @@ The basic syntax:
   <!-- og:image - Sets the image shown on social media content -->
   <meta property="og:image" content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"/>
   <!-- og:url - Sets the URL users click on for social media conent/posts -->
-  
+  <meta property="og:url" content="https://www.freecodecamp.org" />
   ``` 
+
+- Media Elements & Customization
+  - **Replaced elements**: Content is determined by external resources rather than CSS. E.g `iframe - inline frame` element which is used to embed other HTML content directly within an HTML page.
+  ```HTML
+  <iframe src="https://www.example.com" title="Example site"></iframe>
+  ```
   
 
 
