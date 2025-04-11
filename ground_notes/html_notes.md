@@ -255,11 +255,14 @@ The basic syntax:
   ></iframe>
   ```
 
-  - Examples of other replaces elements: `embed`, `video`. Some behave as replaced elements under specific circumstances. E.g `input` element with the `type` attribute set to `image`:
+  - Examples of other replace elements: `embed`, `video`. Some behave as replaced elements under specific circumstances. E.g `input` element with the `type` attribute set to `image`:
 
   ```HTML
     <input type="image" alt="Descriptive text goes here" src="example-img-url">
   ```
+
+  - **Optimizing media**:Size, format and compression are three things to consider while working with media such as images and videos. Compressing them using online tools helps to reduce the file size and as such they load faster.
+
 
   
 
