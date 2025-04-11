@@ -3,6 +3,7 @@
 In this HTML reference notes we'll cover the buliding blocks and dive deeper in understanding the foundation of webpages.
 
 ## Helpful Links
+  - FreeCodeCamp HTML basic review: https://www.freecodecamp.org/learn/full-stack-developer/review-basic-html/basic-html-review
   - MDN Docs: https://developer.mozilla.org/en-US/docs/Web/HTML
   - W3C Schools: https://www.w3schools.com/html/
 
@@ -252,6 +253,12 @@ The basic syntax:
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
   ></iframe>
+  ```
+
+  - Examples of other replaces elements: `embed`, `video`. Some behave as replaced elements under specific circumstances. E.g `input` element with the `type` attribute set to `image`:
+
+  ```HTML
+    <input type="image" alt="Descriptive text goes here" src="example-img-url">
   ```
 
   
