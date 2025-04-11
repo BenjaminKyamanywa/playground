@@ -262,6 +262,8 @@ The basic syntax:
   ```
 
   - **Optimizing media**:Size, format and compression are three things to consider while working with media such as images and videos. Compressing them using online tools helps to reduce the file size and as such they load faster.
+  - **Image formats**: JPG & PNG are two of the most common image file formats however, they are not ideal. WEBP or AVIF are more optimized and modern formats that are recommended for image formats.
+  - 
 
 
   
