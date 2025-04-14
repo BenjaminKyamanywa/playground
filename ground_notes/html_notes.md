@@ -188,7 +188,7 @@ The basic syntax:
   <!-- linking to external script files -->
   <script src="path-to-javasript-file.js"></script>
   ```
-- **Boilerplate and Encoding**:
+## Boilerplate and Encoding
   - **HTML Boilerplate**: A skeletal template presentation that includes the basic structure and essential elements every HTML document needs.
   ```HTML
   <!DOCTYPE html>
@@ -265,6 +265,11 @@ The basic syntax:
   - **Image formats**: JPG & PNG are two of the most common image file formats however, they are not ideal. WEBP or AVIF are more optimized and modern formats that are recommended for image formats.
   - **Image licenses**: Public domain images have no copyright and are free to use without restrictions. E.g Creative Commons 0 licens. Some images can be released under a permitted Creative Commons License, or BSD (Berkeley Software Distribution) that FreeCodeCamp uses.
   - **SVGs**: These track data based on paths and equations to plot points, lines and curves which means as vector graphics that they can be scaled without losing quality.
+
+## Mutlimedia Integration
+
+- **audio and video**: Are used to add both audio and video to HTML documents. Supported audio formats include mp3, wav, ogg. Video formats include mp4, ogg, webm formats.
+
 
 
   
