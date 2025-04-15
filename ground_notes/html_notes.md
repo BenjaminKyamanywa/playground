@@ -270,6 +270,13 @@ The basic syntax:
 
 - **audio and video**: Are used to add both audio and video to HTML documents. Supported audio formats include mp3, wav, ogg. Video formats include mp4, ogg, webm formats.
 
+```HTML
+<audio src="audioFileSource.mp3" controls></audio> <!-- add controls attribute to see audio controls -->
+```
+
+
+
+
 
 
   
