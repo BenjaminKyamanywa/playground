@@ -271,8 +271,28 @@ The basic syntax:
 - **audio and video**: Are used to add both audio and video to HTML documents. Supported audio formats include mp3, wav, ogg. Video formats include mp4, ogg, webm formats.
 
 ```HTML
-<audio src="audioFileSource.mp3" controls></audio> <!-- add controls attribute to see audio controls -->
+<audio src="audioFileSource.mp3" loop controls></audio> 
+<!-- 
+ - Controls (boolean) attribute: To see audio controls which enables users manage audio playback, adjusting volume, pausing, resuming playback.
+ - Loop attribute: audio replays continuously.
+ - Muted attribute: audio starts in a muted state.
+-->
+
 ```
+
+- **source element**: can be used in the audio element to add different audio file sources as there are differences with what browsers accept.
+
+```HTML
+
+<audio controls>
+  <source src="audio.ogg" type="audio/ogg">
+  <source src="audio.wav" type="audio/wav">
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+```
+
+- **video controls**: all the attributes we've utilized with audio controls can also be used for the video element.
 
 
 
