@@ -294,6 +294,16 @@ The basic syntax:
 
 - **video controls**: all the attributes we've utilized with audio controls can also be used for the video element.
 
+```HTML
+<!-- loop, contorls, muted attributes with video element -->
+<video
+  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+  loop
+  controls
+  muted
+></video>
+```
+
 
 
 
