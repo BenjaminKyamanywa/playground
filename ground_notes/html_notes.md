@@ -304,6 +304,18 @@ The basic syntax:
 ></video>
 ```
 
+- **poster attribute**: Used to display an image while a video is downloading. Only available for video element.
+
+```HTML
+<video
+  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+  loop
+  controls
+  muted
+  poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+  width="620"
+></video>
+```
 
 
 
