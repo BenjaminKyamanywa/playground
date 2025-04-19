@@ -317,8 +317,14 @@ The basic syntax:
 ></video>
 ```
 
+## Target attribute types
 
+- **target attribute**: Tells a browser where to open the URL for the anchor element. It has four possible values `_self`, `_blank`, `_parent`, `_top`. There's a fifth value `_unfencedTop`, currently used for the experimental `FencedFrame` API and there won't be a reason to use it yet. 
+- **`self` Value**: Default value for `target` attribute and opens the URL in the current browser tab or window.
 
+```HTML
+<a href="https://freecodecamp.org" target="_self">Visit freeCodeCamp</a>
+```
 
 
   
