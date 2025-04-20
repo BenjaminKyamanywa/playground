@@ -326,6 +326,23 @@ The basic syntax:
 <a href="https://freecodecamp.org" target="_self">Visit freeCodeCamp</a>
 ```
 
+- **`_blank` Value**: Opens the link in new browsing context. Typicaly within a new browser tab. Some users may configure their browsers to open a new window instead.
+
+```HTML
+<a href="https://freecodecamp.org" target="_blank">Visit freeCodeCamp</a>
+```
+- **`–parent` Value**: Opens a link in the parent element of the current context. E.g if a site has an iframe a `_parent` value within the iframe would open in the website's tab/window, not in the embedded iframe.
+
+```HTML
+<a href="https://freecodecamp.org" target="_parent">Visit freeCodeCamp</a>
+```
+- **`–top` Value**: Opens a link in the top most browsing context - "think parent of the parent". It's similar to `_parent` but the link will always open in the full browser tab/window even for nested frames.
+
+```HTML
+<a href="https://freecodecamp.org" target="_top">Visit freeCodeCamp</a>
+```
+
+
 
   
 
