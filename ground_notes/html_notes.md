@@ -342,7 +342,9 @@ The basic syntax:
 <a href="https://freecodecamp.org" target="_top">Visit freeCodeCamp</a>
 ```
 
+## Absolute Vs Relative Paths
 
+- **Path definition**: A path is a string that defines the location of a file or directory in a file system. In web devt paths let developers link resources like images, stylesheets, scrips and other web pages.
 
   
 
