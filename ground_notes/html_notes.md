@@ -345,6 +345,13 @@ The basic syntax:
 ## Absolute Vs Relative Paths
 
 - **Path definition**: A path is a string that defines the location of a file or directory in a file system. In web devt paths let developers link resources like images, stylesheets, scrips and other web pages.
+- **Path Syntax**: Three syntaxes to be known, first is a slash which can be a backslash (\) or forward slash (/) depending on operating system. Second is a single dot (.) and finally a double dot (..). A path is known as a separator used to indicate a break in the text between folder or filenames. A single dot points to a current directory while double dots point to a parent directory.
+
+```HTML
+public/index.html
+./favicon.ico
+../src/index.css
+```
 
   
 
