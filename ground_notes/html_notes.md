@@ -353,6 +353,15 @@ public/index.html
 ../src/index.css
 ```
 
+- **Absolute Path**: Its a complete link to a resource. It starts from the root directory, includes every other directory and finally filename and extension. "Root directory" refers to the top level directory or folder in a hierachy. It also includes the protocol e.g `http`, `https` and `file` plus a domain name if the resource is on the web. E.g below that leads to FCC logo.
+
+```HTML
+<a href="https://design-style-guide.freecodecamp.org/img/fcc_secondary_small.svg">
+  View fCC Logo
+</a>
+```
+
+
   
 
 
