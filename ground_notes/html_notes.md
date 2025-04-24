@@ -361,7 +361,14 @@ public/index.html
 </a>
 ```
 
+- **Relative Path**: Specifies the location of a file relative to the directory of the current file. Doesn't include the protocol or the domain name, making it shorter and more flexible for internal links within the same website. E.g below of linking to `about.html` from `contact.html` page, both of which are in the same folder.
 
+```HTML
+<p>
+  Read more on the
+  <a href="about.html">About Page</a>
+</p>
+```
   
 
 
