@@ -369,7 +369,18 @@ public/index.html
   <a href="about.html">About Page</a>
 </p>
 ```
-  
+
+## Link states:
+
+- **`:link`**: Default state. Represents a link which a user has not visited, clicked or interacted with yet. We can think of this state as providing the base styles for all links on a webpage. Other states build on top of it.
+
+- **`:visited`**: Applies when a user has already visited the page being linked to. By default it turns the link purple, we can leverage CSS to provide a different visual indicator to a user.
+
+- **`:hover`**: Applies when a user is hovering their cursor over a link. Its helpful for providing extra attention to a link, to ensure a user actuall intends to click it. 
+
+- **`:focus`**: Applies when a user focuses on a link with their cursor.
+
+- **`:active`**: Applies to links that are being activated by a user as a result of clicking on them.
 
 
 
