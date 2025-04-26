@@ -382,5 +382,7 @@ public/index.html
 
 - **`:active`**: Applies to links that are being activated by a user as a result of clicking on them.
 
-
+### Common Questions
+1. Why is Index.html used to name the homepage?
+It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
 
