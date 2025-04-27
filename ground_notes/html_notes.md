@@ -382,7 +382,20 @@ public/index.html
 
 - **`:active`**: Applies to links that are being activated by a user as a result of clicking on them.
 
-### Common Questions
+## Semantic HTML
+
+The Semantic meaning of elements refers to the special information elements convey. E.g `<p>` represents a paragraph element because it holds paragraphs of text.
+
+```HTML
+
+<!-- Example <p>: paragraph element -->
+<p>
+Let me tell you about my journey to joining the extra ordinary league of software developers that are taking the charge in building highly scalable, robust, performant software for the world.
+</p>
+
+```
+
+### Common HTML Questions
 1. Why is Index.html used to name the homepage?
-It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
+- It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
 
