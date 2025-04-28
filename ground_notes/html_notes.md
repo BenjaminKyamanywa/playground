@@ -395,7 +395,10 @@ Let me tell you about my journey to joining the extra ordinary league of softwar
 
 ```
 
+
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
-
+2. Why is it important to use semantic HTML?
+- It boots SEO (Search Engine Optimization) and improves user experience especially for assistive technology users such as with screen readers.
