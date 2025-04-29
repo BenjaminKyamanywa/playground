@@ -395,7 +395,29 @@ Let me tell you about my journey to joining the extra ordinary league of softwar
 
 ```
 
+### Importance of Good Structural Hierarchy
 
+Proper use of heading elements ensures good structural heirarchy as they represent the heading level of an element. E.g `h1, h2, h3..`
+
+It's key to utilize heading elements in the correct order:
+- `h1`: Always the top level element and this should be one on a page.
+- `h2`: Comes directly after an h1 element, usually after some intro content and these can be two or more.
+- `h3`: It comes always after the h2 element. Its key not to skip directly from h1 to h3. 
+
+We can have multiple heading elements at the same level. E.g the below is correct code:
+
+```HTML
+
+<div>
+  <section>
+  <h1>FreeCodeCamp</h1>
+  <h2>Learn Front-End Development</h2>
+  <h3>Learn Back-End Development</h3>
+  <p>This is entry into a door with unlimited potential to impact the world.</p>
+  <section>
+</div>
+
+```
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
