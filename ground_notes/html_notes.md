@@ -419,6 +419,26 @@ We can have multiple heading elements at the same level. E.g the below is correc
 
 ```
 
+========
+Examples
+========
+
+### HTML Bookstore page
+
+```HTML
+
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+
+    <title>
+      A simple bookstore page
+    </title>
+  </head>
+</html>
+
+```
+
 It may be tempting to use heading elements especially due to their styling such as using an h1 element to achieve larger text, it's better to use CSS to achieve styling and have appropriate elements for document structure.
 
 Using the right hierarchy is important:
