@@ -427,8 +427,11 @@ Using the right hierarchy is important:
   - Depending on the incorrectness of the HTML structure it can render a webpage technically invalid. When it happens a web browser has to effectively what was intended which could be inaccurate from what a developer wanted to achieve.
 
 
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
 2. Why is it important to use semantic HTML?
 - It boots SEO (Search Engine Optimization) and improves user experience especially for assistive technology users such as with screen readers.
+3. What is the difference between presentational HTML and semantic HTML?
+- Presentational HTML focuses on the appearance of and style of content, alot of these elements are deprecated e.g `center`, `big`, `font`. Semantic HTML is now the recommended approach as it describes the content of elements so its much easier to read, understand and maintain.
