@@ -432,12 +432,11 @@ Examples
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 
-      A simple bookstore page
-    </title>
+    <title>A simple bookstore page</title>
   </head>
   <body>
-    
+    <h1>SAMPLE Bookstore<h1>
+    <p>Browse our collection of amazing books.</p>
   </body>
 </html>
 
