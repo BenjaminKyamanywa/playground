@@ -428,7 +428,7 @@ Examples
 ```HTML
 
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -437,6 +437,9 @@ Examples
   <body>
     <h1>SAMPLE Bookstore<h1>
     <p>Browse our collection of amazing books.</p>
+    <h2>Sally's SciFI Adventure</h2>
+    <p>This is an epic story of Sally and her dog Rex as they navigate through other worlds.</p>
+    <button>Buy Now</button>
   </body>
 </html>
 
