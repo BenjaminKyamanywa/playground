@@ -438,14 +438,16 @@ Examples
     <h1>SAMPLE Bookstore<h1>
     <p>Browse our collection of amazing books.</p>
     <div class="card-container">
-    <h2>Sally's SciFI Adventure</h2>
-    <p>This is an epic story of Sally and her dog Rex as they navigate through other worlds.</p>
-    <button>Buy Now</button>
-    </div>
-    <div class="card-conntainer">
-    <h2>Dave's Adventure</h2>
-    <p>This is an epic story of Dave as he learns to cook everything from pancakes to pasta one recipe at a time.</p>
-    <button>Buy Now</button>
+      <div class="card">
+        <h2>Sally's SciFI Adventure</h2>
+        <p>This is an epic story of Sally and her dog Rex as they navigate through other worlds.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <h2>Dave's Adventure</h2>
+        <p>This is an epic story of Dave as he learns to cook everything from pancakes to pasta one recipe at a time.</p>
+        <button>Buy Now</button>
+      </div>
     </div>
     <p>Reveiew your selections and continue to checkout.</p>
     <button>View Cart</button><button>Check Out</button>
