@@ -454,6 +454,7 @@ Examples
   </body>
 </html>
 
+<!-- We have semantic elements i and em used to highlight text. i is for visual representation, used more for languages. em shows strong text in a sentence -->
 ```
 
 It may be tempting to use heading elements especially due to their styling such as using an h1 element to achieve larger text, it's better to use CSS to achieve styling and have appropriate elements for document structure.
