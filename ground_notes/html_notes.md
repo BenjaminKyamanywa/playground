@@ -419,6 +419,14 @@ We can have multiple heading elements at the same level. E.g the below is correc
 
 ```
 
+It may be tempting to use heading elements especially due to their styling such as using an h1 element to achieve larger text, it's better to use CSS to achieve styling and have appropriate elements for document structure.
+
+Using the right hierarchy is important:
+  - For accessibility, assistive technologies like screen readers rely on the structure of a web page to determine how to parse content and announce it to a user. E.g if an h3 element comes after an h1 element a user might hear it and believe they have accidentally skipped over some content due to the absence of an h3 element.
+  - For SEO, search engines use automation to parse web page content to determine when and where it should show up in search results. If the structure is malformed search engines will have a hard time ranking a webpage accurately in relevant search results.
+  - Depending on the incorrectness of the HTML structure it can render a webpage technically invalid. When it happens a web browser has to effectively what was intended which could be inaccurate from what a developer wanted to achieve.
+
+
 ========
 Examples
 ========
@@ -454,17 +462,27 @@ Examples
   </body>
 </html>
 
-<!-- We have semantic elements i and em used to highlight text. i is for visual representation, used more for languages. em shows strong text in a sentence -->
 ```
 
-It may be tempting to use heading elements especially due to their styling such as using an h1 element to achieve larger text, it's better to use CSS to achieve styling and have appropriate elements for document structure.
+### When to use
 
-Using the right hierarchy is important:
-  - For accessibility, assistive technologies like screen readers rely on the structure of a web page to determine how to parse content and announce it to a user. E.g if an h3 element comes after an h1 element a user might hear it and believe they have accidentally skipped over some content due to the absence of an h3 element.
-  - For SEO, search engines use automation to parse web page content to determine when and where it should show up in search results. If the structure is malformed search engines will have a hard time ranking a webpage accurately in relevant search results.
-  - Depending on the incorrectness of the HTML structure it can render a webpage technically invalid. When it happens a web browser has to effectively what was intended which could be inaccurate from what a developer wanted to achieve.
+**Semantic elements i and em**: 
 
+  Both are used to highlight text. 
 
+  `i` is for visual representation, used more for languages. 
+
+  Example of i element in use:
+
+  ```HTML
+  <p>There is a certain <i lang="fr">je ne sais quois</i> in the air.</p>
+  ```
+
+  `em` shows strong text in a sentence.
+
+  ```HTML
+  <p>Never give up on <em>your</em> dreams. </p>
+  ```
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
