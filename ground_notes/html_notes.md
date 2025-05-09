@@ -426,10 +426,7 @@ Using the right hierarchy is important:
   - For SEO, search engines use automation to parse web page content to determine when and where it should show up in search results. If the structure is malformed search engines will have a hard time ranking a webpage accurately in relevant search results.
   - Depending on the incorrectness of the HTML structure it can render a webpage technically invalid. When it happens a web browser has to effectively what was intended which could be inaccurate from what a developer wanted to achieve.
 
-
-========
-Examples
-========
+## Examples
 
 ### HTML Bookstore page
 
@@ -464,9 +461,9 @@ Examples
 
 ```
 
-### When to use
+### When to use elements
 
-**Semantic elements i and em**: 
+- **Semantic elements i and em**: 
 
   Both are used to highlight text. 
 
@@ -478,7 +475,7 @@ Examples
   <p>There is a certain <i lang="fr">je ne sais quois</i> in the air.</p>
   ```
 
-  `em` shows strong text in a sentence.
+  `em` shows emphasis of text in a sentence. Used when parts of text require special emphasis compared to surrounding text.
 
   ```HTML
   <p>Never give up on <em>your</em> dreams. </p>
