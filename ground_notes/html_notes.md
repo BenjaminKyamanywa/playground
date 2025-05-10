@@ -463,7 +463,7 @@ Using the right hierarchy is important:
 
 ### When to use elements
 
-- **Semantic elements i and em**: 
+- **Semantic elements i and em**
 
   Both are used to highlight text. 
 
@@ -480,6 +480,9 @@ Using the right hierarchy is important:
   ```HTML
   <p>Never give up on <em>your</em> dreams. </p>
   ```
+- **Strong element vs bring to attention element**
+
+  `b` bring to attention element is used to highlight keywords in summaries or product names in reviews.
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
