@@ -1,1 +1,16 @@
 /* Cake Recipe Page Styles */
+
+/* Root styles */
+:root {
+  --bg-color: #ECF2FF;
+  --text-color: #2B283A;
+  --title-color: #4A4E74;
+}
+
+/* Font styles */
+.bubblegum-sans-regular {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
