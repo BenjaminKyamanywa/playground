@@ -14,3 +14,8 @@
   font-style: normal;
 }
 
+body {
+  background: var(--bg-color);
+  font-family: sans-serif;
+  color: var(--text-color);
+}
