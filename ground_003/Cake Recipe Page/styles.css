@@ -19,3 +19,20 @@ body {
   font-family: sans-serif;
   color: var(--text-color);
 }
+
+section {
+  width: 90%;
+  margin: 0, auto;
+}
+
+h1,
+h2 {
+  font-family: "Bubblegum sans";
+  text-align: center;
+}
+
+h1 {
+  color: var(--title-color);
+  font-size: 3em;
+  text-align: center;
+}
