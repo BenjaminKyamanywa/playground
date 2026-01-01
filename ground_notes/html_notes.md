@@ -482,7 +482,17 @@ Using the right hierarchy is important:
   ```
 - **Strong element vs bring to attention element**
 
-  `b` bring to attention element is used to highlight keywords in summaries or product names in reviews.
+  `b` bring to attention element is used to highlight keywords in summaries or product names in reviews. Usually displayed in bold face. 
+
+  ```HTML
+  <p>
+  We tested several products, including the <b>SuperSound 3000</b> for audio
+  quality, the <b>QuickCharge Pro</b> for fast charging, and the
+  <b>EcoClean Vacuum</b> for cleaning. The first two performed well, but the
+  <b>EcoClean Vacuum</b> did not meet expectations.
+  </p>
+  <!-- The browser renders <b> of the text as bold text. This visual emphasis will draw readers attention to the product names. -->
+  ```
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
