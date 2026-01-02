@@ -485,13 +485,22 @@ Using the right hierarchy is important:
   `b` bring to attention element is used to highlight keywords in summaries or product names in reviews. Usually displayed in bold face. 
 
   ```HTML
-  <p>
-  We tested several products, including the <b>SuperSound 3000</b> for audio
-  quality, the <b>QuickCharge Pro</b> for fast charging, and the
-  <b>EcoClean Vacuum</b> for cleaning. The first two performed well, but the
-  <b>EcoClean Vacuum</b> did not meet expectations.
-  </p>
+    <p>
+      We tested several products, including the <b>SuperSound 3000</b> for audio
+      quality, the <b>QuickCharge Pro</b> for fast charging, and the
+      <b>EcoClean Vacuum</b> for cleaning. The first two performed well, but the
+      <b>EcoClean Vacuum</b> did not meet expectations.
+    </p>
   <!-- The browser renders <b> of the text as bold text. This visual emphasis will draw readers attention to the product names. -->
+  ```
+  If we need to emphasize the importance of the text, we should use the `strong` element instead of the `b` (bring to attention) element.
+
+  `strong` is a semantic HTML element that emphasizes text that is crucial, or urgent. Below the strong element is used to label a very important warning about the potential allergic reactions that customers may have to a product:
+
+  ```HTML
+    <p>
+      <strong>Warning:</strong> This product may cause allergic reactions.
+    </p>
   ```
 
 ### Common HTML Questions
