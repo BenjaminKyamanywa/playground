@@ -463,7 +463,7 @@ Using the right hierarchy is important:
 
 ### When to use elements
 
-- **Semantic elements i and em**
+- **Semantic elements `i` and `em`**
 
   Both are used to highlight text. 
 
@@ -495,13 +495,26 @@ Using the right hierarchy is important:
   ```
   If we need to emphasize the importance of the text, we should use the `strong` element instead of the `b` (bring to attention) element.
 
-  `strong` is a semantic HTML element that emphasizes text that is crucial, or urgent. Below the strong element is used to label a very important warning about the potential allergic reactions that customers may have to a product:
+  `strong` is a semantic HTML element that emphasizes text that is crucial, or `urgent`. Below the strong element is used to label a very important warning about the potential allergic reactions that customers may have to a product:
 
   ```HTML
     <p>
       <strong>Warning:</strong> This product may cause allergic reactions.
     </p>
   ```
+- **Description Lists**
+
+  Description lists are ideal for presenting terms and definitions in an organised and easy to read format, like a glossary, dictionary where we can find words with their corresponding definitions. Can also be used for presenting Recipes and Ingredients.
+
+  ```HTML
+    <dl> <!-- Description list element: Container for the entire list -->
+      <dt>HTML<dt> <!-- Description term element: Acronym --->
+      <dd>HyperText Markup Language</dd> <!-- Description Details Element: Expansion -->
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+    <dl>
+  ```
+
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
@@ -510,3 +523,5 @@ Using the right hierarchy is important:
 - It boots SEO (Search Engine Optimization) and improves user experience especially for assistive technology users such as with screen readers.
 3. What is the difference between presentational HTML and semantic HTML?
 - Presentational HTML focuses on the appearance of and style of content, alot of these elements are deprecated e.g `center`, `big`, `font`. Semantic HTML is now the recommended approach as it describes the content of elements so its much easier to read, understand and maintain.
+4. What is the difference between the bring attention to element `<b>` and the `<strong>` element?
+- Visually both are very similar, because they are both rendered as bold by default. But their meanings are quite different. While the "bring attention to" element only draws attention to the text, without indicating the higher level of importance, the strong element does more than that. It conveys a sense of importance, or urgency. This is their main difference.
