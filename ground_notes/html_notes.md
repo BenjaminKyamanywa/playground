@@ -507,12 +507,20 @@ Using the right hierarchy is important:
   Description lists are ideal for presenting terms and definitions in an organised and easy to read format, like a glossary, dictionary where we can find words with their corresponding definitions. Can also be used for presenting Recipes and Ingredients.
 
   ```HTML
+  <!-- Glossary -->
     <dl> <!-- Description list element: Container for the entire list -->
       <dt>HTML<dt> <!-- Description term element: Acronym --->
       <dd>HyperText Markup Language</dd> <!-- Description Details Element: Expansion -->
       <dt>CSS</dt>
       <dd>Cascading Style Sheets</dd>
     <dl>
+  <!-- Recipe List -->
+  <dl>
+    <dt>Flour</dt>
+    <dd>2 cups</dd>
+    <dt>Sugar</dt>
+    <dd>1/2 cup</dd>
+  </dl>
   ```
 
 
