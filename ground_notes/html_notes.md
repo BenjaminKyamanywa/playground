@@ -471,7 +471,21 @@ Using the right hierarchy is important:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Working with the HTML Video Element</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Working with the HTML video Element</h1>
+    <video 
+      width="640" 
+      loop 
+      controls
+      poster="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
+      >
+      <!-- MIME (Multipurpose Internet Mail Extensions - Indicates the nature and format of a document, file) video types "vidoe/mp4", "video/webm", "video/ogg" -->
+       <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" type="video/mp4">
+       <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm" type="video/webm">
+       <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg" type="video/ogg"
+  >
+    </video>
+  </body>
 </html>
 ```
 
