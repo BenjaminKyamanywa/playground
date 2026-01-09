@@ -482,8 +482,8 @@ Using the right hierarchy is important:
       <!-- MIME (Multipurpose Internet Mail Extensions - Indicates the nature and format of a document, file) video types "vidoe/mp4", "video/webm", "video/ogg" -->
        <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" type="video/mp4">
        <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm" type="video/webm">
-       <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg" type="video/ogg"
-  >
+       <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg" type="video/ogg">
+       <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.mov" type="video/quicktime"> <!-- QuickTime is an extensible multimedia architecture created by Apple, which supports playing, streaming, encoding, and transcoding a variety of digital media formats. -->
     </video>
   </body>
 </html>
