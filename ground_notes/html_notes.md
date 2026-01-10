@@ -489,6 +489,20 @@ Using the right hierarchy is important:
 </html>
 ```
 
+### List of Major Web Browsers
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  </head>
+  <body>
+
+  </body>
+</html>
+```
+
 ### When to use elements
 
 - **Semantic elements `i` and `em`**
