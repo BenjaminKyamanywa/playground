@@ -495,10 +495,12 @@ Using the right hierarchy is important:
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+    <meta charset=""UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A list of Major Web Browsers</title>
   </head>
   <body>
-
+    <h1>List of Major Web Browsers</h1>
   </body>
 </html>
 ```
