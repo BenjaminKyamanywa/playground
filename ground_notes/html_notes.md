@@ -579,6 +579,12 @@ Using the right hierarchy is important:
   </dl>
   ```
 
+### Working with Text and Time Semantic Elements
+
+**How Block and Inline Quotes Work in HTML**
+
+Quoted text is used to distinguish surrounding content using Quoted elements which gives it a format that's easy to identify.
+
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
@@ -589,5 +595,5 @@ Using the right hierarchy is important:
 - Presentational HTML focuses on the appearance of and style of content, alot of these elements are deprecated e.g `center`, `big`, `font`. Semantic HTML is now the recommended approach as it describes the content of elements so its much easier to read, understand and maintain.
 4. What is the difference between the bring attention to element `<b>` and the `<strong>` element?
 - Visually both are very similar, because they are both rendered as bold by default. But their meanings are quite different. While the "bring attention to" element only draws attention to the text, without indicating the higher level of importance, the strong element does more than that. It conveys a sense of importance, or urgency. This is their main difference.
-5. What are some use cases for distribution lists?
-- Distribution lists are perfect for presenting terms and definitions in an easy to read format. E.g's Glossary, dictionary, product specifications, frequently asked questions, contact information, and metadata.
+5. What are some use cases for description lists?
+- Description lists are perfect for presenting terms and definitions in an easy to read format. E.g's Glossary, dictionary, product specifications, frequently asked questions, contact information, and metadata.
