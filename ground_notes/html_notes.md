@@ -586,14 +586,18 @@ Using the right hierarchy is important:
 Quoted text is used to distinguish surrounding content using Quoted elements which gives it a format that's easy to identify.
 
 ```HTML
-<blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/"> <!-- cite attribute contains the URL of the source -->
-  "Can you visualize what it would like to be a successful developer? To have built software systems that people rely upon?"
+<div>
+  <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/"> <!-- cite attribute contains the URL of the source -->
+    "Can you visualize what it would like to be a successful developer? To have built software systems that people rely upon?"
 
-  <!-- We can add with multiple paragraphs if we have multiple paragraphs -->
-   <p>Build projects, show them to friends, build, build, build</p>
-   <p>Build your network, help people along the way, what comes around, goes around</p>
-   <p>It's not to late, life is long</p>
-</blockquote>
+    <!-- We can add with multiple paragraphs if we have multiple paragraphs -->
+    <p>Build projects, show them to friends, build, build, build</p>
+    <p>Build your network, help people along the way, what comes around, goes around</p>
+    <p>It's not to late, life is long</p>
+  </blockquote>
+  <!-- We can also add a citation element outside the blockquote to visually add an attribution to the source -->
+   <cite>Quincy larson, How to learn to Code and Get a Developer Job [Full Book]</cite>
+</div>
 ```
 
 ### Common HTML Questions
