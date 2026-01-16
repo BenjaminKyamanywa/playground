@@ -587,6 +587,7 @@ Quoted text is used to distinguish surrounding content using Quoted elements whi
 
 ```HTML
 <div>
+  <!-- Block quotation -->
   <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/"> <!-- cite attribute contains the URL of the source -->
     "Can you visualize what it would like to be a successful developer? To have built software systems that people rely upon?"
 
@@ -597,7 +598,25 @@ Quoted text is used to distinguish surrounding content using Quoted elements whi
   </blockquote>
   <!-- We can also add a citation element outside the blockquote to visually add an attribution to the source -->
    <cite>Quincy larson, How to learn to Code and Get a Developer Job [Full Book]</cite>
+
+   <!-- Inline quotation -->
+    <p> As quincy Larson said 
+      <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">Momentum is everything.</q>
+    </p>
 </div>
+```
+
+### Displaying abbreviations in HTML
+
+An abbreviation is a shortened form of a word. E.g `Dr.` is an abbreviation of the word Doctor. We have two commong abbreviations used i.e. acronyms and initilisms.
+
+Acronyms stem from the first letter of the abbreviation forming the complete word e.g GUI - `Graphical User Interface`
+Initialisms are formed from each letter of the phrase in the abbreviation forming a word e.g HTML - `Hyper Text Markup Language`
+
+The abbreviation element `<abbr></abbr>` helps us display abbreviations such as acronyms and initialisms.
+
+```HTML
+<p><abbr>HTML</abbr> is the foundation of the web.</p>
 ```
 
 ### Common HTML Questions
@@ -611,3 +630,5 @@ Quoted text is used to distinguish surrounding content using Quoted elements whi
 - Visually both are very similar, because they are both rendered as bold by default. But their meanings are quite different. While the "bring attention to" element only draws attention to the text, without indicating the higher level of importance, the strong element does more than that. It conveys a sense of importance, or urgency. This is their main difference.
 5. What are some use cases for description lists?
 - Description lists are perfect for presenting terms and definitions in an easy to read format. E.g's Glossary, dictionary, product specifications, frequently asked questions, contact information, and metadata.
+6. What is the difference between blockquotes and inline quotes?
+- We should use block quotes for extended quotations from other sources and inline quotes for short quotations from other sources that should be part of existing paragraphs.
