@@ -611,12 +611,19 @@ Quoted text is used to distinguish surrounding content using Quoted elements whi
 An abbreviation is a shortened form of a word. E.g `Dr.` is an abbreviation of the word Doctor. We have two commong abbreviations used i.e. acronyms and initilisms.
 
 Acronyms stem from the first letter of the abbreviation forming the complete word e.g GUI - `Graphical User Interface`
-Initialisms are formed from each letter of the phrase in the abbreviation forming a word e.g HTML - `Hyper Text Markup Language`
+Initialisms are formed from each letter of the phrase in the abbreviation forming a word e.g HTML - `HyperText Markup Language`
 
 The abbreviation element `<abbr></abbr>` helps us display abbreviations such as acronyms and initialisms.
 
 ```HTML
-<p><abbr>HTML</abbr> is the foundation of the web.</p>
+<!-- 
+ -We can add a title attribute to help users understand what the abbrevtion means. 
+ -Usually depending on the browser the style of the abbr element changes when we add the title attribute. 
+ -Some change to dotted lines and other to small caps. 
+ -When a user hovers over the abbreviation the full form is displayed as a tooltip.
+ -It's helpful to use for abbreviations that may not be clear and need additional context. It doesn't need to be used for all abbreviations.
+ -->
+<p><abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.</p>
 ```
 
 ### Common HTML Questions
