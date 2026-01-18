@@ -626,6 +626,10 @@ The abbreviation element `<abbr></abbr>` helps us display abbreviations such as 
 <p><abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.</p>
 ```
 
+### How to display addresses in HTML
+
+The address element is used to display contact information within a section on a webpage. It's versatile and can be used for business pages, author pages, personal sites and more.
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
