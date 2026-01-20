@@ -628,7 +628,7 @@ The abbreviation element `<abbr></abbr>` helps us display abbreviations such as 
 
 ### How to display addresses in HTML
 
-The address element is used to display contact information within a section on a webpage. It's versatile and can be used for business pages, author pages, personal sites and more.
+The address element is used to display contact information within a section on a webpage. It's versatile and can be used for business pages, author pages, personal sites and more. It's recommended to use when building out a contact section instead of a generic div element.
 
 ```HTML
 <address>
@@ -642,6 +642,10 @@ The address element is used to display contact information within a section on a
   <p>Email: <a href="mailto:contact@company.com">contact@company.com</a></p>
 </address>
 ```
+
+### Displaying Times and Dates
+
+We utilize the `time` element to display a specific moment in time.
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
