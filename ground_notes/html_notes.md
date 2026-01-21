@@ -647,6 +647,16 @@ The address element is used to display contact information within a section on a
 
 We utilize the `time` element to display a specific moment in time.
 
+```HTML
+<p>The reservations are for <time datetime="20:00">20:00</time></p> 
+<!-- 
+ - datetime attribute is used to translate dates and times into machine readable format
+ - It's value must either be a valid year, month, time, local date, global date or valid duration string
+ -->
+ <p>Graduation date is <time datetime="2026-06-15T15:00">June 15</time></p>
+ <!-- datetime is in ISO 8601 format which is an international standard to represent dates and times -->
+```
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
