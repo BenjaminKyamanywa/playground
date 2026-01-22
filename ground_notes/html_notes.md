@@ -517,6 +517,22 @@ Using the right hierarchy is important:
 </html>
 ```
 
+### Quincy Job Tips Page
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Tips</title>
+</head>
+<body>
+
+</body>
+</html>
+```
+
 ### When to use elements
 
 - **Semantic elements `i` and `em`**
@@ -654,7 +670,10 @@ We utilize the `time` element to display a specific moment in time.
  - It's value must either be a valid year, month, time, local date, global date or valid duration string
  -->
  <p>Graduation date is <time datetime="2026-06-15T15:00">June 15</time></p>
- <!-- datetime is in ISO 8601 format which is an international standard to represent dates and times -->
+ <!-- 
+  - datetime is in ISO 8601 format which is an international standard to represent dates and times 
+  -The first part of that value is the year, month and day. The capital T in the value is a separator between the date and time.
+  -->
 ```
 
 ### Common HTML Questions
