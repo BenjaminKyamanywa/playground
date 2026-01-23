@@ -525,10 +525,16 @@ Using the right hierarchy is important:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Tips</title>
+  <title>Getting a Developer Job Tips</title>
 </head>
 <body>
-
+  <h1>Quincy's Tips for Getting a Developer Job</h1>
+  <p>Learning to code is hard, but as Quincy Larson says, <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">You can become a developer.</q></p>
+  <main>
+    <section>Envisioning Success</section>
+    <section></section>
+    <section></section>
+  </main>
 </body>
 </html>
 ```
