@@ -531,7 +531,13 @@ Using the right hierarchy is important:
   <h1>Quincy's Tips for Getting a Developer Job</h1>
   <p>Learning to code is hard, but as Quincy Larson says, <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">You can become a developer.</q></p>
   <main>
-    <section>Envisioning Success</section>
+    <section>
+      <h2>Envisioning Success</h2>
+      <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+        Can you imagine what it would be like to a successful developer? To have built software systems that people rely upon?
+      </blockquote>
+      <p>&mdash; Quincy Larson, How to Learn To Code and Get a Developer Job [Full Book]
+    </section>
     <section></section>
     <section></section>
   </main>
