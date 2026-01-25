@@ -536,9 +536,11 @@ Using the right hierarchy is important:
       <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
         Can you imagine what it would be like to a successful developer? To have built software systems that people rely upon?
       </blockquote>
-      <p>&mdash; Quincy Larson, How to Learn To Code and Get a Developer Job [Full Book]
+      <p>&mdash; Quincy Larson, <cite>How to Learn To Code and Get a Developer Job [Full Book]</cite>
     </section>
-    <section></section>
+    <section>
+
+    </section>
     <section></section>
   </main>
 </body>
