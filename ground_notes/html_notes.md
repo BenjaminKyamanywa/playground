@@ -539,7 +539,10 @@ Using the right hierarchy is important:
       <p>&mdash; Quincy Larson, <cite>How to Learn To Code and Get a Developer Job [Full Book]</cite>
     </section>
     <section>
-
+      <h2>Importance Of Networking</h2>
+      <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+        
+      </blockquote>
     </section>
     <section></section>
   </main>
