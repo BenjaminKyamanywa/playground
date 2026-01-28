@@ -547,7 +547,14 @@ Using the right hierarchy is important:
           <p>Go to tech meetups and conferences. Travel if you have to.</p>
       </blockquote>
     </section>
-    <section></section>
+    <section>
+        <h2>Importance of Building a Reputation</h2>
+        <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+          <p>Share short video demos of your projects.</p>
+          <p>Keep applying to speak at bigger and bigger conferences.</p>
+          <p>Hang out at hackerspaces and help people who are even newer to coding than you.</p>
+        </blockqoute>
+    </section>
   </main>
 </body>
 </html>
