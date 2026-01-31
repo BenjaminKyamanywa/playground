@@ -21,4 +21,4 @@ A game where a user guesses a number between 0 and 100
 
 ## 📸 Screenshot
 
-![Guess The Number](./)
+![Guess The Number Screenshot](./)
