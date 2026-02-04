@@ -25,7 +25,14 @@ function playGame() {
   let numberGuess = document.getElementById("number-guess").value;
 
   // Check whether the guess is too high, too low or correct
-  if (numberGuess > correctNumber) {
+  displayResult(numberGuess);
+}
+
+/*
+Show result if guess is too high, too low, or correct
+*/
+function displayResult(numberGuess) {
+    if (numberGuess > correctNumber) {
     console.log("too high");
   } else if (numberGuess < correctNumber) {
     console.log("too low");
@@ -33,10 +40,6 @@ function playGame() {
     console.log("is correct")
   }
 }
-
-/*
-Show result if guess is too high, too low, or correct
-*/
 
 /*
 Initialize a new game by resetting all values and content on the app
