@@ -60,6 +60,7 @@ Return a random number between 1 and 100
 */
 function getRandomNumber() {
   let randomNumber = Math.floor(Math.random() * 100) + 1;
+  return randomNumber;
 }
 
 /*
@@ -68,3 +69,17 @@ Save guess history
 function saveGuessHistory(guess) {
 
 }
+
+/*
+Save history
+*/
+function displayHistory() {
+  let index;
+  let list = "<ul class='list-group'>"
+  list += '</ul>'
+  document.getElementById("history").innerHTML = list;
+}
+
+/*
+Retrieve dialog based on whether guess is wrong or correct
+*/
