@@ -83,3 +83,17 @@ function displayHistory() {
 /*
 Retrieve dialog based on whether guess is wrong or correct
 */
+function getDialog(dialogType, text) {
+  let dialog;
+  switch(dialogType) {
+    case "warning":
+      dialog = "<div class='alert alert-warning' role='alert'>"
+      break;
+    case "won":
+      dialog = "<div class='alert alert-success' role='alert'>"
+      break;
+  }
+  dialog += text;
+  dialog += "</div>"
+  return dialog;
+}
