@@ -97,3 +97,23 @@ function getDialog(dialogType, text) {
   dialog += "</div>"
   return dialog;
 }
+
+/*
+Show user winning message
+*/
+function showYouWon() {
+  const text = "Awesome job, you got it!"
+
+  document.getElementById("result").innerHTML = dialog;
+}
+
+/*
+Show user if guess is too high
+*/
+function showNumberAbove() {
+ const text = "Your guess is too high!"
+
+ document.getElementById("result").innerHTML = dialog;
+}
+
+
