@@ -116,4 +116,11 @@ function showNumberAbove() {
  document.getElementById("result").innerHTML = dialog;
 }
 
+/*
+Show user if guess is too low
+*/
+function showNumberBelow() {
+  const text = "Your guess is too low!"
 
+  document.getElementById("result").innerHTML = dialog;
+}
