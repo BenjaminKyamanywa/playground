@@ -103,7 +103,7 @@ Show user winning message
 */
 function showYouWon() {
   const text = "Awesome job, you got it!"
-
+  let dialog = getDialog('won', text); // show success to user
   document.getElementById("result").innerHTML = dialog;
 }
 
@@ -112,7 +112,7 @@ Show user if guess is too high
 */
 function showNumberAbove() {
  const text = "Your guess is too high!"
-
+ let dialog = getDialog('warning', text); // show warning to user 
  document.getElementById("result").innerHTML = dialog;
 }
 
@@ -121,6 +121,8 @@ Show user if guess is too low
 */
 function showNumberBelow() {
   const text = "Your guess is too low!"
-
+  let dialog = getDialog('warning', text); // show warning to user
   document.getElementById("result").innerHTML = dialog;
 }
+
+
