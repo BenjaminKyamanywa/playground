@@ -5,6 +5,10 @@ TODO: Generate a random number between 1 to 100 and save it to variable correctN
 TODO: Console whether the guess is too high, too low, or is correct inside playGame function
 TODO: Create a function called displayResult to move the 
 TODO: Complete the showYouWon, showNumberAbove, showNumberBelow
+TODO: Use the showYouWon... functions within displayResult to display the correct dialog
+TODO: Save the guess history in a variable called guess
+TODO: Display the guess history using displayHistory() function
+TODO: Use this initGame() function to restart the game
 */
 
 // Variable to store list of guesses
@@ -33,11 +37,11 @@ Show result if guess is too high, too low, or correct
 */
 function displayResult(numberGuess) {
     if (numberGuess > correctNumber) {
-    console.log("too high");
+    showNumberAbove(); // show number above guess dialog
   } else if (numberGuess < correctNumber) {
-    console.log("too low");
+    showNumberBelow(); // show number below guess dialog
   } else {
-    console.log("is correct")
+    showYouWon(); // show winning dialog
   }
 }
 
