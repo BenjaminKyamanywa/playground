@@ -12,7 +12,7 @@ TODO: Use this initGame() function to restart the game
 */
 
 // Variable to store list of guesses
-
+let guesses = [];
 // Variable to store the correct random number
 let correctNumber = getRandomNumber();
 
@@ -30,6 +30,8 @@ function playGame() {
 
   // Check whether the guess is too high, too low or correct
   displayResult(numberGuess);
+  // Show guesses history
+  saveGuessHistory(numberGuess); // store user guess and show it
 }
 
 /*
@@ -71,7 +73,7 @@ function getRandomNumber() {
 Save guess history
 */
 function saveGuessHistory(guess) {
-
+  guesses.push(guess);
 }
 
 /*
