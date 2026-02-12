@@ -31,7 +31,8 @@ function playGame() {
   // Check whether the guess is too high, too low or correct
   displayResult(numberGuess);
   // Show guesses history
-  saveGuessHistory(numberGuess); // store user guess and show it
+  saveGuessHistory(numberGuess); // store user guess
+  displayHistory(); // show user history of guesses
 }
 
 /*
@@ -80,8 +81,13 @@ function saveGuessHistory(guess) {
 Save history
 */
 function displayHistory() {
-  let index;
+  let index = 0;
   let list = "<ul class='list-group'>"
+  // loop through user guesses and show each number in a list
+  while(index < guesses.length) {
+    list += "<li class='list-group-item'>" + "You guessed " + guesses[index] + "/<li>";
+    index+=1;
+  }
   list += '</ul>'
   document.getElementById("history").innerHTML = list;
 }
