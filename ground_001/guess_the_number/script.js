@@ -81,12 +81,12 @@ function saveGuessHistory(guess) {
 Save history
 */
 function displayHistory() {
-  let index = 0;
+  let index = guesses.length - 1; // start from the last item in the arrray
   let list = "<ul class='list-group'>"
   // loop through user guesses and show each number in a list
-  while(index < guesses.length) {
+  while(index >= 0) {
     list += "<li class='list-group-item'>" + "You guessed " + guesses[index] + "/<li>";
-    index+=1;
+    index-=1;
   }
   list += '</ul>'
   document.getElementById("history").innerHTML = list;
