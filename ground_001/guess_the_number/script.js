@@ -52,7 +52,10 @@ function displayResult(numberGuess) {
 Initialize a new game by resetting all values and content on the app
 */
 function initGame() {
-
+  correctNumber = getRandomNumber();
+  document.getElementById("result").innerHTML = "";
+  guesses = [];
+  displayHistory();
 }
 
 /*
