@@ -27,6 +27,7 @@ In this Javascript reference guide are notes taken while learning Javascript|ECM
   - [Skipping Iterations with Continue](#skipping-iterations-with-continue)
   - [While and do while loop](#while-and-dowhile-loop)
   - [Functions - Reusable blocks of code](#functions---reusable-blocks-of-code)
+  - [Algorithmic Thinking](#algorithmic-thinking)
   - [Javascript commands](#javascript-commands)
 
 ## Introduction
@@ -2054,6 +2055,27 @@ In this case we'll review building our own functions and we'll build off a simpl
 
 
 ```
+
+### Algorithmic Thinking
+
+We utilize algorithmic thinking to help us map out the roadmap to solving problems.
+
+**Function to add two numbers**: 
+
+For this initial example we are going to create a function that takes two numbers and returns their sum.
+
+```HTML
+
+<script>
+  function addNumbers(num1, num2) {
+    return num1 + num2;
+  }
+  console.log(addNumbers(2, 3)); // 5
+</script>
+
+```
+
+
 
 ### Javascript commands
 
