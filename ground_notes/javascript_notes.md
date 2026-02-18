@@ -2062,7 +2062,7 @@ We utilize algorithmic thinking to help us map out the roadmap to solving proble
 
 **Function to add two numbers**: 
 
-For this initial example we are going to create a function that takes two numbers and returns their sum.
+We are going to create a function that takes two numbers and returns their sum.
 
 ```HTML
 
@@ -2075,7 +2075,18 @@ For this initial example we are going to create a function that takes two number
 
 ```
 
+**Function to convert minutes to seconds**:
 
+We'll create a function that takes minutes and coverts to seconds.
+
+```HTML
+<script>
+  function convertMinutesToSeconds(minutes) {
+    return minutes * 60;
+  }
+  console.log(convertMinutesToSeconds(30)); // 1800
+</script>
+```
 
 ### Javascript commands
 
