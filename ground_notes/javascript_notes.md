@@ -2088,6 +2088,19 @@ We'll create a function that takes minutes and coverts to seconds.
 </script>
 ```
 
+**Function to convert age to seconds**
+
+We'll create a function that takes a users age and converts it to seconds.
+
+```HTML
+<script>
+  function yourAgeInSeconds(age) {
+    return age * 12 * 30 * 24 * 60 * 60; // multiply age by months(12), days(30), hours(24), minutes(60), seconds(60)
+  }
+  console.log(yourAgeInSeconds(18)); // 559872000
+</script>
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
