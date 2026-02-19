@@ -2101,6 +2101,22 @@ We'll create a function that takes a users age and converts it to seconds.
 </script>
 ```
 
+**Function to return the first item in an array**:
+
+When given an array of items we need to return the first item that exists within the array.
+
+```HTML
+<script>
+
+const fruits = ['banana', 'apples', 'mangoes'];
+
+function getFirstArrayItem(item) {
+  return item[0];
+}
+console.log(getFirstArrayItem(fruits));
+</script>
+```
+
 ### Javascript commands
 
 Below is a list of most utilized javascript commands as a helpful reference with descriptions.
@@ -2116,7 +2132,7 @@ function name() {
   // Function declaration
 }
 
-const myFunction() => {
+const myFunction = () => {
   // Arrow function expression
 }
 
