@@ -2114,6 +2114,16 @@ function getFirstArrayItem(item) {
   return item[0];
 }
 console.log(getFirstArrayItem(fruits));
+
+// Movie Rating function
+function badOrGoodMovieRating(movie_rate) {
+  if (movie_rate >= 7) {
+    return console.log('Good Movie'); 
+  } else {
+    return console.log('Bad Movie');
+  }
+}
+console.log(badOrGoodMovieRating(8)); // Good Movie
 </script>
 ```
 
