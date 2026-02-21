@@ -2094,6 +2094,7 @@ We'll create a function that takes a users age and converts it to seconds.
 
 ```HTML
 <script>
+  // convert ageInSeconds
   function yourAgeInSeconds(age) {
     return age * 12 * 30 * 24 * 60 * 60; // multiply age by months(12), days(30), hours(24), minutes(60), seconds(60)
   }
