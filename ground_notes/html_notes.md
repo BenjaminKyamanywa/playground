@@ -703,6 +703,19 @@ We utilize the `time` element to display a specific moment in time.
   -->
 ```
 
+### Representing Computer Code in HTML
+
+Inline code element is used to represent snippets of code inside text. E.g Technical Articles & Documentation pages
+
+```HTML
+
+<p>
+  To set the color to yellow in CSS, use the following code:
+  <code>color: yellow;</code>
+</p>
+
+```
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
