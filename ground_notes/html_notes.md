@@ -712,6 +712,18 @@ Inline code element is used to represent snippets of code inside text. E.g Techn
 <p>
   To set the color to yellow in CSS, use the following code:
   <code>color: yellow;</code>
+
+  <!--
+   - The code element only shows one line of a code snippet. 
+   - If we aim to add longer code snippets we need to use the preformatted element. 
+   -->
+   <pre>
+    <code>
+      body {
+        color: yellow;
+      }
+    </code>
+   </pre>
 </p>
 
 ```
