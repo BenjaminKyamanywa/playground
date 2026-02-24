@@ -726,6 +726,13 @@ Inline code element is used to represent snippets of code inside text. E.g Techn
    </pre>
 </p>
 
+<!-- Unarticulated annotation element represents inline text that has non-textual annotation applied -->
+ <p>
+  You can use the unarticulated annotation element to highlight
+  <u>inccccort</u> <u>spling</u> <u>issses</u>.
+</p>
+<!-- In the example above, the words incorrect, spelling, and issues are misspelled. The default styling for the u element is a black underline underneath the text. -->
+
 ```
 
 ### Common HTML Questions
