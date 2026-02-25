@@ -731,7 +731,21 @@ Inline code element is used to represent snippets of code inside text. E.g Techn
   You can use the unarticulated annotation element to highlight
   <u>inccccort</u> <u>spling</u> <u>issses</u>.
 </p>
-<!-- In the example above, the words incorrect, spelling, and issues are misspelled. The default styling for the u element is a black underline underneath the text. -->
+<!-- 
+ 
+ - In the example above, the words incorrect, spelling, and issues are misspelled. The default styling for the u element is a black underline underneath the text. 
+ 
+ - In HTML5 `u` element indicatest that text has non-textual annotation applied.
+->
+
+<!-- 
+ 
+ - Strikethrough element represents when text is no longer accurate or relevant
+ - `s` element shouldn't be used jus to show changes to a document. More appropriate elements for that are the deleted text element and the inserted text element.
+ -->
+
+ <p><s>Tomorrow's hike will be meeting soon</s></p>
+ <p>Due to unforseen weather conditions, the hike has been <s>cancelled</s></p>
 
 ```
 
