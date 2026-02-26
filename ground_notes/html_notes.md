@@ -747,6 +747,17 @@ Inline code element is used to represent snippets of code inside text. E.g Techn
  <p><s>Tomorrow's hike will be meeting soon</s></p>
  <p>Due to unforseen weather conditions, the hike has been <s>cancelled</s></p>
 
+
+<!-- 
+
+- ruby element represents small text shown above main text.
+- Typically used to show the pronunciation of East Asian characters. Can also be used for other annotations.
+- rp element, or ruby fallback parenthesis element is used as a fallback for browsers lacking support for display ruby annotations
+- rt element, or ruby text telement is used to indicate text for the ruby annotation. Usually used for pronunciation, or translation details in East Asian typography.
+-->
+
+<ruby> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
+
 ```
 
 ### Common HTML Questions
