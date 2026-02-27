@@ -760,6 +760,14 @@ Inline code element is used to represent snippets of code inside text. E.g Techn
 
 ```
 
+### Representing Mathematical Formulas & Chemical Equations
+
+We utilize the superscript element as it's symbol or letter printed above a normal line of text.
+
+```HTML
+<p>2<sp>2</sp>(2 squared) is 4</p>
+```
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
