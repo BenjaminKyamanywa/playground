@@ -762,10 +762,22 @@ Inline code element is used to represent snippets of code inside text. E.g Techn
 
 ### Representing Mathematical Formulas & Chemical Equations
 
-We utilize the superscript element as it's symbol or letter printed above a normal line of text.
+We utilize the superscript element as it's symbol or letter printed above a normal line of text. Common usage includes exponents, superior lettering & ordinal numbers.
+
+Superscript element should only be used for typographical reasons, if we'd like to display a piece of text with a raised baseline we should use CSS.
 
 ```HTML
+<!-- superscript examples -->
 <p>2<sp>2</sp>(2 squared) is 4</p>
+<p>Monseigneur is often written as M<sp>gr</sp></p>
+```
+
+To represent chemical equations we used the subscript eleement which displays a lowered baseline using smaller text.
+
+```HTML
+<!-- subscript ecample -->
+<p>Carbondioxide CO<sub>2</sub></p>
+
 ```
 
 ### Common HTML Questions
