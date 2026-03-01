@@ -560,6 +560,22 @@ Using the right hierarchy is important:
 </html>
 ```
 
+### Cat Blog Page
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=display-width initial-scale=1.0">
+  <Title>Cat Blog Page</title>
+</head>
+<body>
+  <header>Welcome to Mr. Whiskers' Blog Page</header>
+</body>
+</html>
+```
+
 ### When to use elements
 
 - **Semantic elements `i` and `em`**
