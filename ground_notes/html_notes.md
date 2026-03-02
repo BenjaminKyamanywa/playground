@@ -571,7 +571,13 @@ Using the right hierarchy is important:
   <Title>Cat Blog Page</title>
 </head>
 <body>
-  <header>Welcome to Mr. Whiskers' Blog Page</header>
+  <header>
+    <h1>Welcome to Mr. Whiskers' Blog Page</h1>
+  <figure>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" alt="a cat in the garden"/>
+    <figcaption>Mr. Whiskers in the Garden</figcaption>
+  </figure>
+  </header>
 </body>
 </html>
 ```
