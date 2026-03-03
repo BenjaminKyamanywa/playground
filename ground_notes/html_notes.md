@@ -571,12 +571,21 @@ Using the right hierarchy is important:
   <Title>Cat Blog Page</title>
 </head>
 <body>
+  <!-- header -->
   <header>
     <h1>Welcome to Mr. Whiskers' Blog Page</h1>
   <figure>
     <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" alt="a cat in the garden"/>
     <figcaption>Mr. Whiskers in the Garden</figcaption>
   </figure>
+  <!-- navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#posts">Posts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
   </header>
 </body>
 </html>
