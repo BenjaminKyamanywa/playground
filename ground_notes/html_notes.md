@@ -587,6 +587,12 @@ Using the right hierarchy is important:
     </ul>
   </nav>
   </header>
+  <!-- main section -->
+   <main>
+    <section>
+      <h2>About</h2>
+    </section>
+   </main>
 </body>
 </html>
 ```
