@@ -624,6 +624,17 @@ Using the right hierarchy is important:
             quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae,
           </p>
       </article>
+      <article>
+        <h3>Mr. Whiskers' First birthday party</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem. 
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae,
+          </p>
+      </article>
      </section>
    </main>
 </body>
