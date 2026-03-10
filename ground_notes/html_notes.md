@@ -651,6 +651,22 @@ Using the right hierarchy is important:
 </html>
 ```
 
+### Event Hub
+
+```HTML
+
+<!DOCTYPE hml>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=display-width, initial-scale=1.0">
+    <title>Event Hub</title>
+  </head>
+  <body></body>
+</html>
+
+```
+
 ### When to use elements
 
 - **Semantic elements `i` and `em`**
