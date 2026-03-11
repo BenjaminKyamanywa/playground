@@ -662,7 +662,16 @@ Using the right hierarchy is important:
     <meta name="viewport" content="width=display-width, initial-scale=1.0">
     <title>Event Hub</title>
   </head>
-  <body></body>
+  <body>
+    <!-- site header -->
+     <header>
+      <h1>Event Hub</h1>
+      <nav>
+        <li><a href="upcoming-events">Upcoming Events</a></li>
+        <li><a href="past-events">Past Events</a></li>
+      </nav>
+     </header>
+  </body>
 </html>
 
 ```
