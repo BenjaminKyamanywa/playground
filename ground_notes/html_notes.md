@@ -671,6 +671,13 @@ Using the right hierarchy is important:
         <li><a href="past-events">Past Events</a></li>
       </nav>
      </header>
+     <!-- main site content -->
+      <main>
+        <!-- upcoming events section -->
+        <section id="upcoming-events">
+          <h2>Upcoming Events</h2>
+        </section>
+      </main>
   </body>
 </html>
 
