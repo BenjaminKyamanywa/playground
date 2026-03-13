@@ -676,6 +676,11 @@ Using the right hierarchy is important:
         <!-- upcoming events section -->
         <section id="upcoming-events">
           <h2>Upcoming Events</h2>
+          <article>
+                <h3>Summer Camp</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia.</p>
+            </article>
         </section>
       </main>
   </body>
