@@ -681,6 +681,12 @@ Using the right hierarchy is important:
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             quod, voluptates, quae, quos quibusdam dolorum quia.</p>
             </article>
+            <article>
+                <h3>Hackathon</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod.</p>
+
+            </article>
         </section>
       </main>
   </body>
