@@ -685,9 +685,16 @@ Using the right hierarchy is important:
                 <h3>Hackathon</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             quod.</p>
-
             </article>
         </section>
+        <!-- past events section -->
+         <section id="past-events">
+                          <h3>Inaguration Ceremony</h3>
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg" alt="past event computer screen"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia.</p>
+
+            </article>
+         </section>
       </main>
   </body>
 </html>
