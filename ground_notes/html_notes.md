@@ -692,6 +692,11 @@ Using the right hierarchy is important:
                           <h3>Inaguration Ceremony</h3>
                 <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg" alt="past event computer screen"/>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia.</p>
+            </article>
+            <article>
+                <h3>Bootcamp</h3>
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg" alt="past event image" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod.</p>
 
             </article>
          </section>
