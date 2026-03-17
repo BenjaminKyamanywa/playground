@@ -706,6 +706,24 @@ Using the right hierarchy is important:
 
 ```
 
+### Semantic HTML Review
+
+**Importance Of Semantic HTML**
+
+- Semantic HTML Elements: Hold meaning and structure e.g `header`, `nav`, `figure`
+- Structural Hierarchy for heading elements: It's important to use correct heading elements to maintain structural hierarchy of content. `h1` element being the highest heading level and `h6` the lowest.
+
+```HTML
+<!-- Semantic HTML element examples -->
+
+<!-- Header element -->
+<header>
+<h1>RabbitPhotoApp</h1>
+<p>Welcome to the Rabbit photo gallery.</p>
+</header>
+```
+
+
 ### When to use elements
 
 - **Semantic elements `i` and `em`**
