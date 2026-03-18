@@ -716,11 +716,15 @@ Using the right hierarchy is important:
 ```HTML
 <!-- Semantic HTML element examples -->
 
-<!-- Header element -->
+<!-- Header element: Used to define the header of a document or section -->
 <header>
 <h1>RabbitPhotoApp</h1>
 <p>Welcome to the Rabbit photo gallery.</p>
 </header>
+
+<!-- Main elmeent:  Used to contain the main content of a webpage -->
+
+
 ```
 
 
