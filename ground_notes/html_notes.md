@@ -723,8 +723,12 @@ Using the right hierarchy is important:
 </header>
 
 <!-- Main elmeent:  Used to contain the main content of a webpage -->
-
-
+<main>
+  <section>
+    <h2>Rabbit Photos</h2>
+    <p>Browse adorable rabbit photographs.</p>
+  </section>
+</main>
 ```
 
 
