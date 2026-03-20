@@ -729,6 +729,12 @@ Using the right hierarchy is important:
     <p>Browse adorable rabbit photographs.</p>
   </section>
 </main>
+
+<!-- section element: Divides up content into smaller sections -->
+<section>
+  <h2>About Me</h2>
+  <p>Hi, am John Doe and am a Full Stack Developer</p>
+</section>
 ```
 
 
