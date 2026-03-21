@@ -735,6 +735,15 @@ Using the right hierarchy is important:
   <h2>About Me</h2>
   <p>Hi, am John Doe and am a Full Stack Developer</p>
 </section>
+
+<!-- Navigation section element: represents the navigation section of a webpage -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
 ```
 
 
