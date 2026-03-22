@@ -744,6 +744,12 @@ Using the right hierarchy is important:
     <li><a href="#about">About</a></li>
   </ul>
 </nav>
+
+<!-- Fugure element: Contains illustrations and diagrams -->
+<figure>
+  <img scr="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="two baby kittens sleeping together on a couch"/>
+  <figcaption>Cats <strong>love</strong> other cats</figcaption>
+</figure>
 ```
 
 
