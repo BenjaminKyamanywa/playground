@@ -750,6 +750,11 @@ Using the right hierarchy is important:
   <img scr="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="two baby kittens sleeping together on a couch"/>
   <figcaption>Cats <strong>love</strong> other cats</figcaption>
 </figure>
+
+<!-- Emphasis element: Highlights texts to emphasize it -->
+<p>
+  Never give up <em>your</em> dreams
+</p>
 ```
 
 
