@@ -755,6 +755,11 @@ Using the right hierarchy is important:
 <p>
   Never give up <em>your</em> dreams
 </p>
+
+<!-- Idiomatic text element: Used to highlight alternative voice or mood, idiomatic terms from another language, technical terms and thoughts -->
+<p>
+  There is a certain <i lang="fr">je ne sais quoi</i> in the air.
+</p>
 ```
 
 
