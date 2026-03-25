@@ -760,6 +760,8 @@ Using the right hierarchy is important:
 <p>
   There is a certain <i lang="fr">je ne sais quoi</i> in the air.
 </p>
+<!-- lang attribute is used to specify the language  -->
+ <!-- <i> elmeent only shows that the text is different, it doesn't indicate if the text is important or not -->
 ```
 
 
