@@ -762,6 +762,11 @@ Using the right hierarchy is important:
 </p>
 <!-- lang attribute is used to specify the language  -->
  <!-- <i> elmeent only shows that the text is different, it doesn't indicate if the text is important or not -->
+
+<!-- strong element: marks text of strong importance -->
+<p>
+  <strong>Warning:</strong>This product may cause allergic reactions.
+</p>
 ```
 
 
