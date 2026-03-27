@@ -767,6 +767,11 @@ Using the right hierarchy is important:
 <p>
   <strong>Warning:</strong>This product may cause allergic reactions.
 </p>
+
+<!-- Bring Attention To element: brings attention to text that's not important for the meaning of the content. Mainly used to highlight keywords in summaries or product names in reviews -->
+<p>
+  We tested several products includind the <b>JBL Flip 7</b> for audio quality, it's <b>fast charging</b> capabilites outshined all other products
+</p>
 ```
 
 
