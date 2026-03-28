@@ -772,6 +772,19 @@ Using the right hierarchy is important:
 <p>
   We tested several products includind the <b>JBL Flip 7</b> for audio quality, it's <b>fast charging</b> capabilites outshined all other products
 </p>
+
+<!-- 
+Description list element(dl): represents a grouping of list of terms to be described
+Description Term element(dt): represents the term being defined
+Description Details element (dd): represents the description of the term
+-->
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
 ```
 
 
