@@ -785,6 +785,12 @@ Description Details element (dd): represents the description of the term
   <dt>CSS</dt>
   <dd>Cascading Style Sheets</dd>
 </dl>
+
+<!-- 
+ Block Quotation element: Used to represent a section that is quoted from another source. It has a `cite` attribute and it's value is the URL of the source. 
+ -->
+
+ <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">Can you imagine what it would be like to be a successful developer? To have built software systems that people rely upon?</blockquote>
 ```
 
 
