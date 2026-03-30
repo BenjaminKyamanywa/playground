@@ -791,6 +791,13 @@ Description Details element (dd): represents the description of the term
  -->
 
  <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">Can you imagine what it would be like to be a successful developer? To have built software systems that people rely upon?</blockquote>
+
+<!-- 
+Citation (cite) element: attributes the source of referenced work visually. Marks up the title of the reference.
+-->
+<p>
+  Quincy Larson, <cite>How to learn to Code and Get a Developer Job [Full Book]</cite>
+</p>
 ```
 
 
