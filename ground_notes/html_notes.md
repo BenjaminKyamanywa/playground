@@ -798,6 +798,16 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
 <p>
   Quincy Larson, <cite>How to learn to Code and Get a Developer Job [Full Book]</cite>
 </p>
+
+<!-- Inlince quotation element: represents short inline quotation -->
+<p>
+  As Quincy Larson said
+  <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+    Momentum is everything.
+  </q>
+</p>
+
+
 ```
 
 
