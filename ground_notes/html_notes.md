@@ -807,7 +807,10 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
   </q>
 </p>
 
-
+<!-- Abbreviation element: represents an abbreviatio or acronym -->
+<p>
+  <abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.
+</p>
 ```
 
 
