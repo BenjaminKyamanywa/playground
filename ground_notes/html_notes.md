@@ -807,9 +807,17 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
   </q>
 </p>
 
-<!-- Abbreviation element: represents an abbreviatio or acronym -->
+<!-- Abbreviation element: represents an abbreviation or acronym -->
 <p>
   <abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.
+</p>
+
+<!-- 
+ Contact address element: represents contact information 
+ (Date) TIme element: represents a date and/or time `dateeime` attribute is used to translate dates and times into machine readable format
+-->
+<p>
+  The reservations are for <time datetime="20:00">20:00</time>
 </p>
 ```
 
