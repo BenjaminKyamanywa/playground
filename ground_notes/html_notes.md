@@ -813,11 +813,16 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
 </p>
 
 <!-- 
- Contact address element: represents contact information 
- (Date) TIme element: represents a date and/or time `dateeime` attribute is used to translate dates and times into machine readable format
+ - Contact address element: represents contact information 
+ - (Date) TIme element: represents a date and/or time `dateeime` attribute is used to translate dates and times into machine readable format. Standard format is `YYYY-MM-DDThh:mm:ss` with capital T being a seprator between the date and time
 -->
 <p>
   The reservations are for <time datetime="20:00">20:00</time>
+</p>
+
+<!-- superscript element: represents subscript text. Commonly used for chemical formulas, footnotes, and variable subscripts -->
+<p>
+  CO<sub>2</sub> <!-- Carbondmonoxide -->
 </p>
 ```
 
