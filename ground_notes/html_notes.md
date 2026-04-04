@@ -824,6 +824,18 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
 <p>
   CO<sub>2</sub> <!-- Carbondmonoxide -->
 </p>
+
+<!-- 
+ - Inlince code element: represents a fragment of code
+ - Preformatted Text elment: represents preformatted text
+ -->
+<p>
+  <code>
+    body {
+      color: red;
+    }
+  </code>
+</p>
 ```
 
 
