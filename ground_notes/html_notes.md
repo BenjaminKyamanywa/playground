@@ -836,6 +836,13 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
     }
   </code>
 </p>
+
+<!-- 
+- Unarticulated annotation element: represents a span of inline text which should be rendered in a way that indicates it has non-textual annotation.
+-->
+<p>
+  We can use unarticulated annotation element to highlight <u>inccccrt</u> <u>spling</u> <u>isssses</u>
+</p>
 ```
 
 
