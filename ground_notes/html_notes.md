@@ -843,6 +843,23 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
 <p>
   We can use unarticulated annotation element to highlight <u>inccccrt</u> <u>spling</u> <u>isssses</u>
 </p>
+
+<!-- 
+- Ruby annotation element: annotates text with pronunciation or meaning explanations. E.g East Asian typography
+- Ruby fallback parenthesis element: used as a fallback for browsers lacking support for display ruby annocations.
+- Ruby text element: Indicates text for the ruby annotation. Usually used for pronunciation, or translation details in East Asian typography 
+-->
+<ruby>
+  明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+</ruby>
+
+<!-- Strikethrough element: Used to represent content that's no longer accurate or relevant -->
+<p>
+  <s>Tomorrow's hike will be meeting at noon.</s>
+</p>
+<p>
+  Due to unforseen weather conditions, the hike has been cancelled.
+</p>
 ```
 
 
