@@ -860,6 +860,21 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
 <p>
   Due to unforseen weather conditions, the hike has been cancelled.
 </p>
+
+<!-- 
+- Internal Links: Used to link to another section of the page by using `href="id"` on an `<a>` element and giving the destination element the same `id`. This is commonly used for skip links, tables of contents, or long pages with multiple sections. 
+-->
+
+<nav>
+  <ul>
+    <li><a href="#about-section">About</a></li>
+  </ul>
+</nav>
+
+<section id="about-section">
+  <h2>About<h2>
+  <p>This is the about section of the page.</p>
+</section> 
 ```
 
 
