@@ -1098,6 +1098,19 @@ To represent chemical equations we used the subscript eleement which displays a 
 
 ```
 
+### Working with Forms: How Do Forms, Labels and Inputs Work in HTML
+
+Form element gathers user information, such as names and email addresses. E.g
+
+```HTML
+
+<!-- action attribute specifies where form data will be sent upon submission -->
+<form action="url-goes-here">
+  <!-- Form input elements go here -->
+</form> 
+
+```
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
