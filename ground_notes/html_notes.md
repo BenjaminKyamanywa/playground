@@ -1111,6 +1111,14 @@ Form element gathers user information, such as names and email addresses. E.g
 
 ```
 
+To collect specific information, like names and email addresses we utilize input elements e.g
+
+```HTML
+<form action="">
+  <input type="text" />
+</form>
+```
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
