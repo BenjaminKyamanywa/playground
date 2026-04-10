@@ -655,7 +655,7 @@ Using the right hierarchy is important:
 
 ```HTML
 
-<!DOCTYPE hml>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -704,6 +704,21 @@ Using the right hierarchy is important:
   </body>
 </html>
 
+```
+
+### Simple HTML Form
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+  <h1>Welcome</h1>
+  <p>You have been granted access to the platform. Please create an account.</p>
+  <input type="text" placeholder="Enter username">
+  <input type="password" placeholder="Enter your password">
+</body>
+</html>
 ```
 
 ### Semantic HTML Review
@@ -936,7 +951,7 @@ Citation (cite) element: attributes the source of referenced work visually. Mark
     <dt>Flour</dt>
     <dd>2 cups</dd>
     <dt>Sugar</dt>
-    <dd>1/2 cup</dd>
+    <dd>1/2 cup</dd> 
   </dl>
   ```
 
@@ -1115,7 +1130,7 @@ To collect specific information, like names and email addresses we utilize input
 
 ```HTML
 <form action="">
-  <input type="text" />
+  <input type="text" /> <!-- Input element is a self closing void element without a closing tag -->
 </form>
 ```
 
