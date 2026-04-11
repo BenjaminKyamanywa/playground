@@ -1130,9 +1130,16 @@ To collect specific information, like names and email addresses we utilize input
 
 ```HTML
 <form action="">
-  <input type="text" /> <!-- Input element is a self closing void element without a closing tag -->
+  <input type="text" /> 
+  <!-- 
+  - Input element is a self closing void element without a closing tag.
+  - Type attribute defines the data type expected from the user e.g text.
+  - Label element: Used to add a label for an input
+  -->
 </form>
 ```
+
+
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
