@@ -1137,7 +1137,17 @@ To collect specific information, like names and email addresses we utilize input
   - Label element: Used to add a label for an input
   -->
 </form>
+
+<!-- Form Examples -->
+ <form action="">
+  <label for="email">Email Address: </label>
+  <input type="email" id="email">
+ </form>
+ <!-- 
+  - To explicitly associate a label & input element we use the `for` attribute.
+  -->
 ```
+
 
 
 
