@@ -1141,13 +1141,14 @@ To collect specific information, like names and email addresses we utilize input
 <!-- Form Examples -->
  <form action="">
   <label for="email">Email Address: </label>
-  <input type="email" id="email">
+  <input type="email" id="email" placeholder="example@email.com">
  </form>
  <!-- 
   - To explicitly associate a label & input element we use the `for` attribute.
+  - With explicit association the values of `for` attribute and `id` need to be the same. 
+  - For placeholder attribute we want to show helpful short text to show the format and type of data we expect from users.
   -->
 ```
-
 
 
 
@@ -1164,3 +1165,5 @@ To collect specific information, like names and email addresses we utilize input
 - Description lists are perfect for presenting terms and definitions in an easy to read format. E.g's Glossary, dictionary, product specifications, frequently asked questions, contact information, and metadata.
 6. What is the difference between blockquotes and inline quotes?
 - We should use block quotes for extended quotations from other sources and inline quotes for short quotations from other sources that should be part of existing paragraphs.
+7. What attribute is used to explicitely bind a label element with an input element.
+- We use the for attribute on the label element and it should match the id attribute on the input element.
