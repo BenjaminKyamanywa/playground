@@ -1150,7 +1150,11 @@ To collect specific information, like names and email addresses we utilize input
   -->
 ```
 
+### Different Types Of Buttons and When To Use Them
 
+`Button` element is used to perform a particular action when when activated. E.g send form inputs, opening a modal, toggling a sidebar menu.
+
+It has an attribute element that controls it's behavior when clicked.
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
