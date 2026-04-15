@@ -1154,7 +1154,12 @@ To collect specific information, like names and email addresses we utilize input
 
 `Button` element is used to perform a particular action when when activated. E.g send form inputs, opening a modal, toggling a sidebar menu.
 
-It has an attribute element that controls it's behavior when clicked.
+It has a `type` attribute that controls it's behavior when activated. We use the `type='button'` attribute.
+
+```HTML
+<button type="button">Show Alert</button>
+```
+
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
