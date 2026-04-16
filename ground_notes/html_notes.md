@@ -1160,6 +1160,19 @@ It has a `type` attribute that controls it's behavior when activated. We use the
 <button type="button">Show Alert</button>
 ```
 
+By default the button element doesn't do anything however, we can add interactivity with Javascript. For example showing an alert.
+
+```HTML
+
+<button type="button">Show Alert</button>
+
+<!-- javascript for interacitvity -->
+<script>
+  const btn = document.querySelector("button");
+  btn.addEventListener("click", () => alert("You clicked on the alert button"));
+</script>
+
+```
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
