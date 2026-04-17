@@ -1174,6 +1174,19 @@ By default the button element doesn't do anything however, we can add interactiv
 
 ```
 
+Another value we utilize for the button element is the `submit` value. Mostly used to submit form details to a server.
+
+```HTML
+
+<form action="">
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email">
+  <button type="submit">Submit Form</button>
+</form>
+
+```
+
+
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
 - It's the root file of all sites and we name it that way to differentiate it to web servers as our main source file.
