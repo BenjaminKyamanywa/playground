@@ -1176,15 +1176,26 @@ By default the button element doesn't do anything however, we can add interactiv
 
 Another value we utilize for the button element is the `submit` value. Mostly used to submit form details to a server.
 
+We also use a `reset` type attribute to clear form fields.
+
 ```HTML
 
 <form action="">
   <label for="email">Email Address:</label>
   <input type="email" id="email" name="email">
+  <button type="reset">Reset Form</button>
   <button type="submit">Submit Form</button>
 </form>
 
 ```
+
+The input element can also be used to create buttons as it has a type attriubte with possible values of `submit`, `reset`, and `button`. Below example. The value attribute is used to show button text.
+
+```HTML
+<input type="button" value="Start Game">
+```
+
+It's not common to use an input element as a button because it's a void element which means it can't have child nodes, such as text and can only have a start tag. While on the other hand the `button` element offers more flexibility because we can nest text, images and icons inside it.
 
 
 ### Common HTML Questions
