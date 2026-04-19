@@ -1197,6 +1197,22 @@ The input element can also be used to create buttons as it has a type attriubte 
 
 It's not common to use an input element as a button because it's a void element which means it can't have child nodes, such as text and can only have a start tag. While on the other hand the `button` element offers more flexibility because we can nest text, images and icons inside it.
 
+### Working With Forms
+
+We have a concept called client side validation with forms and it enables us to ensure that proper data is sent by users to the server.
+
+We validate forms in a number of ways:
+- Using the `required` attribute.
+- Extra layers using pseudo character check.
+- Using `minlength` & `maxlength`.
+
+```HTML
+
+<form action="">
+  
+</form>
+
+```
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
