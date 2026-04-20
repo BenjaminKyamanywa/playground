@@ -1209,7 +1209,9 @@ We validate forms in a number of ways:
 ```HTML
 
 <form action="">
-  
+  <label for="email">Email Address (Required Field):</label>
+  <input required type="email" name="email" id="email" minlength="4" maxlength="64">
+  <button type="submit">Submit Form</button>
 </form>
 
 ```
