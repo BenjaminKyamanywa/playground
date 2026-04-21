@@ -10,6 +10,18 @@ In this HTML reference notes we'll cover the buliding blocks and dive deeper in 
 ## Topics
   - [Introductions](#introduction)
   - [Common HTML Elements](#common-html-elements)
+  - [Boilerplate and Encoding](#boilerplate-and-encoding)
+  - [Multimedia Integration](#mutlimedia-integration)
+  - [Target Attribute Types](#target-attribute-types)
+  - [Absolute Vs Relative Paths](#absolute-vs-relative-paths)
+  - [Link States](#link-states)
+  - [Semantic HTML](#semantic-html)
+    - [Importance Of Good Structural Hierarchy](#importance-of-good-structural-hierarchy)
+  - [Examples](#examples)
+    - [HTML Bookstore Page](#html-bookstore-page)
+    - [HTML Video Player](#html-video-player)
+  - [Examples]()
+
 
 ## Introduction
 
@@ -1215,6 +1227,14 @@ We validate forms in a number of ways:
 </form>
 
 ```
+
+#### Importance of Different Form States
+
+Form controls such as inputs can be in different stages or conditions such as focused state, readonly state, disabled state.
+
+- Default state: Initial state of an element e.g input field can be empty.
+- Focused state: Highligted state showing a user is currently on an element about to take an action.
+- Disabled state: Displays to users that an input cannot be focused or actived.
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
