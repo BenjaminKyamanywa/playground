@@ -733,6 +733,15 @@ Using the right hierarchy is important:
 </html>
 ```
 
+### Google Homepage (Super Basic)
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body></bdoy>
+</html>
+```
+
 ### Semantic HTML Review
 
 **Importance Of Semantic HTML**
@@ -1235,6 +1244,11 @@ Form controls such as inputs can be in different stages or conditions such as fo
 - Default state: Initial state of an element e.g input field can be empty.
 - Focused state: Highligted state showing a user is currently on an element about to take an action.
 - Disabled state: Displays to users that an input cannot be focused or actived.
+- Readonly state: It's when a form control e.g an input is not editable by a user. 
+
+Key difference between `disabled` and `readonly` states is that readonly can be focused while disabled state cannot.
+
+
 
 ### Common HTML Questions
 1. Why is Index.html used to name the homepage?
