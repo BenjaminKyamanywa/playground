@@ -737,8 +737,16 @@ Using the right hierarchy is important:
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
-  <body></bdoy>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=display-width, initial-scale=1.0">
+  </head>
+  <body>
+    <img src="#img-src"> <!-- Google Logo -->
+    <input type="text">
+    <button>Search Here</button>
+    <button>I'm Feeling Lucky</button>
+  </bdoy>
 </html>
 ```
 
