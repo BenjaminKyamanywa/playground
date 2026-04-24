@@ -746,8 +746,21 @@ Using the right hierarchy is important:
     <input type="text">
     <button>Search Here</button>
     <button>I'm Feeling Lucky</button>
+    <p>Access our privayc policy. Click <a href="#">Here</a></p>
   </bdoy>
 </html>
+```
+
+### HTML Music Player
+
+```HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body></body>
+</html>
+
 ```
 
 ### Semantic HTML Review
