@@ -757,8 +757,17 @@ Using the right hierarchy is important:
 
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
-  <body></body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>freeCodeCamp Tunes</h1>
+    <h2>Can't Stay Down</h2>
+    <p>Artist: Quincy Larson</p>
+    <audio>
+    </audio>
+  </body>
 </html>
 
 ```
