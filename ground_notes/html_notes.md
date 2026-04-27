@@ -783,6 +783,24 @@ Using the right hierarchy is important:
 
 ```
 
+### Hotel Feedback Form
+
+```HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Hotel Feeback Form</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+```
+
 ### Semantic HTML Review
 
 **Importance Of Semantic HTML**
