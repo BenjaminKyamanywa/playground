@@ -795,7 +795,10 @@ Using the right hierarchy is important:
   <title>Hotel Feeback Form</title>
 </head>
 <body>
-  
+  <header>
+    <h1>Hotel Feedback Form</h1>
+    <p>Thank you for staying with us. Please provide feedback on your recent stay.</p>
+  </header>
 </body>
 </html>
 
